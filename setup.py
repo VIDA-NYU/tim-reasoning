@@ -25,8 +25,6 @@ version = read_version()
 with open('requirements.txt') as fp:
     req = [line for line in fp if line and not line.startswith('#')]
 
-print('.........>>>>>>>.', setuptools.find_packages())
-print('>>>>>>>>>>>>>>>')
 
 setuptools.setup(
     name=package_name,
