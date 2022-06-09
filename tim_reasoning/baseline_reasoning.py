@@ -37,18 +37,18 @@ class BaselineReasoning:
                     match = re.match(r'^\[ARG\d: (.+)\]$', role)
                     if match:
                         object_in_action = self.clean_text(match.group(1))
-                        objects_in_action.append(object_in_action)
-
-                actions.append(action)
-                objects.append(objects_in_action)
-                print('Step {0:10} {1:15} {2}'.format(str(step), action, ', '.join(objects_in_action)))
-                step += 1
+                        if object_in_action:
+                            objects_in_action.append(object_in_action)
+                if len(objects_in_action) > 0:
+                    actions.append(action)
+                    objects.append(objects_in_action)
+                    print('Step {0:10} {1:15} {2}'.format(str(step), action, ', '.join(objects_in_action)))
+                    step += 1
 
         return actions, objects
 
     def build_task_graph(self):
         actions, objects = self.extract_actions_objects()
-
         for i in range(len(actions)):
             step = {'action': actions[i], 'objects': objects[i],
                     'instruction': '%s %s' % (actions[i].capitalize(), objects[i][0]),
@@ -114,5 +114,8 @@ class BaselineReasoning:
         for token in docx:
             if not token.is_stop and not token.is_punct and token.pos_ == 'NOUN':
                 nouns.append(token.text)
+
+        if len(nouns) == 0:
+            return None
 
         return ' '.join(nouns)
