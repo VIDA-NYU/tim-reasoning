@@ -49,7 +49,7 @@ class RecipeTagger:
             results.append(list(zip(*result)))
         return results
 
-    def plot_entities(self, tokens, tags):
+    def plot_entities(self, tokens, tags, display_entities=None):
         entities = []
         text = ''
         index = 0
@@ -62,10 +62,15 @@ class RecipeTagger:
                 entity_info = {'start': index, 'end': index+len(token), 'label': tag}
                 entities.append(entity_info)
             text += token + ' '
-            index += len(token)+1  # Plus 1 becuase of the empty space
+            index += len(token)+1  # Plus 1 because of the empty space
 
         text_info = [{'text': text.rstrip(), 'ents': entities}]
 
-        colors = {'INGREDIENT': 'orange', 'QUANTITY': 'gray', 'UNIT': 'pink', 'STATE': 'yellow', 'SIZE': 'blue', 'TEMP': 'green'}
-        options = {'ents': ['INGREDIENT', 'QUANTITY', 'UNIT', 'STATE', 'SIZE', 'TEMP'], 'colors':colors}
+        entity_names = ['INGREDIENT', 'QUANTITY', 'UNIT', 'STATE', 'SIZE', 'TEMP']
+        colors = ['orange', 'gray', 'pink', 'yellow', 'blue', 'green']
+
+        if display_entities is None:
+            display_entities = entity_names  # Show all the entities
+
+        options = {'ents': [e for e in entity_names if e in display_entities], 'colors': zip(entity_names, colors)}
         displacy.render(text_info, style='ent', manual=True, options=options)
