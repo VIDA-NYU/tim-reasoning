@@ -1,5 +1,5 @@
 {
-  "name":"Mug Cake",
+  "title":"Mug Cake",
   "ingredients":[
     "2 Tablespoons all-purpose flour",
     "1.5 Tablespoons granulated sugar",
@@ -22,7 +22,7 @@
     "scissors",
     "spoon"
   ],
-  "instructions":[
+  "steps":[
     "Place the paper cupcake liner inside the mug. Set aside.",
     "Measure and add the flour, sugar, baking powder, and salt to the mixing bowl.",
     "Whisk to combine.",
@@ -30,10 +30,10 @@
     "Whisk batter until no lumps remain.",
     "Pour batter into prepared mug.",
     "Microwave the mug and batter on high power for 60 seconds.",
-    "Check the cake for doneness; it should be mostly dry and springy at the top. If the cake still looks wet, microwave for an additional 5 seconds.",
-    "Invert the mug to release the cake onto a place. Carefully remove paper liner.",
-    "While the cake is cooling, prepare to pipe the frosting. Scoop a spoonful of chocolate frosting into a zip-top bag and seal, removing as much air as possible.",
-    "Use scissors to cut one corner from the bag to create a small opening 1⁄4-inch in diameter.",
+    "Check if the cake is done by inserting and toothpick into the center of the cake and then removing. If wet batter clings to the toothpick, microwave for an additional 5 seconds. If the toothpick comes out clean, continue.",
+    "Invert the mug to release the cake onto a plate. Allow to cool until it is no longer hot to the touch, then carefully remove paper liner.",
+    "While the cake is cooling, prepare to pipe the frosting. Scoop 4 spoonfuls of chocolate frosting into a zip-top bag and seal, removing as much air as possible.",
+    "Use scissors to cut one corner from the bag to create a small opening 1/4-inch in diameter.",
     "Squeeze the frosting through the opening to apply small dollops of frosting to the plate in a circle around the base of the cake."
   ]
 }

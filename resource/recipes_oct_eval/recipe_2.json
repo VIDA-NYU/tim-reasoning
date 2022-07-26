@@ -1,5 +1,5 @@
 {
-  "name":"Pour-over Coffee",
+  "title":"Pour-over Coffee",
   "ingredients":[
     "12 oz water",
     "25 grams whole coffee beans"
@@ -15,13 +15,13 @@
     "thermometer",
     "timer (optional)"
   ],
-  "instructions":[
+  "steps":[
     "Measure 12 ounces of cold water and transfer to a kettle.",
-    "While the water is boiling, assemble the filter cone. Place the dripper on top of a coffee mug.",
+    "Assemble the filter cone.  Place the dripper on top of a coffee mug.",
     "Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",
-    "Weigh the coffee beans and grind until the coffee grounds are the consistency of course sand, about 20 seconds. Transfer the grounds to the filter cone.",
-    "Once the water has boiled, check the temperature. The water should be between 195-205 degrees Fahrenheit or between 91-96 degrees Celsius. If the water is too hot, let it cool briefly.",
-    "Pour a small amount of water in the filter to wet the grounds. Wait for coffee to bloom, about 30 seconds. You will see small bubbles or foam on the coffee grounds during this step.",
+    "Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",
+    "Check the temperature of the water.",
+    "Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.",
     "Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.",
     "Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds."
   ]
