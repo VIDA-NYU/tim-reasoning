@@ -9,15 +9,15 @@ for logger_name in logging.root.manager.loggerDict:
     logging.getLogger(logger_name).setLevel(logging.CRITICAL)
 
 nlp = spacy.load('en_core_web_lg')
-predictor = Predictor.from_path('https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz')
 
 
 class BaselineReasoning:
 
-    def __init__(self, recipe):
+    def __init__(self, recipe, model_path):
         self.recipe = recipe
         self.graph_task = []
         self.current_step = 0
+        self.predictor = PredictorSingleton(model_path).get_predictor()
 
     def extract_actions_objects(self):
         sentences = nltk.sent_tokenize(self.recipe)
@@ -26,7 +26,7 @@ class BaselineReasoning:
         step = 1
         print('{0:15} {1:15} {2}'.format('STEP', 'ACTION', 'OBJECTS'))
         for sentence in sentences:
-            annotations = predictor.predict(sentence=sentence)
+            annotations = self.predictor.predict(sentence=sentence)
             for verb_info in annotations['verbs']:
                 description = verb_info['description']
                 roles = re.findall('\[[^\]]+\]', description)  # Find all ARGs
@@ -119,3 +119,18 @@ class BaselineReasoning:
             return None
 
         return ' '.join(nouns)
+
+
+class PredictorSingleton:
+    _singleton = None
+    predictor = None
+
+    def __new__(cls, model_path):
+        if not cls._singleton:
+            cls._singleton = super(PredictorSingleton, cls).__new__(cls)
+            cls.predictor = Predictor.from_path(model_path)
+
+        return cls._singleton
+
+    def get_predictor(self):
+        return self.predictor
