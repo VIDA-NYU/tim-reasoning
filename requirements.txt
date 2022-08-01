@@ -2,3 +2,6 @@ nltk
 spacy
 allennlp
 allennlp-models
+transformers
+datasets
+torch
