@@ -1,0 +1,24 @@
+{
+    "actions": [
+        "Place paper",
+        "Place cupcake",
+        "Place liner",
+        "Add flour",
+        "Add sugar",
+        "Add baking",
+        "Add powder",
+        "Add salt",
+        "Add mixing",
+        "Add oil",
+        "Add water",
+        "Add vanilla",
+        "Pour batter",
+        "Microwave mug",
+        "Microwave batter",
+        "Check cake",
+        "Release cake",
+        "Pipe frosting",
+        "Squeeze frosting"
+    ],
+    "scene_descriptions": []
+}

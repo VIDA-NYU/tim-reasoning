@@ -1,0 +1,18 @@
+{
+    "actions": [
+        "Measure water",
+        "Assemble filter",
+        "Assemble cone",
+        "Place coffee",
+        "Place mug",
+        "Place paper",
+        "Weigh coffee",
+        "Weigh beans",
+        "Transfer grounds",
+        "Check water",
+        "Pour water",
+        "Pour water",
+        "Let coffee"
+    ],
+    "scene_descriptions": []
+}
