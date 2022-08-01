@@ -14,6 +14,8 @@ $ pip install git+https://github.com/VIDA-NYU/tim-reasoning.git
 2. Download extra files:
 ```
 $ python -m spacy download en_core_web_lg
+$ git clone https://huggingface.co/edwardjross/xlm-roberta-base-finetuned-recipe-all
+$ curl -L https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz  -o structured-prediction-srl-bert.2020.12.15.tar.gz
 ```
 
 3. Run any example from the directory `examples`:
