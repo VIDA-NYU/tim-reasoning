@@ -81,7 +81,7 @@ class RecipeTagger:
         text_info = [{'text': text.rstrip(), 'ents': entities}]
 
         entity_names = ['INGREDIENT', 'QUANTITY', 'UNIT', 'STATE', 'SIZE', 'TEMP', 'ACTION']
-        colors = ['orange', 'gray', 'pink', 'yellow', 'blue', 'green', 'green']
+        colors = ['orange', 'gray', 'pink', 'yellow', 'blue', 'red', 'green']
 
         if display_entities is None:
             display_entities = entity_names  # Show all the entities
@@ -133,5 +133,5 @@ class RecipeTagger:
         return action_phrases
 
     def convert_to_verb(self, sentence):
-        new_sentence = 'To ' + sentence[0].lower() + sentence[1:]
+        new_sentence = 'To ' + sentence
         return new_sentence
