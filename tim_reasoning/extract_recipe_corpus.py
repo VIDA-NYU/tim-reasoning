@@ -221,3 +221,4 @@ print(len(instances))
 
 with open('../data/action_data_train.json', 'w', encoding='utf-8') as f:
     json.dump(instances, f, indent=2)
+
