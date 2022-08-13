@@ -16,7 +16,7 @@ class DeepQDSBertModelHelper(BertPreTrainedModel):
         super(DeepQDSBertModelHelper, self).__init__(bert_config)
         self.bert_encoder_title = encoder_title
         self.batch_counter = 0
-        self.logger = args.logger
+        #self.logger = args.logger
         self.args = args
         self.dropout = nn.Dropout(self.config.hidden_dropout_prob)
 
@@ -74,7 +74,7 @@ class DeepQDSBertModel:
         self.bert_encoder_title = BertModel.from_pretrained(self.config['bert_model_file'])
         self.bert_config = self.bert_encoder_title.config
         self.network=DeepQDSBertModelHelper(self.bert_encoder_title, self.args, self.bert_config)
-        self.device=args.device
+        #self.device=args.device
 
     def half(self):
         self.network.half()
