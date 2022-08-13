@@ -80,8 +80,8 @@ for ii in range(len(actions)):
      ### State management
      ### TODO: after multiple mistakes, should be jump to later steps directly???
      ### TODO: discuss which steps it should compare to 
-     print(ii)
-     print(output.data.cpu().numpy().tolist())
+     #print(ii)
+     #print(output.data.cpu().numpy().tolist())
      #input()
      if curr_step < len(recipe) - 1 and executed == True:
         question = recipe[curr_step + 1]
