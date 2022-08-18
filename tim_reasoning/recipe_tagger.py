@@ -1,10 +1,8 @@
-import re
 import torch
 import string
-from transformers import AutoTokenizer, AutoModelForTokenClassification
+import nltk
+from transformers import pipeline
 from os.path import join
-from datasets import ClassLabel
-from itertools import groupby
 from spacy import displacy
 
 
@@ -12,67 +10,69 @@ device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 punctuation_marks = string.punctuation
 
 
-class HuggingFaceModel:
-
-    def __init__(self, model_path, label_names):
-        self.__tokenizer = AutoTokenizer.from_pretrained(model_path)
-        self.__model = AutoModelForTokenClassification.from_pretrained(model_path)
-        self.__labels = ClassLabel(num_classes=len(label_names), names=label_names)
-
-    def predict(self, sentence):
-        inputs = self.__tokenizer(sentence, return_tensors='pt')
-        tokens = [self.__tokenizer.convert_ids_to_tokens(x) for x in inputs['input_ids']]
-        preds = [self.__labels.int2str(x) for x in self.__model(**inputs.to(device)).logits.argmax(axis=-1)]
-        tokens, tags = self._align_token_preds(inputs, tokens, preds)[0]
-
-        return tokens, tags
-
-    def _align_token_preds(self, inputs, tokens, preds):
-        results = []
-        for idx in range(inputs['input_ids'].shape[0]):
-            result = []
-            for key, group in groupby(zip(inputs.word_ids(idx), tokens[idx], preds[idx]), key=lambda x: x[0]):
-                if key is not None:
-                    group = list(group)
-                    token = ''.join([x[1] for x in group]).lstrip('▁')
-                    tag = group[0][2]
-                    result.append((token, tag))
-            results.append(list(zip(*result)))
-
-        return results
-
-
 class RecipeTagger:
 
     def __init__(self, model_path):
-        labels_edwardjross = ['O', 'I-QUANTITY', 'I-UNIT', 'I-STATE', 'I-NAME', 'I-DF', 'I-SIZE', 'I-TEMP']
-        labels_flowgraph = ['I-Ac', 'I-Ac2', 'I-Af', 'I-At', 'I-D', 'I-F', 'O', 'I-Q', 'I-Sf', 'I-St', 'I-T']
-        self.model_edwardjross = HuggingFaceModel(join(model_path, 'recipe_edwardjross'), labels_edwardjross)
-        self.model_flowgraph = HuggingFaceModel(join(model_path, 'recipe_flowgraph'), labels_flowgraph)
+        model_path_edwardjross = join(model_path, 'recipe_edwardjross')
+        self.model_edwardjross = pipeline('token-classification', model=model_path_edwardjross,
+                                          tokenizer=model_path_edwardjross, ignore_labels=[], device=device)
+        model_path_flowgraph = join(model_path, 'recipe_flowgraph')
+        self.model_flowgraph = pipeline('token-classification', model=model_path_flowgraph,
+                                        tokenizer=model_path_flowgraph, ignore_labels=[], device=device)
 
-    def predict_entities(self, text, replace_original_tags=True):
-        tokens, tags = self.model_edwardjross.predict(text)
-        tokens2, tags2 = self.model_flowgraph.predict(text)
+    def predict_entities(self, text):
+        sentences = nltk.sent_tokenize(text)
+        all_tokens = []
+        all_tags = []
+        for sentence in sentences:
+            entities = self.model_edwardjross(sentence)
+            tokens_me, tags_me = self._join_entities(entities)
+            entities = self.model_flowgraph(sentence)
+            tokens_mf, tags_mf = self._join_entities(entities)
+            tags_me = self._replace_tags(tags_me)
+            tags_mf = self._replace_tags(tags_mf)
+            tokens, tags = self._combine_results(tokens_me, tags_me, tokens_mf, tags_mf)
+            all_tokens += tokens
+            all_tags += tags
 
-        if replace_original_tags:
-            tags = self._replace_tags(tags)
-            tags2 = self._replace_tags(tags2)
+        return all_tokens, all_tags
 
-        new_tags = []
-        for token, tag in zip(tokens, tags):
-            for to, ta in zip(tokens2, tags2):
-                #print(to, ta)
-                if token == to and tag == 'O' and ta in {'ACTION', 'TOOL'}:
-                    tag = ta
+    def _combine_results(self, tokens1, tags1, tokens2, tags2):
+        if tokens1 != tokens2:  # Since the tokens are not the same, only return the ones by the best model
+            return tokens1, tags1
 
-            new_tags.append(tag)
+        for index in range(len(tokens1)):
+            tag1 = tags1[index]
+            tag2 = tags2[index]
+            if tag1 == 'O' and tag2 != 'O':
+                tags1[index] = tag2
 
-        return tokens, new_tags
+        return tokens1, tags1
+
+    def _join_entities(self, entities):
+        tokens = []
+        tags = []
+
+        for token in entities:
+            word = token['word']
+            tag = token['entity']
+            if word.startswith('▁'):  # It's the first part of the word
+                tokens.append(word.lstrip('▁'))
+                tags.append(tag)
+            elif word in punctuation_marks:
+                tokens.append(word)
+                tags.append(tag)
+            else:
+                tokens[-1] = tokens[-1] + word
+
+        return tokens, tags
 
     def _replace_tags(self, tags):
         new_tags = []
-        mappings_edwardjross = {'I-NAME': 'INGREDIENT', 'I-QUANTITY': 'QUANTITY', 'I-UNIT': 'UNIT', 'I-STATE': 'STATE', 'I-SIZE': 'SIZE', 'I-TEMP': 'TEMP'}
-        mappings_flowgraph = {'I-Ac': 'ACTION', 'I-Ac2': 'ACTION', 'I-Af': 'ACTION', 'I-At': 'ACTION', 'I-D': 'DURATION', 'I-F': 'INGREDIENT', 'I-Q': 'QUANTITY', 'I-Sf': 'STATE',  'I-T': 'TOOL'}
+        mappings_edwardjross = {'I-NAME': 'INGREDIENT', 'I-QUANTITY': 'QUANTITY', 'I-UNIT': 'UNIT', 'I-STATE': 'STATE',
+                                'I-SIZE': 'SIZE', 'I-TEMP': 'TEMP'}
+        mappings_flowgraph = {'I-T': 'TOOL', 'I-Ac': 'ACTION', 'I-Ac2': 'ACTION', 'I-Af': 'ACTION', 'I-At': 'ACTION',
+                              'I-D': 'DURATION', 'I-F': 'INGREDIENT', 'I-Q': 'QUANTITY', 'I-Sf': 'STATE'}
 
         for tag in tags:
             if tag in {'I-DF', 'I-St'}:  # Skip these tags
@@ -103,7 +103,7 @@ class RecipeTagger:
         text_info = [{'text': text.rstrip(), 'ents': entities}]
 
         entity_names = ['INGREDIENT', 'QUANTITY', 'UNIT', 'STATE', 'SIZE', 'TEMP', 'ACTION', 'TOOL', 'DURATION']
-        colors = ['orange', 'gray', 'pink', 'yellow', 'blue', 'red', 'green', 'yellow', 'red']
+        colors = ['orange', 'gray', 'pink', 'yellow', 'blue', 'red', 'green', 'magenta', 'cyan']
 
         if display_entities is None:
             display_entities = entity_names  # Show all the entities
