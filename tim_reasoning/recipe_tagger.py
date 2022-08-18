@@ -44,7 +44,7 @@ class RecipeTagger:
         for index in range(len(tokens1)):
             tag1 = tags1[index]
             tag2 = tags2[index]
-            if tag1 == 'O' and tag2 != 'O':
+            if tag1 == 'O' and tag2 in {'ACTION', 'TOOL', 'DURATION'}:
                 tags1[index] = tag2
 
         return tokens1, tags1
