@@ -27,5 +27,5 @@ class TestRuleBasedClassifier(unittest.TestCase):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         TestRuleBasedClassifier.MODEL_TAGGER_PATH = sys.argv.pop()
-        
+
     unittest.main()
