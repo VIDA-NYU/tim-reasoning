@@ -11,14 +11,18 @@ This package works with Python 3.8 in Linux and Mac.
 $ pip install git+https://github.com/VIDA-NYU/tim-reasoning.git
 ```
 
-2. Download extra files:
+2. Download models:
+
+- Download the model for the recipe tagger [here](https://drive.google.com/file/d/1aYSlngadawRTKuIkd1FtMvrMBfenqPLH/view?usp=sharing) 
+(then, uncompress it).
+- Download the model for the BERT classifier [here](#) (then, uncompress it).
+
+3. Download extra files:
 ```
 $ python -m spacy download en_core_web_lg
-$ git clone https://huggingface.co/edwardjross/xlm-roberta-base-finetuned-recipe-all
-$ curl -L https://storage.googleapis.com/allennlp-public-models/structured-prediction-srl-bert.2020.12.15.tar.gz  -o structured-prediction-srl-bert.2020.12.15.tar.gz
 ```
 
-3. Run any example from the directory `examples`:
+4. Run any example from the directory `examples`:
 ```
 $ jupyter notebook
 ```
