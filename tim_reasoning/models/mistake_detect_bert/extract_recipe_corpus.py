@@ -14,13 +14,13 @@ def normalize(text):
     return unicodedata.normalize('NFD', text).lower()
 
 ## load recipe corpus 
-files_list = glob.glob('../../multimodal-aligned-recipe-corpus/multi-step-breakdown/train/*/*')
+files_list = glob.glob('../../../multimodal-aligned-recipe-corpus/multi-step-breakdown/train/*/*')
 
 ## load all verbs and nouns in the epic kitchen dataset
 verb_dict = dict()
 noun_dict = dict()
 
-with open('../../epic/epic-kitchens-100-annotations/EPIC_100_verb_classes.csv', 'r') as ifile:
+with open('../../../epic/epic-kitchens-100-annotations/EPIC_100_verb_classes.csv', 'r') as ifile:
     reader = csv.reader(ifile, delimiter=',')
     for row in tqdm(reader):
         if row[0] == 'id':
@@ -35,7 +35,7 @@ with open('../../epic/epic-kitchens-100-annotations/EPIC_100_verb_classes.csv', 
                 verb_dict[ele] = category
 
 
-with open('../../epic/epic-kitchens-100-annotations/EPIC_100_noun_classes.csv', 'r') as ifile:
+with open('../../../epic/epic-kitchens-100-annotations/EPIC_100_noun_classes.csv', 'r') as ifile:
     reader = csv.reader(ifile, delimiter=',')
     for row in tqdm(reader):
         if row[0] == 'id':
@@ -53,7 +53,7 @@ with open('../../epic/epic-kitchens-100-annotations/EPIC_100_noun_classes.csv', 
 
 noun_verb_list = []
 ### extract all verb and noun combinations 
-with open('../../epic/EPIC_100_train.csv', 'r') as ifile:
+with open('../../../epic/EPIC_100_train.csv', 'r') as ifile:
     reader = csv.reader(ifile, delimiter=',')
     for row in tqdm(reader):
         if row[0] == 'narration_id':
@@ -69,7 +69,7 @@ with open('../../epic/EPIC_100_train.csv', 'r') as ifile:
             if pair_string not in noun_verb_list:
                 noun_verb_list.append(pair_string)
 
-with open('../../epic/EPIC_100_validation.csv', 'r') as ifile:
+with open('../../../epic/EPIC_100_validation.csv', 'r') as ifile:
     reader = csv.reader(ifile, delimiter=',')
     for row in tqdm(reader):
         if row[0] == 'narration_id':
@@ -219,6 +219,6 @@ for sent in tqdm(sent_list):
             count += 1
 print(len(instances))
 
-with open('../data/action_data_train.json', 'w', encoding='utf-8') as f:
+with open('../../data/action_data_train.json', 'w', encoding='utf-8') as f:
     json.dump(instances, f, indent=2)
 
