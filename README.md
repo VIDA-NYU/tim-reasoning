@@ -15,7 +15,7 @@ $ pip install git+https://github.com/VIDA-NYU/tim-reasoning.git
 
 - Download the model for the recipe tagger [here](https://drive.google.com/file/d/1aYSlngadawRTKuIkd1FtMvrMBfenqPLH/view?usp=sharing) 
 (then, uncompress it).
-- Download the model for the BERT classifier [here](#) (then, uncompress it).
+- Download the model for the BERT classifier [here](https://drive.google.com/file/d/1aF3rF6NW69QRHtiBesYJOTXqZhfrUcHL/view?usp=sharing).
 
 3. Download extra files:
 ```
