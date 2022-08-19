@@ -219,6 +219,6 @@ for sent in tqdm(sent_list):
             count += 1
 print(len(instances))
 
-with open('../../data/action_data_train.json', 'w', encoding='utf-8') as f:
+with open('../../data/actions/action_data_train.json', 'w', encoding='utf-8') as f:
     json.dump(instances, f, indent=2)
 
