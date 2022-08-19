@@ -20,20 +20,23 @@ class RecipeTagger:
         self.model_flowgraph = pipeline('token-classification', model=model_path_flowgraph,
                                         tokenizer=model_path_flowgraph, ignore_labels=[], device=device)
 
-    def predict_entities(self, text):
+    def predict_entities(self, text, join_entities=True):
         sentences = nltk.sent_tokenize(text)
         all_tokens = []
         all_tags = []
         for sentence in sentences:
             entities = self.model_edwardjross(sentence)
-            tokens_me, tags_me = self._join_entities(entities)
+            tokens_me, tags_me = self._join_sub_entities(entities)
             entities = self.model_flowgraph(sentence)
-            tokens_mf, tags_mf = self._join_entities(entities)
+            tokens_mf, tags_mf = self._join_sub_entities(entities)
             tags_me = self._replace_tags(tags_me)
             tags_mf = self._replace_tags(tags_mf)
             tokens, tags = self._combine_results(tokens_me, tags_me, tokens_mf, tags_mf)
             all_tokens += tokens
             all_tags += tags
+
+        if join_entities:
+            all_tokens, all_tags = self._join_entities(all_tokens, all_tags)
 
         return all_tokens, all_tags
 
@@ -44,12 +47,12 @@ class RecipeTagger:
         for index in range(len(tokens1)):
             tag1 = tags1[index]
             tag2 = tags2[index]
-            if tag1 == 'O' and tag2 in {'ACTION', 'TOOL', 'DURATION'}:
+            if tag2 in {'ACTION', 'TOOL', 'DURATION'}:
                 tags1[index] = tag2
 
         return tokens1, tags1
 
-    def _join_entities(self, entities):
+    def _join_sub_entities(self, entities):
         tokens = []
         tags = []
 
@@ -66,6 +69,22 @@ class RecipeTagger:
                 tokens[-1] = tokens[-1] + word
 
         return tokens, tags
+
+    def _join_entities(self, tokens, tags):
+        new_tokens = []
+        new_tags = []
+        previous_tag = None
+
+        for token, tag in zip(tokens, tags):
+            if tag == previous_tag:
+                new_tokens[-1] = new_tokens[-1] + ' ' + token
+            else:
+                new_tokens.append(token)
+                new_tags.append(tag)
+
+            previous_tag = tag
+
+        return new_tokens, new_tags
 
     def _replace_tags(self, tags):
         new_tags = []
