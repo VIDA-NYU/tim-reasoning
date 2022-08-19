@@ -1,4 +1,4 @@
 __version__ = '0.0.0'
 
-from .baseline_reasoning import BaselineReasoning
-from .recipe_tagger import RecipeTagger
+from .reasoning.rule_based_classifier import RuleBasedClassifier
+from .reasoning.recipe_tagger import RecipeTagger
