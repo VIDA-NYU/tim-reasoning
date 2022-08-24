@@ -4,3 +4,4 @@ transformers
 datasets
 torch
 pytorch-transformers
+sentencepiece==0.1.95
