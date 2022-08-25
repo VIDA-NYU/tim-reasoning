@@ -15,14 +15,15 @@ $ pip install git+https://github.com/VIDA-NYU/tim-reasoning.git
 
 - Download the model for the recipe tagger [here](https://drive.google.com/file/d/1aYSlngadawRTKuIkd1FtMvrMBfenqPLH/view?usp=sharing) 
 (then, uncompress it).
-- Download the model for the BERT classifier [here](https://drive.google.com/file/d/1aF3rF6NW69QRHtiBesYJOTXqZhfrUcHL/view?usp=sharing).
+- Download the model for the BERT classifier [here](https://drive.google.com/file/d/1RsXbLrIubPTAbgP3NEAB73LMcAKDV3oE/view?usp=sharing) 
+(then, uncompress it).
 
 3. Download extra files:
 ```
 $ python -m spacy download en_core_web_lg
 ```
 
-4. Run any example from the directory `examples`:
+4. Run any example from the `examples` directory:
 ```
 $ jupyter notebook
 ```
