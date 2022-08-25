@@ -4,7 +4,7 @@ from tim_reasoning import RecipeTagger
 
 
 class TestRecipeTagger(unittest.TestCase):
-    MODEL_TAGGER_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
+    MODEL_TAGGER_PATH = None
 
     @classmethod
     def setUpClass(cls):
@@ -29,5 +29,7 @@ class TestRecipeTagger(unittest.TestCase):
 if __name__ == '__main__':
     if len(sys.argv) > 1:
         TestRecipeTagger.MODEL_TAGGER_PATH = sys.argv.pop()
+    else:
+        TestRecipeTagger.MODEL_TAGGER_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
         
     unittest.main()
