@@ -20,7 +20,7 @@ class BertClassifier:
 
     def __init__(self, model_path):
         parser = argparse.ArgumentParser('Hotpot Edge Ranking')
-        args = parser.parse_args()
+        args, unknown = parser.parse_known_args()
         args.fp16 = False
 
         with open(join(dirname(__file__), CONFIG_PATH), 'r', encoding='utf-8') as fin:
