@@ -26,9 +26,9 @@ for file in files_list:
     last_name = file.split('/')[-1]
     if last_name == 'text_to_video_paraphrases.csv':
         continue
+    sent_dict = dict()
     with open(file) as ifile:
         
-        sent_dict = dict()
         reader = csv.reader(ifile, delimiter=',')
         for row in reader:
             if row[0] == 'Source' and row[1] == 'Target':
@@ -44,6 +44,8 @@ for file in files_list:
                 if row[0] not in sent_dict:
                     sent_dict[sent1] = {'pos': [], 'neg': []}
                 sent_dict[sent1]['pos'].append(sent2)
+    with open(file) as ifile:    
+        reader = csv.reader(ifile, delimiter=',')
         
         for row in reader:
             if row[0] == 'Source' and row[1] == 'Target':
@@ -57,17 +59,20 @@ for file in files_list:
             sent2 = row[1]
             for sent in sent_dict:
                 if sent != sent1:
-                    sent_dict[sent1]['neg'].append(sent2)
+                    sent_dict[sent]['neg'].append(sent2)
+    
+    for sent in sent_dict:
+        if len(sent_dict[sent]['neg']) < 3:
+            continue
+        for sent2 in sent_dict[sent]['pos'][:5]:
+            instances.append({'id': ct, 'sent1':sent, 'sent2':sent2, 'label': 1})
+            ct += 1
         
-        for sent in sent_dict:
-            for sent2 in sent_dict[sent]['pos']:
-                instances.append({'id': ct, 'sent1':sent, 'sent2':sent2, 'label': 1})
-                ct += 1
-            num_neg = len(sent_dict[sent]['neg'])
-            neg_sents = random.choices(sent_dict[sent]['neg'], k=num_neg)	
-            for sent2 in neg_sents:
-                instances.append({'id': ct, 'sent1':sent, 'sent2':sent2, 'label': 0})
-                ct += 1
+        num_neg = min(len(sent_dict[sent]['pos']), 5)
+        neg_sents = random.choices(sent_dict[sent]['neg'], k=num_neg)	
+        for sent2 in neg_sents:
+            instances.append({'id': ct, 'sent1':sent, 'sent2':sent2, 'label': 0})
+            ct += 1
         
             
 
