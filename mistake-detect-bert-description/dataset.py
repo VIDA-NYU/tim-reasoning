@@ -72,10 +72,10 @@ def encode_sequence(question, passage, max_seq_len, tokenizer):
 
 def batch_transform_bert(inst, bert_max_len, bert_tokenizer):
     qid = inst['id']
-    question = inst['step']
+    question = inst['sent1']
     label = inst['label']
     
-    passage = inst['action_vb'] + ' ' + inst['action_noun']
+    passage = inst['sent2']
 
     ids, mask, type_ids = encode_sequence(question, passage, bert_max_len, bert_tokenizer)
     
@@ -113,5 +113,5 @@ class HotpotSpanDataset(Dataset):
 
         ids, mask, type_ids, label, qid = batch_transform_bert(inst, self.config_model['bert_max_len'], self.bert_tokenizer)
         
-        return [ids, mask, type_ids, label, qid, inst['step']]
+        return [ids, mask, type_ids, label, qid, inst['sent1']]
  

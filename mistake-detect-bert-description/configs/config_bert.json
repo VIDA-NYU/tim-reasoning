@@ -1,5 +1,5 @@
 {
-    "name": "mistake_detect_bert",
+    "name": "mistake_detect_bert_description",
     "model": {
         "bert-model": true,
         "vocab_size": 40000,
@@ -41,9 +41,9 @@
     "system": {
         "device": "cuda",
         "num_workers": 1,
-        "base_dir": "/home/zhaochen/postdoc/tim-reasoning-models/mistake-detect-bert/",
-	    "train_data": "/home/zhaochen/postdoc/tim-reasoning/data/action_data_train.json",
-        "test_data": "/home/zhaochen/postdoc/tim-reasoning/data/action_data_val.json"
+        "base_dir": "/home/zhaochen/postdoc/tim-reasoning-models/mistake-detect-bert-description/",
+	    "train_data": "/home/zhaochen/postdoc/tim-reasoning/data/description_data_train.json",
+        "test_data": "/home/zhaochen/postdoc/tim-reasoning/data/description_data_test.json"
     },
     "bert_token_file": "bert-base-uncased",
     "bert_model_file": "bert-base-uncased",
