@@ -23,13 +23,19 @@ class StateManager:
         self.status = RecipeStatus.IN_PROGRESS
         self.current_step_index = 0
 
-        return {'step': current_step, 'error': False, 'status_message': 'Starting the recipe'}
+        return {
+            'step_id': self.current_step_index,
+            'step_status': StepStatus.IN_PROGRESS,
+            'step_description': current_step,
+            'error_status': False,
+            'error_description': ''
+        }
 
     def _build_task_graph(self):
         for step in self.recipe['steps']:
-            self.graph_task.append({'step': step, 'is_completed': False, 'sub_steps_counter': 0})  # TODO: Improve the logic of sub_steps_counter
+            self.graph_task.append({'step': step, 'is_completed': False, 'sub_steps_counter': 0})  # TODO: sub_steps_counter is just a placeholder to know when a step is completed
 
-    def next_step(self, detected_actions, scene_descriptions=None):
+    def check_status(self, detected_actions, scene_descriptions=None):
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
@@ -40,7 +46,14 @@ class StateManager:
         mistake = self._has_mistake(current_step, detected_actions)
 
         if mistake:
-            return {'step': current_step, 'error': True, 'status_message': 'Errors detected in the step'}
+            return {
+                'step_id': self.current_step_index,
+                'step_status': StepStatus.IN_PROGRESS,
+                'step_description': current_step,
+                'error_status': True,
+                'error_description': 'Errors detected in the step'
+            }
+
         else:
             self.graph_task[self.current_step_index]['sub_steps_counter'] += 1
             if self.graph_task[self.current_step_index]['sub_steps_counter'] == 2:
@@ -54,9 +67,21 @@ class StateManager:
                     return {'step': 'Enjoy, you completed the recipe', 'error': False, 'status_message': 'Recipe completed'}
                 else:
                     current_step = self.graph_task[self.current_step_index]['step']
-                    return {'step': current_step, 'error': False, 'status_message': 'New step'}
+                    return {
+                        'step_id': self.current_step_index,
+                        'step_status': StepStatus.NEW,
+                        'step_description': current_step,
+                        'error_status': False,
+                        'error_description': ''
+                    }
             else:
-                return {'step': current_step, 'error': False, 'status_message': 'Still in the same step'}
+                return {
+                    'step_id': self.current_step_index,
+                    'step_status': StepStatus.IN_PROGRESS,
+                    'step_description': current_step,
+                    'error_status': False,
+                    'error_description': ''
+                }
 
     def _has_mistake(self, current_step, detected_actions):
         for detected_action in detected_actions:
@@ -73,3 +98,8 @@ class RecipeStatus(Enum):
     NOT_STARTED = 'NOT_STARTED'
     IN_PROGRESS = 'IN_PROGRESS'
     COMPLETED = 'COMPLETED'
+
+
+class StepStatus(Enum):
+    IN_PROGRESS = 'IN_PROGRESS'
+    NEW = 'NEW'
