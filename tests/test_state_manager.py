@@ -42,9 +42,13 @@ class TestStateManager(unittest.TestCase):
         cls.state_manager = StateManager(recipe, cls.CONFIGS)
 
     def test_start_steps(self):
-        expected_first_step = 'Place tortilla on cutting board.'
-        actual_first_step = self.state_manager.start_steps()['step']
-        self.assertEqual(actual_first_step, expected_first_step)
+        expected_step_id = 0
+        expected_step_description = 'Place tortilla on cutting board.'
+        step_data = self.state_manager.start_steps()
+        actual_step_description = step_data['step_description']
+        self.assertEqual(actual_step_description, expected_step_description)
+        actual_step_id = step_data['step_id']
+        self.assertEqual(actual_step_id, expected_step_id)
 
 
 if __name__ == '__main__':
