@@ -9,23 +9,20 @@ logger = logging.getLogger(__name__)
 
 
 class StateManager:
-    def __init__(self, recipe, configs):
-        self.recipe = recipe
+    def __init__(self, configs):
         self.rule_classifier = RuleBasedClassifier(configs['rule_classifier_path'])
         self.bert_classifier = BertClassifier(configs['bert_classifier_path'])
+        self.recipe = None
+        self.current_step_index = None
         self.graph_task = []  # Initially we are using a simple list for the graph task
         self.status = RecipeStatus.NOT_STARTED
-        self.current_step_index = None
-        self._build_task_graph()
 
-    def _build_task_graph(self):
-        for step in self.recipe['steps']:
-            self.graph_task.append({'step_description': step, 'is_step_completed': False})
-
-    def start_steps(self):
-        current_step = self.graph_task[0]['step_description']
-        self.status = RecipeStatus.IN_PROGRESS
+    def start_recipe(self, recipe):
+        self.recipe = recipe
         self.current_step_index = 0
+        self._build_task_graph()
+        current_step = self.graph_task[self.current_step_index]['step_description']
+        self.status = RecipeStatus.IN_PROGRESS
 
         return {
             'step_id': self.current_step_index,
@@ -89,6 +86,16 @@ class StateManager:
                     'error_status': False,
                     'error_description': ''
                 }
+
+    def reset(self):
+        self.recipe = None
+        self.current_step_index = None
+        self.graph_task = []
+        self.status = RecipeStatus.NOT_STARTED
+
+    def _build_task_graph(self):
+        for step in self.recipe['steps']:
+            self.graph_task.append({'step_description': step, 'is_step_completed': False})
 
     def _has_mistake(self, current_step, detected_actions):
         # Perception will send the top-k actions for a single frame

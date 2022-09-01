@@ -35,8 +35,8 @@ class ReasoningApp:
         recipe_id: str = self.api.sessions.current_recipe()
         recipe = self.api.recipes.get(recipe_id)
         logger.info('Loaded recipe: %s' % str(recipe))
-        state_manager = StateManager(recipe, configs)
-        step_data = state_manager.start_steps()
+        state_manager = StateManager(configs)
+        step_data = state_manager.start_recipe(recipe)
         logger.info('First step: %s' % str(step_data))
 
         async with self.api.data_pull_connect(input_sid) as ws_pull, \
