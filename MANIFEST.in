@@ -1,0 +1,4 @@
+include LICENSE.txt
+include README.md
+include requirements.txt
+include tim_reasoning/models/mistake_detect_bert/configs/*.json
