@@ -37,7 +37,15 @@ class StateManager:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
         if self.status == RecipeStatus.COMPLETED:
-            raise SystemError('The recipe has been completed.')
+            #raise SystemError('The recipe has been completed.')
+            current_step = self.graph_task[self.current_step_index]['step_description']
+            return {
+                'step_id': self.current_step_index,
+                'step_status': StepStatus.LAST.value,
+                'step_description': current_step,
+                'error_status': False,
+                'error_description': ''
+            }
 
         current_step = self.graph_task[self.current_step_index]['step_description']
         mistake = self._has_mistake(current_step, detected_actions)
