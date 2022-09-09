@@ -3,7 +3,7 @@ import spacy
 import logging
 from tim_reasoning.reasoning.recipe_tagger import RecipeTagger
 
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s', stream=sys.stdout)
+logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s', stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
 
@@ -13,7 +13,7 @@ class RuleBasedClassifier:
         self.recipe_tagger = RecipeTagger(model_tagger_path)
         self.nlp = spacy.load('en_core_web_lg')
 
-    def is_mistake(self, current_step, detected_action, threshold=0.4):
+    def is_mistake(self, current_step, detected_action, threshold=0.8):
         tokens, tags = self.recipe_tagger.predict_entities(current_step)
         step_action_pairs = self.recipe_tagger.extract_action_relations(tokens, tags)
 

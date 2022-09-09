@@ -4,7 +4,7 @@ from enum import Enum
 from tim_reasoning.reasoning.rule_based_classifier import RuleBasedClassifier
 from tim_reasoning.reasoning.bert_classifier import BertClassifier
 
-logging.basicConfig(level=logging.INFO, format='%(levelname)s: %(message)s', stream=sys.stdout)
+logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s', stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
 
