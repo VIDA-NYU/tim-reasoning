@@ -16,7 +16,6 @@ CONFIG_PATH = '../models/mistake_detect_bert/configs/config_bert.json'
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
-
 class BertClassifier:
 
     def __init__(self, model_path):
