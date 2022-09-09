@@ -31,9 +31,9 @@ class RuleBasedClassifier:
                 similarity = text_query.similarity(self.nlp(detected_text))
                 logger.info('Similarity between %s and %s: (%.2f)' % (step_text, detected_text, similarity))
                 if similarity >= threshold:
-                    logger.info('It is not a mistake!')
+                    logger.info('It is not a mistake')
                     return False
 
-        logger.info('It is a mistake!')
+        logger.info('It is a mistake')
 
         return True

@@ -108,13 +108,15 @@ class StateManager:
     def _has_mistake(self, current_step, detected_actions):
         # Perception will send the top-k actions for a single frame
         for detected_action in detected_actions:
+            logger.info('Evaluating "%s"...' % detected_action)
             is_mistake_bert = self.bert_classifier.is_mistake(current_step, detected_action)
             is_mistake_rule = self.rule_classifier.is_mistake(current_step, detected_action)
             # If there is an agreement of "NO MISTAKE" by both classifier, then it's not a mistake
             # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should for n>=3 classifiers
             if not is_mistake_bert and not is_mistake_rule:
+                logger.info('Final decision: IT IS NOT A MISTAKE')
                 return False
-
+        logger.info('Final decision: IT IS A MISTAKE')
         return True
 
 

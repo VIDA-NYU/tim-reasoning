@@ -43,8 +43,8 @@ class BertClassifier:
         pred = output.argmax(dim=1).data.cpu().numpy().tolist()
 
         if pred[0] == 0:  # Label '0' means it's a mistake
-            logger.info('It is a mistake!')
+            logger.info('It is a mistake')
             return True
         else:
-            logger.info('It is not a mistake!')
+            logger.info('It is not a mistake')
             return False
