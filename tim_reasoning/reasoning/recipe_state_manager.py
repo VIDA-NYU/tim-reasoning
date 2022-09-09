@@ -47,10 +47,21 @@ class StateManager:
                 'error_description': ''
             }
 
-        current_step = self.graph_task[self.current_step_index]['step_description']
+        current_step, curr_step_score = self.graph_task[self.current_step_index]['step_description']
         mistake = self._has_mistake(current_step, detected_actions)
+        
+        
 
         if mistake:
+            if self.graph_task[self.current_step_index]['is_completed']:
+                next_step = self.graph_task[self.current_step_index + 1]['step_description']
+                next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
+                # go to next step if not a mistake comparing with next step instruction. 
+                if not next_step_mistake:
+                    self.current_step_index += 1
+
+
+            current_step = self.graph_task[self.current_step_index]['step_description']
             return {
                 'step_id': self.current_step_index,
                 'step_status': StepStatus.IN_PROGRESS.value,
@@ -77,7 +88,13 @@ class StateManager:
                     }
 
                 else:
-                    self.current_step_index += 1
+                    # ask classifier to output mistakes for next step
+                    next_step = self.graph_task[self.current_step_index + 1]['step_description']
+                    next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
+                    # go to next step if next step score is higher than current step score
+                    if not next_step_mistake and next_step_score > curr_step_score: 
+                        self.current_step_index += 1
+                    
                     current_step = self.graph_task[self.current_step_index]['step_description']
                     return {
                         'step_id': self.current_step_index,
@@ -109,15 +126,15 @@ class StateManager:
         # Perception will send the top-k actions for a single frame
         for detected_action in detected_actions:
             logger.info('Evaluating "%s"...' % detected_action)
-            is_mistake_bert = self.bert_classifier.is_mistake(current_step, detected_action)
+            is_mistake_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
             is_mistake_rule = self.rule_classifier.is_mistake(current_step, detected_action)
             # If there is an agreement of "NO MISTAKE" by both classifier, then it's not a mistake
             # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should for n>=3 classifiers
             if not is_mistake_bert and not is_mistake_rule:
                 logger.info('Final decision: IT IS NOT A MISTAKE')
-                return False
+                return False, bert_score
         logger.info('Final decision: IT IS A MISTAKE')
-        return True
+        return True, bert_score
 
 
 class RecipeStatus(Enum):

@@ -41,10 +41,11 @@ class BertClassifier:
         batch_eval_data = tuple([ids, mask, type_ids, None, None])
         output = self.model.network(batch_eval_data)
         pred = output.argmax(dim=1).data.cpu().numpy().tolist()
+        pred_logit = output.data.cpu().numpy().tolist()[0][1]
 
         if pred[0] == 0:  # Label '0' means it's a mistake
             logger.info('It is a mistake')
-            return True
+            return True, pred_logit
         else:
             logger.info('It is not a mistake')
-            return False
+            return False, pred_logit
