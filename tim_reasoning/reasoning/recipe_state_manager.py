@@ -37,7 +37,6 @@ class StateManager:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
         if self.status == RecipeStatus.COMPLETED:
-            #raise SystemError('The recipe has been completed.')
             current_step = self.graph_task[self.current_step_index]['step_description']
             return {
                 'step_id': self.current_step_index,
@@ -47,21 +46,19 @@ class StateManager:
                 'error_description': ''
             }
 
-        current_step, curr_step_score = self.graph_task[self.current_step_index]['step_description']
-        mistake = self._has_mistake(current_step, detected_actions)
-        
-        
+        current_step = self.graph_task[self.current_step_index]['step_description']
+        mistake, curr_step_score = self._has_mistake(current_step, detected_actions)
 
         if mistake:
-            if self.graph_task[self.current_step_index]['is_completed']:
+            if self.graph_task[self.current_step_index]['is_step_completed']:
                 next_step = self.graph_task[self.current_step_index + 1]['step_description']
                 next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
                 # go to next step if not a mistake comparing with next step instruction. 
                 if not next_step_mistake:
                     self.current_step_index += 1
 
-
             current_step = self.graph_task[self.current_step_index]['step_description']
+
             return {
                 'step_id': self.current_step_index,
                 'step_status': StepStatus.IN_PROGRESS.value,
@@ -71,11 +68,11 @@ class StateManager:
             }
 
         else:
-            self.graph_task[self.current_step_index]['is_completed'] = True
+            self.graph_task[self.current_step_index]['is_step_completed'] = True
             # TODO: This assumes that every step is completed after it's execute once. However, there are some steps
             #  that need more than one execution, e.g. steps that requires 5 minutes to be completed.
 
-            if self.graph_task[self.current_step_index]['is_completed']:  # Is the step completed?
+            if self.graph_task[self.current_step_index]['is_step_completed']:  # Is the step completed?
                 if self.current_step_index == len(self.graph_task) - 1:  # Is the recipe completed?
                     self.status = RecipeStatus.COMPLETED
 
@@ -96,6 +93,7 @@ class StateManager:
                         self.current_step_index += 1
                     
                     current_step = self.graph_task[self.current_step_index]['step_description']
+
                     return {
                         'step_id': self.current_step_index,
                         'step_status': StepStatus.NEW.value,
@@ -124,6 +122,8 @@ class StateManager:
 
     def _has_mistake(self, current_step, detected_actions):
         # Perception will send the top-k actions for a single frame
+        bert_score = None
+
         for detected_action in detected_actions:
             logger.info('Evaluating "%s"...' % detected_action)
             is_mistake_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
@@ -133,6 +133,7 @@ class StateManager:
             if not is_mistake_bert and not is_mistake_rule:
                 logger.info('Final decision: IT IS NOT A MISTAKE')
                 return False, bert_score
+
         logger.info('Final decision: IT IS A MISTAKE')
         return True, bert_score
 
