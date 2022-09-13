@@ -18,7 +18,7 @@ class StateManager:
         self.status = RecipeStatus.NOT_STARTED
 
     def start_recipe(self, recipe):
-        self._reset()
+        self.reset()
         self.recipe = recipe
         self.current_step_index = 0
         self._build_task_graph()
@@ -111,7 +111,7 @@ class StateManager:
                     'error_description': ''
                 }
 
-    def _reset(self):
+    def reset(self):
         self.recipe = None
         self.current_step_index = None
         self.graph_task = []
