@@ -51,29 +51,32 @@ class StateManager:
         mistake, curr_step_score = self._has_mistake(current_step, detected_actions)
 
         if mistake:
-            if self.graph_task[self.current_step_index]['is_step_completed']:
-                next_step = self.graph_task[self.current_step_index + 1]['step_description']
-                next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
-                # go to next step if not a mistake comparing with next step instruction. 
-                if not next_step_mistake:
-                    self.current_step_index += 1
+            next_step = self.graph_task[self.current_step_index + 1]['step_description']
+            next_step_mistake, _ = self._has_mistake(next_step, detected_actions)
+            # go to next step if not a mistake comparing with next step instruction.
+            if not next_step_mistake:
+                self.current_step_index += 1
 
-            current_step = self.graph_task[self.current_step_index]['step_description']
+                return {
+                    'step_id': self.current_step_index,
+                    'step_status': StepStatus.NEW.value,
+                    'step_description': next_step,
+                    'error_status': False,
+                    'error_description': ''
+                }
 
-            return {
-                'step_id': self.current_step_index,
-                'step_status': StepStatus.IN_PROGRESS.value,
-                'step_description': current_step,
-                'error_status': True,
-                'error_description': 'Errors detected in the step'
-            }
+            else:
+
+                return {
+                    'step_id': self.current_step_index,
+                    'step_status': StepStatus.IN_PROGRESS.value,
+                    'step_description': current_step,
+                    'error_status': True,
+                    'error_description': 'Errors detected in the step'
+                }
 
         else:
-            self.graph_task[self.current_step_index]['is_step_completed'] = True
-            # TODO: This assumes that every step is completed after it's execute once. However, there are some steps
-            #  that need more than one execution, e.g. steps that requires 5 minutes to be completed.
-
-            if self.graph_task[self.current_step_index]['is_step_completed']:  # Is the step completed?
+            if self._is_step_completed():  # Is the step completed?
                 if self.current_step_index == len(self.graph_task) - 1:  # Is the recipe completed?
                     self.status = RecipeStatus.COMPLETED
 
@@ -90,9 +93,9 @@ class StateManager:
                     next_step = self.graph_task[self.current_step_index + 1]['step_description']
                     next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
                     # go to next step if next step score is higher than current step score
-                    if not next_step_mistake and next_step_score > curr_step_score: 
+                    if not next_step_mistake and next_step_score > curr_step_score:
                         self.current_step_index += 1
-                    
+
                     current_step = self.graph_task[self.current_step_index]['step_description']
 
                     return {
@@ -130,13 +133,22 @@ class StateManager:
             is_mistake_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
             is_mistake_rule = self.rule_classifier.is_mistake(current_step, detected_action)
             # If there is an agreement of "NO MISTAKE" by both classifier, then it's not a mistake
-            # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should for n>=3 classifiers
+            # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should do for n>=3 classifiers
             if not is_mistake_bert and not is_mistake_rule:
                 logger.info('Final decision: IT IS NOT A MISTAKE')
                 return False, bert_score
 
         logger.info('Final decision: IT IS A MISTAKE')
         return True, bert_score
+
+    def _is_step_completed(self):
+        # TODO: This assumes that every step is completed after it's execute once. However, there are some steps
+        #  that need more than one execution, e.g. steps that require 5 minutes to be completed. We could use features
+        #  like if the user is moving his hand, time needed to execute a tasks, etc.
+        completed = True
+        self.graph_task[self.current_step_index]['is_step_completed'] = True
+
+        return completed
 
 
 class RecipeStatus(Enum):
