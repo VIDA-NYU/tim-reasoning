@@ -48,6 +48,8 @@ class StateManager:
             }
 
         current_step = self.graph_task[self.current_step_index]['step_description']
+        logger.info('Current step: "%s"' % current_step)
+
         mistake, curr_step_score = self._has_mistake(current_step, detected_actions)
 
         if mistake:
@@ -96,15 +98,22 @@ class StateManager:
                     if not next_step_mistake and next_step_score > curr_step_score:
                         self.current_step_index += 1
 
-                    current_step = self.graph_task[self.current_step_index]['step_description']
+                        return {
+                            'step_id': self.current_step_index,
+                            'step_status': StepStatus.NEW.value,
+                            'step_description': next_step,
+                            'error_status': False,
+                            'error_description': ''
+                        }
 
-                    return {
-                        'step_id': self.current_step_index,
-                        'step_status': StepStatus.NEW.value,
-                        'step_description': current_step,
-                        'error_status': False,
-                        'error_description': ''
-                    }
+                    else:
+                        return {
+                            'step_id': self.current_step_index,
+                            'step_status': StepStatus.IN_PROGRESS.value,
+                            'step_description': current_step,
+                            'error_status': False,
+                            'error_description': ''
+                        }
             else:
                 return {
                     'step_id': self.current_step_index,
