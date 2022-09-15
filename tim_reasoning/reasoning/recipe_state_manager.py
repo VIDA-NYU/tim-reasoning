@@ -34,6 +34,12 @@ class StateManager:
         }
 
     def check_status(self, detected_actions, scene_descriptions=None):
+        detected_actions = self._preprocess_inputs(detected_actions)
+
+        if len(detected_actions) == 0:
+            logger.info('No valid actions to be processed')
+            return None
+
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
@@ -56,6 +62,7 @@ class StateManager:
             next_step = self.graph_task[self.current_step_index + 1]['step_description']
             next_step_mistake, _ = self._has_mistake(next_step, detected_actions)
             # go to next step if not a mistake comparing with next step instruction.
+            
             if not next_step_mistake:
                 self.current_step_index += 1
 
@@ -95,6 +102,7 @@ class StateManager:
                     next_step = self.graph_task[self.current_step_index + 1]['step_description']
                     next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
                     # go to next step if next step score is higher than current step score
+
                     if not next_step_mistake and next_step_score > curr_step_score:
                         self.current_step_index += 1
 
@@ -158,6 +166,20 @@ class StateManager:
         self.graph_task[self.current_step_index]['is_step_completed'] = True
 
         return completed
+
+    def _preprocess_inputs(self, actions, proba_threshold=0.2):
+        filtered_actions = []
+
+        for action_description, action_proba in actions:
+            if action_proba >= proba_threshold:
+                # Split the inputs to have actions in the form: verb + noun
+                nouns = action_description.split(', ')
+                verb, first_noun = nouns.pop(0).split(' ', 1)
+                for noun in [first_noun] + nouns:
+                    filtered_actions.append(verb + ' ' + noun)
+
+        logger.info('Actions after pre-processing: %s' % (str(filtered_actions)))
+        return filtered_actions
 
 
 class RecipeStatus(Enum):
