@@ -18,7 +18,6 @@ class StateManager:
         self.status = RecipeStatus.NOT_STARTED
 
     def start_recipe(self, recipe):
-        self.reset()
         self.recipe = recipe
         self.current_step_index = 0
         self._build_task_graph()
@@ -27,109 +26,82 @@ class StateManager:
 
         return {
             'step_id': self.current_step_index,
-            'step_status': StepStatus.IN_PROGRESS.value,
+            'step_status': StepStatus.NEW.value,
             'step_description': current_step,
             'error_status': False,
             'error_description': ''
         }
 
     def check_status(self, detected_actions, scene_descriptions=None):
-        detected_actions = self._preprocess_inputs(detected_actions)
-
-        if len(detected_actions) == 0:
-            logger.info('No valid actions to be processed')
-            return None
-
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
+        current_step = self.graph_task[self.current_step_index]['step_description']
+        logger.info('Current step: "%s"' % current_step)
+
         if self.status == RecipeStatus.COMPLETED:
-            current_step = self.graph_task[self.current_step_index]['step_description']
             return {
                 'step_id': self.current_step_index,
-                'step_status': StepStatus.LAST.value,
+                'step_status': StepStatus.COMPLETED.value,
                 'step_description': current_step,
                 'error_status': False,
                 'error_description': ''
             }
 
-        current_step = self.graph_task[self.current_step_index]['step_description']
-        logger.info('Current step: "%s"' % current_step)
+        valid_actions, exist_actions = self._preprocess_inputs(detected_actions)
 
-        mistake, curr_step_score = self._has_mistake(current_step, detected_actions)
+        if len(valid_actions) == 0 and exist_actions:  # If there are no valid actions, don't make a decision, just wait for new inputs
+            logger.info('No valid actions to be processed')
+            return
 
-        if mistake:
-            next_step = self.graph_task[self.current_step_index + 1]['step_description']
-            next_step_mistake, _ = self._has_mistake(next_step, detected_actions)
-            # go to next step if not a mistake comparing with next step instruction.
-            
-            if not next_step_mistake:
-                self.current_step_index += 1
+        if not exist_actions:  # Is the user waiting for instructions?
+            if self.graph_task[self.current_step_index]['step_status'] == StepStatus.IN_PROGRESS:  # Was the step executed at least once?
+                self.graph_task[self.current_step_index]['step_status'] = StepStatus.COMPLETED  # Mark as a done step
 
-                return {
+                if self.current_step_index == len(self.graph_task) - 1:  # If recipe completed, don't move
+                    self.status = RecipeStatus.COMPLETED
+                    return
+
+                self.current_step_index += 1  # Move to the next step
+                current_step = self.graph_task[self.current_step_index]['step_description']
+                self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
+
+                return {  # Return next step
                     'step_id': self.current_step_index,
                     'step_status': StepStatus.NEW.value,
-                    'step_description': next_step,
+                    'step_description': current_step,
+                    'error_status': False,
+                    'error_description': ''
+                }
+            else:
+                return {  # Return the same step
+                    'step_id': self.current_step_index,
+                    'step_status': StepStatus.IN_PROGRESS.value,
+                    'step_description': current_step,
                     'error_status': False,
                     'error_description': ''
                 }
 
-            else:
+        mistake, _ = self._has_mistake(current_step, valid_actions)
 
-                return {
-                    'step_id': self.current_step_index,
-                    'step_status': StepStatus.IN_PROGRESS.value,
-                    'step_description': current_step,
-                    'error_status': True,
-                    'error_description': 'Errors detected in the step'
-                }
+        if mistake:
+            return {
+                'step_id': self.current_step_index,
+                'step_status': StepStatus.IN_PROGRESS.value,
+                'step_description': current_step,
+                'error_status': True,
+                'error_description': 'Errors detected in the step'
+            }
 
         else:
-            if self._is_step_completed():  # Is the step completed?
-                if self.current_step_index == len(self.graph_task) - 1:  # Is the recipe completed?
-                    self.status = RecipeStatus.COMPLETED
-
-                    return {
-                        'step_id': self.current_step_index,
-                        'step_status': StepStatus.LAST.value,
-                        'step_description': current_step,
-                        'error_status': False,
-                        'error_description': ''
-                    }
-
-                else:
-                    # ask classifier to output mistakes for next step
-                    next_step = self.graph_task[self.current_step_index + 1]['step_description']
-                    next_step_mistake, next_step_score = self._has_mistake(next_step, detected_actions)
-                    # go to next step if next step score is higher than current step score
-
-                    if not next_step_mistake and next_step_score > curr_step_score:
-                        self.current_step_index += 1
-
-                        return {
-                            'step_id': self.current_step_index,
-                            'step_status': StepStatus.NEW.value,
-                            'step_description': next_step,
-                            'error_status': False,
-                            'error_description': ''
-                        }
-
-                    else:
-                        return {
-                            'step_id': self.current_step_index,
-                            'step_status': StepStatus.IN_PROGRESS.value,
-                            'step_description': current_step,
-                            'error_status': False,
-                            'error_description': ''
-                        }
-            else:
-                return {
-                    'step_id': self.current_step_index,
-                    'step_status': StepStatus.IN_PROGRESS.value,
-                    'step_description': current_step,
-                    'error_status': False,
-                    'error_description': ''
-                }
+            self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            return {
+                'step_id': self.current_step_index,
+                'step_status': StepStatus.IN_PROGRESS.value,
+                'step_description': current_step,
+                'error_status': False,
+                'error_description': ''
+            }
 
     def reset(self):
         self.recipe = None
@@ -139,7 +111,7 @@ class StateManager:
 
     def _build_task_graph(self):
         for step in self.recipe['steps']:
-            self.graph_task.append({'step_description': step, 'is_step_completed': False})
+            self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED})
 
     def _has_mistake(self, current_step, detected_actions):
         # Perception will send the top-k actions for a single frame
@@ -158,17 +130,9 @@ class StateManager:
         logger.info('Final decision: IT IS A MISTAKE')
         return True, bert_score
 
-    def _is_step_completed(self):
-        # TODO: This assumes that every step is completed after it's execute once. However, there are some steps
-        #  that need more than one execution, e.g. steps that require 5 minutes to be completed. We could use features
-        #  like if the user is moving his hand, time needed to execute a tasks, etc.
-        completed = True
-        self.graph_task[self.current_step_index]['is_step_completed'] = True
-
-        return completed
-
     def _preprocess_inputs(self, actions, proba_threshold=0.2):
-        filtered_actions = []
+        valid_actions = []
+        exist_actions = False
 
         for action_description, action_proba in actions:
             if action_proba >= proba_threshold:
@@ -176,10 +140,13 @@ class StateManager:
                 nouns = action_description.split(', ')
                 verb, first_noun = nouns.pop(0).split(' ', 1)
                 for noun in [first_noun] + nouns:
-                    filtered_actions.append(verb + ' ' + noun)
+                    valid_actions.append(verb + ' ' + noun)
 
-        logger.info('Actions after pre-processing: %s' % (str(filtered_actions)))
-        return filtered_actions
+            if action_proba > 0.0:
+                exist_actions = True
+
+        logger.info('Actions after pre-processing: %s' % (str(valid_actions)))
+        return valid_actions, exist_actions
 
 
 class RecipeStatus(Enum):
@@ -189,6 +156,7 @@ class RecipeStatus(Enum):
 
 
 class StepStatus(Enum):
-    IN_PROGRESS = 'IN_PROGRESS'
+    NOT_STARTED = 'NOT_STARTED'
     NEW = 'NEW'
-    LAST = 'LAST'
+    IN_PROGRESS = 'IN_PROGRESS'
+    COMPLETED = 'COMPLETED'
