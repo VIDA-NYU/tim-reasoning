@@ -109,6 +109,18 @@ class StateManager:
         self.graph_task = []
         self.status = RecipeStatus.NOT_STARTED
 
+    def set_user_feedback(self, new_step_index=None):
+        if new_step_index is None:
+            new_step_index = self.current_step_index + 1  # Assume it's the next step when new_step_index is None
+
+        for index in range(new_step_index):
+            self.graph_task[index]['step_status'] = StepStatus.COMPLETED
+        self.graph_task[new_step_index]['step_status'] = StepStatus.IN_PROGRESS
+
+        self.current_step_index = new_step_index
+
+        logger.info('Feedback received, now user is in step %d' % (self.current_step_index + 1))
+
     def _build_task_graph(self):
         for step in self.recipe['steps']:
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED})
