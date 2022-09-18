@@ -23,6 +23,7 @@ class StateManager:
         self._build_task_graph()
         current_step = self.graph_task[self.current_step_index]['step_description']
         self.status = RecipeStatus.IN_PROGRESS
+        logger.info('Starting a recipe ...')
 
         return {
             'step_id': self.current_step_index,
@@ -108,6 +109,7 @@ class StateManager:
         self.current_step_index = None
         self.graph_task = []
         self.status = RecipeStatus.NOT_STARTED
+        logger.info('Recipe resetted')
 
     def set_user_feedback(self, new_step_index=None):
         if new_step_index is None:
