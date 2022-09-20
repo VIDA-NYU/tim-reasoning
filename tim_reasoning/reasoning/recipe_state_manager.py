@@ -133,7 +133,7 @@ class StateManager:
         }
 
     def _build_task_graph(self):
-        for step in self.recipe['steps']:
+        for step in self.recipe['instructions']:
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED})
 
     def _has_mistake(self, current_step, detected_actions):
