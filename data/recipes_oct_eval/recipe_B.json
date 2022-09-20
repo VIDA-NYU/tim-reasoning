@@ -1,5 +1,5 @@
 {
-  "title":"Pour-over Coffee",
+  "name":"Pour-over Coffee",
   "ingredients":[
     "12 oz water",
     "25 grams whole coffee beans"
@@ -15,7 +15,7 @@
     "thermometer",
     "timer (optional)"
   ],
-  "steps":[
+  "instructions":[
     "Measure 12 ounces of cold water and transfer to a kettle.",
     "Assemble the filter cone.  Place the dripper on top of a coffee mug.",
     "Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",

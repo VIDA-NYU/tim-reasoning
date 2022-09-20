@@ -1,5 +1,5 @@
 {
-  "title":"Mug Cake",
+  "name":"Mug Cake",
   "ingredients":[
     "2 Tablespoons all-purpose flour",
     "1.5 Tablespoons granulated sugar",
@@ -22,7 +22,7 @@
     "scissors",
     "spoon"
   ],
-  "steps":[
+  "instructions":[
     "Place the paper cupcake liner inside the mug. Set aside.",
     "Measure and add the flour, sugar, baking powder, and salt to the mixing bowl.",
     "Whisk to combine.",

@@ -12,7 +12,7 @@ class TestStateManager(unittest.TestCase):
 
     def test_start_steps(self):
         recipe = {
-            "title": "Pinwheels",
+            "name": "Pinwheels",
             "ingredients": [
                 "1 8-inch flour tortilla",
                 "Jar of nut butter or allergy-friendly alternative (such as sunbutter, soy butter, or seed butter)",
@@ -26,7 +26,7 @@ class TestStateManager(unittest.TestCase):
                 "~12-inch strand of dental floss",
                 "plate"
             ],
-            "steps": [
+            "instructions": [
                 "Place tortilla on cutting board.",
                 "Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges.",
                 "Clean the knife by wiping with a paper towel.",
