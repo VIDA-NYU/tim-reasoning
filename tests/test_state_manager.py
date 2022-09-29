@@ -48,13 +48,13 @@ class TestStateManager(unittest.TestCase):
         self.assertEqual(actual_step_description, expected_step_description)
         actual_step_id = step_data['step_id']
         self.assertEqual(actual_step_id, expected_step_id)
-
+        
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        configs = {'rule_classifier_path': sys.argv.pop(), 'bert_classifier_path': sys.argv.pop()}
+        configs = {'tagger_model_path': sys.argv.pop(), 'bert_classifier_path': sys.argv.pop()}
     else:
-        configs = {'rule_classifier_path': '/Users/rlopez/PTG/experiments/models/recipe_tagger',
+        configs = {'tagger_model_path': '/Users/rlopez/PTG/experiments/models/recipe_tagger',
                    'bert_classifier_path': '/Users/rlopez/PTG/experiments/models/bert_classifier/'}
 
     TestStateManager.CONFIGS = configs

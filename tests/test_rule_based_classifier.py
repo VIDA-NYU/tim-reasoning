@@ -1,17 +1,19 @@
 import sys
 import unittest
 from tim_reasoning import RuleBasedClassifier
+from tim_reasoning import RecipeTagger
 
 
 class TestRuleBasedClassifier(unittest.TestCase):
-    MODEL_TAGGER_PATH = None
+    TAGGER_MODEL_PATH = None
 
     @classmethod
     def setUpClass(cls):
-        cls.classifier = RuleBasedClassifier(cls.MODEL_TAGGER_PATH)
+        recipe_tagger = RecipeTagger(cls.TAGGER_MODEL_PATH)
+        cls.classifier = RuleBasedClassifier(recipe_tagger)
 
     def test_is_mistake(self):
-        recipe_step = 'Place tortilla on cutting board.'
+        recipe_step = 'Put tortilla on cutting board.'
         detected_action = 'Put tortilla'
         expected = False
         actual = self.classifier.is_mistake(recipe_step, detected_action)
@@ -26,8 +28,8 @@ class TestRuleBasedClassifier(unittest.TestCase):
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        TestRuleBasedClassifier.MODEL_TAGGER_PATH = sys.argv.pop()
+        TestRuleBasedClassifier.TAGGER_MODEL_PATH = sys.argv.pop()
     else:
-        TestRuleBasedClassifier.MODEL_TAGGER_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
+        TestRuleBasedClassifier.TAGGER_MODEL_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
 
     unittest.main()
