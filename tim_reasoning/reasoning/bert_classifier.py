@@ -12,7 +12,7 @@ from pytorch_transformers.tokenization_bert import BertTokenizer
 logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s', stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
-CONFIG_PATH = '../models/mistake_detect_bert/configs/config_bert.json'
+CONFIG_PATH = join(dirname(__file__), '../models/mistake_detect_bert/configs/config_bert.json')
 device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 
 
