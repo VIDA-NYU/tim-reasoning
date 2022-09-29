@@ -1,6 +1,7 @@
 import sys
 import logging
 from enum import Enum
+from tim_reasoning.reasoning.recipe_tagger import RecipeTagger
 from tim_reasoning.reasoning.rule_based_classifier import RuleBasedClassifier
 from tim_reasoning.reasoning.bert_classifier import BertClassifier
 
@@ -9,8 +10,10 @@ logger = logging.getLogger(__name__)
 
 
 class StateManager:
+
     def __init__(self, configs):
-        self.rule_classifier = RuleBasedClassifier(configs['rule_classifier_path'])
+        self.recipe_tagger = RecipeTagger(configs['tagger_model_path'])
+        self.rule_classifier = RuleBasedClassifier(self.recipe_tagger)
         self.bert_classifier = BertClassifier(configs['bert_classifier_path'])
         self.recipe = None
         self.current_step_index = None
@@ -134,7 +137,9 @@ class StateManager:
 
     def _build_task_graph(self):
         for step in self.recipe['instructions']:
-            self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED})
+            entities = self._extract_entities(step)
+            self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
+                                    'step_entities': entities})
 
     def _has_mistake(self, current_step, detected_actions):
         # Perception will send the top-k actions for a single frame
@@ -170,6 +175,18 @@ class StateManager:
 
         logger.info('Actions after pre-processing: %s' % (str(valid_actions)))
         return valid_actions, exist_actions
+
+    def _extract_entities(self, step, use_perception_tokens=False):
+        entities = {'ingredients': [], 'tools': []}
+        tokens, tags = self.recipe_tagger.predict_entities(step)
+
+        for token, tag in zip(tokens, tags):
+            if tag == 'INGREDIENT':
+                entities['ingredients'].append(token)
+            elif tag == 'TOOL':
+                entities['tools'].append(token)
+
+        return entities
 
 
 class RecipeStatus(Enum):
