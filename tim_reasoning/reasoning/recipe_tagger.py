@@ -47,6 +47,9 @@ class RecipeTagger:
         for index in range(len(tokens1)):
             tag1 = tags1[index]
             tag2 = tags2[index]
+
+            if tag1 == 'INGREDIENT' and tag2 != 'INGREDIENT':  # If there is no agreement, don't tag it as ingredient
+                tags1[index] = 'O'
             if tag2 in {'ACTION', 'TOOL', 'DURATION'}:
                 tags1[index] = tag2
 
