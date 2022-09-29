@@ -14,13 +14,13 @@ class TestBertClassifier(unittest.TestCase):
         recipe_step = 'Place tortilla on cutting board.'
         detected_action = 'Grab tortilla from plate'
         expected = False
-        actual = self.classifier.is_mistake(recipe_step, detected_action)
+        actual, _ = self.classifier.is_mistake(recipe_step, detected_action)
         self.assertEqual(actual, expected)
 
         recipe_step = 'Clean the knife by wiping with a paper towel.'
         detected_action = 'Grab tortilla from plate'
         expected = True
-        actual = self.classifier.is_mistake(recipe_step, detected_action)
+        actual, _ = self.classifier.is_mistake(recipe_step, detected_action)
         self.assertEqual(actual, expected)
 
 
