@@ -4,11 +4,11 @@ from tim_reasoning import RecipeTagger
 
 
 class TestRecipeTagger(unittest.TestCase):
-    MODEL_TAGGER_PATH = None
+    TAGGER_MODEL_PATH = None
 
     @classmethod
     def setUpClass(cls):
-        cls.recipe_tagger = RecipeTagger(cls.MODEL_TAGGER_PATH)
+        cls.recipe_tagger = RecipeTagger(cls.TAGGER_MODEL_PATH)
 
     def test_predict_entities(self):
         recipe_text = '25 grams whole coffee beans.'
@@ -28,8 +28,8 @@ class TestRecipeTagger(unittest.TestCase):
 
 if __name__ == '__main__':
     if len(sys.argv) > 1:
-        TestRecipeTagger.MODEL_TAGGER_PATH = sys.argv.pop()
+        TestRecipeTagger.TAGGER_MODEL_PATH = sys.argv.pop()
     else:
-        TestRecipeTagger.MODEL_TAGGER_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
+        TestRecipeTagger.TAGGER_MODEL_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
         
     unittest.main()
