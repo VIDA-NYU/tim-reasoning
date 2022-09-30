@@ -21,6 +21,7 @@ $ pip install git+https://github.com/VIDA-NYU/tim-reasoning.git
 3. Download extra files:
 ```
 $ python -m spacy download en_core_web_lg
+$ python -c "import nltk;nltk.download('punkt')"
 ```
 
 4. Run any example from the `examples` directory:
