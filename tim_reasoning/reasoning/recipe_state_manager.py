@@ -1,5 +1,6 @@
 import sys
 import logging
+import tim_reasoning.utils as utils
 from enum import Enum
 from tim_reasoning.reasoning.recipe_tagger import RecipeTagger
 from tim_reasoning.reasoning.rule_based_classifier import RuleBasedClassifier
@@ -136,8 +137,12 @@ class StateManager:
         }
 
     def _build_task_graph(self):
+        recipe_id = self.recipe['name'].replace(' ', '_').lower()
+        recipe_entity_labels = utils.load_recipe_entity_labels(recipe_id)
+
         for step in self.recipe['instructions']:
-            entities = self._extract_entities(step)
+            detected_entities = self._extract_entities(step)
+            entities = utils.map_entity_labels(recipe_entity_labels, detected_entities)
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
                                     'step_entities': entities})
 
@@ -176,15 +181,15 @@ class StateManager:
         logger.info('Actions after pre-processing: %s' % (str(valid_actions)))
         return valid_actions, exist_actions
 
-    def _extract_entities(self, step, use_perception_tokens=False):
-        entities = {'ingredients': [], 'tools': []}
+    def _extract_entities(self, step):
+        entities = {'ingredients': set(), 'tools': set()}
         tokens, tags = self.recipe_tagger.predict_entities(step)
 
         for token, tag in zip(tokens, tags):
             if tag == 'INGREDIENT':
-                entities['ingredients'].append(token)
+                entities['ingredients'].add(token)
             elif tag == 'TOOL':
-                entities['tools'].append(token)
+                entities['tools'].add(token)
 
         return entities
 
