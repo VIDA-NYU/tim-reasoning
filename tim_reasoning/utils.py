@@ -1,6 +1,5 @@
 import json
 from os.path import join, dirname
-from Levenshtein import distance as calculate_lev
 
 RECIPES_PATH = join(dirname(__file__), 'resource', 'mit_recipes')
 
