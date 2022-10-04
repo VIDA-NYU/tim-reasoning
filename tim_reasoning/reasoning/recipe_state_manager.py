@@ -25,15 +25,15 @@ class StateManager:
         self.recipe = recipe
         self.current_step_index = 0
         self._build_task_graph()
-        current_step = self.graph_task[self.current_step_index]['step_description']
         self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
         self.status = RecipeStatus.IN_PROGRESS
         logger.info('Starting a recipe ...')
 
         return {
             'step_id': self.current_step_index,
-            'step_status': StepStatus.NEW.value,
-            'step_description': current_step,
+            'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+            'step_description': self.graph_task[self.current_step_index]['step_description'],
+            'step_entities': self.graph_task[self.current_step_index]['step_entities'],
             'error_status': False,
             'error_description': ''
         }
@@ -48,8 +48,9 @@ class StateManager:
         if self.status == RecipeStatus.COMPLETED:
             return {
                 'step_id': self.current_step_index,
-                'step_status': StepStatus.COMPLETED.value,
-                'step_description': current_step,
+                'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                'step_description': self.graph_task[self.current_step_index]['step_description'],
+                'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                 'error_status': False,
                 'error_description': ''
             }
@@ -69,21 +70,22 @@ class StateManager:
                     return
 
                 self.current_step_index += 1  # Move to the next step
-                current_step = self.graph_task[self.current_step_index]['step_description']
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
 
                 return {  # Return next step
                     'step_id': self.current_step_index,
-                    'step_status': StepStatus.NEW.value,
-                    'step_description': current_step,
+                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                    'step_description': self.graph_task[self.current_step_index]['step_description'],
+                    'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                     'error_status': False,
                     'error_description': ''
                 }
             else:
                 return {  # Return the same step
                     'step_id': self.current_step_index,
-                    'step_status': StepStatus.IN_PROGRESS.value,
-                    'step_description': current_step,
+                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                    'step_description': self.graph_task[self.current_step_index]['step_description'],
+                    'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                     'error_status': False,
                     'error_description': ''
                 }
@@ -93,8 +95,9 @@ class StateManager:
         if mistake:
             return {
                 'step_id': self.current_step_index,
-                'step_status': StepStatus.IN_PROGRESS.value,
-                'step_description': current_step,
+                'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                'step_description': self.graph_task[self.current_step_index]['step_description'],
+                'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                 'error_status': True,
                 'error_description': 'Errors detected in the step'
             }
@@ -103,8 +106,9 @@ class StateManager:
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
             return {
                 'step_id': self.current_step_index,
-                'step_status': StepStatus.IN_PROGRESS.value,
-                'step_description': current_step,
+                'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                'step_description': self.graph_task[self.current_step_index]['step_description'],
+                'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                 'error_status': False,
                 'error_description': ''
             }
@@ -125,13 +129,13 @@ class StateManager:
 
         self.current_step_index = new_step_index
         self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
-        current_step = self.graph_task[self.current_step_index]['step_description']
         logger.info('Feedback received, now step index = %d' % self.current_step_index)
 
         return {
             'step_id': self.current_step_index,
-            'step_status': StepStatus.NEW.value,
-            'step_description': current_step,
+            'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+            'step_description': self.graph_task[self.current_step_index]['step_description'],
+            'step_entities': self.graph_task[self.current_step_index]['step_entities'],
             'error_status': False,
             'error_description': ''
         }
