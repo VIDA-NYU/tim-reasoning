@@ -7,7 +7,7 @@
       "Jar of jelly, jam, or fruit preserves"
    ],
    "ingredients_annotated":{
-      "flour tortilla" : ["tortilla"],
+      "tortilla" : ["tortilla"],
       "Jar of peanut butter" : ["Jar of peanut butter"],
       "Jar of jelly": ["Jar of jelly"],
       "peanut butter": ["peanut butter"],
