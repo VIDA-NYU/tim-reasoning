@@ -140,13 +140,14 @@ class StateManager:
             'error_description': ''
         }
 
-    def _build_task_graph(self):
+    def _build_task_graph(self, map_entities=True):
         recipe_id = self.recipe['name'].replace(' ', '_').lower()
         recipe_entity_labels = utils.load_recipe_entity_labels(recipe_id)
 
         for step in self.recipe['instructions']:
-            detected_entities = self._extract_entities(step)
-            entities = utils.map_entity_labels(recipe_entity_labels, detected_entities)
+            entities = self._extract_entities(step)
+            if map_entities:
+                entities = utils.map_entity_labels(recipe_entity_labels, entities)
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
                                     'step_entities': entities})
 
