@@ -6,15 +6,6 @@
       "Jar of nut butter or allergy-friendly alternative (such as sunbutter, soy butter, or seed butter)",
       "Jar of jelly, jam, or fruit preserves"
    ],
-   "ingredients_annotated":{
-      "tortilla" : ["tortilla"],
-      "Jar of peanut butter" : ["Jar of peanut butter"],
-      "Jar of jelly": ["Jar of jelly"],
-      "peanut butter": ["peanut butter"],
-      "jelly" : ["jelly", "grape jelly"],
-      "jar lid": ["jar lid"],
-      "tortilla roll": ["flauta", "burrito", "wraps"]
-   },
    "tools":[
       "cutting board",
       "butter knife",
@@ -23,13 +14,67 @@
       "~12-inch strand of dental floss",
       "plate"
    ],
-   "tools_annotated":{
-      "cutting board": ["cutting board"],
-      "butter knife":  ["knife", "butter knife"],
-      "paper towel": ["paper towel"],
-      "toothpicks": ["toothpicks"],
-      "dental floss" : ["string"],
-      "plate": ["plate"]
+   "ingredients_simple":[
+      "tortilla",
+      "flour tortilla",
+      "Jar of peanut butter",
+      "Jar of jelly",
+      "peanut butter",
+      "grape jelly",
+      "jar lid",
+      "flauta",
+      "burrito",
+      "wraps"
+   ],
+   "tools_simple":[
+      "cutting board",
+      "butter knife",
+      "paper towel",
+      "toothpicks",
+      "string",
+      "plate"
+   ],
+   "ingredient_objects":{
+      "1 8-inch flour tortilla":[
+         "tortilla",
+         "flour tortilla",
+         "flauta",
+         "burrito",
+         "wraps"
+      ],
+      "Jar of nut butter":[
+         "Jar of peanut butter",
+         "Jar of nut butter"
+      ],
+      "Jar of jelly / jam":[
+         "Jar of jelly",
+         "Jar of jam"
+      ]
+   },
+   "tool_objects":{
+      "cutting board":[
+         "cutting board",
+         "chopping board"
+      ],
+      "butter knife":[
+         "butter knife",
+         "knife"
+      ],
+      "paper towel":[
+         "paper towel",
+         "paper towel roll",
+         "paper towel sheet"
+      ],
+      "toothpicks":[
+         "toothpicks"
+      ],
+      "~12-inch strand of dental floss":[
+         "dental floss",
+         "string"
+      ],
+      "plate":[
+         "plate"
+      ]
    },
    "instructions":[
       "Place tortilla on cutting board.",
@@ -45,13 +90,31 @@
       "Continue slicing with floss to create 5 pinwheels.",
       "Place the pinwheels on a plate."
    ],
-   "steps_annotated":[
+   "steps":[
+      "place tortilla on cutting board",
+      "scoop peanut butter from the jar with a knife",
+      "spread peanut butter on the tortilla",
+      "wipe off knife with a paper towel",
+      "scoop grape jelly from the jar with a knife",
+      "spread grape jelly on the tortilla",
+      "wipe off knife with a paper towel",
+      "roll tortilla into a roll",
+      "grab toothpicks",
+      "insert toothpicks into the roll",
+      "cut the ends of the tortilla",
+      "grab string",
+      "slide string under the tortilla",
+      "slice the wrap into small pieces using a string",
+      "place the mini wraps onto the plate"
+   ],
+   "steps_simple":[
       "place tortilla on chopping board",
       "scoop peanut butter, knife",
       "spread-on peanut butter, tortilla",
       "wipe knife, paper towel",
       "scoop grape jelly, knife",
       "spread-on grape jelly, tortilla",
+      "wipe knife, paper towel",
       "roll tortilla",
       "pick up toothpicks",
       "insert toothpicks",
@@ -60,5 +123,24 @@
       "wrap string around tortilla",
       "slice tortilla",
       "place wraps plate"
+   ],
+   "objects":[
+      "tortilla",
+      "flour tortilla",
+      "Jar",
+      "Jar of peanut butter",
+      "Jar of jelly",
+      "peanut butter",
+      "grape jelly",
+      "jar lid",
+      "flauta",
+      "burrito",
+      "wraps",
+      "cutting board",
+      "butter knife",
+      "paper towel",
+      "toothpicks",
+      "string",
+      "plate"
    ]
 }

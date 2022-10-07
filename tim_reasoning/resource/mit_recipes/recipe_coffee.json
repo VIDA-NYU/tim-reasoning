@@ -16,6 +16,53 @@
       "thermometer",
       "timer (optional)"
    ],
+   "ingredient_objects":{
+      "12 oz water":[
+         "water",
+         "pouring water"
+      ],
+      "25 grams whole coffee beans":[
+         "brown bag",
+         "brown bag of coffee beans",
+         "coffee beans"
+      ]
+   },
+   "tool_objects":{
+      "2-cup liquid measuring cup":[
+         "liquid measuring cup",
+         "measuring cup"
+      ],
+      "electric kettle":[
+         "electric kettle",
+         "hot water kettle"
+      ],
+      "kitchen scale":[
+         "electronic scale",
+         "kitchen scale"
+      ],
+      "coffee grinder":[
+         "coffee grinder"
+      ],
+      "filter cone dripper (stainless steel)":[
+         "filter cone dripper (stainless steel)",
+         "coffe cone dripper"
+      ],
+      "paper basket filter":[
+         "brown paper coffee filter",
+         "paper filter",
+         "paper cone"
+      ],
+      "12-ounce coffee mug":[
+         "coffee mug"
+      ],
+      "thermometer":[
+         "thermometer"
+      ],
+      "thermos":[
+         "thermos",
+         "thermos (stainless steel)"
+      ]
+   },
    "ingredients_simple":[
       "water",
       "brown bag of coffee beans"
