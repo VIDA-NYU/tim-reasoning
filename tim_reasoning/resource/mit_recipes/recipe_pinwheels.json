@@ -14,26 +14,6 @@
       "~12-inch strand of dental floss",
       "plate"
    ],
-   "ingredients_simple":[
-      "tortilla",
-      "flour tortilla",
-      "Jar of peanut butter",
-      "Jar of jelly",
-      "peanut butter",
-      "grape jelly",
-      "jar lid",
-      "flauta",
-      "burrito",
-      "wraps"
-   ],
-   "tools_simple":[
-      "cutting board",
-      "butter knife",
-      "paper towel",
-      "toothpicks",
-      "string",
-      "plate"
-   ],
    "ingredient_objects":{
       "1 8-inch flour tortilla":[
          "tortilla",
@@ -76,6 +56,26 @@
          "plate"
       ]
    },
+   "ingredients_simple":[
+      "tortilla",
+      "flour tortilla",
+      "Jar of peanut butter",
+      "Jar of jelly",
+      "peanut butter",
+      "grape jelly",
+      "jar lid",
+      "flauta",
+      "burrito",
+      "wraps"
+   ],
+   "tools_simple":[
+      "cutting board",
+      "butter knife",
+      "paper towel",
+      "toothpicks",
+      "string",
+      "plate"
+   ],
    "instructions":[
       "Place tortilla on cutting board.",
       "Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges.",

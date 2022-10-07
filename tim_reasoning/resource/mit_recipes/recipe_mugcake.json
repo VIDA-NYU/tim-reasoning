@@ -23,6 +23,64 @@
       "scissors",
       "spoon"
    ],
+   "ingredient_objects":{
+      "2 Tablespoons all-purpose flour":[
+         "tablespoons"
+      ],
+      "1.5 Tablespoons granulated sugar":[
+         "tablespoons sugar"
+      ],
+      "1⁄4 teaspoon baking powder":[
+         "teaspoon baking powder"
+      ],
+      "Pinch salt":[
+         "Pinch salt"
+      ],
+      "2 teaspoons canola or vegetable oil":[
+         "teaspoons canola"
+      ],
+      "2 Tablespoons water":[
+         "tablespoons water"
+      ],
+      "1⁄4 teaspoon vanilla extract":[
+         "teaspoon vanilla"
+      ],
+      "Container of chocolate frosting (premade)":[
+         "Container of chocolate frosting (premade)"
+      ]
+   },
+   "tool_objects":{
+      "measuring spoons":[
+         "measuring spoons"
+      ],
+      "small mixing bowl":[
+         "mixing bowl"
+      ],
+      "whisk":[
+         "whisk"
+      ],
+      "paper cupcake liner":[
+         "paper cupcake liner"
+      ],
+      "12-ounce coffee mug":[
+         "coffee mug"
+      ],
+      "plate":[
+         "plate"
+      ],
+      "microwave":[
+         "microwave"
+      ],
+      "zip-top bag, snack or sandwich size":[
+         "zip-top bag"
+      ],
+      "scissors":[
+         "scissors"
+      ],
+      "spoon":[
+         "spoon"
+      ]
+   },
    "instructions":[
       "Place the paper cupcake liner inside the mug. Set aside.",
       "Measure and add the flour, sugar, baking powder, and salt to the mixing bowl.",
