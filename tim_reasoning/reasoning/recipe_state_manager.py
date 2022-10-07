@@ -141,8 +141,7 @@ class StateManager:
         }
 
     def _build_task_graph(self, map_entities=True):
-        recipe_id = self.recipe['name'].replace(' ', '_').lower()
-        recipe_entity_labels = utils.load_recipe_entity_labels(recipe_id)
+        recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['name'])
 
         for step in self.recipe['instructions']:
             entities = self._extract_entities(step)
