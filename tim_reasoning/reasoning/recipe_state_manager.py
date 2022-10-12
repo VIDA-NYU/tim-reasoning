@@ -133,7 +133,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def get_ingredients_tools(self):
+    def get_entities(self):
         ingredients_tools = {}
 
         for index, step_data in enumerate(self.graph_task):
