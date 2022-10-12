@@ -33,7 +33,6 @@ class StateManager:
             'step_id': self.current_step_index,
             'step_status': self.graph_task[self.current_step_index]['step_status'].value,
             'step_description': self.graph_task[self.current_step_index]['step_description'],
-            'step_entities': self.graph_task[self.current_step_index]['step_entities'],
             'error_status': False,
             'error_description': ''
         }
@@ -50,7 +49,6 @@ class StateManager:
                 'step_id': self.current_step_index,
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
-                'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                 'error_status': False,
                 'error_description': ''
             }
@@ -76,7 +74,6 @@ class StateManager:
                     'step_id': self.current_step_index,
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                     'step_description': self.graph_task[self.current_step_index]['step_description'],
-                    'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                     'error_status': False,
                     'error_description': ''
                 }
@@ -85,7 +82,6 @@ class StateManager:
                     'step_id': self.current_step_index,
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                     'step_description': self.graph_task[self.current_step_index]['step_description'],
-                    'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                     'error_status': False,
                     'error_description': ''
                 }
@@ -97,7 +93,6 @@ class StateManager:
                 'step_id': self.current_step_index,
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
-                'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                 'error_status': True,
                 'error_description': 'Errors detected in the step'
             }
@@ -108,7 +103,6 @@ class StateManager:
                 'step_id': self.current_step_index,
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
-                'step_entities': self.graph_task[self.current_step_index]['step_entities'],
                 'error_status': False,
                 'error_description': ''
             }
@@ -135,10 +129,18 @@ class StateManager:
             'step_id': self.current_step_index,
             'step_status': self.graph_task[self.current_step_index]['step_status'].value,
             'step_description': self.graph_task[self.current_step_index]['step_description'],
-            'step_entities': self.graph_task[self.current_step_index]['step_entities'],
             'error_status': False,
             'error_description': ''
         }
+
+    def get_ingredients_tools(self):
+        ingredients_tools = {}
+
+        for index, step_data in enumerate(self.graph_task):
+            step_entities = step_data['step_entities']
+            ingredients_tools[str(index)] = step_entities
+
+        return ingredients_tools
 
     def _build_task_graph(self, map_entities=True):
         recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['name'])
