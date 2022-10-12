@@ -43,7 +43,7 @@ class StateManager:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
         current_step = self.graph_task[self.current_step_index]['step_description']
-        logger.info('Current step: "%s"' % current_step)
+        logger.info(f'Current step: "{current_step}"')
 
         if self.status == RecipeStatus.COMPLETED:
             return {
@@ -129,7 +129,7 @@ class StateManager:
 
         self.current_step_index = new_step_index
         self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
-        logger.info('Feedback received, now step index = %d' % self.current_step_index)
+        logger.info(f'Feedback received, now step index = {self.current_step_index}')
 
         return {
             'step_id': self.current_step_index,
@@ -145,8 +145,10 @@ class StateManager:
 
         for step in self.recipe['instructions']:
             entities = self._extract_entities(step)
+            logger.info(f'Found entities in the step:{str(entities)}')
             if map_entities:
                 entities = utils.map_entity_labels(recipe_entity_labels, entities)
+                logger.info(f'New names for entities: {str(entities)}')
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
                                     'step_entities': entities})
 
@@ -155,7 +157,7 @@ class StateManager:
         bert_score = None
 
         for detected_action in detected_actions:
-            logger.info('Evaluating "%s"...' % detected_action)
+            logger.info(f'Evaluating "{detected_action}"...')
             is_mistake_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
             is_mistake_rule = self.rule_classifier.is_mistake(current_step, detected_action)
             # If there is an agreement of "NO MISTAKE" by both classifier, then it's not a mistake
@@ -182,7 +184,7 @@ class StateManager:
             if action_proba > 0.0:
                 exist_actions = True
 
-        logger.info('Actions after pre-processing: %s' % (str(valid_actions)))
+        logger.info(f'Actions after pre-processing: {str(valid_actions)}')
         return valid_actions, exist_actions
 
     def _extract_entities(self, step):
