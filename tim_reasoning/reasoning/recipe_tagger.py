@@ -58,18 +58,23 @@ class RecipeTagger:
     def _join_sub_entities(self, entities):
         tokens = []
         tags = []
+        size = len(entities)
 
-        for token in entities:
+        for index, token in enumerate(entities):
             word = token['word']
             tag = token['entity']
+
             if word.startswith('▁'):  # It's the first part of the word
                 tokens.append(word.lstrip('▁'))
                 tags.append(tag)
             elif word in punctuation_marks:
-                tokens.append(word)
-                tags.append(tag)
+                if index+1 < size and not entities[index+1]['word'].startswith('▁'):
+                    tokens[-1] = tokens[-1] + word  # Concatenate to the previous word
+                else:
+                    tokens.append(word)
+                    tags.append(tag)
             else:
-                tokens[-1] = tokens[-1] + word
+                tokens[-1] = tokens[-1] + word  # Concatenate to the previous word
 
         return tokens, tags
 
