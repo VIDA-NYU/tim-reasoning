@@ -21,10 +21,13 @@
          "water",
          "pouring water"
       ],
-      "25 grams whole coffee beans":[
+      "coffee beans":[
          "brown bag",
          "brown bag of coffee beans",
          "coffee beans"
+      ],
+      "coffee":[
+         "coffee"
       ]
    },
    "tool_objects":{
@@ -43,7 +46,7 @@
       "coffee grinder":[
          "coffee grinder"
       ],
-      "filter cone dripper (stainless steel)":[
+      "filter cone dripper":[
          "filter cone dripper (stainless steel)",
          "coffe cone dripper"
       ],
@@ -52,7 +55,7 @@
          "paper filter",
          "paper cone"
       ],
-      "12-ounce coffee mug":[
+      "coffee mug":[
          "coffee mug"
       ],
       "thermometer":[
