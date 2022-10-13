@@ -134,11 +134,10 @@ class StateManager:
         }
 
     def get_entities(self):
-        ingredients_tools = {}
+        ingredients_tools = []
 
         for index, step_data in enumerate(self.graph_task):
-            step_entities = step_data['step_entities']
-            ingredients_tools[str(index)] = step_entities
+            ingredients_tools.append({'step_id': index, 'step_entities': step_data['step_entities']})
 
         return ingredients_tools
 
