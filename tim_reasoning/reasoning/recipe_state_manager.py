@@ -18,12 +18,13 @@ class StateManager:
         self.bert_classifier = BertClassifier(configs['bert_classifier_path'])
         self.recipe = None
         self.current_step_index = None
-        self.graph_task = []  # Initially we are using a simple list for the graph task
+        self.graph_task = None
         self.status = RecipeStatus.NOT_STARTED
 
     def start_recipe(self, recipe):
         self.recipe = recipe
         self.current_step_index = 0
+        self.graph_task = []
         self._build_task_graph()
         self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
         self.status = RecipeStatus.IN_PROGRESS
@@ -110,7 +111,7 @@ class StateManager:
     def reset(self):
         self.recipe = None
         self.current_step_index = None
-        self.graph_task = []
+        self.graph_task = None
         self.status = RecipeStatus.NOT_STARTED
         logger.info('Recipe resetted')
 
