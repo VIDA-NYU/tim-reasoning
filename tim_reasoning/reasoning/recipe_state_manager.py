@@ -38,7 +38,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def check_status(self, detected_actions, scene_descriptions=None):
+    def check_status(self, detected_actions, detected_objects):
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
@@ -88,6 +88,7 @@ class StateManager:
                 }
 
         mistake, _ = self._has_mistake(current_step, valid_actions)
+        #self.detect_mistake(valid_actions, detected_objects)
 
         if mistake:
             return {
@@ -141,6 +142,28 @@ class StateManager:
             ingredients_tools.append({'step_id': index, 'step_entities': step_data['step_entities']})
 
         return ingredients_tools
+
+    def detect_mistake(self, detected_actions, detected_objects):
+        #for detected_action in detected_actions:
+        #    tokens, tags = self.recipe_tagger.predict_entities(detected_action)
+        #    detected_action_pairs = self.recipe_tagger.extract_action_relations(tokens, tags)
+
+        tools_in_step = set(self.graph_task[self.current_step_index]['step_entities']['tools'])
+        ingredients_in_step = set(self.graph_task[self.current_step_index]['step_entities']['ingredients'])
+
+        for object_data in detected_objects:
+            object_label = object_data['label']
+
+            if object_label in tools_in_step:
+                tools_in_step.remove(object_label)
+
+            if object_label in ingredients_in_step:
+                ingredients_in_step.remove(object_label)
+
+        if len(tools_in_step) > 0:
+            logger.info(f'Error, missing tools in step: {str(tools_in_step)}')
+        if len(ingredients_in_step):
+            logger.info(f'Error, missing ingredients in step: {str(ingredients_in_step)}')
 
     def _build_task_graph(self, map_entities=True):
         recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['name'])
