@@ -35,7 +35,8 @@ class StateManager:
             'step_status': self.graph_task[self.current_step_index]['step_status'].value,
             'step_description': self.graph_task[self.current_step_index]['step_description'],
             'error_status': False,
-            'error_description': ''
+            'error_description': '',
+            'error_entities': []
         }
 
     def check_status(self, detected_actions, detected_objects):
@@ -51,7 +52,8 @@ class StateManager:
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
                 'error_status': False,
-                'error_description': ''
+                'error_description': '',
+                'error_entities': []
             }
 
         valid_actions, exist_actions = self._preprocess_inputs(detected_actions)
@@ -76,7 +78,8 @@ class StateManager:
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                     'step_description': self.graph_task[self.current_step_index]['step_description'],
                     'error_status': False,
-                    'error_description': ''
+                    'error_description': '',
+                    'error_entities': []
                 }
             else:
                 return {  # Return the same step
@@ -84,11 +87,12 @@ class StateManager:
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                     'step_description': self.graph_task[self.current_step_index]['step_description'],
                     'error_status': False,
-                    'error_description': ''
+                    'error_description': '',
+                    'error_entities': []
                 }
 
-        error_act_status, _ = self._detect_error_by_actions(valid_actions)
-        error_obj_status, error_obj_message, error_obj_entities = self._detect_error_by_objects(detected_objects)
+        error_act_status, _ = self._detect_error_in_actions(valid_actions)
+        error_obj_status, error_obj_message, error_obj_entities = self._detect_error_in_objects(detected_objects)
 
         if error_act_status:
             return {
@@ -96,7 +100,8 @@ class StateManager:
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
                 'error_status': True,
-                'error_description': 'Errors detected in the step'
+                'error_description': error_obj_message,
+                'error_entities': error_obj_entities
             }
 
         else:
@@ -106,7 +111,8 @@ class StateManager:
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
                 'error_status': False,
-                'error_description': ''
+                'error_description': '',
+                'error_entities': []
             }
 
     def reset(self):
@@ -132,7 +138,8 @@ class StateManager:
             'step_status': self.graph_task[self.current_step_index]['step_status'].value,
             'step_description': self.graph_task[self.current_step_index]['step_description'],
             'error_status': False,
-            'error_description': ''
+            'error_description': '',
+            'error_entities': []
         }
 
     def get_entities(self):
@@ -155,7 +162,7 @@ class StateManager:
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
                                     'step_entities': entities})
 
-    def _detect_error_by_actions(self, detected_actions):
+    def _detect_error_in_actions(self, detected_actions):
         # Perception will send the top-k actions for a single frame
         current_step = self.graph_task[self.current_step_index]['step_description']
         bert_score = None
@@ -173,7 +180,7 @@ class StateManager:
         logger.info('Final decision: IT IS A ERROR')
         return True, bert_score
 
-    def _detect_error_by_objects(self, detected_objects):
+    def _detect_error_in_objects(self, detected_objects):
         tools_in_step = set(self.graph_task[self.current_step_index]['step_entities']['tools'])
         ingredients_in_step = set(self.graph_task[self.current_step_index]['step_entities']['ingredients'])
         error_message = ''
