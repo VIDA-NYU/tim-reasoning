@@ -87,8 +87,8 @@ class StateManager:
                     'error_description': ''
                 }
 
-        mistake, _ = self._has_mistake(current_step, valid_actions)
-        #self.detect_mistake(valid_actions, detected_objects)
+        mistake, _ = self._detect_mistake_by_actions(valid_actions)
+        #self._detect_mistake_by_objects(detected_objects)
 
         if mistake:
             return {
@@ -143,11 +143,37 @@ class StateManager:
 
         return ingredients_tools
 
-    def detect_mistake(self, detected_actions, detected_objects):
-        #for detected_action in detected_actions:
-        #    tokens, tags = self.recipe_tagger.predict_entities(detected_action)
-        #    detected_action_pairs = self.recipe_tagger.extract_action_relations(tokens, tags)
+    def _build_task_graph(self, map_entities=True):
+        recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['name'])
 
+        for step in self.recipe['instructions']:
+            entities = self._extract_entities(step)
+            logger.info(f'Found entities in the step:{str(entities)}')
+            if map_entities:
+                entities = utils.map_entity_labels(recipe_entity_labels, entities)
+                logger.info(f'New names for entities: {str(entities)}')
+            self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
+                                    'step_entities': entities})
+
+    def _detect_mistake_by_actions(self, detected_actions):
+        # Perception will send the top-k actions for a single frame
+        current_step = self.graph_task[self.current_step_index]['step_description']
+        bert_score = None
+
+        for detected_action in detected_actions:
+            logger.info(f'Evaluating "{detected_action}"...')
+            is_mistake_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
+            is_mistake_rule = self.rule_classifier.is_mistake(current_step, detected_action)
+            # If there is an agreement of "NO MISTAKE" by both classifier, then it's not a mistake
+            # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should do for n>=3 classifiers
+            if not is_mistake_bert and not is_mistake_rule:
+                logger.info('Final decision: IT IS NOT A MISTAKE')
+                return False, bert_score
+
+        logger.info('Final decision: IT IS A MISTAKE')
+        return True, bert_score
+
+    def _detect_mistake_by_objects(self, detected_objects):
         tools_in_step = set(self.graph_task[self.current_step_index]['step_entities']['tools'])
         ingredients_in_step = set(self.graph_task[self.current_step_index]['step_entities']['ingredients'])
 
@@ -164,35 +190,6 @@ class StateManager:
             logger.info(f'Error, missing tools in step: {str(tools_in_step)}')
         if len(ingredients_in_step):
             logger.info(f'Error, missing ingredients in step: {str(ingredients_in_step)}')
-
-    def _build_task_graph(self, map_entities=True):
-        recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['name'])
-
-        for step in self.recipe['instructions']:
-            entities = self._extract_entities(step)
-            logger.info(f'Found entities in the step:{str(entities)}')
-            if map_entities:
-                entities = utils.map_entity_labels(recipe_entity_labels, entities)
-                logger.info(f'New names for entities: {str(entities)}')
-            self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
-                                    'step_entities': entities})
-
-    def _has_mistake(self, current_step, detected_actions):
-        # Perception will send the top-k actions for a single frame
-        bert_score = None
-
-        for detected_action in detected_actions:
-            logger.info(f'Evaluating "{detected_action}"...')
-            is_mistake_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
-            is_mistake_rule = self.rule_classifier.is_mistake(current_step, detected_action)
-            # If there is an agreement of "NO MISTAKE" by both classifier, then it's not a mistake
-            # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should do for n>=3 classifiers
-            if not is_mistake_bert and not is_mistake_rule:
-                logger.info('Final decision: IT IS NOT A MISTAKE')
-                return False, bert_score
-
-        logger.info('Final decision: IT IS A MISTAKE')
-        return True, bert_score
 
     def _preprocess_inputs(self, actions, proba_threshold=0.2):
         valid_actions = []
