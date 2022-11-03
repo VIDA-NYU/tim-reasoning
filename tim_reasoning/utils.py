@@ -1,5 +1,6 @@
 import json
 import pandas as pd
+import numpy as np
 from os.path import join, dirname
 from Levenshtein import distance as levenshtein_distance
 
@@ -59,28 +60,25 @@ def create_matrix(recipe_id, normalize=True):
     # TODO: Add "no action" as a step
     annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'recipe_{recipe_id}.csv'), keep_default_na=False)
     annotations = annotations[annotations['step_id'] != 'NA']
-    annotations['narration'] = annotations['narration'].replace(['NA'], 'no action')
-    unique_steps = annotations['step_id'].unique()
-    unique_actions = annotations['narration'].unique()
-    matrix = {}
+    no_action_label = 'no action'
+    annotations['narration'] = annotations['narration'].replace(['NA'], no_action_label)
+    unique_steps = {s: i for i, s in enumerate(annotations['step_id'].unique())}
+    unique_actions = {a: i for i, a in enumerate(annotations['narration'].unique())}
 
-    for step in unique_steps:
-        matrix[step] = {}
-        for action in unique_actions:
-            matrix[step][action] = 0
-        # Add the 'no action' label
-        if 'no action' not in matrix[step]:
-            matrix[step]['no action'] = 0
+    if no_action_label not in unique_actions:
+        unique_actions[no_action_label] = len(unique_actions)
 
-    for index, row in annotations.iterrows():
-        action = row['narration']
-        step = row['step_id']
+    matrix = np.zeros((len(unique_steps), len(unique_actions)))
+
+    for _, row in annotations.iterrows():
+        action_index = unique_actions[row['narration']]
+        step_index = unique_steps[row['step_id']]
         duration = row['stop_sec'] - row['start_sec']
-        matrix[step][action] += duration
+
+        matrix[step_index][action_index] += duration
 
     if normalize:
-        for step, actions in matrix.items():
-            total_duration = float(sum([x for x in matrix[step].values()]))
-            matrix[step] = {k: v / total_duration for k, v in matrix[step].items()}
+        row_sums = matrix.sum(axis=1)
+        matrix = matrix / row_sums[:, np.newaxis]
 
-    return matrix
+    return {'indexes': unique_actions, 'matrix': matrix}
