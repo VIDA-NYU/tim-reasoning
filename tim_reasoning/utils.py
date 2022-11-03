@@ -1,22 +1,18 @@
 import json
-from os import listdir
 from os.path import join, dirname
 from Levenshtein import distance as levenshtein_distance
 
 RECIPES_PATH = join(dirname(__file__), 'resource', 'mit_recipes')
 
 
-def load_recipe_entity_labels(recipe_name):
-    recipe_files = [f for f in listdir(RECIPES_PATH) if f.endswith('.json')]
+def load_recipe_entity_labels(recipe_id):
+    with open(join(RECIPES_PATH, f'recipe_{recipe_id}.json')) as fin:
+        recipe_data = json.load(fin)
 
-    for recipe_file in recipe_files:
-        with open(join(RECIPES_PATH, recipe_file)) as fin:
-            recipe_data = json.load(fin)
-            if recipe_data['name'] == recipe_name:
-                recipe_object_labels = {'ingredients': list(recipe_data['ingredient_objects'].keys()),
-                                        'tools': list(recipe_data['tool_objects'].keys())}
+        recipe_object_labels = {'ingredients': list(recipe_data['ingredient_objects'].keys()),
+                                'tools': list(recipe_data['tool_objects'].keys())}
 
-                return recipe_object_labels
+        return recipe_object_labels
 
 
 def map_entity_labels(entity_labels, detected_entities):

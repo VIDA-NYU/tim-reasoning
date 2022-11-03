@@ -151,7 +151,7 @@ class StateManager:
         return ingredients_tools
 
     def _build_task_graph(self, map_entities=True):
-        recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['name'])
+        recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['_id'])
 
         for step in self.recipe['instructions']:
             entities = self._extract_entities(step)
