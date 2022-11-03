@@ -10,6 +10,7 @@ class TestStateManager(unittest.TestCase):
     def setUpClass(cls):
         cls.state_manager = StateManager(cls.CONFIGS)
         cls.recipe = {
+            "_id": "pinwheels",
             "name": "Pinwheels",
             "ingredients": [
                 "1 8-inch flour tortilla",
