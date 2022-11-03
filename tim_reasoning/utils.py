@@ -56,7 +56,7 @@ def has_common_words(word1, word2):
 
 
 def create_matrix(recipe_id, normalize=True):
-    # TODO: Add "no action" label
+    # TODO: Add "no action" as a step
     annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'recipe_{recipe_id}.csv'), keep_default_na=False)
     annotations = annotations[annotations['step_id'] != 'NA']
     annotations['narration'] = annotations['narration'].replace(['NA'], 'no action')
@@ -68,6 +68,9 @@ def create_matrix(recipe_id, normalize=True):
         matrix[step] = {}
         for action in unique_actions:
             matrix[step][action] = 0
+        # Add the 'no action' label
+        if 'no action' not in matrix[step]:
+            matrix[step]['no action'] = 0
 
     for index, row in annotations.iterrows():
         action = row['narration']
