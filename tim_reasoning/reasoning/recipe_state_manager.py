@@ -35,8 +35,7 @@ class StateManager:
             'step_status': self.graph_task[self.current_step_index]['step_status'].value,
             'step_description': self.graph_task[self.current_step_index]['step_description'],
             'error_status': False,
-            'error_description': '',
-            'error_entities': []
+            'error_description': ''
         }
 
     def check_status(self, detected_actions, detected_objects):
@@ -52,8 +51,7 @@ class StateManager:
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
                 'error_status': False,
-                'error_description': '',
-                'error_entities': []
+                'error_description': ''
             }
 
         valid_actions, exist_actions = self._preprocess_inputs(detected_actions)
@@ -78,8 +76,7 @@ class StateManager:
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                     'step_description': self.graph_task[self.current_step_index]['step_description'],
                     'error_status': False,
-                    'error_description': '',
-                    'error_entities': []
+                    'error_description': ''
                 }
             else:
                 return {  # Return the same step
@@ -87,8 +84,7 @@ class StateManager:
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                     'step_description': self.graph_task[self.current_step_index]['step_description'],
                     'error_status': False,
-                    'error_description': '',
-                    'error_entities': []
+                    'error_description': ''
                 }
 
         error_act_status, _ = self._detect_error_in_actions(valid_actions)
@@ -100,8 +96,7 @@ class StateManager:
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
                 'error_status': True,
-                'error_description': error_obj_message,
-                'error_entities': error_obj_entities
+                'error_description': error_obj_message
             }
 
         else:
@@ -111,8 +106,7 @@ class StateManager:
                 'step_status': self.graph_task[self.current_step_index]['step_status'].value,
                 'step_description': self.graph_task[self.current_step_index]['step_description'],
                 'error_status': False,
-                'error_description': '',
-                'error_entities': []
+                'error_description': ''
             }
 
     def reset(self):
@@ -138,8 +132,7 @@ class StateManager:
             'step_status': self.graph_task[self.current_step_index]['step_status'].value,
             'step_description': self.graph_task[self.current_step_index]['step_description'],
             'error_status': False,
-            'error_description': '',
-            'error_entities': []
+            'error_description': ''
         }
 
     def get_entities(self):
