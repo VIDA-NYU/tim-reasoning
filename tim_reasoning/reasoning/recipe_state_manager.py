@@ -332,7 +332,7 @@ class StateManager:
                 exist_objects = True
             for o_idx, obj_pred in enumerate(box['labels']):
                 if self.step_ct > 0:
-                    box_class_score = box['confidence'][o_idx] ** 2 / box['box_confidences'][o_idx]
+                    box_class_score = box['confidences'][o_idx] ** 2 / box['box_confidences'][o_idx]
                     if obj_pred not in self.object_track_dict:
                         self.object_track_dict[obj_pred] = {'indices':[box['xyxyn']], 'score': [box_class_score]}
                         min_distince[obj_pred] = -1
