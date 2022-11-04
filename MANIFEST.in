@@ -3,3 +3,4 @@ include README.md
 include requirements.txt
 include tim_reasoning/models/mistake_detect_bert/configs/*.json
 include tim_reasoning/resource/mit_recipes/*.json
+include tim_reasoning/resource/annotated_videos/*.csv
