@@ -22,6 +22,7 @@ REASONING_STATUS_SID = 'reasoning:check_status'
 REASONING_ENTITIES_SID = 'reasoning:entities'
 
 PERCEPTION_OUTPUTS_PATH = '/Users/rlopez/PTG/experiments/datasets/NYU_PTG/perception_outputs'
+ANNOTATED_VIDEOS_PATH = '/Users/rlopez/PTG/tim-reasoning/scripts/evaluations/resource'
 CONFIGS = {'tagger_model_path': join(os.environ['REASONING_MODELS_PATH'], 'recipe_tagger'),
            'bert_classifier_path': join(os.environ['REASONING_MODELS_PATH'], 'bert_classifier')}
 
@@ -49,12 +50,31 @@ class ReasoningApp:
         recipe_id = 'pinwheels'
         perception_actions = np.load(join(PERCEPTION_OUTPUTS_PATH, 'action_frames', video_id + '.npy'))
         perception_indexes = np.load(join(PERCEPTION_OUTPUTS_PATH, 'action_names', recipe_id, 'classes.npy'))
-        perception_actions = [list(zip(perception_indexes, y_i)) for y_i in perception_actions]
+        #perception_actions = [list(zip(perception_indexes, y_i)) for y_i in perception_actions]
         steps_groundtruth = self.load_groundtruth(recipe_id, video_id)
         results = {'action': [], 'true_step': [], 'predicted_step': []}
         self.start_recipe(recipe_id)
+        batch_size = 20
+        counter = 0
+        batch = np.zeros((batch_size, len(perception_indexes)))
 
         for index, detected_actions in enumerate(perception_actions):
+            if steps_groundtruth['step'][index] == -1:
+                continue  # Ignore no action
+
+            if counter < batch_size:
+                batch[counter] = detected_actions
+                counter += 1
+
+                if counter == batch_size:
+                    detected_actions = batch.mean(0)
+                    batch = np.delete(batch, 0, axis=0)
+                    batch = np.append(batch, np.zeros((1, len(perception_indexes))), axis=0)
+                    counter -= 1
+                else:
+                    continue
+
+            detected_actions = list(zip(perception_indexes, detected_actions))
             detected_actions = sorted(detected_actions, key=lambda x: x[1], reverse=True)
             logger.info(f'Perception actions: {str(detected_actions)}')
             recipe_status = self.state_manager.check_status(detected_actions, [])
@@ -77,8 +97,7 @@ class ReasoningApp:
         results.to_csv(f'/Users/rlopez/PTG/tim-reasoning/scripts/evaluations/resource/results_{recipe_id}.csv', index=False)
 
     def load_groundtruth(self, recipe_id, video_id):
-        annotations_path = '/Users/rlopez/PTG/tim-reasoning/scripts/evaluations/resource'
-        annotations = pd.read_csv(join(annotations_path, f'groundtruth_{recipe_id}.csv'), keep_default_na=False)
+        annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'groundtruth_{recipe_id}.csv'), keep_default_na=False)
         annotations = annotations[annotations['video_id'] == video_id]
         frame_classes = np.load(join(PERCEPTION_OUTPUTS_PATH, 'frame_classes', video_id + '.npy'))
         perception_indexes = np.load(join(PERCEPTION_OUTPUTS_PATH, 'action_names', recipe_id, 'classes.npy'))
@@ -97,7 +116,8 @@ class ReasoningApp:
                     id_step = int(float(id_step)) if len(id_step) > 0 else id_step
                     if id_step == '':
                         # If there are no step annotated, it should be the current step
-                        id_step = current_step
+                        #id_step = current_step
+                        id_step = no_action
                     previous_value = frame_class
                     current_step = id_step
                     index += 1
@@ -105,13 +125,14 @@ class ReasoningApp:
 
             else:
                 previous_value = no_action
-                #steps_groundtruth['step'].append(no_action)
+                steps_groundtruth['step'].append(no_action)
                 # Add the current step instead of no action because for the UI we always output the current step with an error message
-                steps_groundtruth['step'].append(current_step)
+                #steps_groundtruth['step'].append(current_step)
 
             steps_groundtruth['action'].append(perception_indexes[frame_class])
 
         return steps_groundtruth
+
 
     def run(self):
         self.run_reasoning()
