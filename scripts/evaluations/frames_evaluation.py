@@ -1,8 +1,10 @@
 import os
 import logging
+import time
 import ptgctl
 import ptgctl.util
 import numpy as np
+import pandas as pd
 from os.path import join
 from tim_reasoning import StateManager
 
@@ -45,18 +47,53 @@ class ReasoningApp:
     def run_reasoning(self):
         video_id = '2022.07.26-20.35.03'
         recipe_id = 'pinwheels'
-        perception_actions = np.load(join(PERCEPTION_OUTPUTS_PATH, 'matrix', video_id + '.npy'))
-        perception_indexes = np.load(join(PERCEPTION_OUTPUTS_PATH, 'classes', recipe_id, 'classes.npy'))
+        perception_actions = np.load(join(PERCEPTION_OUTPUTS_PATH, 'action_frames', video_id + '.npy'))
+        perception_indexes = np.load(join(PERCEPTION_OUTPUTS_PATH, 'action_names', recipe_id, 'classes.npy'))
         perception_actions = [list(zip(perception_indexes, y_i)) for y_i in perception_actions]
+        steps_groundtruth = self.load_groundtruth(recipe_id, video_id)
+        results = {'True': [], 'Predicted': []}
         self.start_recipe(recipe_id)
 
-        for detected_actions in perception_actions[:3]:
+        for index, detected_actions in enumerate(perception_actions):
             detected_actions = sorted(detected_actions, key=lambda x: x[1], reverse=True)
             logger.info(f'Perception actions: {str(detected_actions)}')
             recipe_status = self.state_manager.check_status(detected_actions, [])
-            step = str(recipe_status['step_id'] + 1)
-            print(step)
+            predicted_step = str(recipe_status['step_id'] + 1)
+            results['True'].append(steps_groundtruth[index])
+            results['Predicted'].append(predicted_step)
             #logger.info(f'Reasoning outputs: {str(recipe_status)}')
+
+        results = pd.DataFrame.from_dict(results)
+        results.to_csv(f'/Users/rlopez/PTG/tim-reasoning/scripts/evaluations/resource/results_{recipe_id}.csv', index=False)
+
+    def load_groundtruth(self, recipe_id, video_id):
+        annotations_path = '/Users/rlopez/PTG/tim-reasoning/scripts/evaluations/resource'
+        perception_output_path = '/Users/rlopez/PTG/experiments/datasets/NYU_PTG/perception_outputs'
+        annotations = pd.read_csv(join(annotations_path, f'groundtruth_{recipe_id}.csv'), keep_default_na=False)
+        # annotations = annotations[annotations['step_id'] != '']
+        annotations = annotations[annotations['video_id'] == video_id]
+        frame_classes = np.load(join(perception_output_path, 'frame_classes', video_id + '.npy'))
+
+        i = 0
+        previous_value = None
+        no_action = -1
+        id_step = no_action
+        steps_groundtruth = []
+
+        for frame_class in frame_classes:
+            if frame_class != 0:
+                if frame_class != previous_value:
+                    id_step = annotations.iloc[i]['step_id']
+                    id_step = int(float(id_step)) if len(id_step) > 0 else id_step
+                    previous_value = frame_class
+                    i += 1
+                steps_groundtruth.append(id_step)
+
+            else:
+                previous_value = no_action
+                steps_groundtruth.append(no_action)
+
+        return steps_groundtruth
 
     def run(self):
         self.run_reasoning()
