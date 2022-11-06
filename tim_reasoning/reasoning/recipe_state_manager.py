@@ -67,15 +67,15 @@ class StateManager:
         
         ### CHEN: I think this is dangerous 
     
-        if self.status == RecipeStatus.COMPLETED:
-            return {
-                'step_id': self.current_step_index,
-                'step_status': self.graph_task[self.current_step_index]['step_status'].value,
-                'step_description': self.graph_task[self.current_step_index]['step_description'],
-                'error_status': False,
-                'error_description': '',
-                'error_entities': []
-            }
+        #if self.status == RecipeStatus.COMPLETED:
+        #     return {
+        #        'step_id': self.current_step_index,
+        #        'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+        #        'step_description': self.graph_task[self.current_step_index]['step_description'],
+        #        'error_status': False,
+        #        'error_description': '',
+        #        'error_entities': []
+        #    }
         
 
         valid_actions, exist_actions = self._preprocess_inputs(detected_actions)
@@ -86,7 +86,14 @@ class StateManager:
         ## actually this should be an error
         if len(valid_objects) == 0 and exist_objects:  # If there are no valid actions, don't make a decision, just wait for new inputs
             logger.info('No valid objects to be processed')
-            return
+            return {  # Return next step
+                    'step_id': self.current_step_index,
+                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                    'step_description': self.graph_task[self.current_step_index]['step_description'],
+                    'error_status': False,
+                    'error_description': '',
+                    'error_entities': []
+                }
         
 
 
@@ -97,7 +104,15 @@ class StateManager:
             if self.finished[self.current_step_index] == 1 and self.current_step_index < len(self.graph_task) - 1 and self.act_counter[self.current_step_index] >= 10 and self.no_act_counter[self.current_step_index] >= 4:
                 if self.current_step_index == len(self.graph_task) - 1:  # If recipe completed, don't move
                     self.status = RecipeStatus.COMPLETED
-                    return
+                    print('???????????????')
+                    return {  # Return next step
+                    'step_id': self.current_step_index,
+                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                    'step_description': self.graph_task[self.current_step_index]['step_description'],
+                    'error_status': False,
+                    'error_description': '',
+                    'error_entities': []
+                }
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
 
