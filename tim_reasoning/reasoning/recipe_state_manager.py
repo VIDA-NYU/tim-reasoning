@@ -540,7 +540,7 @@ class StateManager:
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
         
         if self.act_counter[self.current_step_index] > 40 and has_error and self.current_step_index == 7:
-            if '~12-inch strand of dental floss' in detected_objects and object_scores[detected_objects.index('~12-inch strand of dental floss')] > 0.2:
+            if '~12-inch strand of dental floss' in detected_objects and object_scores[detected_objects.index('~12-inch strand of dental floss')] > 0.05:
                 self.main_step_exe[8][0] = 1
                 has_error = False
                 self.current_step_index += 1

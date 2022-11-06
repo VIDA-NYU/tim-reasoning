@@ -7,6 +7,7 @@ import cv2
 from collections import Counter
 import math
 
+
 #detic_pred = pickle.load(open('/Users/chenzhao/Desktop/ptg-server-ml/data/detic_pred_coffee1.pkl', 'rb'))
 egohos_pred = pickle.load(open('/Users/chenzhao/Desktop/ptg-server-ml/data/egohos_pred_coffee_801.pkl', 'rb'))
 #egohos_pred2 = pickle.load(open('/Users/chenzhao/Desktop/ptg-server-ml/data/egohos_pred_coffee2_obj2.pkl', 'rb'))
@@ -42,8 +43,6 @@ step_counter = Counter()
 no_act_counter= Counter()
 is_exe = [0] * len(steps)
 executed = []
-box_scores = dict()
-indices_list = list()
 tracker_dict = dict()
 
 for ii in range(len(step_tools)):
