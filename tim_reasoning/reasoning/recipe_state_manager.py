@@ -59,6 +59,8 @@ class StateManager:
                  ['cut wrap wire', 'put wire', 'cut wrap floss'],
                   ['put wrap plate']]
 
+
+
         for ii in range(len(self.recipe['step_actions'])):
             exe_st = [0] * len(self.recipe['step_actions'][ii])
             self.main_action_steps_exe.append(exe_st)
@@ -262,10 +264,9 @@ class StateManager:
             self.main_action_steps = [[1], [4,5], [0], [2,3], [0],[1],[3],[1],[2],[1],[2],[0]]
         elif self.recipe['_id'] == 'mugcake':
             self.main_steps = self.recipe['main_steps']
-            self.main_action_steps = [[1], [4,5], [0], [2,3], [0],[1],[3],[1],[2],[1],[2],[0]]
+            
         elif self.recipe['_id'] == 'coffee':
             self.main_steps = self.recipe['main_steps']
-            self.main_action_steps = [[1], [4,5], [0], [2,3], [0],[1],[3],[1],[2],[1],[2],[0]]
 
         for step in self.recipe['instructions']:
             entities = self._extract_entities(step)
