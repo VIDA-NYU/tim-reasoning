@@ -284,12 +284,16 @@ class StateManager:
                 self.act_counter[self.current_step_index] += 1
                 all_finished = True
                 for jj in self.main_steps[self.current_step_index]:
-                    if self.main_step_exe[self.current_step_index][jj] == 0:
-                        all_finished = False
+                    if jj < len(self.main_step_exe[self.current_step_index]):
+                        if self.main_step_exe[self.current_step_index][jj] == 0:
+                            all_finished = False
                 all_action_finished = True
                 for jj in self.main_action_steps[self.current_step_index]:
-                    if self.main_action_steps_exe[self.current_step_index][jj] == 0:
-                        all_action_finished = False
+                    if jj < len(self.main_action_steps_exe[self.current_step_index]):
+                        if self.main_action_steps_exe[self.current_step_index][jj] == 0:
+                            all_action_finished = False
+                    else:
+                        print(jj, len(self.main_action_steps_exe[self.current_step_index]), self.current_step_index)
                 #print(all_finished)
                 if all_finished or all_action_finished:
                     self.finished[self.current_step_index] = 1
@@ -427,6 +431,10 @@ class StateManager:
                         has_error = False
                         self.current_step_index = self.current_step_index - 1
                         self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                        #if self.act_counter[self.current_step_index] > 10:
+                        #    self.act_counter[self.current_step_index] = self.act_counter[self.current_step_index] - 10
+                        #else:
+                        #    self.act_counter[self.current_step_index]  = 0 
                         break
                     
             if (has_error or action_error) and not self.freeze and self.current_step_index < len(self.graph_task) - 1 and self.act_counter[self.current_step_index] > 50:
@@ -445,6 +453,8 @@ class StateManager:
                     has_error = False
                     self.current_step_index = self.current_step_index + 1
                     self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
+                    self.act_counter[self.current_step_index] = 0
+
 
             if not self.freeze:
                 if self.recipe['_id'] == 'pinwheels':
