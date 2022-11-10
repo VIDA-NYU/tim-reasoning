@@ -1,4 +1,4 @@
-import sys
+import argparse
 import unittest
 from tim_reasoning import RecipeTagger
 
@@ -27,9 +27,13 @@ class TestRecipeTagger(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        TestRecipeTagger.TAGGER_MODEL_PATH = sys.argv.pop()
-    else:
-        TestRecipeTagger.TAGGER_MODEL_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
-        
-    unittest.main()
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-t', '--tagger')
+    args, unknown_args = parser.parse_known_args()
+
+    TestRecipeTagger.TAGGER_MODEL_PATH = '/Users/rlopez/PTG/experiments/models/recipe_tagger'
+
+    if args.tagger:
+        TestRecipeTagger.TAGGER_MODEL_PATH = args.tagger
+
+    unittest.main(argv=[parser.prog] + unknown_args)  # Send the remaining arguments to unittest

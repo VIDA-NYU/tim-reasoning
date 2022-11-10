@@ -1,4 +1,4 @@
-import sys
+import argparse
 import unittest
 from tim_reasoning import StateManager
 
@@ -58,12 +58,18 @@ class TestStateManager(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        configs = {'tagger_model_path': sys.argv.pop(), 'bert_classifier_path': sys.argv.pop()}
-    else:
-        configs = {'tagger_model_path': '/Users/rlopez/PTG/experiments/models/recipe_tagger',
-                   'bert_classifier_path': '/Users/rlopez/PTG/experiments/models/bert_classifier/'}
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-t', '--tagger')
+    parser.add_argument('-b', '--bert')
+    args, unknown_args = parser.parse_known_args()
+
+    configs = {'tagger_model_path': '/Users/rlopez/PTG/experiments/models/recipe_tagger',
+               'bert_classifier_path': '/Users/rlopez/PTG/experiments/models/bert_classifier'}
+
+    if args.tagger:
+        configs['tagger_model_path'] = args.tagger
+    if args.bert:
+        configs['bert_classifier_path'] = args.bert
 
     TestStateManager.CONFIGS = configs
-        
-    unittest.main()
+    unittest.main(argv=[parser.prog]+unknown_args)  # Send the remaining arguments to unittest

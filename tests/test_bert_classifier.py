@@ -1,4 +1,4 @@
-import sys
+import argparse
 import unittest
 from tim_reasoning import BertClassifier
 
@@ -25,9 +25,13 @@ class TestBertClassifier(unittest.TestCase):
 
 
 if __name__ == '__main__':
-    if len(sys.argv) > 1:
-        TestBertClassifier.MODEL_PATH = sys.argv.pop()
-    else:
-        TestBertClassifier.MODEL_PATH = '/Users/rlopez/PTG/experiments/models/bert_classifier/'
+    parser = argparse.ArgumentParser()
+    parser.add_argument('-b', '--bert')
+    args, unknown_args = parser.parse_known_args()
 
-    unittest.main()
+    TestBertClassifier.MODEL_PATH = '/Users/rlopez/PTG/experiments/models/bert_classifier'
+
+    if args.bert:
+        TestBertClassifier.MODEL_PATH = args.bert
+
+    unittest.main(argv=[parser.prog]+unknown_args)  # Send the remaining arguments to unittest
