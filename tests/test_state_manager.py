@@ -50,6 +50,12 @@ class TestStateManager(unittest.TestCase):
         actual_step_id = step_data['step_id']
         self.assertEqual(actual_step_id, expected_step_id)
 
+    def test_get_entities(self):
+        self.state_manager.start_recipe(self.recipe)
+        expected_entities = {'ingredients': {'tortilla'}, 'tools': {'cutting board'}}
+        actual_entities = self.state_manager.get_entities()[0]['step_entities']  # Only for step 1
+        self.assertEqual(actual_entities, expected_entities)
+
     def test_check_status(self):
         self.state_manager.start_recipe(self.recipe)
         detected_actions = [('place tortilla on chopping board', 0.7), ('scoop peanut butter, knife', 0.8), ('spread-on peanut butter, tortilla', 0.8), ('wipe knife', 0.8), ('scoop grape jelly, knife', 0.8)]
