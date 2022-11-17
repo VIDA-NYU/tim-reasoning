@@ -59,7 +59,7 @@ def has_common_words(word1, word2):
 def create_matrix(recipe_id, normalize=True, exclude=None):
     annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'recipe_{recipe_id}.csv'), keep_default_na=False)
     annotations = annotations[annotations['video_id'] != exclude]  # For testing
-    annotations = annotations[annotations['step_id'] != 'NA']
+    annotations = annotations[annotations['step_id'] != '']
     no_action_label = 'no action'
     annotations['narration'] = annotations['narration'].replace(['NA'], no_action_label)
     unique_steps = {s: i for i, s in enumerate(annotations['step_id'].unique())}
