@@ -56,12 +56,12 @@ def has_common_words(word1, word2):
         return False
 
 
-def create_matrix(recipe_id, normalize=True, exclude=None):
+def create_matrix(recipe_id, exclude=None):
     annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'recipe_{recipe_id}.csv'), keep_default_na=False)
     annotations = annotations[annotations['video_id'] != exclude]  # For testing
     annotations = annotations[annotations['step_id'] != '']
     no_action_label = 'no action'
-    annotations['narration'] = annotations['narration'].replace(['NA'], no_action_label)
+    annotations['narration'] = annotations['narration'].replace([''], no_action_label)
     unique_steps = {s: i for i, s in enumerate(annotations['step_id'].unique())}
     unique_actions = {a: i for i, a in enumerate(annotations['narration'].unique())}
 
@@ -74,11 +74,9 @@ def create_matrix(recipe_id, normalize=True, exclude=None):
         action_index = unique_actions[row['narration']]
         step_index = unique_steps[row['step_id']]
         duration = row['stop_sec'] - row['start_sec']
-
         matrix[step_index][action_index] += duration
 
-    if normalize:
-        row_sums = matrix.sum(axis=1)
-        matrix = matrix / row_sums[:, np.newaxis]
+    step_times = matrix.sum(axis=1)
+    matrix = matrix / step_times[:, np.newaxis]
 
-    return {'indexes': unique_actions, 'matrix': matrix}
+    return {'indexes': unique_actions, 'matrix': matrix, 'step_times': step_times}
