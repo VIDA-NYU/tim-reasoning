@@ -24,8 +24,8 @@ state_manager = StateManager(CONFIGS)
 def evaluate_videos():
     recipe_id = 'pinwheels'
     video_ids = ['2022.07.26-22.21.56', '2022.07.26-20.35.03']
-    recipe_id = 'coffee'
-    video_ids = ['coffee-test-1', 'coffee-test-2']
+    #recipe_id = 'coffee'
+    #video_ids = ['coffee-test-1', 'coffee-test-2']
     #recipe_id = 'mugcake'
     #video_ids = ['mugcake-10.13', 'peterx-mugcake']
 
@@ -50,8 +50,8 @@ def evaluate_video(recipe_id, video_id):
     results = {'video': [], 'action': [], 'true_step': [], 'predicted_step': []}
     start_recipe(recipe_id)
     batch_size = BATCH_SIZE
+    batch_counter = 0
     batch = np.zeros((batch_size, len(perception_indexes)))
-    counter = 0
     valid_frames = 0
     indexes = []
 
@@ -60,17 +60,17 @@ def evaluate_video(recipe_id, video_id):
             continue  # Ignore no action for this evaluation
         valid_frames += 1
 
-        if counter < batch_size:
-            batch[counter] = detected_actions
+        if batch_counter < batch_size:
+            batch[batch_counter] = detected_actions
             indexes.append(index)
-            counter += 1
+            batch_counter += 1
 
-            if counter == batch_size:
+            if batch_counter == batch_size:
                 detected_actions = batch.mean(0)
                 real_index = indexes.pop(0)
                 batch = np.delete(batch, 0, axis=0)
                 batch = np.append(batch, np.zeros((1, len(perception_indexes))), axis=0)
-                counter -= 1
+                batch_counter -= 1
             else:
                 continue
 
@@ -78,8 +78,7 @@ def evaluate_video(recipe_id, video_id):
         detected_actions = sorted(detected_actions, key=lambda x: x[1], reverse=True)
         logger.info(f'Perception actions: {str(detected_actions)}')
         recipe_status = state_manager.check_status(detected_actions, [])
-        predicted_step = str(recipe_status['step_id'] + 1)
-
+        predicted_step = recipe_status['step_id'] + 1
         results['action'].append(steps_groundtruth['action'][real_index])
         results['true_step'].append(steps_groundtruth['step'][real_index])
         results['predicted_step'].append(predicted_step)
@@ -87,12 +86,26 @@ def evaluate_video(recipe_id, video_id):
         print('True:', steps_groundtruth['step'][real_index])
         print('Predicted', predicted_step)
 
-    count = 0.0
-    for true_step, predicted_step in zip(results['true_step'], results['predicted_step']):
-        if str(true_step) == str(predicted_step):
-            count += 1
-    print(len(perception_actions), valid_frames, len(results['true_step']))
-    print('Total Accuracy:', count/len(results['true_step']))
+    for index in range(batch_size-1):  # For the remaining final frames
+        detected_actions = batch[index]
+        real_index = indexes[index]
+        detected_actions = list(zip(perception_indexes, detected_actions))
+        detected_actions = sorted(detected_actions, key=lambda x: x[1], reverse=True)
+        logger.info(f'Perception actions: {str(detected_actions)}')
+        recipe_status = state_manager.check_status(detected_actions, [])
+        predicted_step = recipe_status['step_id'] + 1
+        results['action'].append(steps_groundtruth['action'][real_index])
+        results['true_step'].append(steps_groundtruth['step'][real_index])
+        results['predicted_step'].append(predicted_step)
+        results['video'].append(video_id)
+        print('True:', steps_groundtruth['step'][real_index])
+        print('Predicted', predicted_step)
+
+    assert valid_frames == len(results['true_step'])
+    print(f'Total frames: {len(perception_actions)}, valid frames: {valid_frames}')
+
+    correct_predictions = sum([t == p for t, p in zip(results['true_step'], results['predicted_step'])])
+    print('Total Accuracy:', float(correct_predictions)/valid_frames)
 
     return results
 
