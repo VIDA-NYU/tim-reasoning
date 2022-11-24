@@ -1,189 +1,187 @@
-video_id,recipe,fps,start_frame,stop_frame,start_sec,stop_sec,start_time,stop_time,narration,step_id,step_description,,,,,
-coffee-test-1,coffee,24,192,384,8,16,0:00:08,0:00:16,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-1,coffee,24,480,504,20,21,0:00:20,0:00:21,open kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-1,coffee,24,504,624,21,26,0:00:21,0:00:26,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-1,coffee,24,624,648,26,27,0:00:26,0:00:27,turn-on kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-1,coffee,24,648,696,27,29,0:00:27,0:00:29,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-1,coffee,24,744,792,31,33,0:00:31,0:00:33,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-coffee-test-1,coffee,24,816,1152,34,48,0:00:34,0:00:48,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-coffee-test-1,coffee,24,1152,1200,48,50,0:00:48,0:00:50,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-coffee-test-1,coffee,24,1320,1344,55,56,0:00:55,0:00:56,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,1440,1872,60,78,0:01:00,0:01:18,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,1872,1968,78,82,0:01:18,0:01:22,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,1992,2040,83,85,0:01:23,0:01:25,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,2040,2328,85,97,0:01:25,0:01:37,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,2376,2400,99,100,0:01:39,0:01:40,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,2472,3072,103,128,0:01:43,0:02:08,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-1,coffee,24,3144,3288,131,137,0:02:11,0:02:17,turn-on thermometer,5,Check the temperature of the water.,,,,,
-coffee-test-1,coffee,24,4752,4800,198,200,0:03:18,0:03:20,take kettle,5,Check the temperature of the water.,,,,,
-coffee-test-1,coffee,24,4800,4824,200,201,0:03:20,0:03:21,open kettle,5,Check the temperature of the water.,,,,,
-coffee-test-1,coffee,24,4872,5712,203,238,0:03:23,0:03:58,measure heat,5,Check the temperature of the water.,,,,,
-coffee-test-1,coffee,24,5712,5784,238,241,0:03:58,0:04:01,put thermometer,5,Check the temperature of the water.,,,,,
-coffee-test-1,coffee,24,5784,6000,241,250,0:04:01,0:04:10,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-coffee-test-1,coffee,24,6912,7320,288,305,0:04:48,0:05:05,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-coffee-test-1,coffee,24,7488,7656,312,319,0:05:12,0:05:19,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-coffee-test-1,coffee,24,7896,8352,329,348,0:05:29,0:05:48,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-coffee-test-1,coffee,24,8352,9384,348,391,0:05:48,0:06:31,NA,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-coffee-test-1,coffee,24,9384,9576,391,399,0:06:31,0:06:39,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-coffee-test-1,coffee,24,9576,9720,399,405,0:06:39,0:06:45,take cup,NA,NA,,,,,
-coffee-test-2,coffee,24,192,408,8,17,0:00:08,0:00:17,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-2,coffee,24,528,624,22,26,0:00:22,0:00:26,open kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-2,coffee,24,672,816,28,34,0:00:28,0:00:34,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-2,coffee,24,864,936,36,39,0:00:36,0:00:39,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-2,coffee,24,960,1008,40,42,0:00:40,0:00:42,turn-on kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-coffee-test-2,coffee,24,1056,1296,44,54,0:00:44,0:00:54,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-coffee-test-2,coffee,24,1320,1440,55,60,0:00:55,0:01:00,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-coffee-test-2,coffee,24,1440,1488,60,62,0:01:00,0:01:02,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-coffee-test-2,coffee,24,1584,1608,66,67,0:01:06,0:01:07,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.
-coffee-test-2,coffee,24,1728,2112,72,88,0:01:12,0:01:28,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,2280,2328,95,97,0:01:35,0:01:37,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,2328,2496,97,104,0:01:37,0:01:44,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,2544,2592,106,108,0:01:46,0:01:48,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,2592,2880,108,120,0:01:48,0:02:00,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,2880,2928,120,122,0:02:00,0:02:02,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,3048,3096,127,129,0:02:07,0:02:09,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,3144,3192,131,133,0:02:11,0:02:13,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,3240,3744,135,156,0:02:15,0:02:36,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,3792,3864,158,161,0:02:38,0:02:41,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-coffee-test-2,coffee,24,4632,4680,193,195,0:03:13,0:03:15,take kettle,5,Check the temperature of the water.,,,,,
-coffee-test-2,coffee,24,4680,4752,195,198,0:03:15,0:03:18,open kettle,5,Check the temperature of the water.,,,,,
-coffee-test-2,coffee,24,4776,4920,199,205,0:03:19,0:03:25,turn-on thermometer,5,Check the temperature of the water.,,,,,
-coffee-test-2,coffee,24,4920,6168,205,257,0:03:25,0:04:17,measure heat,5,Check the temperature of the water.,,,,,
-coffee-test-2,coffee,24,6168,6240,257,260,0:04:17,0:04:20,put thermometer,5,Check the temperature of the water.,,,,,
-coffee-test-2,coffee,24,6240,6432,260,268,0:04:20,0:04:28,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-coffee-test-2,coffee,24,7248,7560,302,315,0:05:02,0:05:15,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-coffee-test-2,coffee,24,8040,8280,335,345,0:05:35,0:05:45,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-coffee-test-2,coffee,24,8904,9264,371,386,0:06:11,0:06:26,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-coffee-test-2,coffee,24,9264,10128,386,422,0:06:26,0:07:02,NA,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-coffee-test-2,coffee,24,10128,10248,422,427,0:07:02,0:07:07,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-coffee-test-2,coffee,24,10248,10560,427,440,0:07:07,0:07:20,take cup,NA,NA,,,,,
-ethan_4coffees,coffee,15,75,165,5,11,0:00:05,0:00:11,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,300,375,20,25,0:00:20,0:00:25,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,480,495,32,33,0:00:32,0:00:33,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,495,525,33,35,0:00:33,0:00:35,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-ethan_4coffees,coffee,15,645,855,43,57,0:00:43,0:00:57,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,855,1020,57,68,0:00:57,0:01:08,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,1260,1305,84,87,0:01:24,0:01:27,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,1320,1425,88,95,0:01:28,0:01:35,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,1755,1935,117,129,0:01:57,0:02:09,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,2130,2325,142,155,0:02:22,0:02:35,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,2400,2565,160,171,0:02:40,0:02:51,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,2700,3000,180,200,0:03:00,0:03:20,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,3120,3150,208,210,0:03:28,0:03:30,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,3300,3630,220,242,0:03:40,0:04:02,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,3630,3675,242,245,0:04:02,0:04:05,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,3825,3945,255,263,0:04:15,0:04:23,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,4050,4125,270,275,0:04:30,0:04:35,turn-on thermometer,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,4125,4155,275,277,0:04:35,0:04:37,open kettle,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,4155,4305,277,287,0:04:37,0:04:47,measure heat,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,4425,4470,295,298,0:04:55,0:04:58,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-ethan_4coffees,coffee,15,5025,5295,335,353,0:05:35,0:05:53,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,5550,5625,370,375,0:06:10,0:06:15,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,5850,5910,390,394,0:06:30,0:06:34,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,6060,6075,404,405,0:06:44,0:06:45,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,6345,6435,423,429,0:07:03,0:07:09,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,6675,6750,445,450,0:07:25,0:07:30,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,6915,6945,461,463,0:07:41,0:07:43,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,7080,7245,472,483,0:07:52,0:08:03,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,8850,8895,590,593,0:09:50,0:09:53,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-ethan_4coffees,coffee,15,8895,8940,593,596,0:09:53,0:09:56,take cup,NA,NA,,,,,
-ethan_4coffees,coffee,15,9090,9180,606,612,0:10:06,0:10:12,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,9210,9225,614,615,0:10:14,0:10:15,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,9285,9330,619,622,0:10:19,0:10:22,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,9345,9375,623,625,0:10:23,0:10:25,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,9375,9390,625,626,0:10:25,0:10:26,turn-on kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,9420,9480,628,632,0:10:28,0:10:32,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-ethan_4coffees,coffee,15,9540,9675,636,645,0:10:36,0:10:45,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,9675,9975,645,665,0:10:45,0:11:05,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,10035,10050,669,670,0:11:09,0:11:10,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,10125,10395,675,693,0:11:15,0:11:33,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,10470,10485,698,699,0:11:38,0:11:39,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,10500,10575,700,705,0:11:40,0:11:45,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,10575,10845,705,723,0:11:45,0:12:03,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,10845,10890,723,726,0:12:03,0:12:06,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,10935,11010,729,734,0:12:09,0:12:14,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,11145,11160,743,744,0:12:23,0:12:24,open kettle,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,11160,11340,744,756,0:12:24,0:12:36,measure heat,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,11565,11580,771,772,0:12:51,0:12:52,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-ethan_4coffees,coffee,15,12030,12240,802,816,0:13:22,0:13:36,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,12870,12930,858,862,0:14:18,0:14:22,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,13065,13155,871,877,0:14:31,0:14:37,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,13260,13305,884,887,0:14:44,0:14:47,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,13365,13410,891,894,0:14:51,0:14:54,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,13665,13710,911,914,0:15:11,0:15:14,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,13845,13875,923,925,0:15:23,0:15:25,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,14025,14070,935,938,0:15:35,0:15:38,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,14445,14490,963,966,0:16:03,0:16:06,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,14670,14685,978,979,0:16:18,0:16:19,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,14850,14865,990,991,0:16:30,0:16:31,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,14910,15030,994,1002,0:16:34,0:16:42,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,16815,16845,1121,1123,0:18:41,0:18:43,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-ethan_4coffees,coffee,15,16860,16920,1124,1128,0:18:44,0:18:48,take cup,NA,NA,,,,,
-ethan_4coffees,coffee,15,17040,17115,1136,1141,0:18:56,0:19:01,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,17175,17220,1145,1148,0:19:05,0:19:08,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,17220,17235,1148,1149,0:19:08,0:19:09,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,17280,17310,1152,1154,0:19:12,0:19:14,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-ethan_4coffees,coffee,15,17490,17565,1166,1171,0:19:26,0:19:31,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,17565,17775,1171,1185,0:19:31,0:19:45,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,17805,17820,1187,1188,0:19:47,0:19:48,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,17940,18150,1196,1210,0:19:56,0:20:10,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,18210,18240,1214,1216,0:20:14,0:20:16,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,18240,18315,1216,1221,0:20:16,0:20:21,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,18315,18645,1221,1243,0:20:21,0:20:43,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,18645,18675,1243,1245,0:20:43,0:20:45,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,18720,18810,1248,1254,0:20:48,0:20:54,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,18945,18975,1263,1265,0:21:03,0:21:05,open kettle,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,19035,19140,1269,1276,0:21:09,0:21:16,turn-on thermometer,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,19140,19275,1276,1285,0:21:16,0:21:25,measure heat,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,19365,19380,1291,1292,0:21:31,0:21:32,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-ethan_4coffees,coffee,15,19815,19905,1321,1327,0:22:01,0:22:07,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,19965,20070,1331,1338,0:22:11,0:22:18,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,20370,20565,1358,1371,0:22:38,0:22:51,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,20730,20835,1382,1389,0:23:02,0:23:09,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,21000,21240,1400,1416,0:23:20,0:23:36,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,23085,23115,1539,1541,0:25:39,0:25:41,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-ethan_4coffees,coffee,15,23115,23160,1541,1544,0:25:41,0:25:44,take cup,NA,NA,,,,,
-ethan_4coffees,coffee,15,23280,23385,1552,1559,0:25:52,0:25:59,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,23430,23475,1562,1565,0:26:02,0:26:05,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,23490,23535,1566,1569,0:26:06,0:26:09,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,23565,23595,1571,1573,0:26:11,0:26:13,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-ethan_4coffees,coffee,15,23625,23730,1575,1582,0:26:15,0:26:22,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,23730,23865,1582,1591,0:26:22,0:26:31,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,23940,23970,1596,1598,0:26:36,0:26:38,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,23985,24090,1599,1606,0:26:39,0:26:46,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,24165,24195,1611,1613,0:26:51,0:26:53,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,24210,24240,1614,1616,0:26:54,0:26:56,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,24240,24585,1616,1639,0:26:56,0:27:19,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,24585,24615,1639,1641,0:27:19,0:27:21,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,24645,24720,1643,1648,0:27:23,0:27:28,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,24795,24825,1653,1655,0:27:33,0:27:35,open kettle,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,24825,24945,1655,1663,0:27:35,0:27:43,measure heat,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,24945,24975,1663,1665,0:27:43,0:27:45,turn-on kettle,NA,NA,,,,,
-ethan_4coffees,coffee,15,24975,25110,1665,1674,0:27:45,0:27:54,measure heat,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,25170,25200,1678,1680,0:27:58,0:28:00,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-ethan_4coffees,coffee,15,25755,25980,1717,1732,0:28:37,0:28:52,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,26280,26340,1752,1756,0:29:12,0:29:16,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,26415,26505,1761,1767,0:29:21,0:29:27,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,26550,26700,1770,1780,0:29:30,0:29:40,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,28770,28815,1918,1921,0:31:58,0:32:01,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
-ethan_4coffees,coffee,15,28830,28875,1922,1925,0:32:02,0:32:05,take cup,NA,NA,,,,,
-ethan_4coffees,coffee,15,28995,29085,1933,1939,0:32:13,0:32:19,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,29130,29175,1942,1945,0:32:22,0:32:25,pour water,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,29175,29205,1945,1947,0:32:25,0:32:27,turn-on kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,29205,29235,1947,1949,0:32:27,0:32:29,close kettle,1,Measure 12 ounces of cold water and transfer to a kettle.,,,,,
-ethan_4coffees,coffee,15,29250,29295,1950,1953,0:32:30,0:32:33,put colander,2,Assemble the filter cone.  Place the dripper on top of a coffee mug.,,,,,
-ethan_4coffees,coffee,15,29490,29595,1966,1973,0:32:46,0:32:53,fold filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,29595,29670,1973,1978,0:32:53,0:32:58,put filter,3,"Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",,,,,
-ethan_4coffees,coffee,15,29775,29880,1985,1992,0:33:05,0:33:12,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,29940,29970,1996,1998,0:33:16,0:33:18,turn-on scale,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,29970,30180,1998,2012,0:33:18,0:33:32,measure coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,30300,30330,2020,2022,0:33:40,0:33:42,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,30360,30420,2024,2028,0:33:44,0:33:48,close maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,30420,30705,2028,2047,0:33:48,0:34:07,turn-on maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,30705,30750,2047,2050,0:34:07,0:34:10,open maker:coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,30795,30900,2053,2060,0:34:13,0:34:20,move coffee,4,"Weigh the coffee beans and grind until the coffee grounds are the consistency of coarse sand, about 20 seconds. Transfer the grounds to the filter cone.",,,,,
-ethan_4coffees,coffee,15,30945,31005,2063,2067,0:34:23,0:34:27,open kettle,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,31005,31125,2067,2075,0:34:27,0:34:35,measure heat,5,Check the temperature of the water.,,,,,
-ethan_4coffees,coffee,15,31185,31215,2079,2081,0:34:39,0:34:41,pour water,6,Pour a small amount of water in the filter to wet the grounds. Wait about 30 seconds.,,,,,
-ethan_4coffees,coffee,15,31680,32730,2112,2182,0:35:12,0:36:22,pour water,7,Slowly pour the rest of the water over the grounds in a circular motion. Do not overfill beyond the top of the paper filter.,,,,,
-ethan_4coffees,coffee,15,34215,34245,2281,2283,0:38:01,0:38:03,take colander,8,Let the coffee drain completely into the mug before removing the dripper. Discard the paper filter and coffee grounds.,,,,,
+,video_id,fps,start_sec,stop_sec,narration,step_id
+0,coffee-test-1,24,8,16,pour water,1
+1,coffee-test-1,24,20,21,open kettle,1
+2,coffee-test-1,24,21,26,pour water,1
+3,coffee-test-1,24,26,27,turn-on kettle,1
+4,coffee-test-1,24,27,29,close kettle,1
+5,coffee-test-1,24,31,33,put colander,2
+6,coffee-test-1,24,34,48,fold filter,3
+7,coffee-test-1,24,48,50,put filter,3
+8,coffee-test-1,24,55,56,turn-on scale,4
+9,coffee-test-1,24,60,78,measure coffee,4
+10,coffee-test-1,24,78,82,move coffee,4
+11,coffee-test-1,24,83,85,close maker:coffee,4
+12,coffee-test-1,24,85,97,turn-on maker:coffee,4
+13,coffee-test-1,24,99,100,open maker:coffee,4
+14,coffee-test-1,24,103,128,move coffee,4
+15,coffee-test-1,24,131,137,turn-on thermometer,5
+16,coffee-test-1,24,198,200,take kettle,5
+17,coffee-test-1,24,200,201,open kettle,5
+18,coffee-test-1,24,203,238,measure heat,5
+19,coffee-test-1,24,238,241,put thermometer,5
+20,coffee-test-1,24,241,250,pour water,6
+21,coffee-test-1,24,288,305,pour water,7
+22,coffee-test-1,24,312,319,pour water,7
+23,coffee-test-1,24,329,348,pour water,7
+24,coffee-test-1,24,391,399,take colander,8
+25,coffee-test-1,24,399,405,take cup,
+26,coffee-test-2,24,8,17,pour water,1
+27,coffee-test-2,24,22,26,open kettle,1
+28,coffee-test-2,24,28,34,pour water,1
+29,coffee-test-2,24,36,39,close kettle,1
+30,coffee-test-2,24,40,42,turn-on kettle,1
+31,coffee-test-2,24,44,54,fold filter,3
+32,coffee-test-2,24,55,60,put filter,3
+33,coffee-test-2,24,60,62,put colander,2
+34,coffee-test-2,24,66,67,turn-on scale,4
+35,coffee-test-2,24,72,88,measure coffee,4
+36,coffee-test-2,24,95,97,open maker:coffee,4
+37,coffee-test-2,24,97,104,move coffee,4
+38,coffee-test-2,24,106,108,close maker:coffee,4
+39,coffee-test-2,24,108,120,turn-on maker:coffee,4
+40,coffee-test-2,24,120,122,open maker:coffee,4
+41,coffee-test-2,24,127,129,close maker:coffee,4
+42,coffee-test-2,24,131,133,open maker:coffee,4
+43,coffee-test-2,24,135,156,move coffee,4
+44,coffee-test-2,24,158,161,close maker:coffee,4
+45,coffee-test-2,24,193,195,take kettle,5
+46,coffee-test-2,24,195,198,open kettle,5
+47,coffee-test-2,24,199,205,turn-on thermometer,5
+48,coffee-test-2,24,205,257,measure heat,5
+49,coffee-test-2,24,257,260,put thermometer,5
+50,coffee-test-2,24,260,268,pour water,6
+51,coffee-test-2,24,302,315,pour water,7
+52,coffee-test-2,24,335,345,pour water,7
+53,coffee-test-2,24,371,386,pour water,7
+54,coffee-test-2,24,422,427,take colander,8
+55,coffee-test-2,24,427,440,take cup,
+56,ethan-4coffees,15,5,11,pour water,1
+57,ethan-4coffees,15,20,25,pour water,1
+58,ethan-4coffees,15,32,33,close kettle,1
+59,ethan-4coffees,15,33,35,put colander,2
+60,ethan-4coffees,15,43,57,fold filter,3
+61,ethan-4coffees,15,57,68,put filter,3
+62,ethan-4coffees,15,84,87,turn-on scale,4
+63,ethan-4coffees,15,88,95,measure coffee,4
+64,ethan-4coffees,15,117,129,measure coffee,4
+65,ethan-4coffees,15,142,155,move coffee,4
+66,ethan-4coffees,15,160,171,move coffee,4
+67,ethan-4coffees,15,180,200,move coffee,4
+68,ethan-4coffees,15,208,210,close maker:coffee,4
+69,ethan-4coffees,15,220,242,turn-on maker:coffee,4
+70,ethan-4coffees,15,242,245,open maker:coffee,4
+71,ethan-4coffees,15,255,263,move coffee,4
+72,ethan-4coffees,15,270,275,turn-on thermometer,5
+73,ethan-4coffees,15,275,277,open kettle,5
+74,ethan-4coffees,15,277,287,measure heat,5
+75,ethan-4coffees,15,295,298,pour water,6
+76,ethan-4coffees,15,335,353,pour water,7
+77,ethan-4coffees,15,370,375,pour water,7
+78,ethan-4coffees,15,390,394,pour water,7
+79,ethan-4coffees,15,404,405,pour water,7
+80,ethan-4coffees,15,423,429,pour water,7
+81,ethan-4coffees,15,445,450,pour water,7
+82,ethan-4coffees,15,461,463,pour water,7
+83,ethan-4coffees,15,472,483,pour water,7
+84,ethan-4coffees,15,590,593,take colander,8
+85,ethan-4coffees,15,593,596,take cup,
+86,ethan-4coffees,15,606,612,pour water,1
+87,ethan-4coffees,15,614,615,pour water,1
+88,ethan-4coffees,15,619,622,pour water,1
+89,ethan-4coffees,15,623,625,close kettle,1
+90,ethan-4coffees,15,625,626,turn-on kettle,1
+91,ethan-4coffees,15,628,632,put colander,2
+92,ethan-4coffees,15,636,645,fold filter,3
+93,ethan-4coffees,15,645,665,put filter,3
+94,ethan-4coffees,15,669,670,turn-on scale,4
+95,ethan-4coffees,15,675,693,measure coffee,4
+96,ethan-4coffees,15,698,699,move coffee,4
+97,ethan-4coffees,15,700,705,close maker:coffee,4
+98,ethan-4coffees,15,705,723,turn-on maker:coffee,4
+99,ethan-4coffees,15,723,726,open maker:coffee,4
+100,ethan-4coffees,15,729,734,move coffee,4
+101,ethan-4coffees,15,743,744,open kettle,5
+102,ethan-4coffees,15,744,756,measure heat,5
+103,ethan-4coffees,15,771,772,pour water,6
+104,ethan-4coffees,15,802,816,pour water,7
+105,ethan-4coffees,15,858,862,pour water,7
+106,ethan-4coffees,15,871,877,pour water,7
+107,ethan-4coffees,15,884,887,pour water,7
+108,ethan-4coffees,15,891,894,pour water,7
+109,ethan-4coffees,15,911,914,pour water,7
+110,ethan-4coffees,15,923,925,pour water,7
+111,ethan-4coffees,15,935,938,pour water,7
+112,ethan-4coffees,15,963,966,pour water,7
+113,ethan-4coffees,15,978,979,pour water,7
+114,ethan-4coffees,15,990,991,pour water,7
+115,ethan-4coffees,15,994,1002,pour water,7
+116,ethan-4coffees,15,1121,1123,take colander,8
+117,ethan-4coffees,15,1124,1128,take cup,
+118,ethan-4coffees,15,1136,1141,pour water,1
+119,ethan-4coffees,15,1145,1148,pour water,1
+120,ethan-4coffees,15,1148,1149,close kettle,1
+121,ethan-4coffees,15,1152,1154,put colander,2
+122,ethan-4coffees,15,1166,1171,fold filter,3
+123,ethan-4coffees,15,1171,1185,put filter,3
+124,ethan-4coffees,15,1187,1188,turn-on scale,4
+125,ethan-4coffees,15,1196,1210,measure coffee,4
+126,ethan-4coffees,15,1214,1216,move coffee,4
+127,ethan-4coffees,15,1216,1221,close maker:coffee,4
+128,ethan-4coffees,15,1221,1243,turn-on maker:coffee,4
+129,ethan-4coffees,15,1243,1245,open maker:coffee,4
+130,ethan-4coffees,15,1248,1254,move coffee,4
+131,ethan-4coffees,15,1263,1265,open kettle,5
+132,ethan-4coffees,15,1269,1276,turn-on thermometer,5
+133,ethan-4coffees,15,1276,1285,measure heat,5
+134,ethan-4coffees,15,1291,1292,pour water,6
+135,ethan-4coffees,15,1321,1327,pour water,7
+136,ethan-4coffees,15,1331,1338,pour water,7
+137,ethan-4coffees,15,1358,1371,pour water,7
+138,ethan-4coffees,15,1382,1389,pour water,7
+139,ethan-4coffees,15,1400,1416,pour water,7
+140,ethan-4coffees,15,1539,1541,take colander,8
+141,ethan-4coffees,15,1541,1544,take cup,
+142,ethan-4coffees,15,1552,1559,pour water,1
+143,ethan-4coffees,15,1562,1565,pour water,1
+144,ethan-4coffees,15,1566,1569,close kettle,1
+145,ethan-4coffees,15,1571,1573,put colander,2
+146,ethan-4coffees,15,1575,1582,fold filter,3
+147,ethan-4coffees,15,1582,1591,put filter,3
+148,ethan-4coffees,15,1596,1598,turn-on scale,4
+149,ethan-4coffees,15,1599,1606,measure coffee,4
+150,ethan-4coffees,15,1611,1613,move coffee,4
+151,ethan-4coffees,15,1614,1616,close maker:coffee,4
+152,ethan-4coffees,15,1616,1639,turn-on maker:coffee,4
+153,ethan-4coffees,15,1639,1641,open maker:coffee,4
+154,ethan-4coffees,15,1643,1648,move coffee,4
+155,ethan-4coffees,15,1653,1655,open kettle,5
+156,ethan-4coffees,15,1655,1663,measure heat,5
+157,ethan-4coffees,15,1663,1665,turn-on kettle,
+158,ethan-4coffees,15,1665,1674,measure heat,5
+159,ethan-4coffees,15,1678,1680,pour water,6
+160,ethan-4coffees,15,1717,1732,pour water,7
+161,ethan-4coffees,15,1752,1756,pour water,7
+162,ethan-4coffees,15,1761,1767,pour water,7
+163,ethan-4coffees,15,1770,1780,pour water,7
+164,ethan-4coffees,15,1918,1921,take colander,8
+165,ethan-4coffees,15,1922,1925,take cup,
+166,ethan-4coffees,15,1933,1939,pour water,1
+167,ethan-4coffees,15,1942,1945,pour water,1
+168,ethan-4coffees,15,1945,1947,turn-on kettle,1
+169,ethan-4coffees,15,1947,1949,close kettle,1
+170,ethan-4coffees,15,1950,1953,put colander,2
+171,ethan-4coffees,15,1966,1973,fold filter,3
+172,ethan-4coffees,15,1973,1978,put filter,3
+173,ethan-4coffees,15,1985,1992,measure coffee,4
+174,ethan-4coffees,15,1996,1998,turn-on scale,4
+175,ethan-4coffees,15,1998,2012,measure coffee,4
+176,ethan-4coffees,15,2020,2022,move coffee,4
+177,ethan-4coffees,15,2024,2028,close maker:coffee,4
+178,ethan-4coffees,15,2028,2047,turn-on maker:coffee,4
+179,ethan-4coffees,15,2047,2050,open maker:coffee,4
+180,ethan-4coffees,15,2053,2060,move coffee,4
+181,ethan-4coffees,15,2063,2067,open kettle,5
+182,ethan-4coffees,15,2067,2075,measure heat,5
+183,ethan-4coffees,15,2079,2081,pour water,6
+184,ethan-4coffees,15,2112,2182,pour water,7
+185,ethan-4coffees,15,2281,2283,take colander,8

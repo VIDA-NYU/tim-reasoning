@@ -1,225 +1,219 @@
-video_id,recipe,fps,start_frame,stop_frame,start_sec,stop_sec,start_time,stop_time,narration,step_id,step_description
-2022.07.26-20.35.03,pinwheels,24,168,216,7,9,0:00:07,0:00:09,take plate,NA,NA
-2022.07.26-20.35.03,pinwheels,24,216,240,9,10,0:00:09,0:00:10,put plate,NA,NA
-2022.07.26-20.35.03,pinwheels,24,240,264,10,11,0:00:10,0:00:11,take jar,NA,NA
-2022.07.26-20.35.03,pinwheels,24,264,288,11,12,0:00:11,0:00:12,put jar,NA,NA
-2022.07.26-20.35.03,pinwheels,24,288,312,12,13,0:00:12,0:00:13,take wire,NA,NA
-2022.07.26-20.35.03,pinwheels,24,360,384,15,16,0:00:15,0:00:16,put wire,NA,NA
-2022.07.26-20.35.03,pinwheels,24,480,504,20,21,0:00:20,0:00:21,take tortilla,1,Place tortilla on cutting board.
-2022.07.26-20.35.03,pinwheels,24,504,576,21,24,0:00:21,0:00:24,put tortilla,1,Place tortilla on cutting board.
-2022.07.26-20.35.03,pinwheels,24,576,624,24,26,0:00:24,0:00:26,take knife,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,624,672,26,28,0:00:26,0:00:28,take cloth,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,720,744,30,31,0:00:30,0:00:31,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,744,840,31,35,0:00:31,0:00:35,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,864,1032,36,43,0:00:36,0:00:43,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,1032,1104,43,46,0:00:43,0:00:46,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,1104,1392,46,58,0:00:46,0:00:58,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,1392,1440,58,60,0:00:58,0:01:00,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,1440,2160,60,90,0:01:00,0:01:30,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-20.35.03,pinwheels,24,2160,2400,90,100,0:01:30,0:01:40,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-2022.07.26-20.35.03,pinwheels,24,2496,2544,104,106,0:01:44,0:01:46,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-20.35.03,pinwheels,24,2544,2592,106,108,0:01:46,0:01:48,take knife,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-20.35.03,pinwheels,24,2592,2688,108,112,0:01:48,0:01:52,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-20.35.03,pinwheels,24,2688,2736,112,114,0:01:52,0:01:54,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-20.35.03,pinwheels,24,2760,2904,115,121,0:01:55,0:02:01,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-20.35.03,pinwheels,24,2904,3792,121,158,0:02:01,0:02:38,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-20.35.03,pinwheels,24,3792,3960,158,165,0:02:38,0:02:45,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-2022.07.26-20.35.03,pinwheels,24,3960,4008,165,167,0:02:45,0:02:47,put knife,5,Clean the knife by wiping with a paper towel.
-2022.07.26-20.35.03,pinwheels,24,4056,4272,169,178,0:02:49,0:02:58,move wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-2022.07.26-20.35.03,pinwheels,24,4272,4632,178,193,0:02:58,0:03:13,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-2022.07.26-20.35.03,pinwheels,24,4656,4728,194,197,0:03:14,0:03:17,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-2022.07.26-20.35.03,pinwheels,24,4824,5496,201,229,0:03:21,0:03:49,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-2022.07.26-20.35.03,pinwheels,24,5496,5712,229,238,0:03:49,0:03:58,move wrap,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-2022.07.26-20.35.03,pinwheels,24,5736,5760,239,240,0:03:59,0:04:00,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-20.35.03,pinwheels,24,5760,6048,240,252,0:04:00,0:04:12,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-20.35.03,pinwheels,24,6120,6336,255,264,0:04:15,0:04:24,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-20.35.03,pinwheels,24,6384,6480,266,270,0:04:26,0:04:30,put knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-20.35.03,pinwheels,24,6528,6552,272,273,0:04:32,0:04:33,move wrap,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-2022.07.26-20.35.03,pinwheels,24,6576,6720,274,280,0:04:34,0:04:40,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-2022.07.26-20.35.03,pinwheels,24,6720,6960,280,290,0:04:40,0:04:50,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-2022.07.26-20.35.03,pinwheels,24,6960,8952,290,373,0:04:50,0:06:13,cut wrap wire,11,Continue slicing with floss to create 5 pinwheels.
-2022.07.26-20.35.03,pinwheels,24,9024,9048,376,377,0:06:16,0:06:17,put wire,11,Continue slicing with floss to create 5 pinwheels.
-2022.07.26-20.35.03,pinwheels,24,9144,9504,381,396,0:06:21,0:06:36,put wrap plate,12,Place the pinwheels on a plate.
-2022.07.26-22.21.56,pinwheels,24,0,48,0,2,0:00:00,0:00:02,put tortilla,1,Place tortilla on cutting board.
-2022.07.26-22.21.56,pinwheels,24,48,96,2,4,0:00:02,0:00:04,take knife,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-22.21.56,pinwheels,24,96,120,4,5,0:00:04,0:00:05,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-22.21.56,pinwheels,24,120,144,5,6,0:00:05,0:00:06,take knife,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-22.21.56,pinwheels,24,144,288,6,12,0:00:06,0:00:12,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-22.21.56,pinwheels,24,312,1368,13,57,0:00:13,0:00:57,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-2022.07.26-22.21.56,pinwheels,24,1368,1608,57,67,0:00:57,0:01:07,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-2022.07.26-22.21.56,pinwheels,24,1680,1704,70,71,0:01:10,0:01:11,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-22.21.56,pinwheels,24,1704,1728,71,72,0:01:11,0:01:12,take knife,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-22.21.56,pinwheels,24,1728,1872,72,78,0:01:12,0:01:18,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-22.21.56,pinwheels,24,1872,2568,78,107,0:01:18,0:01:47,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-2022.07.26-22.21.56,pinwheels,24,2616,2760,109,115,0:01:49,0:01:55,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-2022.07.26-22.21.56,pinwheels,24,2760,2784,115,116,0:01:55,0:01:56,put knife,5,Clean the knife by wiping with a paper towel.
-2022.07.26-22.21.56,pinwheels,24,2832,2880,118,120,0:01:58,0:02:00,take wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-2022.07.26-22.21.56,pinwheels,24,2880,3168,120,132,0:02:00,0:02:12,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-2022.07.26-22.21.56,pinwheels,24,3168,3240,132,135,0:02:12,0:02:15,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-2022.07.26-22.21.56,pinwheels,24,3312,3888,138,162,0:02:18,0:02:42,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-2022.07.26-22.21.56,pinwheels,24,3912,3936,163,164,0:02:43,0:02:44,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-22.21.56,pinwheels,24,3936,4344,164,181,0:02:44,0:03:01,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-22.21.56,pinwheels,24,4416,4464,184,186,0:03:04,0:03:06,put knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-2022.07.26-22.21.56,pinwheels,24,4464,4512,186,188,0:03:06,0:03:08,move wrap,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-2022.07.26-22.21.56,pinwheels,24,4512,4536,188,189,0:03:08,0:03:09,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-2022.07.26-22.21.56,pinwheels,24,4584,7512,191,313,0:03:11,0:05:13,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-2022.07.26-22.21.56,pinwheels,24,7536,7584,314,316,0:05:14,0:05:16,put wire,11,Continue slicing with floss to create 5 pinwheels.
-2022.07.26-22.21.56,pinwheels,24,7632,8208,318,342,0:05:18,0:05:42,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,150,180,10,12,0:00:10,0:00:12,take bag,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,180,225,12,15,0:00:12,0:00:15,open bag,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,225,255,15,17,0:00:15,0:00:17,put tortilla,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,300,315,20,21,0:00:20,0:00:21,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,315,330,21,22,0:00:21,0:00:22,take knife,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,330,405,22,27,0:00:22,0:00:27,open jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,405,495,27,33,0:00:27,0:00:33,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,525,780,35,52,0:00:35,0:00:52,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,780,825,52,55,0:00:52,0:00:55,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,825,1230,55,82,0:00:55,0:01:22,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,1290,1320,86,88,0:01:26,0:01:28,take cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,1350,1410,90,94,0:01:30,0:01:34,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,1755,1770,117,118,0:01:57,0:01:58,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,1815,1920,121,128,0:02:01,0:02:08,open jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,1995,2025,133,135,0:02:13,0:02:15,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2025,2070,135,138,0:02:15,0:02:18,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2100,2145,140,143,0:02:20,0:02:23,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2145,2190,143,146,0:02:23,0:02:26,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2190,2235,146,149,0:02:26,0:02:29,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2235,2295,149,153,0:02:29,0:02:33,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2295,2355,153,157,0:02:33,0:02:37,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2355,2490,157,166,0:02:37,0:02:46,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,2625,2685,175,179,0:02:55,0:02:59,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,2880,3030,192,202,0:03:12,0:03:22,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-ethan_4pinwheels,pinwheels,15,3120,3225,208,215,0:03:28,0:03:35,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,3270,3435,218,229,0:03:38,0:03:49,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,3540,3555,236,237,0:03:56,0:03:57,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,3585,3735,239,249,0:03:59,0:04:09,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,3765,3795,251,253,0:04:11,0:04:13,put knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,3915,4005,261,267,0:04:21,0:04:27,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-ethan_4pinwheels,pinwheels,15,4095,5100,273,340,0:04:33,0:05:40,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-ethan_4pinwheels,pinwheels,15,5220,5295,348,353,0:05:48,0:05:53,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,5910,5925,394,395,0:06:34,0:06:35,open bag,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,5955,5985,397,399,0:06:37,0:06:39,put tortilla,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,6060,6075,404,405,0:06:44,0:06:45,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,6105,6150,407,410,0:06:47,0:06:50,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,6150,6360,410,424,0:06:50,0:07:04,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,6375,6390,425,426,0:07:05,0:07:06,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,6390,6825,426,455,0:07:06,0:07:35,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,6870,6885,458,459,0:07:38,0:07:39,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,6930,6945,462,463,0:07:42,0:07:43,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,7050,7110,470,474,0:07:50,0:07:54,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,7125,7140,475,476,0:07:55,0:07:56,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7185,7215,479,481,0:07:59,0:08:01,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7215,7320,481,488,0:08:01,0:08:08,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7320,7350,488,490,0:08:08,0:08:10,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7350,7395,490,493,0:08:10,0:08:13,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7395,7410,493,494,0:08:13,0:08:14,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7410,7650,494,510,0:08:14,0:08:30,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,7740,7770,516,518,0:08:36,0:08:38,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,7995,8205,533,547,0:08:53,0:09:07,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-ethan_4pinwheels,pinwheels,15,8235,8385,549,559,0:09:09,0:09:19,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,8460,8700,564,580,0:09:24,0:09:40,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,8790,8910,586,594,0:09:46,0:09:54,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,8925,8955,595,597,0:09:55,0:09:57,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,9045,9150,603,610,0:10:03,0:10:10,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,9255,9300,617,620,0:10:17,0:10:20,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-ethan_4pinwheels,pinwheels,15,9330,10170,622,678,0:10:22,0:11:18,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-ethan_4pinwheels,pinwheels,15,10245,10275,683,685,0:11:23,0:11:25,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,10320,10335,688,689,0:11:28,0:11:29,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,12525,12540,835,836,0:13:55,0:13:56,open bag,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,12690,12705,846,847,0:14:06,0:14:07,take knife,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,12705,12735,847,849,0:14:07,0:14:09,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,12735,12765,849,851,0:14:09,0:14:11,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,12780,12915,852,861,0:14:12,0:14:21,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,12930,12975,862,865,0:14:22,0:14:25,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,12990,13455,866,897,0:14:26,0:14:57,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,13500,13545,900,903,0:15:00,0:15:03,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,13620,13635,908,909,0:15:08,0:15:09,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,13635,13665,909,911,0:15:09,0:15:11,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,13710,13725,914,915,0:15:14,0:15:15,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,13740,13770,916,918,0:15:16,0:15:18,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,13770,13905,918,927,0:15:18,0:15:27,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,13905,13950,927,930,0:15:27,0:15:30,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,13950,14295,930,953,0:15:30,0:15:53,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,14325,14370,955,958,0:15:55,0:15:58,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,14400,14430,960,962,0:16:00,0:16:02,put knife,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,14430,14550,962,970,0:16:02,0:16:10,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-ethan_4pinwheels,pinwheels,15,14565,14595,971,973,0:16:11,0:16:13,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14625,14640,975,976,0:16:15,0:16:16,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14655,14685,977,979,0:16:17,0:16:19,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14685,14715,979,981,0:16:19,0:16:21,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14715,14745,981,983,0:16:21,0:16:23,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14775,14835,985,989,0:16:25,0:16:29,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14835,14850,989,990,0:16:29,0:16:30,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14850,14895,990,993,0:16:30,0:16:33,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,14940,14955,996,997,0:16:36,0:16:37,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,14955,15090,997,1006,0:16:37,0:16:46,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,15165,15180,1011,1012,0:16:51,0:16:52,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-ethan_4pinwheels,pinwheels,15,15225,15975,1015,1065,0:16:55,0:17:45,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-ethan_4pinwheels,pinwheels,15,16095,16185,1073,1079,0:17:53,0:17:59,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,16305,16350,1087,1090,0:18:07,0:18:10,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,17010,17040,1134,1136,0:18:54,0:18:56,put tortilla,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,17055,17085,1137,1139,0:18:57,0:18:59,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,17100,17130,1140,1142,0:19:00,0:19:02,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,17145,17175,1143,1145,0:19:03,0:19:05,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,17190,17235,1146,1149,0:19:06,0:19:09,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,17235,17730,1149,1182,0:19:09,0:19:42,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,17760,17790,1184,1186,0:19:44,0:19:46,take cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,17835,17865,1189,1191,0:19:49,0:19:51,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,17895,17925,1193,1195,0:19:53,0:19:55,put knife,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,17940,17955,1196,1197,0:19:56,0:19:57,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,17970,18000,1198,1200,0:19:58,0:20:00,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18030,18060,1202,1204,0:20:02,0:20:04,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18060,18075,1204,1205,0:20:04,0:20:05,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18075,18090,1205,1206,0:20:05,0:20:06,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18090,18165,1206,1211,0:20:06,0:20:11,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18165,18180,1211,1212,0:20:11,0:20:12,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18180,18195,1212,1213,0:20:12,0:20:13,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18195,18555,1213,1237,0:20:13,0:20:37,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,18615,18630,1241,1242,0:20:41,0:20:42,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,18645,18660,1243,1244,0:20:43,0:20:44,put knife,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,18750,18870,1250,1258,0:20:50,0:20:58,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-ethan_4pinwheels,pinwheels,15,18885,18930,1259,1262,0:20:59,0:21:02,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,18960,18990,1264,1266,0:21:04,0:21:06,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,18990,19020,1266,1268,0:21:06,0:21:08,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,19050,19320,1270,1288,0:21:10,0:21:28,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,19320,19350,1288,1290,0:21:28,0:21:30,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,19380,19470,1292,1298,0:21:32,0:21:38,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,19560,19575,1304,1305,0:21:44,0:21:45,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-ethan_4pinwheels,pinwheels,15,19650,20790,1310,1386,0:21:50,0:23:06,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-ethan_4pinwheels,pinwheels,15,20910,21030,1394,1402,0:23:14,0:23:22,put wrap plate,12,Place the pinwheels on a plate.
-ethan_4pinwheels,pinwheels,15,32685,32700,2179,2180,0:36:19,0:36:20,open bag,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,32730,32745,2182,2183,0:36:22,0:36:23,put tortilla,1,Place tortilla on cutting board.
-ethan_4pinwheels,pinwheels,15,32760,32790,2184,2186,0:36:24,0:36:26,take knife,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,32790,32805,2186,2187,0:36:26,0:36:27,take jar,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,32835,32865,2189,2191,0:36:29,0:36:31,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,32880,33090,2192,2206,0:36:32,0:36:46,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,33105,33120,2207,2208,0:36:47,0:36:48,scoop spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,33135,33540,2209,2236,0:36:49,0:37:16,apply spreads,2,"Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges."
-ethan_4pinwheels,pinwheels,15,33555,33570,2237,2238,0:37:17,0:37:18,take cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,33600,33630,2240,2242,0:37:20,0:37:22,wash knife cloth,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,33675,33705,2245,2247,0:37:25,0:37:27,put knife,3,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,33705,33735,2247,2249,0:37:27,0:37:29,take jar,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,33735,33795,2249,2253,0:37:29,0:37:33,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,33795,33855,2253,2257,0:37:33,0:37:37,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,33855,33885,2257,2259,0:37:37,0:37:39,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,33885,33915,2259,2261,0:37:39,0:37:41,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,33930,33945,2262,2263,0:37:42,0:37:43,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,33945,34005,2263,2267,0:37:43,0:37:47,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,34005,34035,2267,2269,0:37:47,0:37:49,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,34035,34200,2269,2280,0:37:49,0:38:00,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,34200,34230,2280,2282,0:38:00,0:38:02,scoop spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,34230,34485,2282,2299,0:38:02,0:38:19,apply spreads,4,Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.
-ethan_4pinwheels,pinwheels,15,34500,34530,2300,2302,0:38:20,0:38:22,take cloth,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,34530,34590,2302,2306,0:38:22,0:38:26,wash knife cloth,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,34635,34650,2309,2310,0:38:29,0:38:30,put knife,5,Clean the knife by wiping with a paper towel.
-ethan_4pinwheels,pinwheels,15,34680,34860,2312,2324,0:38:32,0:38:44,wrap wrap,6,"Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks."
-ethan_4pinwheels,pinwheels,15,34935,34965,2329,2331,0:38:49,0:38:51,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,34995,35025,2333,2335,0:38:53,0:38:55,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,35100,35220,2340,2348,0:39:00,0:39:08,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,35220,35310,2348,2354,0:39:08,0:39:14,take wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,35310,35385,2354,2359,0:39:14,0:39:19,insert wire,7,Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.
-ethan_4pinwheels,pinwheels,15,35430,35460,2362,2364,0:39:22,0:39:24,take knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,35460,35625,2364,2375,0:39:24,0:39:35,cut wrap knife,8,"Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends."
-ethan_4pinwheels,pinwheels,15,35745,35790,2383,2386,0:39:43,0:39:46,take wire,9,"Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks."
-ethan_4pinwheels,pinwheels,15,35850,36600,2390,2440,0:39:50,0:40:40,cut wrap wire,10,"Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice."
-ethan_4pinwheels,pinwheels,15,36690,36840,2446,2456,0:40:46,0:40:56,put wrap plate,12,Place the pinwheels on a plate.
+,video_id,fps,start_sec,stop_sec,narration,step_id
+0,2022.07.26-20.35.03,24,10,11,take jar,
+1,2022.07.26-20.35.03,24,12,13,take wire,
+2,2022.07.26-20.35.03,24,21,24,put tortilla,1
+3,2022.07.26-20.35.03,24,24,26,take knife,2
+4,2022.07.26-20.35.03,24,26,28,take cloth,2
+5,2022.07.26-20.35.03,24,30,31,take jar,2
+6,2022.07.26-20.35.03,24,31,35,scoop spreads,2
+7,2022.07.26-20.35.03,24,36,43,apply spreads,2
+8,2022.07.26-20.35.03,24,43,46,scoop spreads,2
+9,2022.07.26-20.35.03,24,46,58,apply spreads,2
+10,2022.07.26-20.35.03,24,58,60,scoop spreads,2
+11,2022.07.26-20.35.03,24,60,90,apply spreads,2
+12,2022.07.26-20.35.03,24,90,100,wash knife cloth,3
+13,2022.07.26-20.35.03,24,104,106,take jar,4
+14,2022.07.26-20.35.03,24,106,108,take knife,4
+15,2022.07.26-20.35.03,24,108,112,scoop spreads,4
+16,2022.07.26-20.35.03,24,112,114,apply spreads,4
+17,2022.07.26-20.35.03,24,115,121,scoop spreads,4
+18,2022.07.26-20.35.03,24,121,158,apply spreads,4
+19,2022.07.26-20.35.03,24,158,165,wash knife cloth,5
+20,2022.07.26-20.35.03,24,165,167,put knife,5
+21,2022.07.26-20.35.03,24,169,178,move wrap,6
+22,2022.07.26-20.35.03,24,178,193,wrap wrap,6
+23,2022.07.26-20.35.03,24,194,197,take wire,7
+24,2022.07.26-20.35.03,24,201,229,insert wire,7
+25,2022.07.26-20.35.03,24,229,238,move wrap,7
+26,2022.07.26-20.35.03,24,239,240,take knife,8
+27,2022.07.26-20.35.03,24,240,252,cut wrap knife,8
+28,2022.07.26-20.35.03,24,255,264,cut wrap knife,8
+29,2022.07.26-20.35.03,24,266,270,put knife,8
+30,2022.07.26-20.35.03,24,272,273,move wrap,9
+31,2022.07.26-20.35.03,24,274,280,take wire,9
+,2022.07.26-20.35.03,24,280,290,cut wrap wire,10
+32,2022.07.26-20.35.03,24,290,373,cut wrap wire,11
+33,2022.07.26-20.35.03,24,381,396,put wrap plate,12
+34,2022.07.26-22.21.56,24,0,2,put tortilla,1
+35,2022.07.26-22.21.56,24,2,4,take knife,2
+36,2022.07.26-22.21.56,24,4,5,take jar,2
+37,2022.07.26-22.21.56,24,5,6,take knife,2
+38,2022.07.26-22.21.56,24,6,12,scoop spreads,2
+39,2022.07.26-22.21.56,24,13,57,apply spreads,2
+40,2022.07.26-22.21.56,24,57,67,wash knife cloth,3
+41,2022.07.26-22.21.56,24,70,71,take jar,4
+42,2022.07.26-22.21.56,24,71,72,take knife,4
+43,2022.07.26-22.21.56,24,72,78,scoop spreads,4
+44,2022.07.26-22.21.56,24,78,107,apply spreads,4
+45,2022.07.26-22.21.56,24,109,115,wash knife cloth,5
+46,2022.07.26-22.21.56,24,115,116,put knife,5
+47,2022.07.26-22.21.56,24,118,120,wrap wrap,6
+48,2022.07.26-22.21.56,24,120,132,wrap wrap,6
+49,2022.07.26-22.21.56,24,132,135,take wire,7
+50,2022.07.26-22.21.56,24,138,162,insert wire,7
+51,2022.07.26-22.21.56,24,163,164,take knife,8
+52,2022.07.26-22.21.56,24,164,181,cut wrap knife,8
+53,2022.07.26-22.21.56,24,184,186,put knife,8
+54,2022.07.26-22.21.56,24,186,188,move wrap,9
+55,2022.07.26-22.21.56,24,188,189,take wire,9
+56,2022.07.26-22.21.56,24,191,227,cut wrap wire,10
+,2022.07.26-22.21.56,24,227,313,cut wrap wire,11
+57,2022.07.26-22.21.56,24,318,342,put wrap plate,12
+58,ethan-4pinwheels,15,10,12,take bag,1
+59,ethan-4pinwheels,15,12,15,open bag,1
+60,ethan-4pinwheels,15,15,17,put tortilla,1
+61,ethan-4pinwheels,15,20,21,take jar,2
+62,ethan-4pinwheels,15,21,22,take knife,2
+63,ethan-4pinwheels,15,22,27,open jar,2
+64,ethan-4pinwheels,15,27,33,scoop spreads,2
+65,ethan-4pinwheels,15,35,52,apply spreads,2
+66,ethan-4pinwheels,15,52,55,scoop spreads,2
+67,ethan-4pinwheels,15,55,82,apply spreads,2
+68,ethan-4pinwheels,15,86,88,take cloth,3
+69,ethan-4pinwheels,15,90,94,wash knife cloth,3
+70,ethan-4pinwheels,15,117,118,take jar,4
+71,ethan-4pinwheels,15,121,128,open jar,4
+72,ethan-4pinwheels,15,133,135,scoop spreads,4
+73,ethan-4pinwheels,15,135,138,apply spreads,4
+74,ethan-4pinwheels,15,140,143,scoop spreads,4
+75,ethan-4pinwheels,15,143,146,apply spreads,4
+76,ethan-4pinwheels,15,146,149,scoop spreads,4
+77,ethan-4pinwheels,15,149,153,apply spreads,4
+78,ethan-4pinwheels,15,153,157,scoop spreads,4
+79,ethan-4pinwheels,15,157,166,apply spreads,4
+80,ethan-4pinwheels,15,175,179,wash knife cloth,5
+81,ethan-4pinwheels,15,192,202,wrap wrap,6
+82,ethan-4pinwheels,15,208,215,take wire,7
+83,ethan-4pinwheels,15,218,229,insert wire,7
+84,ethan-4pinwheels,15,236,237,take knife,8
+85,ethan-4pinwheels,15,239,249,cut wrap knife,8
+86,ethan-4pinwheels,15,251,253,put knife,8
+87,ethan-4pinwheels,15,261,267,take wire,9
+88,ethan-4pinwheels,15,273,340,cut wrap wire,10
+89,ethan-4pinwheels,15,348,353,put wrap plate,12
+90,ethan-4pinwheels,15,394,395,open bag,1
+91,ethan-4pinwheels,15,397,399,put tortilla,1
+92,ethan-4pinwheels,15,404,405,take jar,2
+93,ethan-4pinwheels,15,407,410,scoop spreads,2
+94,ethan-4pinwheels,15,410,424,apply spreads,2
+95,ethan-4pinwheels,15,425,426,scoop spreads,2
+96,ethan-4pinwheels,15,426,455,apply spreads,2
+97,ethan-4pinwheels,15,458,459,take jar,2
+98,ethan-4pinwheels,15,462,463,take jar,2
+99,ethan-4pinwheels,15,470,474,wash knife cloth,3
+100,ethan-4pinwheels,15,475,476,take jar,4
+101,ethan-4pinwheels,15,479,481,scoop spreads,4
+102,ethan-4pinwheels,15,481,488,apply spreads,4
+103,ethan-4pinwheels,15,488,490,scoop spreads,4
+104,ethan-4pinwheels,15,490,493,apply spreads,4
+105,ethan-4pinwheels,15,493,494,scoop spreads,4
+106,ethan-4pinwheels,15,494,510,apply spreads,4
+107,ethan-4pinwheels,15,516,518,wash knife cloth,5
+108,ethan-4pinwheels,15,533,547,wrap wrap,6
+109,ethan-4pinwheels,15,549,559,take wire,7
+110,ethan-4pinwheels,15,564,580,insert wire,7
+111,ethan-4pinwheels,15,586,594,insert wire,7
+112,ethan-4pinwheels,15,595,597,take knife,8
+113,ethan-4pinwheels,15,603,610,cut wrap knife,8
+114,ethan-4pinwheels,15,617,620,take wire,9
+115,ethan-4pinwheels,15,622,678,cut wrap wire,10
+116,ethan-4pinwheels,15,683,685,put wrap plate,12
+117,ethan-4pinwheels,15,688,689,put wrap plate,12
+118,ethan-4pinwheels,15,835,836,open bag,1
+119,ethan-4pinwheels,15,846,847,take knife,2
+120,ethan-4pinwheels,15,847,849,take jar,2
+121,ethan-4pinwheels,15,849,851,scoop spreads,2
+122,ethan-4pinwheels,15,852,861,apply spreads,2
+123,ethan-4pinwheels,15,862,865,scoop spreads,2
+124,ethan-4pinwheels,15,866,897,apply spreads,2
+125,ethan-4pinwheels,15,900,903,wash knife cloth,3
+126,ethan-4pinwheels,15,908,909,take jar,4
+127,ethan-4pinwheels,15,909,911,scoop spreads,4
+128,ethan-4pinwheels,15,914,915,scoop spreads,4
+129,ethan-4pinwheels,15,916,918,scoop spreads,4
+130,ethan-4pinwheels,15,918,927,apply spreads,4
+131,ethan-4pinwheels,15,927,930,scoop spreads,4
+132,ethan-4pinwheels,15,930,953,apply spreads,4
+133,ethan-4pinwheels,15,955,958,wash knife cloth,5
+134,ethan-4pinwheels,15,960,962,put knife,5
+135,ethan-4pinwheels,15,962,970,wrap wrap,6
+136,ethan-4pinwheels,15,971,973,take wire,7
+137,ethan-4pinwheels,15,975,976,insert wire,7
+138,ethan-4pinwheels,15,977,979,take wire,7
+139,ethan-4pinwheels,15,979,981,insert wire,7
+140,ethan-4pinwheels,15,981,983,take wire,7
+141,ethan-4pinwheels,15,985,989,insert wire,7
+142,ethan-4pinwheels,15,989,990,take wire,7
+143,ethan-4pinwheels,15,990,993,insert wire,7
+144,ethan-4pinwheels,15,996,997,take knife,8
+145,ethan-4pinwheels,15,997,1006,cut wrap knife,8
+146,ethan-4pinwheels,15,1011,1012,take wire,9
+147,ethan-4pinwheels,15,1015,1065,cut wrap wire,10
+148,ethan-4pinwheels,15,1073,1079,put wrap plate,12
+149,ethan-4pinwheels,15,1087,1090,put wrap plate,12
+150,ethan-4pinwheels,15,1134,1136,put tortilla,1
+151,ethan-4pinwheels,15,1137,1139,scoop spreads,2
+152,ethan-4pinwheels,15,1140,1142,take jar,2
+153,ethan-4pinwheels,15,1143,1145,apply spreads,2
+154,ethan-4pinwheels,15,1146,1149,scoop spreads,2
+155,ethan-4pinwheels,15,1149,1182,apply spreads,2
+156,ethan-4pinwheels,15,1184,1186,take cloth,3
+157,ethan-4pinwheels,15,1189,1191,wash knife cloth,3
+158,ethan-4pinwheels,15,1193,1195,put knife,3
+159,ethan-4pinwheels,15,1196,1197,take jar,4
+160,ethan-4pinwheels,15,1198,1200,scoop spreads,4
+161,ethan-4pinwheels,15,1202,1204,apply spreads,4
+162,ethan-4pinwheels,15,1204,1205,take jar,4
+163,ethan-4pinwheels,15,1205,1206,scoop spreads,4
+164,ethan-4pinwheels,15,1206,1211,apply spreads,4
+165,ethan-4pinwheels,15,1211,1212,take jar,4
+166,ethan-4pinwheels,15,1212,1213,scoop spreads,4
+167,ethan-4pinwheels,15,1213,1237,apply spreads,4
+168,ethan-4pinwheels,15,1241,1242,wash knife cloth,5
+169,ethan-4pinwheels,15,1243,1244,put knife,5
+170,ethan-4pinwheels,15,1250,1258,wrap wrap,6
+171,ethan-4pinwheels,15,1259,1262,take wire,7
+172,ethan-4pinwheels,15,1264,1266,take wire,7
+173,ethan-4pinwheels,15,1266,1268,take wire,7
+174,ethan-4pinwheels,15,1270,1288,insert wire,7
+175,ethan-4pinwheels,15,1288,1290,take knife,8
+176,ethan-4pinwheels,15,1292,1298,cut wrap knife,8
+177,ethan-4pinwheels,15,1304,1305,take wire,9
+178,ethan-4pinwheels,15,1310,1386,cut wrap wire,10
+179,ethan-4pinwheels,15,1394,1402,put wrap plate,12
+180,ethan-4pinwheels,15,2179,2180,open bag,1
+181,ethan-4pinwheels,15,2182,2183,put tortilla,1
+182,ethan-4pinwheels,15,2184,2186,take knife,2
+183,ethan-4pinwheels,15,2186,2187,take jar,2
+184,ethan-4pinwheels,15,2189,2191,scoop spreads,2
+185,ethan-4pinwheels,15,2192,2206,apply spreads,2
+186,ethan-4pinwheels,15,2207,2208,scoop spreads,2
+187,ethan-4pinwheels,15,2209,2236,apply spreads,2
+188,ethan-4pinwheels,15,2237,2238,take cloth,3
+189,ethan-4pinwheels,15,2240,2242,wash knife cloth,3
+190,ethan-4pinwheels,15,2245,2247,put knife,3
+191,ethan-4pinwheels,15,2247,2249,take jar,4
+192,ethan-4pinwheels,15,2249,2253,scoop spreads,4
+193,ethan-4pinwheels,15,2253,2257,apply spreads,4
+194,ethan-4pinwheels,15,2257,2259,scoop spreads,4
+195,ethan-4pinwheels,15,2259,2261,apply spreads,4
+196,ethan-4pinwheels,15,2262,2263,scoop spreads,4
+197,ethan-4pinwheels,15,2263,2267,apply spreads,4
+198,ethan-4pinwheels,15,2267,2269,scoop spreads,4
+199,ethan-4pinwheels,15,2269,2280,apply spreads,4
+200,ethan-4pinwheels,15,2280,2282,scoop spreads,4
+201,ethan-4pinwheels,15,2282,2299,apply spreads,4
+202,ethan-4pinwheels,15,2300,2302,take cloth,5
+203,ethan-4pinwheels,15,2302,2306,wash knife cloth,5
+204,ethan-4pinwheels,15,2309,2310,put knife,5
+205,ethan-4pinwheels,15,2312,2324,wrap wrap,6
+206,ethan-4pinwheels,15,2329,2331,take wire,7
+207,ethan-4pinwheels,15,2333,2335,take wire,7
+208,ethan-4pinwheels,15,2340,2348,insert wire,7
+209,ethan-4pinwheels,15,2348,2354,take wire,7
+210,ethan-4pinwheels,15,2354,2359,insert wire,7
+211,ethan-4pinwheels,15,2362,2364,take knife,8
+212,ethan-4pinwheels,15,2364,2375,cut wrap knife,8
+213,ethan-4pinwheels,15,2383,2386,take wire,9
+214,ethan-4pinwheels,15,2390,2440,cut wrap wire,10
+215,ethan-4pinwheels,15,2446,2456,put wrap plate,12
