@@ -58,15 +58,103 @@ class StateManager:
                  ['cut wrap wire', 'cut wrap floss'],
                  ['cut wrap wire', 'put wire', 'cut wrap floss'],
                   ['put wrap plate']]
-
+        elif self.recipe == 'coffee':
+            self.recipe['step_actions'] = [['pour water','open kettle','turn-on kettle','close kettle'],
+            ['put colander'],
+            ['fold filter','put filter'],
+            ['turn-on scale','measure coffee','move coffee',
+            'close maker:coffee','turn-on maker:coffee','open maker:coffee'],
+            ['turn-on thermometer','take kettle',
+            'open kettle','measure heat','put thermometer'],
+            ['pour water'],
+            ['pour water'],
+            ['take colander']
+            ]
+        elif self.recipe == 'mugcake':
+            self.recipe['step_actions'] =  [['take cup','put filter','take filter','move cup'],
+        ['take spoon','pour flour','put bag','take container','open container','put spoon',
+            'pour sugar','take spoon','pour powder','put container','pour salt','take bag','scoop flour',
+            'close bag','close container'],
+        ['mix mixture','put spoon','put whisk','take whisk'],
+        ['take bottle','open bottle','take spoon',
+            'close bottle',
+            'pour oil',
+            'put bottle',
+            'pour water',
+            'take cup',
+            'put spoon',
+            'pour powder',
+            'pour extract:vanilla',
+            'take cap',
+            'take bowl',
+            'put bowl'
+        ],
+        ['mix mixture','take whisk'],
+        [
+            'pour mixture',
+            'take bowl',
+            'take cup',
+            'put bowl',
+            'take spoon',
+            'put cup'
+        ],
+        [
+            'open microwave',
+            'put mug microwave',
+            'close microwave',
+            'press buttons',
+            'take cup'
+        ],
+        [
+            'open microwave',
+            'take cup',
+            'put cup',
+            'open container',
+            'take wire',
+            'insert wire',
+            'take cap',
+            'close container',
+            'put wire',
+            'take cup microwave'
+        ],
+        [
+            'take plate',
+            'put cup plate',
+            'take cup',
+            'put cup',
+            'take spoon',
+            'take filter',
+            'put filter'
+        ],
+        [
+            'take container',
+            'open container',
+            'take bag',
+            'scoop spreads',
+            'insert spreads',
+            'close bag',
+            'take spoon',
+            'scrape frosting',
+            'open box',
+            'slide container',
+            'touch bag'
+        ],
+        [
+            'take scissors',
+            'take filter',
+            'cut bag',
+            'put scissors',
+            'take bag'
+        ],
+        [
+            'apply spreads',
+            'put bag'
+        ]]
 
 
         for ii in range(len(self.recipe['step_actions'])):
             exe_st = [0] * len(self.recipe['step_actions'][ii])
             self.main_action_steps_exe.append(exe_st)
-        print(self.recipe['step_actions'])
-        print('sss', self.main_action_steps_exe)
-        print(self.main_action_steps)
         
 
         self.status = RecipeStatus.IN_PROGRESS
@@ -128,11 +216,11 @@ class StateManager:
         
 
 
-        if not exist_objects:  # Is the user waiting for instructions?
+        if not exist_objects and self.graph_task[self.current_step_index]['step_status'] != StepStatus.NEW:  # Is the user waiting for instructions?
             self.no_act_counter[self.current_step_index] += 1
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.NO_ACTION
             
-            if self.finished[self.current_step_index] == 1 and self.current_step_index < len(self.graph_task) - 1 and self.act_counter[self.current_step_index] >= 5 and self.no_act_counter[self.current_step_index] >= 4:
+            if self.finished[self.current_step_index] == 1 and self.current_step_index < len(self.graph_task) - 1 and self.act_counter[self.current_step_index] >= 5 and self.no_act_counter[self.current_step_index] >= 5:
                 if self.current_step_index == len(self.graph_task) - 1:  # If recipe completed, don't move
                     self.status = RecipeStatus.COMPLETED
                     return {  # Return next step
@@ -172,7 +260,7 @@ class StateManager:
                 }
         else:
             self.no_act_counter[self.current_step_index] = 0
-            self.act_counter[self.current_step_index] += 1
+            
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
 
             error_act_status = self._detect_error_in_actions(valid_actions)
@@ -180,6 +268,7 @@ class StateManager:
 
 
             if error_obj_status and error_act_status:
+                self.act_counter[self.current_step_index] += 0.5
                 return {
                     'step_id': self.current_step_index,
                     'step_status': self.graph_task[self.current_step_index]['step_status'].value,
@@ -192,17 +281,20 @@ class StateManager:
 
             else:
 
-                
+                self.act_counter[self.current_step_index] += 1
                 all_finished = True
                 for jj in self.main_steps[self.current_step_index]:
-                    if self.main_step_exe[self.current_step_index][jj] == 0:
-                        all_finished = False
+                    if jj < len(self.main_step_exe[self.current_step_index]):
+                        if self.main_step_exe[self.current_step_index][jj] == 0:
+                            all_finished = False
                 all_action_finished = True
                 for jj in self.main_action_steps[self.current_step_index]:
-                    if self.main_action_steps_exe[self.current_step_index][jj] == 0:
-                        all_action_finished = False
+                    if jj < len(self.main_action_steps_exe[self.current_step_index]):
+                        if self.main_action_steps_exe[self.current_step_index][jj] == 0:
+                            all_action_finished = False
+                    else:
+                        print(jj, len(self.main_action_steps_exe[self.current_step_index]), self.current_step_index)
                 #print(all_finished)
-                #print(self.main_steps[self.current_step_index], self.main_step_exe[self.current_step_index])
                 if all_finished or all_action_finished:
                     self.finished[self.current_step_index] = 1
                     #self.graph_task[self.current_step_index]['step_status'] = StepStatus.COMPLETED
@@ -263,10 +355,12 @@ class StateManager:
             self.main_steps = [[2], [1], [2], [1],[2],[0],[0],[1], [0],[0],[0],[0]]
             self.main_action_steps = [[1], [4,5], [0], [2,3], [0],[1],[3],[1],[2],[1],[2],[0]]
         elif self.recipe['_id'] == 'mugcake':
-            self.main_steps = self.recipe['main_steps']
-            
+            self.main_steps =  [[1], [0], [0], [0, 2], [0], [0], [0], [0], [0], [0], [0], [0]]
+            self.main_action_steps = [[1], [1, 6, 8, 10], [0], [4, 9, 10], [0], [1], [3], [5], [5], [7], [0], [0]]
+            #self.main_action_steps = [[0], [0], [0], [1, 4], [3], [0], [0], [0]]
         elif self.recipe['_id'] == 'coffee':
-            self.main_steps = self.recipe['main_steps']
+            self.main_steps = [[1], [0], [0], [0], [0], [1], [0], [0]]
+            self.main_action_steps = [[0], [0], [0], [1, 4], [3], [0], [0], [0]]
 
         for step in self.recipe['instructions']:
             entities = self._extract_entities(step)
@@ -319,9 +413,9 @@ class StateManager:
             
             if h_error == 0:
                 has_error = False
-                self.main_step_exe[self.current_step_index][jj] = 1
+                if jj < len(self.main_step_exe[self.current_step_index]):
+                    self.main_step_exe[self.current_step_index][jj] = 1
             
-            print('correct', self.main_step_exe[self.current_step_index], jj, self.current_step_index)
 
             if (has_error or action_error) and not self.freeze and self.finished[self.current_step_index] == 0 and self.current_step_index > 0:
                 objects_last_step = self.recipe['step_objects'][self.current_step_index - 1]
@@ -333,10 +427,14 @@ class StateManager:
                         if ele not in detected_objects:
                             h_error = 1
                     
-                    if h_error == 0 and valid_actions[0] in actions_last_step:
+                    if h_error == 0 and len(valid_actions) > 0 and valid_actions[0] in actions_last_step:
                         has_error = False
                         self.current_step_index = self.current_step_index - 1
                         self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                        #if self.act_counter[self.current_step_index] > 10:
+                        #    self.act_counter[self.current_step_index] = self.act_counter[self.current_step_index] - 10
+                        #else:
+                        #    self.act_counter[self.current_step_index]  = 0 
                         break
                     
             if (has_error or action_error) and not self.freeze and self.current_step_index < len(self.graph_task) - 1 and self.act_counter[self.current_step_index] > 50:
@@ -355,6 +453,8 @@ class StateManager:
                     has_error = False
                     self.current_step_index = self.current_step_index + 1
                     self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
+                    self.act_counter[self.current_step_index] = 0
+
 
             if not self.freeze:
                 if self.recipe['_id'] == 'pinwheels':
@@ -418,7 +518,6 @@ class StateManager:
         min_distince = dict()
         has_added_set = set()
         new_all_boxes = []
-        #print('???????')
         
         for box in object_boxes:
             if box['hoi_iou'] > 0:
@@ -545,13 +644,13 @@ class StateManager:
         return entities
 
     def step_rules_pinwheel(self, detected_objects, object_scores, has_error, action_error, valid_actions):
-        print('act counter', self.current_step_index, self.act_counter[self.current_step_index])
         if self.act_counter[self.current_step_index] > 10 and self.current_step_index == 0:
             if 'Jar of nut butter' in detected_objects and ('apply spreads' in valid_actions[:1] or 'scoop spreads' in valid_actions[:1]):
                 self.main_step_exe[1][0] = 1
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         if self.act_counter[self.current_step_index] > 60 and has_error and self.current_step_index == 1:
             if 'butter knife' in detected_objects and 'flour tortilla' not in detected_objects and 'Jar of nut butter' not in detected_objects:
@@ -559,6 +658,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         if self.act_counter[self.current_step_index] > 60 and action_error and self.current_step_index == 1:
             if valid_actions[0] == 'wash knife cloth':
@@ -567,6 +667,7 @@ class StateManager:
                 action_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
 
         
         
@@ -576,6 +677,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
             #elif 'butter knife' in detected_objects and 'Jar of nut butter' in detected_objects and 'Jar of jelly / jam' not in detected_objects and object_scores[detected_objects.index('Jar of nut butter')] > 0.5:
             #    has_error = False
             #    self.current_step_index -= 1
@@ -588,6 +690,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         if self.act_counter[self.current_step_index] > 60 and action_error and self.current_step_index == 3:
             if valid_actions[0] == 'wash knife cloth':
@@ -596,6 +699,7 @@ class StateManager:
                 action_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         if self.act_counter[self.current_step_index] > 10 and has_error and self.current_step_index == 4:
             if 'flour tortilla' in detected_objects and object_scores[detected_objects.index('flour tortilla')] > 0.5:
@@ -603,6 +707,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
 
         
         if self.act_counter[self.current_step_index] > 15 and has_error  and self.current_step_index == 5:
@@ -611,6 +716,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         
         
@@ -621,6 +727,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         if self.act_counter[self.current_step_index] > 20 and has_error and self.current_step_index == 7:
             if '~12-inch strand of dental floss' in detected_objects and 'cut wrap floss' in valid_actions[:1]:
@@ -628,6 +735,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
         if self.act_counter[self.current_step_index] > 20 and self.current_step_index == 8:
             if '~12-inch strand of dental floss' in detected_objects and 'cut wrap floss' in valid_actions[:1]:
@@ -635,6 +743,7 @@ class StateManager:
                 has_error = False
                 self.current_step_index += 1
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
 
         if self.act_counter[self.current_step_index] > 20 and self.current_step_index in [9, 10]:
             if 'plate' in detected_objects and (has_error or action_error) and 'put wrap plate' in valid_actions[:1]:
@@ -642,20 +751,28 @@ class StateManager:
                 has_error = False
                 self.current_step_index = 11
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         return has_error
     
-    def step_rules_coffee(self, detected_objects, object_scores, has_error, valid_actions):
-        print('act counter', self.current_step_index, self.act_counter[self.current_step_index])
-        if self.act_counter[self.current_step_index] > 30 and has_error and self.current_step_index == 0:
-            if 'paper basket filter' in detected_objects and len(detected_objects) < 3 and object_scores[detected_objects.index('paper basket filter')] > 0.1:
+    def step_rules_coffee(self, detected_objects, object_scores, has_error, action_error, valid_actions):
+        if self.act_counter[self.current_step_index] > 30 and (has_error or action_error) and self.current_step_index == 0:
+            if 'fold filter' in valid_actions[:1]:
                 self.main_step_exe[2][0] = 1
                 has_error = False
                 self.current_step_index = 2
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index] = 0
         
-        if self.current_step_index == 2 and has_error and self.act_counter[self.current_step_index] < 10:
-            if 'electric kettle' in detected_objects and len(detected_objects) < 3 and object_scores[detected_objects.index('electric kettle')] > 0.3:
+        if self.current_step_index == 2 and (has_error or action_error) and self.act_counter[self.current_step_index] < 10:
+            if 'pour water' in valid_actions[:1]:
                 self.act_counter[2] = 0
+                self.main_step_exe[0][0] = 1
+                has_error = False
+                self.current_step_index = 1
+        
+        if self.current_step_index == 1 and (has_error or action_error) and self.act_counter[self.current_step_index] < 10:
+            if 'pour water' in valid_actions[:1]:
+                self.act_counter[1] = 0
                 self.main_step_exe[0][0] = 1
                 has_error = False
                 self.current_step_index = 1
@@ -663,26 +780,49 @@ class StateManager:
 
 
         if self.act_counter[self.current_step_index] > 5 and self.current_step_index == 1 :
-            if 'paper basket filter' in detected_objects and len(detected_objects) < 3 and object_scores[detected_objects.index('paper basket filter')] > 0.1:
+            if 'paper basket filter' in detected_objects and 'fold filter' in valid_actions[:1]:
                 self.main_step_exe[2][0] = 1
                 has_error = False
                 self.current_step_index = self.current_step_index + 1
+                self.act_counter[self.current_step_index] = 0
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
         
         
-        if self.act_counter[self.current_step_index] > 20 and self.current_step_index == 2:
-            if 'kitchen scale' in detected_objects and object_scores[detected_objects.index('kitchen scale')] > 0.5:
+        if self.act_counter[self.current_step_index] > 10 and self.current_step_index == 2:
+            if 'kitchen scale' in detected_objects and 'measure coffee' in valid_actions[:1]:
                 self.main_step_exe[3][0] = 1
                 has_error = False
                 self.current_step_index += 1
+                self.act_counter[self.current_step_index] = 0
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
 
+        if self.act_counter[self.current_step_index] > 10 and self.current_step_index == 3 and action_error:
+            if 'paper basket filter' in detected_objects and 'fold filter' in valid_actions[:1]:
+                self.main_step_exe[3][0] = 1
+                has_error = False
+                self.current_step_index = self.current_step_index - 1
+                self.act_counter[self.current_step_index] = 0
+                self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+        
+        if self.act_counter[self.current_step_index] > 6 and self.current_step_index == 4 and action_error:
+            if  'move coffee' in valid_actions[:1] or 'measure coffee' in valid_actions[:1]:
+                has_error = False
+                self.current_step_index = self.current_step_index - 1
+                self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+        
+        if self.act_counter[self.current_step_index] > 6 and self.current_step_index == 5 and action_error and has_error:
+            if 'move coffee' in valid_actions[:1] or 'measure coffee' in valid_actions[:1]:
+                has_error = False
+                self.current_step_index = 3
+                self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                self.act_counter[self.current_step_index]  -= 10
                 
-        if self.act_counter[self.current_step_index] > 50 and self.current_step_index == 3 and has_error:
-            if 'thermometer' in detected_objects and object_scores[detected_objects.index('thermometer')] > 0.3:
+        if self.act_counter[self.current_step_index] > 50 and self.current_step_index == 3 and (has_error or action_error):
+            if 'thermometer' in detected_objects and 'measure heat' in valid_actions[:1]:
                 self.main_step_exe[4][0] = 1
                 has_error = False
                 self.current_step_index = self.current_step_index + 1
+                self.act_counter[self.current_step_index] = 0
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
         
         #if self.act_counter[self.current_step_index] > 5 and self.current_step_index == 4 and has_error:
@@ -693,60 +833,80 @@ class StateManager:
         #        self.current_step_index = self.current_step_index - 1
         #        self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
         
-        if self.act_counter[self.current_step_index] > 6 and self.current_step_index == 5 and has_error:
-            if 'thermometer' in detected_objects:
+        if self.act_counter[self.current_step_index] > 6 and self.current_step_index == 5 and (has_error or action_error):
+            if 'thermometer' in detected_objects and 'measure heat' in valid_actions[:1]:
                 has_error = False
                 self.current_step_index = self.current_step_index - 1
+                self.act_counter[self.current_step_index] = 0
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+                
         
-        if self.act_counter[self.current_step_index] > 20  and self.current_step_index == 5:
-            if 'electric kettle' in detected_objects and len(detected_objects) < 3 and object_scores[detected_objects.index('electric kettle')] > 0.3:
+        if self.act_counter[self.current_step_index] > 15 and self.current_step_index == 5:
+            if 'electric kettle' in detected_objects and 'pour water' in valid_actions[:1]:
                 self.main_step_exe[6][0] = 1
                 has_error = False
                 self.current_step_index = self.current_step_index + 1
+                self.act_counter[self.current_step_index] = 0
         
-        if self.act_counter[self.current_step_index] > 20  and self.current_step_index == 7:
-            if 'electric kettle' in detected_objects and len(detected_objects) < 3 and object_scores[detected_objects.index('electric kettle')] > 0.3:
+        if self.act_counter[self.current_step_index] > 20 and self.current_step_index == 7 and (has_error or action_error):
+            if 'electric kettle' in detected_objects and 'pour water' in valid_actions[:1]:
                 self.main_step_exe[6][0] = 1
                 has_error = False
                 self.current_step_index = self.current_step_index - 1
+                self.act_counter[self.current_step_index] = 0
         return has_error
 
-    def step_rules_mugcake(self, detected_objects, object_scores, has_error, valid_actions):
-        if step_ct == 0 and self.act_counter[step_ct] > 6 and has_error and 'small mixing bowl' in detected_objects and object_scores[detected_objects.index('bowl')] > 0.3:
+    def step_rules_mugcake(self, detected_objects, object_scores, has_error, action_error, valid_actions):
+        if self.current_step_index == 0 and self.act_counter[self.current_step_index] > 6 and has_error and ('small mixing bowl' in detected_objects or '2 Tablespoons all-purpose flour' in detected_objects or '1.5 Tablespoons granulated sugar' in detected_objects) :
             self.main_step_exe[1][0] = 1
+            self.current_step_index += 1
+            has_error = False
+            self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
+        
+        if self.current_step_index == 1 and self.act_counter[self.current_step_index] > 30 and '2 Tablespoons all-purpose flour' not in detected_objects and '1.5 Tablespoons granulated sugar' not in detected_objects and '1⁄4 teaspoon baking powder' not in detected_objects and 'Pinch salt' not in detected_objects and '1⁄4 teaspoon vanilla extract' not in detected_objects and len(detected_objects) > 0:
             step_ct += 1
             has_error = False
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
         
-        if step_ct == 1 and self.act_counter[step_ct] > 30 and '2 Tablespoons all-purpose flour' not in detected_objects and '1.5 Tablespoons granulated sugar' not in detected_objects and '1⁄4 teaspoon baking powder' not in detected_objects and 'Pinch salt' not in detected_objects and '1⁄4 teaspoon vanilla extract' not in detected_objects and len(detected_objects) > 0:
-            step_ct += 1
-            has_error = False
-            self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
-        
-        if step_ct == 2 and self.act_counter[step_ct] > 20 and has_error and '2 teaspoons canola or vegetable oil' in detected_objects and object_scores[detected_objects.index('2 teaspoons canola or vegetable oil')] > 0.3:
+        if self.current_step_index == 2 and self.act_counter[self.current_step_index] > 20 and has_error and '2 teaspoons canola or vegetable oil' in detected_objects and object_scores[detected_objects.index('2 teaspoons canola or vegetable oil')] > 0.3:
             self.main_step_exe[3][0] = 1
-            step_ct += 1
+            self.current_step_index += 1
             has_error = False
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
         
-        if step_ct == 4 and self.act_counter[step_ct] > 20 and has_error and '12-ounce coffee mug' in detected_objects and object_scores[detected_objects.index('12-ounce coffee mug')] > 0.3:
+        if self.current_step_index == 4 and self.act_counter[self.current_step_index] > 20 and has_error and '12-ounce coffee mug' in detected_objects and object_scores[detected_objects.index('12-ounce coffee mug')] > 0.3:
             self.main_step_exe[5][0] = 1
-            step_ct += 1
+            self.current_step_index += 1
             has_error = False
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
         
-        if step_ct in [4, 5] and self.act_counter[step_ct] > 20 and has_error and 'microwave' in detected_objects and object_scores[detected_objects.index('microwave')] > 0.3:
+
+        if self.current_step_index in [5, 6] and self.act_counter[self.current_step_index] < 10 and action_error and 'pour mixture' in valid_actions[:1]:
+            self.main_step_exe[4][0] = 1
+            self.current_step_index = 4
+            has_error = False
+            self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
+        
+
+        
+        if self.current_step_index in [4, 5] and self.act_counter[self.current_step_index] > 20 and has_error and 'microwave' in detected_objects and (object_scores[detected_objects.index('microwave')] > 0.3 or 'put mug microwave' in valid_actions[:1]):
             self.main_step_exe[6][0] = 1
-            step_ct = 6
+            self.current_step_index = 6
             has_error = False
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
         
-        if step_ct == 6 and self.act_counter[step_ct] > 20 and has_error and 'toothpicks' in detected_objects and object_scores[detected_objects.index('toothpicks')] > 0.3:
+        if self.current_step_index == 6 and self.act_counter[self.current_step_index] > 20 and has_error and 'toothpicks' in detected_objects and object_scores[detected_objects.index('toothpicks')] > 0.3:
             self.main_step_exe[7][0] = 1
-            step_ct += 1
+            self.current_step_index += 1
             has_error = False
             self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+            self.act_counter[self.current_step_index] = 0
         return has_error
 
 
