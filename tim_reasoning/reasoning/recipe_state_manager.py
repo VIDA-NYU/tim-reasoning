@@ -1,5 +1,6 @@
 import sys
 import logging
+import numpy as np
 import tim_reasoning.utils as utils
 from enum import Enum
 from tim_reasoning.reasoning.recipe_tagger import RecipeTagger
@@ -17,14 +18,21 @@ class StateManager:
         self.rule_classifier = RuleBasedClassifier(self.recipe_tagger)
         self.bert_classifier = BertClassifier(configs['bert_classifier_path'])
         self.recipe = None
+        self.status = RecipeStatus.NOT_STARTED
         self.current_step_index = None
         self.graph_task = None
-        self.status = RecipeStatus.NOT_STARTED
+        self.probability_matrix = None
+        self.transition_matrix = None
+        self.min_executions = None
 
     def start_recipe(self, recipe):
         self.recipe = recipe
         self.current_step_index = 0
         self.graph_task = []
+        self.probability_matrix = utils.create_matrix(recipe['_id'])
+        self.min_executions = self.probability_matrix['step_times']
+        self.transition_matrix = np.zeros(self.probability_matrix['matrix'].shape[0])
+        self.transition_matrix[0] = 1.0
         self._build_task_graph()
         self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
         self.status = RecipeStatus.IN_PROGRESS
@@ -54,65 +62,53 @@ class StateManager:
                 'error_description': ''
             }
 
-        valid_actions, exist_actions = self._preprocess_inputs(detected_actions)
+        self.identify_status(detected_actions)
 
-        if len(valid_actions) == 0 and exist_actions:  # If there are no valid actions, don't make a decision, just wait for new inputs
-            logger.info('No valid actions to be processed')
-            return
+        return {
+            'step_id': self.current_step_index,
+            'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+            'step_description': self.graph_task[self.current_step_index]['step_description'],
+            'error_status': False,
+            'error_description': ''
+        }
 
-        if not exist_actions:  # Is the user waiting for instructions?
-            if self.graph_task[self.current_step_index]['step_status'] == StepStatus.IN_PROGRESS:  # Was the step executed at least once?
-                self.graph_task[self.current_step_index]['step_status'] = StepStatus.COMPLETED  # Mark as a done step
+    def identify_status(self, detected_actions, window_size=1):
+        self.graph_task[self.current_step_index]['executions'] += 1
 
-                if self.current_step_index == len(self.graph_task) - 1:  # If recipe completed, don't move
-                    self.status = RecipeStatus.COMPLETED
-                    return
+        probability_matrix = self.probability_matrix['matrix']
+        indexes = self.probability_matrix['indexes']
+        vector = np.zeros(len(indexes))
 
-                self.current_step_index += 1  # Move to the next step
-                self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
+        for action_name, action_proba in detected_actions:
+            if action_name in indexes:
+                vector[indexes[action_name]] = action_proba
 
-                return {  # Return next step
-                    'step_id': self.current_step_index,
-                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
-                    'step_description': self.graph_task[self.current_step_index]['step_description'],
-                    'error_status': False,
-                    'error_description': ''
-                }
+        dot_product = np.dot(probability_matrix, vector)
+        dot_product = np.multiply(dot_product, self.transition_matrix).round(5)
+        move = self._calculate_move(self.current_step_index, dot_product, window_size)
+
+        if move == 1:
+            if self.graph_task[self.current_step_index]['executions'] > self.min_executions[self.current_step_index]:
+                prev = self.current_step_index
+                self.transition_matrix[prev] = 0.10
             else:
-                return {  # Return the same step
-                    'step_id': self.current_step_index,
-                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
-                    'step_description': self.graph_task[self.current_step_index]['step_description'],
-                    'error_status': False,
-                    'error_description': ''
-                }
+                move = 0
 
-        error_act_status, _ = self._detect_error_in_actions(valid_actions)
-        error_obj_status, error_obj_message, error_obj_entities = self._detect_error_in_objects(detected_objects)
+        if move == -1:
+            move = 0  # avoid go back
 
-        if error_act_status:
-            return {
-                'step_id': self.current_step_index,
-                'step_status': self.graph_task[self.current_step_index]['step_status'].value,
-                'step_description': self.graph_task[self.current_step_index]['step_description'],
-                'error_status': True,
-                'error_description': error_obj_message
-            }
+        next_step = self.current_step_index + 1
+        if len(self.graph_task) > next_step:
+            self.transition_matrix[next_step] = 1.0
 
-        else:
-            self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
-            return {
-                'step_id': self.current_step_index,
-                'step_status': self.graph_task[self.current_step_index]['step_status'].value,
-                'step_description': self.graph_task[self.current_step_index]['step_description'],
-                'error_status': False,
-                'error_description': ''
-            }
+        if 0 <= self.current_step_index + move < len(self.graph_task):
+            self.current_step_index += move
 
     def reset(self):
         self.recipe = None
         self.current_step_index = None
         self.graph_task = None
+        self.probability_matrix = None
         self.status = RecipeStatus.NOT_STARTED
         logger.info('Recipe resetted')
 
@@ -143,7 +139,23 @@ class StateManager:
 
         return ingredients_tools
 
-    def _build_task_graph(self, map_entities=True):
+    def _calculate_move(self, current_index, values, window_size):
+        windows = [values[current_index]] * (window_size * 2 + 1)
+
+        for i in range(window_size):
+            previous_index = current_index - (i + 1)
+            next_index = current_index + (i + 1)
+            previous_value = values[previous_index] if previous_index >= 0 else -float('inf')
+            next_value = values[next_index] if next_index < len(values) else -float('inf')
+            windows[window_size - (i + 1)] = previous_value
+            windows[window_size + (i + 1)] = next_value
+
+        max_index = np.argmax(windows)
+        move = max_index - window_size
+
+        return move
+
+    def _build_task_graph(self, map_entities=False):
         recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['_id'])
 
         for step in self.recipe['instructions']:
@@ -153,7 +165,7 @@ class StateManager:
                 entities = utils.map_entity_labels(recipe_entity_labels, entities)
                 logger.info(f'New names for entities: {str(entities)}')
             self.graph_task.append({'step_description': step, 'step_status': StepStatus.NOT_STARTED,
-                                    'step_entities': entities})
+                                    'step_entities': entities, 'executions': 0})
 
     def _detect_error_in_actions(self, detected_actions):
         # Perception will send the top-k actions for a single frame
