@@ -155,7 +155,7 @@ class StateManager:
 
         return move
 
-    def _build_task_graph(self, map_entities=False):
+    def _build_task_graph(self, map_entities=True):
         recipe_entity_labels = utils.load_recipe_entity_labels(self.recipe['_id'])
 
         for step in self.recipe['instructions']:
