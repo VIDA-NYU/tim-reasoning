@@ -5,7 +5,6 @@ import tim_reasoning.utils as utils
 from enum import Enum
 from tim_reasoning.reasoning.recipe_tagger import RecipeTagger
 from tim_reasoning.reasoning.rule_based_classifier import RuleBasedClassifier
-from tim_reasoning.reasoning.bert_classifier import BertClassifier
 
 logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s', stream=sys.stdout)
 logger = logging.getLogger(__name__)
@@ -16,7 +15,6 @@ class StateManager:
     def __init__(self, configs):
         self.recipe_tagger = RecipeTagger(configs['tagger_model_path'])
         self.rule_classifier = RuleBasedClassifier(self.recipe_tagger)
-        self.bert_classifier = BertClassifier(configs['bert_classifier_path'])
         self.recipe = None
         self.status = RecipeStatus.NOT_STARTED
         self.current_step_index = None
@@ -170,20 +168,18 @@ class StateManager:
     def _detect_error_in_actions(self, detected_actions):
         # Perception will send the top-k actions for a single frame
         current_step = self.graph_task[self.current_step_index]['step_description']
-        bert_score = None
 
         for detected_action in detected_actions:
             logger.info(f'Evaluating "{detected_action}"...')
-            has_error_bert, bert_score = self.bert_classifier.is_mistake(current_step, detected_action)
             has_error_rule = self.rule_classifier.is_mistake(current_step, detected_action)
             # If there is an agreement of "NO ERROR" by both classifier, then it's not a error
             # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should do for n>=3 classifiers
-            if not has_error_bert and not has_error_rule:
+            if not has_error_rule:
                 logger.info('Final decision: IT IS NOT A ERROR')
-                return False, bert_score
+                return False
 
         logger.info('Final decision: IT IS A ERROR')
-        return True, bert_score
+        return True
 
     def _detect_error_in_objects(self, detected_objects):
         tools_in_step = set(self.graph_task[self.current_step_index]['step_entities']['tools'])
