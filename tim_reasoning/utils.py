@@ -79,4 +79,7 @@ def create_matrix(recipe_id, exclude=None):
     step_times = matrix.sum(axis=1)
     matrix = matrix / step_times[:, np.newaxis]
 
-    return {'indexes': unique_actions, 'matrix': matrix, 'step_times': step_times}
+    # There is no way to know how many recipes there are in the train data, a video can contain multiple recipes
+    num_train_videos = {'pinwheels': 6, 'coffee': 6, 'mugcake': 4}
+
+    return {'indexes': unique_actions, 'matrix': matrix, 'step_times': step_times/num_train_videos[recipe_id]}
