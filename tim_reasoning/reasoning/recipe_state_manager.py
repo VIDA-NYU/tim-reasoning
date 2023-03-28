@@ -70,7 +70,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def identify_status(self, detected_actions, window_size=1):
+    def identify_status(self, detected_actions, window_size=1, threshold_confidence=0.0):
         self.graph_task[self.current_step_index]['executions'] += 1
 
         probability_matrix = self.probability_matrix['matrix']
@@ -79,20 +79,21 @@ class StateManager:
 
         for action_name, action_proba in detected_actions:
             if action_name in indexes:
-                vector[indexes[action_name]] = action_proba
+                if action_proba >= threshold_confidence:
+                    vector[indexes[action_name]] = action_proba
 
         dot_product = np.dot(probability_matrix, vector)
         dot_product = np.multiply(dot_product, self.transition_matrix).round(5)
         move = self._calculate_move(self.current_step_index, dot_product, window_size)
 
-        if move == 1:
+        if move >= 1:
             if self.graph_task[self.current_step_index]['executions'] > self.min_executions[self.current_step_index]:
                 prev = self.current_step_index
                 self.transition_matrix[prev] = 0.10
             else:
                 move = 0
 
-        if move == -1:
+        if move <= -1:
             move = 0  # avoid go back
 
         next_step = self.current_step_index + 1
@@ -148,7 +149,10 @@ class StateManager:
             windows[window_size - (i + 1)] = previous_value
             windows[window_size + (i + 1)] = next_value
 
-        max_index = np.argmax(windows)
+        # Get the index of the last max value, useful when there are more than 1 max value
+        max_index = len(windows) - np.argmax(windows[::-1]) - 1
+        if windows[max_index] == 0:
+            max_index = 0
         move = max_index - window_size
 
         return move
