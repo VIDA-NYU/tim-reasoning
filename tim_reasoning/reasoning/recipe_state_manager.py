@@ -70,7 +70,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def identify_status(self, detected_actions, window_size=1, threshold_confidence=0.0):
+    def identify_status(self, detected_actions, window_size=1, threshold_confidence=0.3):
         self.graph_task[self.current_step_index]['executions'] += 1
 
         probability_matrix = self.probability_matrix['matrix']
@@ -149,10 +149,7 @@ class StateManager:
             windows[window_size - (i + 1)] = previous_value
             windows[window_size + (i + 1)] = next_value
 
-        # Get the index of the last max value, useful when there are more than 1 max value
-        max_index = len(windows) - np.argmax(windows[::-1]) - 1
-        if windows[max_index] == 0:
-            max_index = 0
+        max_index = np.argmax(windows)
         move = max_index - window_size
 
         return move
