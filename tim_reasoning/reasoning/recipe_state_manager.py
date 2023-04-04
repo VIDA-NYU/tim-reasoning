@@ -90,11 +90,18 @@ class StateManager:
             if self.graph_task[self.current_step_index]['executions'] > self.min_executions[self.current_step_index]:
                 prev = self.current_step_index
                 self.transition_matrix[prev] = 0.10
+                self.graph_task[self.current_step_index]['step_status'] = StepStatus.COMPLETED
+                if self.current_step_index + move < len(self.graph_task):
+                    self.graph_task[self.current_step_index + move]['step_status'] = StepStatus.NEW
+
             else:
                 move = 0
 
-        if move <= -1:
-            move = 0  # avoid go back
+        elif move == 0:
+            self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+
+        elif move <= -1:
+            move = 0  # Avoid go back
 
         next_step = self.current_step_index + 1
         if len(self.graph_task) > next_step:
