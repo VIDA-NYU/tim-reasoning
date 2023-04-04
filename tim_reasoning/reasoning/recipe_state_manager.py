@@ -44,7 +44,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def check_status(self, detected_actions, detected_objects):
+    def check_status(self, detected_actions, detected_objects, detected_steps):
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
@@ -59,8 +59,10 @@ class StateManager:
                 'error_status': False,
                 'error_description': ''
             }
-
-        self.identify_status(detected_actions)
+        sorted_step_probas = sorted(detected_steps.items(), key=lambda x:x[1], reverse=True)
+        detected_step_index = sorted_step_probas[0][0]
+        self.current_step_index = detected_step_index
+        #self.identify_status(detected_actions)
 
         return {
             'step_id': self.current_step_index,
@@ -180,8 +182,6 @@ class StateManager:
         for detected_action in detected_actions:
             logger.info(f'Evaluating "{detected_action}"...')
             has_error_rule = self.rule_classifier.is_mistake(current_step, detected_action)
-            # If there is an agreement of "NO ERROR" by both classifier, then it's not a error
-            # TODO: We are not using an ensemble voting classifier because there are only 2 classifiers, but we should do for n>=3 classifiers
             if not has_error_rule:
                 logger.info('Final decision: IT IS NOT A ERROR')
                 return False
