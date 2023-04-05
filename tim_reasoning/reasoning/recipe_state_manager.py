@@ -62,6 +62,7 @@ class StateManager:
         sorted_step_probas = sorted(detected_steps.items(), key=lambda x:x[1], reverse=True)
         detected_step_index = sorted_step_probas[0][0]
         self.current_step_index = detected_step_index
+        self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
         #self.identify_status(detected_actions)
 
         return {
