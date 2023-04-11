@@ -44,7 +44,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def check_status(self, detected_actions, detected_objects, detected_steps):
+    def check_status(self, detected_actions, detected_objects, detected_steps, use_perception_steps=True):
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
@@ -59,7 +59,7 @@ class StateManager:
                 'error_status': False,
                 'error_description': ''
             }
-        if self.recipe['_id'] == 'tourniquet': # Use perception
+        if use_perception_steps: # Use perception
             sorted_step_probas = sorted(detected_steps.items(), key=lambda x:x[1], reverse=True)
             detected_step_index = sorted_step_probas[0][0]
             self.current_step_index = detected_step_index
