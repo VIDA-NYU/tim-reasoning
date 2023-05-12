@@ -9,6 +9,8 @@ from tim_reasoning.reasoning.rule_based_classifier import RuleBasedClassifier
 logging.basicConfig(level=logging.INFO, format='%(levelname)s:%(name)s:%(message)s', stream=sys.stdout)
 logger = logging.getLogger(__name__)
 
+mapping_status_bbn = {'NOT_STARTED': 'unobserved', 'NEW': 'current', 'IN_PROGRESS': 'current',  'COMPLETED': 'done'}
+
 
 class StateManager:
 
@@ -44,7 +46,7 @@ class StateManager:
             'error_description': ''
         }
 
-    def check_status(self, detected_actions, detected_objects, detected_steps, use_perception_steps=True):
+    def check_status(self, detected_actions, detected_objects, detected_steps, use_perception_steps=True, use_bbn=True):
         if self.status == RecipeStatus.NOT_STARTED:
             raise SystemError('Call the method "start_steps()" to begin the process.')
 
@@ -67,6 +69,25 @@ class StateManager:
                     self.graph_task[self.current_step_index]['step_status'] = StepStatus.COMPLETED
                 self.current_step_index = detected_step_index
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
+
+            if use_bbn:
+                all_steps = []
+                for step_index, step_info in enumerate(self.graph_task):
+                    all_steps.append({'number': step_index,
+                                      'name': self.graph_task[step_index]['step_description'],
+                                      'state': mapping_status_bbn[self.graph_task[step_index]['step_status'].value],
+                                      'confidence': detected_steps.get(step_index, 0)
+                                      })
+
+                return {
+                    'step_id': self.current_step_index,
+                    'step_status': self.graph_task[self.current_step_index]['step_status'].value,
+                    'step_description': self.graph_task[self.current_step_index]['step_description'],
+                    'error_status': False,
+                    'error_description': '',
+                    'all_steps': all_steps
+                }
+
         else:
             self.identify_status(detected_actions)
 
