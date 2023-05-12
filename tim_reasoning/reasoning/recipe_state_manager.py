@@ -73,10 +73,11 @@ class StateManager:
             if use_bbn:
                 all_steps = []
                 for step_index, step_info in enumerate(self.graph_task):
+                    confidence = 1 if self.graph_task[step_index]['step_status'].value in {'COMPLETED',  'NOT_STARTED'} else detected_steps.get(step_index, 0)
                     all_steps.append({'number': step_index,
                                       'name': self.graph_task[step_index]['step_description'],
                                       'state': mapping_status_bbn[self.graph_task[step_index]['step_status'].value],
-                                      'confidence': detected_steps.get(step_index, 0)
+                                      'confidence': confidence
                                       })
 
                 return {
