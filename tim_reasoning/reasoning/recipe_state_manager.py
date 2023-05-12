@@ -59,10 +59,12 @@ class StateManager:
                 'error_status': False,
                 'error_description': ''
             }
-        if use_perception_steps: # Use perception
-            sorted_step_probas = sorted(detected_steps.items(), key=lambda x:x[1], reverse=True)
+        if use_perception_steps:  # Use perception
+            sorted_step_probas = sorted(detected_steps.items(), key=lambda x: x[1], reverse=True)
             detected_step_index = sorted_step_probas[0][0]
             if detected_step_index >= 0:  # negative index is OTHER
+                if detected_step_index >= self.current_step_index:
+                    self.graph_task[self.current_step_index]['step_status'] = StepStatus.COMPLETED
                 self.current_step_index = detected_step_index
                 self.graph_task[self.current_step_index]['step_status'] = StepStatus.IN_PROGRESS
         else:
