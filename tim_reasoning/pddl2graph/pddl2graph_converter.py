@@ -1,9 +1,9 @@
 import os
-from .dependency_graph import DependencyGraph
-from .node import Node
-from .problem_parser import ProblemParser
 from glob import glob
 from unified_planning.io import PDDLReader
+from tim_reasoning.pddl2graph.dependency_graph import DependencyGraph
+from tim_reasoning.pddl2graph.node import Node
+from tim_reasoning.pddl2graph.problem_parser import ProblemParser
 
 class Pddl2GraphConverter:
     def __init__(self) -> None:
@@ -56,7 +56,7 @@ class Pddl2GraphConverter:
                     ):
         for step_count in range(1, total_steps + 1):
             print(f"Parsing for step {step_count}/{total_steps}")
-            
+
             problem = self.reader.parse_problem(
                 domain_filename=domain_file,
                 problem_filename=f'{pddl_folder}/step{step_count}.pddl'
@@ -65,12 +65,12 @@ class Pddl2GraphConverter:
             parsed_goals = self.problem_parser.parse_goals(problem=problem)
             if verbose:
                 print(f"Parsed goals are = \n{parsed_goals}\n")
-            
+
             # finding final object states for current step
             current_step_nodes = self._goals_to_nodes(parsed_goals)
             # add these to graph
             self.graph.add_nodes(current_step_nodes)
-            
+
             # after traversing 2nd step, i would add dependency of step n to step n-1
             if step_count != 1 and previous_step_nodes:
                 # Add current step nodes to 
@@ -87,7 +87,6 @@ class Pddl2GraphConverter:
         assert os.path.exists(DOMAIN_FILE)
         TOTAL_STEPS = len(glob(f'{pddl_folder}/step*.pddl'))
         assert TOTAL_STEPS > 0
-        
         # create the graph and add dependencies
         graph = self._parse_pddl(
             domain_file=DOMAIN_FILE,

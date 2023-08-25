@@ -7,10 +7,13 @@ class Node:
         self.state = state
         self.objects = objects
         self.dependencies = []
-    
+
+    def get_id(self):
+        return self._id
+
     def add_dependency(self, node):
         self.dependencies.append(node)
-    
+
     def add_dependencies(self, nodes):
         for node in nodes:
             self.add_dependency(node)
@@ -18,7 +21,7 @@ class Node:
 
 # Notes from reviewers
 # duplicate objects
-# connection to tracked objects 
+# connection to tracked objects
 
 # -----
 # action recognition is done by mainly object states
