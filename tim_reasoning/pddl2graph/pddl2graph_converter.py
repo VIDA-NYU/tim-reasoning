@@ -80,16 +80,24 @@ class Pddl2GraphConverter:
                 )
 
             previous_step_nodes = current_step_nodes
-        return self.graph
 
-    def convert(self, pddl_folder: str):
+    def convert(self, pddl_folder: str, verbose: bool = False) -> DependencyGraph:
+        """Converts PDDL to a DependencyGraph
+
+        Args:
+            pddl_folder (str): Folder path containing all the pddl files.
+
+        Returns:
+            DependencyGraph: graph object
+        """
         DOMAIN_FILE = f'{pddl_folder}/domain.pddl'
         assert os.path.exists(DOMAIN_FILE)
         TOTAL_STEPS = len(glob(f'{pddl_folder}/step*.pddl'))
         assert TOTAL_STEPS > 0
         # create the graph and add dependencies
-        graph = self._parse_pddl(
+        self._parse_pddl(
             domain_file=DOMAIN_FILE,
             total_steps=TOTAL_STEPS,
-            pddl_folder=pddl_folder)
-        return graph
+            pddl_folder=pddl_folder,
+            verbose=verbose)
+        return self.graph
