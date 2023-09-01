@@ -11,36 +11,38 @@ class Pddl2GraphConverter:
         self.problem_parser = ProblemParser()
         self.reader = PDDLReader()
 
-    def _create_2_nodes(self, parsed):
+    def _create_2_nodes(self, parsed, step_number):
         nodes = []
         for i in range(len(parsed['state'])):
             nodes.append(
                 Node(
                     state=parsed['state'][i],
-                    objects=parsed['objects'][i]
+                    objects=parsed['objects'][i],
+                    step_number=step_number
                 )
             )
         return nodes
 
-    def _create_single_node(self, parsed):
+    def _create_single_node(self, parsed, step_number):
         return [
             Node(
                     state=parsed['state'][0],
-                    objects=parsed['objects'][0]
+                    objects=parsed['objects'][0],
+                    step_number=step_number
             )
         ]
 
-    def _create_step_nodes(self, parsed):
+    def _create_step_nodes(self, parsed, step_number: int):
         if parsed['operand'] == 'AND':
-            nodes = self._create_2_nodes(parsed)
+            nodes = self._create_2_nodes(parsed, step_number)
         else:
-            nodes = self._create_single_node(parsed)
+            nodes = self._create_single_node(parsed, step_number)
         return nodes
 
-    def _goals_to_nodes(self, goals):
+    def _goals_to_nodes(self, goals: list, step_number: int):
         step_nodes = []
         for goal in goals:
-            nodes = self._create_step_nodes(goal)
+            nodes = self._create_step_nodes(goal, step_number)
             step_nodes.extend(nodes)
         return step_nodes
 
@@ -67,13 +69,14 @@ class Pddl2GraphConverter:
                 print(f"Parsed goals are = \n{parsed_goals}\n")
 
             # finding final object states for current step
-            current_step_nodes = self._goals_to_nodes(parsed_goals)
+            current_step_nodes = self._goals_to_nodes(
+                goals=parsed_goals, step_number=step_count)
             # add these to graph
             self.graph.add_nodes(current_step_nodes)
 
             # after traversing 2nd step, i would add dependency of step n to step n-1
             if step_count != 1 and previous_step_nodes:
-                # Add current step nodes to 
+                # Add current step nodes
                 self._add_previous_step_dependencies(
                     previous_step_nodes=previous_step_nodes,
                     current_step_nodes=current_step_nodes

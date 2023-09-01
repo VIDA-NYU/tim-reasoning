@@ -13,6 +13,7 @@
     (measured ?a)
     (steeped ?tea - sth)
     (used ?a - sth ?b - sth)
+    (temperature-measured ?a)
 
     ; external knowledge
 
@@ -135,10 +136,7 @@
   (:action measure-temperature
     :parameters (?instrument - sth ?item - sth)
     :precondition (can-measure-temperature ?instrument)
-    :effect (and 
-      (measured ?item)
-      (used ?instrument ?item)
-    )
+    :effect (temperature-measured ?item)
   )
 
   (:action steep

@@ -14,6 +14,11 @@ class DependencyGraph:
         for node in nodes:
             self.add_node(node)
 
+    def find_node(self, state: str, objects: list):
+        for node in self.nodes.values():
+            if node.state == state and set(node.objects) == set(objects):
+                return node.get_id(), node
+
     def get_dependencies(self, node_id):
         node = self.nodes[node_id]
         return node.dependencies

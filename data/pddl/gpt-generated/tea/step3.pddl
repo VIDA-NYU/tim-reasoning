@@ -14,11 +14,6 @@
 )
 
 (:goal
-  (
-    (and
-      (measured water)
-      (used thermometer water)
-    )
-  )
+  (temperature-measured water)
 )
 )
