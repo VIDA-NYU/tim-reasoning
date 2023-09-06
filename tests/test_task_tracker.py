@@ -5,6 +5,7 @@ from tim_reasoning.pddl2graph.node import Node
 from tim_reasoning.reasoning_errors import ReasoningErrors
 from tim_reasoning import TaskTracker
 
+
 class TestTaskTracker(unittest.TestCase):
     def setUp(self):
         self.tracker = TaskTracker(recipe='tea')
@@ -25,12 +26,15 @@ class TestTaskTracker(unittest.TestCase):
         result = self.tracker._is_dependencies_completed(self.node2)
         self.assertFalse(result)
 
+    def test_track_invalid_state(self):
+        result = self.tracker.track(state='non-existent', objects=['non-existent'])
+        self.assertEqual(result, ReasoningErrors.INVALID_STATE)
+
     def test_track_missing_dependency(self):
         self.tracker.completed_nodes = []
         self.tracker.completed_nodes.append(self.node1)
         self.tracker.completed_nodes.append(self.node2)
-        result = self.tracker.track(state='steeped',
-                                    objects=['tea-bag'])
+        result = self.tracker.track(state='steeped', objects=['tea-bag'])
         self.assertEqual(result, ReasoningErrors.MISSING_PREVIOUS)
 
     def test_track_success(self):
@@ -41,6 +45,7 @@ class TestTaskTracker(unittest.TestCase):
         self.tracker.task_graph.find_node = MagicMock(return_value=(3, self.node3))
         result = self.tracker.track('contains', ['mug', 'tea-bag'])
         self.assertIsNone(result)
+
 
 if __name__ == '__main__':
     unittest.main()
