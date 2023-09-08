@@ -1,5 +1,6 @@
 from tim_reasoning.pddl2graph.node import Node
 
+
 class DependencyGraph:
     def __init__(self):
         self.nodes = {}
@@ -13,6 +14,12 @@ class DependencyGraph:
     def add_nodes(self, nodes: list):
         for node in nodes:
             self.add_node(node)
+
+    def find_node(self, state: str, objects: list) -> (int, Node):
+        for node in self.nodes.values():
+            if node.state == state and set(node.objects) == set(objects):
+                return node.get_id(), node
+        return None, None
 
     def get_dependencies(self, node_id):
         node = self.nodes[node_id]

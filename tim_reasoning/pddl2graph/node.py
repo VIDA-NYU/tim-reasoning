@@ -1,12 +1,15 @@
 class Node:
     _id = 0
 
-    def __init__(self, state: str, objects: list) -> None:
+    def __init__(self, state: str, objects: list, step_number: int = -1) -> None:
         self._id = Node._id
         Node._id += 1
         self.state = state
         self.objects = objects
         self.dependencies = []
+        self.step_number = step_number
+        # TODO:
+        # add tools in the step
 
     def get_id(self) -> int:
         """Return Node ID
