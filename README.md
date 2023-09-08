@@ -31,15 +31,18 @@ $ jupyter notebook
 
 ## Usage
 
-1. For using the `Pddl2GraphConverter`:
+1. For using the `TaskTracker`:
 
 ```py
-from tim_reasoning import Pddl2GraphConverter
-# create the converter object
-converter = Pddl2GraphConverter()
-# convert the recipe pddl to graph
-# provide the folder containing domain.pddl and steps
-# make sure to name the step pddl files as step1.pddl, step2.pddl ...
-graph = converter.convert(pddl_folder='./data/')
-graph.print_dependencies()
+from tim_reasoning import TaskTracker
+
+# Create the TaskTracker object with initial recipe and data folder
+tracker = TaskTracker(recipe='tea', data_folder='data/')
+# Start tracking the steps in tasks
+error = tracker.track(state='steeped', objects=['tea-bag'])
+
+if error:
+    print(f"Error returned in tracking: {error}")
+else:xw
+    continue
 ```

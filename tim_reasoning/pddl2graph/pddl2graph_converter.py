@@ -5,6 +5,7 @@ from tim_reasoning.pddl2graph.dependency_graph import DependencyGraph
 from tim_reasoning.pddl2graph.node import Node
 from tim_reasoning.pddl2graph.problem_parser import ProblemParser
 
+
 class Pddl2GraphConverter:
     def __init__(self) -> None:
         self.graph = DependencyGraph()
@@ -18,7 +19,7 @@ class Pddl2GraphConverter:
                 Node(
                     state=parsed['state'][i],
                     objects=parsed['objects'][i],
-                    step_number=step_number
+                    step_number=step_number,
                 )
             )
         return nodes
@@ -26,9 +27,9 @@ class Pddl2GraphConverter:
     def _create_single_node(self, parsed, step_number):
         return [
             Node(
-                    state=parsed['state'][0],
-                    objects=parsed['objects'][0],
-                    step_number=step_number
+                state=parsed['state'][0],
+                objects=parsed['objects'][0],
+                step_number=step_number,
             )
         ]
 
@@ -50,18 +51,16 @@ class Pddl2GraphConverter:
         for curr_node in current_step_nodes:
             curr_node.add_dependencies(previous_step_nodes)
 
-    def _parse_pddl(self,
-                    domain_file: str,
-                    total_steps: str,
-                    pddl_folder: str,
-                    verbose: bool = False
-                    ):
+    def _parse_pddl(
+        self, domain_file: str, total_steps: str, pddl_folder: str, verbose: bool = False
+    ):
         for step_count in range(1, total_steps + 1):
-            print(f"Parsing for step {step_count}/{total_steps}")
+            if verbose:
+                print(f"Parsing for step {step_count}/{total_steps}")
 
             problem = self.reader.parse_problem(
                 domain_filename=domain_file,
-                problem_filename=f'{pddl_folder}/step{step_count}.pddl'
+                problem_filename=f'{pddl_folder}/step{step_count}.pddl',
             )
             # parse all the goals for the cuyrrent step
             parsed_goals = self.problem_parser.parse_goals(problem=problem)
@@ -70,7 +69,8 @@ class Pddl2GraphConverter:
 
             # finding final object states for current step
             current_step_nodes = self._goals_to_nodes(
-                goals=parsed_goals, step_number=step_count)
+                goals=parsed_goals, step_number=step_count
+            )
             # add these to graph
             self.graph.add_nodes(current_step_nodes)
 
@@ -79,7 +79,7 @@ class Pddl2GraphConverter:
                 # Add current step nodes
                 self._add_previous_step_dependencies(
                     previous_step_nodes=previous_step_nodes,
-                    current_step_nodes=current_step_nodes
+                    current_step_nodes=current_step_nodes,
                 )
 
             previous_step_nodes = current_step_nodes
@@ -102,5 +102,6 @@ class Pddl2GraphConverter:
             domain_file=DOMAIN_FILE,
             total_steps=TOTAL_STEPS,
             pddl_folder=pddl_folder,
-            verbose=verbose)
+            verbose=verbose,
+        )
         return self.graph
