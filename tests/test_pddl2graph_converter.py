@@ -14,7 +14,7 @@ class TestPddl2GraphConverter(unittest.TestCase):
             'state': ['measured', 'contains'],
             'objects': ['water', ['mug', 'honey']]
         }
-        nodes = self.converter._create_2_nodes(parsed)
+        nodes = self.converter._create_2_nodes(parsed=parsed, step_number=1)
         self.assertEqual(len(nodes), 2)
         self.assertEqual(nodes[0].state, 'measured')
         self.assertEqual(nodes[1].state, 'contains')
@@ -24,7 +24,7 @@ class TestPddl2GraphConverter(unittest.TestCase):
             'state': ['measured'],
             'objects': [['a', 'b']]
         }
-        nodes = self.converter._create_single_node(parsed)
+        nodes = self.converter._create_single_node(parsed=parsed, step_number=1)
         self.assertEqual(len(nodes), 1)
         self.assertEqual(nodes[0].state, 'measured')
         self.assertEqual(nodes[0].objects, ['a', 'b'])
@@ -35,7 +35,7 @@ class TestPddl2GraphConverter(unittest.TestCase):
             'state': ['measured', 'contains'],
             'objects': ['water', ['mug', 'honey']]
         }
-        nodes = self.converter._create_step_nodes(parsed)
+        nodes = self.converter._create_step_nodes(parsed=parsed, step_number=1)
         self.assertEqual(len(nodes), 2)
 
         parsed = {
@@ -43,7 +43,7 @@ class TestPddl2GraphConverter(unittest.TestCase):
             'state': ['measured'], 
             'objects': ['a']
         }
-        nodes = self.converter._create_step_nodes(parsed)
+        nodes = self.converter._create_step_nodes(parsed=parsed, step_number=1)
         self.assertEqual(len(nodes), 1)
 
     def test_goals_to_nodes(self):
@@ -53,7 +53,7 @@ class TestPddl2GraphConverter(unittest.TestCase):
             },
             {'operand': 'NONE', 'state': ['measured'], 'objects': ['a']}
         ]
-        nodes = self.converter._goals_to_nodes(goals)
+        nodes = self.converter._goals_to_nodes(goals=goals, step_number=1)
         self.assertEqual(len(nodes), 3)
 
 if __name__ == '__main__':

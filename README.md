@@ -43,6 +43,6 @@ error = tracker.track(state='steeped', objects=['tea-bag'])
 
 if error:
     print(f"Error returned in tracking: {error}")
-else:xw
+else:
     continue
 ```
