@@ -1,0 +1,9 @@
+{
+  "operand": "None",
+  "goals": [
+    {
+      "state": "with",
+      "objects": ["tortilla", "toothpicks"]
+    }
+  ]
+}

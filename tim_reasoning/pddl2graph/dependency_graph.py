@@ -4,8 +4,6 @@ from tim_reasoning.pddl2graph.node import Node
 class DependencyGraph:
     def __init__(self):
         self.nodes = {}
-        # TODO: have a root to reference the start
-        # self.root = None
 
     def add_node(self, node: Node):
         node_id = node.get_id()

@@ -8,7 +8,7 @@ from tim_reasoning import TaskTracker
 
 class TestTaskTracker(unittest.TestCase):
     def setUp(self):
-        self.tracker = TaskTracker(recipe='tea')
+        self.tracker = TaskTracker(recipe='tea', if_json_converter=False)
         self.node1 = Node('measured', ['water'], 1)
         self.node2 = Node('contains', ['kettle', 'water'], 1)
         self.node3 = Node('contains', ['mug', 'tea-bag'], 2)
@@ -59,7 +59,22 @@ class TestTaskTracker(unittest.TestCase):
         self.assertIsNone(result)
         self.assertEqual(step_number, 2)
 
+    def test_track_success_without_mock_with_json(self):
+        tracker = TaskTracker(
+            recipe="tea",
+            data_folder="data/step_goals/",
+            if_json_converter=True,
+            verbose=True,
+        )
+        tracker.track(self.node1.state, self.node1.objects)
+        tracker.track(self.node2.state, self.node2.objects)
+        result = tracker.track('contains', ['mug', 'tea-bag'])
+        step_number = tracker.get_current_step_number()
+        self.assertIsNone(result)
+        self.assertEqual(step_number, 2)
+
     def test_get_current_step_number_success(self):
+        self.tracker = TaskTracker(recipe='tea', if_json_converter=False)
         self.tracker.completed_nodes = {}
         self.tracker.track(self.node1.state, self.node1.objects)
         self.tracker.track(self.node2.state, self.node2.objects)
@@ -70,6 +85,11 @@ class TestTaskTracker(unittest.TestCase):
         self.tracker.completed_nodes = {}
         step_number = self.tracker.get_current_step_number()
         self.assertEqual(step_number, ReasoningErrors.NOT_STARTED)
+
+    def test_get_next_recipe_step_success(self):
+        self.tracker.current_step_number = 1
+        next_step = self.tracker.get_next_recipe_step()
+        self.assertEqual(next_step, "Place tea bag in mug.")
 
 
 if __name__ == '__main__':
