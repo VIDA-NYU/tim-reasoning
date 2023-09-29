@@ -125,7 +125,11 @@ class TaskTracker:
         instructions = json_data[self.recipe]["steps"]
 
         # next step number
-        step_num = str(self.current_step_number + 1)
+        current_step = self.get_current_step_number()
+        if isinstance(current_step, int):
+            step_num = str(self.current_step_number + 1)
+        else:
+            return ReasoningErrors.NOT_STARTED
         # if next instruction exists
         if step_num in instructions:
             return instructions[step_num]

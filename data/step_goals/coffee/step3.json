@@ -3,10 +3,10 @@
   "goals": [
     {
       "state": "contains",
-      "objects": ["mug", "liquid"]
+      "objects": ["mug", "dripper", "filter"]
     },
     {
-      "state": "unstacked",
+      "state": "stacked",
       "objects": ["mug"]
     }
   ]

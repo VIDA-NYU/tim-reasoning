@@ -6,8 +6,8 @@
       "objects": ["kettle", "water"]
     },
     {
-      "state": "measured",
-      "objects": ["water"]
+      "state": "unstacked",
+      "objects": ["mug"]
     }
   ]
 }

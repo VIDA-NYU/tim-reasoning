@@ -1,0 +1,13 @@
+{
+  "operand": "and",
+  "goals": [
+    {
+      "state": "contains",
+      "objects": ["tortilla", "nutella", "banana", "cinnamon"] 
+    },
+    {
+      "state": "open",
+      "objects": ["tortilla"]
+    }
+  ]
+}

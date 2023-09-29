@@ -35,13 +35,3 @@ class Node:
         """
         for node in nodes:
             self.add_dependency(node)
-
-
-# Notes from reviewers
-# duplicate objects
-# connection to tracked objects
-
-# -----
-# action recognition is done by mainly object states
-# - object states
-# detecting actions is unstable

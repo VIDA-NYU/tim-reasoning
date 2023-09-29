@@ -6,7 +6,7 @@
       "objects": ["mug", "liquid"]
     },
     {
-      "state": "unstacked",
+      "state": "stacked",
       "objects": ["mug"]
     }
   ]

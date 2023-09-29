@@ -4,6 +4,10 @@
     {
       "state": "contains",
       "objects": ["mug", "tea-bag"]
+    },
+    {
+      "state": "unstacked",
+      "objects": ["mug"]
     }
   ]
 }
