@@ -1,4 +1,6 @@
+import json
 import os
+
 from glob import glob
 from unified_planning.io import PDDLReader
 from tim_reasoning.pddl2graph.dependency_graph import DependencyGraph
@@ -40,6 +42,12 @@ class Pddl2GraphConverter:
             nodes = self._create_single_node(parsed, step_number)
         return nodes
 
+    def _get_recipe_length(self, recipe_data_folder, recipe_name) -> int:
+        with open(f'{recipe_data_folder}/recipe.json', encoding="utf-8") as file:
+            recipe_data = json.load(file)
+        steps = recipe_data[recipe_name]['steps']
+        return len(steps)
+
     def _goals_to_nodes(self, goals: list, step_number: int):
         step_nodes = []
         for goal in goals:
@@ -47,22 +55,33 @@ class Pddl2GraphConverter:
             step_nodes.extend(nodes)
         return step_nodes
 
-    def _add_previous_step_dependencies(self, previous_step_nodes, current_step_nodes):
+    def _add_previous_step_dependencies(
+        self, previous_step_nodes, current_step_nodes
+    ):
         for curr_node in current_step_nodes:
             curr_node.add_dependencies(previous_step_nodes)
 
     def _parse_pddl(
-        self, domain_file: str, total_steps: str, pddl_folder: str, verbose: bool = False
+        self,
+        domain_file: str,
+        total_steps: int,
+        pddl_folder: str,
+        verbose: bool = False,
     ):
         for step_count in range(1, total_steps + 1):
             if verbose:
                 print(f"Parsing for step {step_count}/{total_steps}")
 
+            pddl_step_file = f'{pddl_folder}/step{step_count}.pddl'
+            if not os.path.exists(pddl_step_file):
+                if verbose:
+                    print(f"PDDL step file doesn't exist for Step {step_count}")
+                continue
             problem = self.reader.parse_problem(
                 domain_filename=domain_file,
-                problem_filename=f'{pddl_folder}/step{step_count}.pddl',
+                problem_filename=pddl_step_file,
             )
-            # parse all the goals for the cuyrrent step
+            # parse all the goals for the current step
             parsed_goals = self.problem_parser.parse_goals(problem=problem)
             if verbose:
                 print(f"Parsed goals are = \n{parsed_goals}\n")
@@ -84,7 +103,13 @@ class Pddl2GraphConverter:
 
             previous_step_nodes = current_step_nodes
 
-    def convert(self, pddl_folder: str, verbose: bool = False) -> DependencyGraph:
+    def convert(
+        self,
+        recipe: str,
+        pddl_folder: str,
+        recipe_data_folder: str = 'data/recipe',
+        verbose: bool = False,
+    ) -> DependencyGraph:
         """Converts PDDL to a DependencyGraph
 
         Args:
@@ -93,9 +118,12 @@ class Pddl2GraphConverter:
         Returns:
             DependencyGraph: graph object
         """
+
         DOMAIN_FILE = f'{pddl_folder}/domain.pddl'
         assert os.path.exists(DOMAIN_FILE)
-        TOTAL_STEPS = len(glob(f'{pddl_folder}/step*.pddl'))
+        TOTAL_STEPS = self._get_recipe_length(
+            recipe_data_folder=recipe_data_folder, recipe_name=recipe
+        )
         assert TOTAL_STEPS > 0
         # create the graph and add dependencies
         self._parse_pddl(

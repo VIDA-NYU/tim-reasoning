@@ -1,0 +1,9 @@
+{
+  "operand": "None",
+  "goals": [
+    {
+      "state": "placed",
+      "objects": ["pinwheels", "plate"]
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "operand": "and",
+  "goals": [
+    {
+      "state": "not-contains",
+      "objects": ["mug", "tea-bag"]
+    },
+    {  
+      "state": "contains",
+      "objects": ["mug", "tea"]
+    }
+  ]
+}

@@ -52,3 +52,6 @@ desktop.ini
 
 # Vagrant
 .vagrant
+
+# VScode
+.vscode/*

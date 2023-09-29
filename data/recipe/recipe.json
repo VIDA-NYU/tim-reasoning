@@ -1,0 +1,40 @@
+{
+    "pinwheels": {
+        "steps": {
+            "1": "Place tortilla on cutting board.",
+            "2": "Use a butter knife to scoop nut butter from the jar. Spread nut butter onto tortilla, leaving 1/2-inch uncovered at the edges.",
+            "3": "Clean the knife by wiping with a paper towel.",
+            "4": "Use the knife to scoop jelly from the jar. Spread jelly over the nut butter.",
+            "5": "Clean the knife by wiping with a paper towel.",
+            "6": "Roll the tortilla from one end to the other into a log shape, about 1.5 inches thick. Roll it tight enough to prevent gaps, but not so tight that the filling leaks.",
+            "7": "Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.",
+            "8": "Trim the ends of the tortilla roll with the butter knife, leaving 1⁄2 inch margin between the last toothpick and the end of the roll. Discard ends.",
+            "9": "Slide floss under the tortilla, perpendicular to the length of the roll. Place the floss halfway between two toothpicks.",
+            "10": "Cross the two ends of the floss over the top of the tortilla roll. Holding one end of the floss in each hand, pull the floss ends in opposite directions to slice.",
+            "11": "Continue slicing with floss to create 5 pinwheels.",
+            "12": "Place the pinwheels on a plate."
+        }
+    },
+    "tea": {
+        "steps": {
+            "1": "Measure 12 ounces of cold water and transfer to a kettle.",
+            "2": "Place tea bag in mug.",
+            "3": "Check the temperature of the water.",
+            "4": "Pour water into mug.",
+            "5": "Steep for 3 minutes.", 
+            "6": "Discard tea bag.",
+            "7": "Add honey and stir."
+        }
+    },
+    "quesadilla": {
+        "steps": {
+            "1": "Place tortilla on cutting board.",
+            "2": "Use a butter knife to spread a layer of Nutella onto tortilla.",
+            "3": "Top with banana slices.",
+            "4": "Sprinkle small amount of cinnamon onto tortilla.",
+            "5": "Fold tortilla in half into semi-circle.",
+            "6": "Slice tortilla in half using butter knife to create two triangular wedges.",
+            "7": "Place tortilla wedges on a plate to serve."
+        }
+    }
+}
