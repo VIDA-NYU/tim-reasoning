@@ -1,9 +1,0 @@
-{
-  "operand": "None",
-  "goals": [
-    {
-      "state": "steeped",
-      "objects": ["tea-bag"]
-    }
-  ]
-}

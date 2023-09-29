@@ -1,9 +1,0 @@
-{
-  "operand": "None",
-  "goals": [
-    {
-      "state": "temperature-measured",
-      "objects": ["water"]  
-    }
-  ]
-}

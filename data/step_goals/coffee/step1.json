@@ -1,12 +1,12 @@
 {
-  "operand": "and", 
+  "operand": "and",
   "goals": [
     {
       "state": "contains",
-      "objects": ["mug", "liquid"]
+      "objects": ["kettle", "water"]
     },
     {
-      "state": "unstacked",
+      "state": "stacked",
       "objects": ["mug"]
     }
   ]

@@ -1,0 +1,13 @@
+{
+  "operand": "and",
+  "goals": [
+    {
+      "state": "half folded",
+      "objects": ["tortilla"]
+    },
+    {
+      "state": "closed",
+      "objects": ["tortilla"]
+    }
+  ]
+}
