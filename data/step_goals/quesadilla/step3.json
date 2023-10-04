@@ -2,8 +2,8 @@
   "operand": "and",
   "goals": [
     {
-      "state": "contains",
-      "objects": ["tortilla", "nutella", "banana"] 
+      "state": "nutella+banana[full]",
+      "objects": ["tortilla"] 
     },
     {
       "state": "open",

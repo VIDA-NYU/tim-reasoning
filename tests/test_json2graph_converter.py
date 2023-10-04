@@ -9,7 +9,7 @@ class TestJson2GraphConverter(unittest.TestCase):
     def setUp(self):
         self.converter = Json2GraphConverter()
         self.recipe = "tea"  # sample recipe to test
-        self.nodes_len = 10  # total number of nodes in tea recipe
+        self.nodes_len = 5  # total number of nodes in tea recipe
         self.total_steps = 7
         self.recipe_folder = "data/recipe"
         self.instructions_folder = 'data/step_goals'

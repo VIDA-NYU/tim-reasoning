@@ -2,11 +2,7 @@
   "operand": "None", 
   "goals": [
     {
-      "state": "contains",
-      "objects": ["mug", "tea-bag"]
-    },
-    {
-      "state": "unstacked",
+      "state": "tea-bag",
       "objects": ["mug"]
     }
   ]

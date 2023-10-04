@@ -2,7 +2,7 @@
   "operand": "and",
   "goals": [
     {
-      "state": "half folded",
+      "state": "folding",
       "objects": ["tortilla"]
     },
     {

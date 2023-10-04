@@ -37,7 +37,8 @@ class Json2GraphConverter:
                     print(f"JSON step file doesn't exist for Step {step_number}")
                 continue
             with open(step_path, encoding="utf-8") as f:
-                steps = json.load(f)
+                data = f.read()
+            steps = json.loads(data)
 
             if verbose:
                 print(f"Parsing step {step_number}")

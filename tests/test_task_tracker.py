@@ -28,7 +28,9 @@ class TestTaskTracker(unittest.TestCase):
         self.assertFalse(result)
 
     def test_track_invalid_state(self):
-        result = self.tracker.track(state='non-existent', objects=['non-existent'])
+        result = self.tracker.track(
+            state='non-existent', objects=['non-existent'], object_ids=[1]
+        )
         self.assertEqual(result, ReasoningErrors.INVALID_STATE)
 
     def test_track_missing_dependency(self):
@@ -37,7 +39,9 @@ class TestTaskTracker(unittest.TestCase):
         node2_id = self.node2.get_id()
         self.tracker.completed_nodes[node1_id] = self.node1
         self.tracker.completed_nodes[node2_id] = self.node2
-        result = self.tracker.track(state='steeped', objects=['tea-bag'])
+        result = self.tracker.track(
+            state='steeped', objects=['tea-bag'], object_ids=[1]
+        )
         self.assertEqual(result, ReasoningErrors.MISSING_PREVIOUS)
 
     def test_track_success(self):
@@ -48,36 +52,42 @@ class TestTaskTracker(unittest.TestCase):
         self.tracker.completed_nodes[node2_id] = self.node2
 
         self.tracker.task_graph.find_node = MagicMock(return_value=(3, self.node3))
-        result = self.tracker.track('contains', ['mug', 'tea-bag'])
-        self.assertIsNone(result)
+        result = self.tracker.track(
+            'contains', ['mug', 'tea-bag'], object_ids=[1, 2]
+        )
+        self.assertEqual(result, "Check the temperature of the water.")
 
     def test_track_success_without_mock(self):
-        self.tracker.track(self.node1.state, self.node1.objects)
-        self.tracker.track(self.node2.state, self.node2.objects)
-        result = self.tracker.track('contains', ['mug', 'tea-bag'])
+        self.tracker.track(self.node1.state, self.node1.objects, object_ids=[1])
+        self.tracker.track(self.node2.state, self.node2.objects, object_ids=[2, 3])
+        result = self.tracker.track(
+            'contains', ['mug', 'tea-bag'], object_ids=[1, 2]
+        )
         step_number = self.tracker.get_current_step_number()
-        self.assertIsNone(result)
+        self.assertEqual(result, "Check the temperature of the water.")
         self.assertEqual(step_number, 2)
 
     def test_track_success_without_mock_with_json(self):
+        self.node1 = Node('unstacked', ['mug'], 1)
+        self.node2 = Node("tea-bag", ["mug"], 2)
         tracker = TaskTracker(
             recipe="tea",
             data_folder="data/step_goals/",
             if_json_converter=True,
             verbose=True,
         )
-        tracker.track(self.node1.state, self.node1.objects)
-        tracker.track(self.node2.state, self.node2.objects)
-        result = tracker.track('contains', ['mug', 'tea-bag'])
+        tracker.track(self.node1.state, self.node1.objects, object_ids=[1])
+        tracker.track(self.node2.state, self.node2.objects, object_ids=[1])
+        result = tracker.track("liquid+tea-bag", ['mug'], object_ids=[1])
         step_number = tracker.get_current_step_number()
-        self.assertIsNone(result)
-        self.assertEqual(step_number, 2)
+        self.assertEqual(result, 'Steep for 3 minutes.')
+        self.assertEqual(step_number, 4)
 
     def test_get_current_step_number_success(self):
         self.tracker = TaskTracker(recipe='tea', if_json_converter=False)
         self.tracker.completed_nodes = {}
-        self.tracker.track(self.node1.state, self.node1.objects)
-        self.tracker.track(self.node2.state, self.node2.objects)
+        self.tracker.track(self.node1.state, self.node1.objects, object_ids=[1])
+        self.tracker.track(self.node2.state, self.node2.objects, object_ids=[2, 3])
         step_number = self.tracker.get_current_step_number()
         self.assertEqual(step_number, 1)
 

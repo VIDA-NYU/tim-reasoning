@@ -31,18 +31,71 @@ $ jupyter notebook
 
 ## Usage
 
-1. For using the `TaskTracker`:
+For using the new `SessionManager`:
 
 ```py
-from tim_reasoning import TaskTracker
+from tim_reasoning import SessionManager
 
-# Create the TaskTracker object with initial recipe and data folder
-tracker = TaskTracker(recipe='tea', data_folder='data/')
-# Start tracking the steps in tasks
-error = tracker.track(state='steeped', objects=['tea-bag'])
+sm = SessionManager(
+    unique_objects_file="data/step_goals/unique_objects.json",
+    data_folder="data/step_goals/",
+    patience=1,
+)
 
-if error:
-    print(f"Error returned in tracking: {error}")
-else:
-    continue
+message = [
+    {
+        "pos": [-1.2149151724097291, -0.4343880843796524, -0.6208099189217009],
+        "xyxyn": [0.2, 0.2, 0.4, 0.4],
+        "label": "tortilla",
+        "id": 1,
+        "status": "tracked",
+        "last_seen": 133344374307946261,
+        "state": {
+            "in-package": 0.02,
+            "plain": 0.45,
+            "peanut-butter[initial]": 0.25,
+            "peanut-butter[full]": 0.2,
+            "pb+jelly[partial]": 0.02,
+            "pb+jelly[full]": 0.02,
+            "nutella[partial]": 0.02,
+            "nutella[full]": 0.02,
+            "nutella+banana[partial]": 0.02,
+            "nutella+banana[full]": 0.02,
+            "nutella+banana+cinnamon": 0.02,
+            "folding": 0.02,
+            "folded": 0.02,
+            "cut": 0.02,
+            "rolling": 0.02,
+            "rolled": 0.02,
+            "rolled+toothpicks": 0.02,
+            "ends-cut": 0.02,
+            "sliced[partial]": 0.02,
+            "sliced[full]": 0.02,
+            "on-plate[partial]": 0.02,
+            "on-plate[full]": 0.02,
+        },
+        "hand_object_interaction": 0.89,
+    },
+    {
+        "pos": [-1.2149151724097291, -0.4343880843796524, -0.6208099189217009],
+        "xyxyn": [0.2, 0.2, 0.4, 0.4],
+        "label": "spoon",
+        "id": 10,
+        "status": "tracked",
+        "last_seen": 133344374307946261,
+        "unexpected_object": True,
+        "hand_object_interaction": 0.8,
+    },
+    {
+        "pos": [-1.2149151724097291, -0.4343880843796524, -0.6208099189217009],
+        "xyxyn": [0.0, 0.1, 0.1, 0.2],
+        "label": "peanut butter jar",
+        "id": 2,
+        "status": "tracked",
+        "last_seen": 133344374307946261,
+        "hand_object_interaction": 0.0,
+    },
+]
+
+sm.handle_message(message=message)
 ```

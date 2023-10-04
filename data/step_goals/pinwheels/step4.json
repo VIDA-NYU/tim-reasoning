@@ -2,8 +2,8 @@
   "operand": "None",
   "goals": [
     {
-      "state": "contains",
-      "objects": ["tortilla", "jelly"]
+      "state": "pb+jelly[full]",
+      "objects": ["tortilla"]
     }
   ]
 }

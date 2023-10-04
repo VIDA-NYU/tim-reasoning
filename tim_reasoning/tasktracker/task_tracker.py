@@ -26,6 +26,9 @@ class TaskTracker:
         )
         self.completed_nodes = {}
         self.current_step_number = 0
+        self.object_ids = []  # ids are unique
+        self.object_labels = []  # object_labels can be duplicates
+        self.completed = False  # whether the Task is completed or not
 
     def setup_task_graph(
         self,
@@ -134,9 +137,25 @@ class TaskTracker:
         if step_num in instructions:
             return instructions[step_num]
         # else if its last step
-        return None
+        else:
+            self.completed = True
+            return None
 
-    def track(self, state: str, objects: list) -> ReasoningErrors or None:
+    def add_completed_node(self, node, node_id, objects, object_ids):
+        if node_id not in self.completed_nodes:
+            # Add to completed nodes
+            self.completed_nodes[node_id] = node
+
+            # Update step number
+            self._update_step_number(node_step=node.step_number)
+            for object_id, object_label in zip(object_ids, objects):
+                if object_id not in self.object_ids:
+                    self.object_ids.append(object_id)
+                    self.object_labels.append(object_label)
+
+    def track(
+        self, state: str, objects: list, object_ids: list
+    ) -> ReasoningErrors or None:
         """Track the steps using task graph, add to completed list and raise errors
 
         Args:
@@ -155,10 +174,10 @@ class TaskTracker:
             # raise error
             return ReasoningErrors.MISSING_PREVIOUS
 
-        # Add to completed nodes
-        self.completed_nodes[node_id] = node
-
-        # Update step number
-        self._update_step_number(node_step=node.step_number)
+        # even if the node is already completed the below function would not do anything
+        self.add_completed_node(
+            node=node, node_id=node_id, objects=objects, object_ids=object_ids
+        )
         # return none when no errors found to keep on going
-        return None
+        next_recipe_step = self.get_next_recipe_step()
+        return next_recipe_step
