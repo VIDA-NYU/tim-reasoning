@@ -1,30 +1,45 @@
-recipe,video_name,start_time,end_time,step,tortilla,plate
-pinwheels,pinwheels_2023.03.30-16.38.48,0,7,place tortilla,in-package,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,8,22,place tortilla,plain,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,23,32,spread PB,plain,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,33,49,spread PB,peanut-butter[initial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,50,83,spread PB,peanut-butter[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,84,97,clean knife,peanut-butter[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,98,109,spread J,peanut-butter[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,110,118,spread J,pb+jelly[partial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,119,138,spread J,pb+jelly[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,139,149,clean knife,pb+jelly[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,150,152,roll,pb+jelly[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,153,161,roll,rolling,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,162,168,roll,rolled,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,169,175,insert toothpicks,rolled,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,176,187,insert toothpicks,rolled+toothpicks[partial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,188,195,insert toothpicks,rolled+toothpicks[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,196,202,cut ends,rolled+toothpicks[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,203,209,cut ends,ends-cut[partial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,210,225,cut ends,ends-cut[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,226,237,slide floss,ends-cut[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,238,238,slide floss,floss-underneath,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,239,238,slice first,floss-underneath,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,239,245,slice first,floss-crossed,empty
-pinwheels,pinwheels_2023.03.30-16.38.48,246,247,slice first,sliced[partial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,248,273,slice 2-5,sliced[partial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,274,279,slice 2-5,sliced[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,280,280,put on plate,sliced[full],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,281,287,put on plate,on-plate[partial],empty
-pinwheels,pinwheels_2023.03.30-16.38.48,288,289,put on plate,on-plate[full],with-pinwheels[full]
+recipe,video_name,start_time,end_time,step,tortilla,plate,bowl
+pinwheels,pinwheels_2023.03.30-16.38.48,0,7,place tortilla,in-package,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,8,22,place tortilla,plain,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,23,32,spread PB,plain,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,33,49,spread PB,peanut-butter[initial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,50,83,spread PB,peanut-butter[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,84,97,clean knife,peanut-butter[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,98,109,spread J,peanut-butter[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,110,118,spread J,pb+jelly[partial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,119,138,spread J,pb+jelly[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,139,149,clean knife,pb+jelly[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,150,152,roll,pb+jelly[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,153,161,roll,rolling,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,162,168,roll,rolled,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,169,175,insert toothpicks,rolled,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,176,187,insert toothpicks,rolled+toothpicks[partial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,188,195,insert toothpicks,rolled+toothpicks[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,196,202,cut ends,rolled+toothpicks[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,203,209,cut ends,ends-cut[partial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,210,225,cut ends,ends-cut[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,226,237,slide floss,ends-cut[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,238,238,slide floss,floss-underneath,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,239,238,slice first,floss-underneath,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,239,245,slice first,floss-crossed,empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,246,247,slice first,sliced[partial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,248,273,slice 2-5,sliced[partial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,274,279,slice 2-5,sliced[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,280,280,put on plate,sliced[full],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,281,287,put on plate,on-plate[partial],empty,
+pinwheels,pinwheels_2023.03.30-16.38.48,288,289,put on plate,on-plate[full],with-pinwheels[full],
+oatmeal,oatmeal_mit-eval,0,13,1,,,plain
+oatmeal,oatmeal_mit-eval,14,33,1,,,oatmeal
+oatmeal,oatmeal_mit-eval,34,49,2,,,oatmeal
+oatmeal,oatmeal_mit-eval,50,55,2,,,oatmeal+water
+oatmeal,oatmeal_mit-eval,56,106,3,,,oatmeal+water
+oatmeal,oatmeal_mit-eval,107,109,3,,,oatmeal[cooked]
+oatmeal,oatmeal_mit-eval,110,118,4,,,oatmeal[cooked]
+oatmeal,oatmeal_mit-eval,119,138,4,,,oatmeal[cooked]+raisins
+oatmeal,oatmeal_mit-eval,139,210,5,,,oatmeal[cooked]+raisins
+oatmeal,oatmeal_mit-eval,211,225,5,,,oatmeal+raisins[cooked]
+oatmeal,oatmeal_mit-eval,226,228,6,,,oatmeal+raisins[cooked]
+oatmeal,oatmeal_mit-eval,229,238,6,,,oatmeal+raisins[cooked]+banana
+oatmeal,oatmeal_mit-eval,239,243,7,,,oatmeal+raisins[cooked]+banana
+oatmeal,oatmeal_mit-eval,244,253,7,,,oatmeal+raisins[cooked]+banana+cinnamon
+oatmeal,oatmeal_mit-eval,254,255,7,,,oatmeal+raisins[cooked]+banana+cinnamon+honey
