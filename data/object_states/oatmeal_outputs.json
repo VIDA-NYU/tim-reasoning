@@ -1,0 +1,7426 @@
+[
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606000,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606001,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606002,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606003,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606004,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606005,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606006,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606007,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606008,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606009,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606010,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606011,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606012,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606013,
+    "state": {
+      "plain": 1.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606014,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606015,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606016,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606017,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606018,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606019,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606020,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606021,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606022,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606023,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606024,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606025,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606026,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606027,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606028,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606029,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606030,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606031,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606032,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606033,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 1
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606034,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606035,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606036,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606037,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606038,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606039,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606040,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606041,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606042,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606043,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606044,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606045,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606046,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606047,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606048,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606049,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 1.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606050,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606051,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606052,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606053,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606054,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606055,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606056,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606057,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606058,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606059,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606060,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606061,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606062,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606063,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606064,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606065,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606066,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606067,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606068,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606069,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606070,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606071,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606072,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606073,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606074,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606075,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606076,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606077,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606078,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606079,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606080,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606081,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606082,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606083,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606084,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606085,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606086,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606087,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606088,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606089,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606090,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606091,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606092,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606093,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606094,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606095,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606096,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606097,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606098,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606099,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606100,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606101,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606102,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606103,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606104,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606105,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606106,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 1.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606107,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606108,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606109,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606110,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606111,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606112,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606113,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606114,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606115,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606116,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606117,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606118,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 1.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606119,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606120,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606121,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606122,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606123,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606124,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606125,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606126,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606127,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606128,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606129,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606130,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606131,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606132,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606133,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606134,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606135,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606136,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606137,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606138,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 4
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606139,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606140,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606141,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606142,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606143,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606144,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606145,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606146,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606147,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606148,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606149,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606150,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606151,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606152,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606153,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606154,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606155,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606156,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606157,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606158,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606159,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606160,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606161,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606162,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606163,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606164,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606165,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606166,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606167,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606168,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606169,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606170,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606171,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606172,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606173,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606174,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606175,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606176,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606177,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606178,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606179,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606180,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606181,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606182,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606183,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606184,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606185,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606186,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606187,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606188,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606189,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606190,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606191,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606192,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606193,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606194,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606195,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606196,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606197,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606198,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606199,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606200,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606201,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606202,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606203,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606204,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606205,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606206,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606207,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606208,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606209,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606210,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 1.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606211,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606212,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606213,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606214,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606215,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606216,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606217,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606218,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606219,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606220,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606221,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606222,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606223,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606224,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606225,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606226,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606227,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606228,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 1.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606229,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606230,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606231,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606232,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606233,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606234,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606235,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606236,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606237,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606238,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606239,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606240,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606241,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606242,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606243,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606244,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606245,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606246,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606247,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606248,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606249,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606250,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606251,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606252,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606253,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 1.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606254,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 1.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "last_seen": 1696606255,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 1.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 7
+  }
+]
