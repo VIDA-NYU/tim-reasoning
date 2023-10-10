@@ -2,10 +2,6 @@
   "operand": "and",
   "goals": [
     {
-      "state": "contains",
-      "objects": ["kettle", "water"]
-    },
-    {
       "state": "stacked",
       "objects": ["mug"]
     }

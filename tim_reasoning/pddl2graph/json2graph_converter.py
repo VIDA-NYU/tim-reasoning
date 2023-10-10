@@ -1,12 +1,14 @@
 import json
 import os
-from tim_reasoning.pddl2graph.dependency_graph import DependencyGraph
+
+from tim_reasoning import DependencyGraph, Logger
 from tim_reasoning.pddl2graph.node import Node
 
 
 class Json2GraphConverter:
     def __init__(self):
         self.graph = DependencyGraph()
+        self.log = Logger(name="Json2GraphConverter")
 
     def _add_previous_dependencies(self, previous_nodes, current_nodes):
         for node in current_nodes:
@@ -34,13 +36,16 @@ class Json2GraphConverter:
             step_path = f'{json_dir}/step{step_number}.json'
             if not os.path.exists(step_path):
                 if verbose:
-                    print(f"JSON step file doesn't exist for Step {step_number}")
+                    self.log.info(
+                        f"JSON step file doesn't exist for Step {step_number}"
+                    )
                 continue
             with open(step_path, encoding="utf-8") as f:
-                steps = json.load(f)
+                data = f.read()
+            steps = json.loads(data)
 
             if verbose:
-                print(f"Parsing step {step_number}")
+                self.log.info(f"Parsing step {step_number}")
 
             nodes = self._create_nodes(steps, step_number)
             self.graph.add_nodes(nodes)

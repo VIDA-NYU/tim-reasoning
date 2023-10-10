@@ -3,7 +3,7 @@
   "goals": [
     {
       "state": "clean",
-      "objects": ["butter-knife"]
+      "objects": ["knife"]
     }
   ]
 }

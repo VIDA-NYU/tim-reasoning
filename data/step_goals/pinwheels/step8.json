@@ -2,7 +2,7 @@
   "operand": "None",
   "goals": [
     {
-      "state": "sliced[partial]",
+      "state": "ends-cut",
       "objects": ["tortilla"]
     }
   ]

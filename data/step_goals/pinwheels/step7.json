@@ -2,8 +2,8 @@
   "operand": "None",
   "goals": [
     {
-      "state": "with",
-      "objects": ["tortilla", "toothpicks"]
+      "state": "rolled+toothpicks",
+      "objects": ["tortilla"]
     }
   ]
 }

@@ -2,8 +2,8 @@
   "operand": "and", 
   "goals": [
     {
-      "state": "contains",
-      "objects": ["mug", "dripper", "filter", "grounds", "water"]
+      "state": "dripper+filter+grounds+water",
+      "objects": ["mug"]
     },
     {
       "state": "stacked",

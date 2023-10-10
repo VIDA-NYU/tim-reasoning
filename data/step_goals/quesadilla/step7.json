@@ -6,8 +6,8 @@
       "objects": ["tortilla"]
     },
     {
-      "state": "on",
-      "objects": ["plate", "tortilla"]
+      "state": "on-plate",
+      "objects": ["tortilla"]
     }
   ]
 }

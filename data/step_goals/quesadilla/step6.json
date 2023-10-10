@@ -1,12 +1,8 @@
 {
-  "operand": "and",
+  "operand": "None",
   "goals": [
     {
       "state": "cut",
-      "objects": ["tortilla"]
-    },
-    {
-      "state": "closed",
       "objects": ["tortilla"]
     }
   ]
