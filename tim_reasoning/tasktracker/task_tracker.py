@@ -9,6 +9,8 @@ RECIPE_DATA_FOLDER = "data/recipe"
 class TaskTracker:
     """Class for task manager that track a specific recipe"""
 
+    _id = 0
+
     def __init__(
         self,
         recipe: str,
@@ -16,6 +18,8 @@ class TaskTracker:
         if_json_converter: bool = True,
         verbose: str = False,
     ):
+        self._id = TaskTracker._id
+        TaskTracker._id += 1
         self.recipe = recipe
         self.task_graph = self.setup_task_graph(
             recipe,
@@ -29,6 +33,9 @@ class TaskTracker:
         self.object_ids = []  # ids are unique
         self.object_labels = []  # object_labels can be duplicates
         self.completed = False  # whether the Task is completed or not
+
+    def get_id(self):
+        return self._id
 
     def setup_task_graph(
         self,
@@ -96,7 +103,7 @@ class TaskTracker:
         Args:
             node_step (int): last node added's step_number
         """
-        self.current_step_number = max(self.current_step_number, node_step)
+        self.current_step_number = max(self.current_step_number, node_step + 1)
 
     def get_current_step_number(self) -> int or ReasoningErrors:
         """Returns Task graph's current step number
@@ -130,7 +137,7 @@ class TaskTracker:
         # next step number
         current_step = self.get_current_step_number()
         if isinstance(current_step, int):
-            step_num = str(self.current_step_number + 1)
+            step_num = str(self.current_step_number)
         else:
             return ReasoningErrors.NOT_STARTED
         # if next instruction exists
@@ -166,14 +173,24 @@ class TaskTracker:
             ReasoningErrors or None: errors or none
         """
         node_id, node = self.task_graph.find_node(state=state, objects=objects)
-        if not node:
-            return ReasoningErrors.INVALID_STATE
+        if self.current_step_number > 0:
+            if not node:
+                (
+                    max_match,
+                    partial_node_id,
+                    partial_node,
+                ) = self.task_graph.find_partial_node(state=state, objects=objects)
+                if max_match > 0.1:
+                    return ReasoningErrors.PARTIAL_STATE
+                else:
+                    return ReasoningErrors.INVALID_STATE
 
-        # check_dependencies
-        if not self._is_dependencies_completed(node=node):
-            # raise error
-            return ReasoningErrors.MISSING_PREVIOUS
-
+            # check_dependencies
+            if not self._is_dependencies_completed(node=node):
+                # raise error
+                return ReasoningErrors.MISSING_PREVIOUS
+        if self.current_step_number == 0 and not node:
+            return None
         # even if the node is already completed the below function would not do anything
         self.add_completed_node(
             node=node, node_id=node_id, objects=objects, object_ids=object_ids

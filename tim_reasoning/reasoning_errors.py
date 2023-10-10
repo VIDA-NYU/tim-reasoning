@@ -9,11 +9,18 @@ class ReasoningErrors(Enum):
         "Invalid state.",  # title
         "The state provided is not valid.",  # description
     )
+    PARTIAL_STATE = (
+        "Partial state.",  # title
+        "The state provided is partially valid.",  # description
+    )
     MISSING_PREVIOUS = (
         "Previous step incomplete.",  # title
         "Some of the previous states are incomplete.",  # description
     )
-    NOT_STARTED = ("No completed nodes", "The task graph hasn't started, there were no tasks recorded.")
+    NOT_STARTED = (
+        "No completed nodes",
+        "The task graph hasn't started, there were no tasks recorded.",
+    )
     UNEXPECTED_ERROR = (
         "An unexpected error occurred.",
         "Please contact support for assistance.",

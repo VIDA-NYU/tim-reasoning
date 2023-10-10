@@ -3,6 +3,7 @@ import os
 
 from glob import glob
 from unified_planning.io import PDDLReader
+from tim_reasoning import Logger
 from tim_reasoning.pddl2graph.dependency_graph import DependencyGraph
 from tim_reasoning.pddl2graph.node import Node
 from tim_reasoning.pddl2graph.problem_parser import ProblemParser
@@ -13,6 +14,7 @@ class Pddl2GraphConverter:
         self.graph = DependencyGraph()
         self.problem_parser = ProblemParser()
         self.reader = PDDLReader()
+        self.log = Logger(name="Pddl2GraphConverter")
 
     def _create_2_nodes(self, parsed, step_number):
         nodes = []
@@ -70,12 +72,14 @@ class Pddl2GraphConverter:
     ):
         for step_count in range(1, total_steps + 1):
             if verbose:
-                print(f"Parsing for step {step_count}/{total_steps}")
+                self.log.info(f"Parsing for step {step_count}/{total_steps}")
 
             pddl_step_file = f'{pddl_folder}/step{step_count}.pddl'
             if not os.path.exists(pddl_step_file):
                 if verbose:
-                    print(f"PDDL step file doesn't exist for Step {step_count}")
+                    self.log.info(
+                        f"PDDL step file doesn't exist for Step {step_count}"
+                    )
                 continue
             problem = self.reader.parse_problem(
                 domain_filename=domain_file,
@@ -84,7 +88,7 @@ class Pddl2GraphConverter:
             # parse all the goals for the current step
             parsed_goals = self.problem_parser.parse_goals(problem=problem)
             if verbose:
-                print(f"Parsed goals are = \n{parsed_goals}\n")
+                self.log.info(f"Parsed goals are = \n{parsed_goals}\n")
 
             # finding final object states for current step
             current_step_nodes = self._goals_to_nodes(
