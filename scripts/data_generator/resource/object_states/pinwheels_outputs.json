@@ -13,7 +13,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606000,
+    "id": "1",
+    "last_seen": 1697045213,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -51,7 +52,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606000,
+    "id": "1",
+    "last_seen": 1697045213,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -73,7 +75,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606001,
+    "id": "1",
+    "last_seen": 1697045214,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -111,7 +114,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606001,
+    "id": "1",
+    "last_seen": 1697045214,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -133,7 +137,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606002,
+    "id": "1",
+    "last_seen": 1697045215,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -171,7 +176,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606002,
+    "id": "1",
+    "last_seen": 1697045215,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -193,7 +199,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606003,
+    "id": "1",
+    "last_seen": 1697045216,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -231,7 +238,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606003,
+    "id": "1",
+    "last_seen": 1697045216,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -253,7 +261,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606004,
+    "id": "1",
+    "last_seen": 1697045217,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -291,7 +300,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606004,
+    "id": "1",
+    "last_seen": 1697045217,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -313,7 +323,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606005,
+    "id": "1",
+    "last_seen": 1697045218,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -351,7 +362,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606005,
+    "id": "1",
+    "last_seen": 1697045218,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -373,7 +385,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606006,
+    "id": "1",
+    "last_seen": 1697045219,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -411,7 +424,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606006,
+    "id": "1",
+    "last_seen": 1697045219,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -433,7 +447,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606007,
+    "id": "1",
+    "last_seen": 1697045220,
     "state": {
       "in-package": 1.0,
       "plain": 0.0,
@@ -471,7 +486,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606007,
+    "id": "1",
+    "last_seen": 1697045220,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -493,7 +509,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606008,
+    "id": "1",
+    "last_seen": 1697045221,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -531,7 +548,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606008,
+    "id": "1",
+    "last_seen": 1697045221,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -553,7 +571,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606009,
+    "id": "1",
+    "last_seen": 1697045222,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -591,7 +610,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606009,
+    "id": "1",
+    "last_seen": 1697045222,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -613,7 +633,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606010,
+    "id": "1",
+    "last_seen": 1697045223,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -651,7 +672,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606010,
+    "id": "1",
+    "last_seen": 1697045223,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -673,7 +695,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606011,
+    "id": "1",
+    "last_seen": 1697045224,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -711,7 +734,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606011,
+    "id": "1",
+    "last_seen": 1697045224,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -733,7 +757,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606012,
+    "id": "1",
+    "last_seen": 1697045225,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -771,7 +796,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606012,
+    "id": "1",
+    "last_seen": 1697045225,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -793,7 +819,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606013,
+    "id": "1",
+    "last_seen": 1697045226,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -831,7 +858,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606013,
+    "id": "1",
+    "last_seen": 1697045226,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -853,7 +881,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606014,
+    "id": "1",
+    "last_seen": 1697045227,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -891,7 +920,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606014,
+    "id": "1",
+    "last_seen": 1697045227,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -913,7 +943,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606015,
+    "id": "1",
+    "last_seen": 1697045228,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -951,7 +982,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606015,
+    "id": "1",
+    "last_seen": 1697045228,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -973,7 +1005,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606016,
+    "id": "1",
+    "last_seen": 1697045229,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1011,7 +1044,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606016,
+    "id": "1",
+    "last_seen": 1697045229,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1033,7 +1067,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606017,
+    "id": "1",
+    "last_seen": 1697045230,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1071,7 +1106,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606017,
+    "id": "1",
+    "last_seen": 1697045230,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1093,7 +1129,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606018,
+    "id": "1",
+    "last_seen": 1697045231,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1131,7 +1168,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606018,
+    "id": "1",
+    "last_seen": 1697045231,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1153,7 +1191,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606019,
+    "id": "1",
+    "last_seen": 1697045232,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1191,7 +1230,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606019,
+    "id": "1",
+    "last_seen": 1697045232,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1213,7 +1253,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606020,
+    "id": "1",
+    "last_seen": 1697045233,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1251,7 +1292,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606020,
+    "id": "1",
+    "last_seen": 1697045233,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1273,7 +1315,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606021,
+    "id": "1",
+    "last_seen": 1697045234,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1311,7 +1354,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606021,
+    "id": "1",
+    "last_seen": 1697045234,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1333,7 +1377,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606022,
+    "id": "1",
+    "last_seen": 1697045235,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1371,7 +1416,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606022,
+    "id": "1",
+    "last_seen": 1697045235,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1393,67 +1439,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606023,
-    "state": {
-      "in-package": 0.0,
-      "plain": 1.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606023,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606024,
+    "id": "1",
+    "last_seen": 1697045236,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1491,7 +1478,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606024,
+    "id": "1",
+    "last_seen": 1697045236,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1513,7 +1501,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606025,
+    "id": "1",
+    "last_seen": 1697045237,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1551,7 +1540,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606025,
+    "id": "1",
+    "last_seen": 1697045237,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1573,7 +1563,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606026,
+    "id": "1",
+    "last_seen": 1697045238,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1611,7 +1602,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606026,
+    "id": "1",
+    "last_seen": 1697045238,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1633,7 +1625,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606027,
+    "id": "1",
+    "last_seen": 1697045239,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1671,7 +1664,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606027,
+    "id": "1",
+    "last_seen": 1697045239,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1693,7 +1687,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606028,
+    "id": "1",
+    "last_seen": 1697045240,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1731,7 +1726,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606028,
+    "id": "1",
+    "last_seen": 1697045240,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1753,7 +1749,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606029,
+    "id": "1",
+    "last_seen": 1697045241,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1791,7 +1788,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606029,
+    "id": "1",
+    "last_seen": 1697045241,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1813,7 +1811,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606030,
+    "id": "1",
+    "last_seen": 1697045242,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1851,7 +1850,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606030,
+    "id": "1",
+    "last_seen": 1697045242,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1873,7 +1873,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606031,
+    "id": "1",
+    "last_seen": 1697045243,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1911,7 +1912,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606031,
+    "id": "1",
+    "last_seen": 1697045243,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1933,7 +1935,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606032,
+    "id": "1",
+    "last_seen": 1697045244,
     "state": {
       "in-package": 0.0,
       "plain": 1.0,
@@ -1971,7 +1974,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606032,
+    "id": "1",
+    "last_seen": 1697045244,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -1993,7 +1997,70 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606033,
+    "id": "1",
+    "last_seen": 1697045245,
+    "state": {
+      "in-package": 0.0,
+      "plain": 1.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045245,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045246,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2031,7 +2098,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606033,
+    "id": "1",
+    "last_seen": 1697045246,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2053,67 +2121,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606034,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606034,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606035,
+    "id": "1",
+    "last_seen": 1697045247,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2151,7 +2160,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606035,
+    "id": "1",
+    "last_seen": 1697045247,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2173,67 +2183,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606036,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606036,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606037,
+    "id": "1",
+    "last_seen": 1697045248,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2271,7 +2222,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606037,
+    "id": "1",
+    "last_seen": 1697045248,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2293,67 +2245,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606038,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606038,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606039,
+    "id": "1",
+    "last_seen": 1697045249,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2391,7 +2284,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606039,
+    "id": "1",
+    "last_seen": 1697045249,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2413,67 +2307,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606040,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606040,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606041,
+    "id": "1",
+    "last_seen": 1697045250,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2511,7 +2346,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606041,
+    "id": "1",
+    "last_seen": 1697045250,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2533,67 +2369,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606042,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606042,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606043,
+    "id": "1",
+    "last_seen": 1697045251,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2631,7 +2408,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606043,
+    "id": "1",
+    "last_seen": 1697045251,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2653,67 +2431,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606044,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606044,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606045,
+    "id": "1",
+    "last_seen": 1697045252,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2751,7 +2470,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606045,
+    "id": "1",
+    "last_seen": 1697045252,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2773,67 +2493,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606046,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 1.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606046,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606047,
+    "id": "1",
+    "last_seen": 1697045253,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2871,7 +2532,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606047,
+    "id": "1",
+    "last_seen": 1697045253,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2893,7 +2555,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606048,
+    "id": "1",
+    "last_seen": 1697045254,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2931,7 +2594,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606048,
+    "id": "1",
+    "last_seen": 1697045254,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -2953,7 +2617,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606049,
+    "id": "1",
+    "last_seen": 1697045255,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -2991,7 +2656,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606049,
+    "id": "1",
+    "last_seen": 1697045255,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3013,7 +2679,442 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606050,
+    "id": "1",
+    "last_seen": 1697045256,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045256,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045257,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045257,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045258,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045258,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045259,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045259,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045260,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045260,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045261,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045261,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045262,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 1.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045262,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 2
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045263,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3051,7 +3152,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606050,
+    "id": "1",
+    "last_seen": 1697045263,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3073,7 +3175,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606051,
+    "id": "1",
+    "last_seen": 1697045264,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3111,7 +3214,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606051,
+    "id": "1",
+    "last_seen": 1697045264,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3133,7 +3237,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606052,
+    "id": "1",
+    "last_seen": 1697045265,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3171,7 +3276,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606052,
+    "id": "1",
+    "last_seen": 1697045265,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3193,7 +3299,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606053,
+    "id": "1",
+    "last_seen": 1697045266,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3231,7 +3338,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606053,
+    "id": "1",
+    "last_seen": 1697045266,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3253,7 +3361,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606054,
+    "id": "1",
+    "last_seen": 1697045267,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3291,7 +3400,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606054,
+    "id": "1",
+    "last_seen": 1697045267,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3313,7 +3423,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606055,
+    "id": "1",
+    "last_seen": 1697045268,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3351,7 +3462,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606055,
+    "id": "1",
+    "last_seen": 1697045268,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3373,7 +3485,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606056,
+    "id": "1",
+    "last_seen": 1697045269,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3411,7 +3524,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606056,
+    "id": "1",
+    "last_seen": 1697045269,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3433,7 +3547,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606057,
+    "id": "1",
+    "last_seen": 1697045270,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3471,7 +3586,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606057,
+    "id": "1",
+    "last_seen": 1697045270,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3493,7 +3609,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606058,
+    "id": "1",
+    "last_seen": 1697045271,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3531,7 +3648,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606058,
+    "id": "1",
+    "last_seen": 1697045271,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3553,7 +3671,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606059,
+    "id": "1",
+    "last_seen": 1697045272,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3591,7 +3710,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606059,
+    "id": "1",
+    "last_seen": 1697045272,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3613,7 +3733,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606060,
+    "id": "1",
+    "last_seen": 1697045273,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3651,7 +3772,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606060,
+    "id": "1",
+    "last_seen": 1697045273,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3673,7 +3795,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606061,
+    "id": "1",
+    "last_seen": 1697045274,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3711,7 +3834,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606061,
+    "id": "1",
+    "last_seen": 1697045274,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3733,7 +3857,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606062,
+    "id": "1",
+    "last_seen": 1697045275,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3771,7 +3896,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606062,
+    "id": "1",
+    "last_seen": 1697045275,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3793,7 +3919,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606063,
+    "id": "1",
+    "last_seen": 1697045276,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3831,7 +3958,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606063,
+    "id": "1",
+    "last_seen": 1697045276,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3853,7 +3981,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606064,
+    "id": "1",
+    "last_seen": 1697045277,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3891,7 +4020,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606064,
+    "id": "1",
+    "last_seen": 1697045277,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3913,7 +4043,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606065,
+    "id": "1",
+    "last_seen": 1697045278,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -3951,7 +4082,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606065,
+    "id": "1",
+    "last_seen": 1697045278,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -3973,7 +4105,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606066,
+    "id": "1",
+    "last_seen": 1697045279,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4011,7 +4144,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606066,
+    "id": "1",
+    "last_seen": 1697045279,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4033,7 +4167,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606067,
+    "id": "1",
+    "last_seen": 1697045280,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4071,7 +4206,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606067,
+    "id": "1",
+    "last_seen": 1697045280,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4093,7 +4229,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606068,
+    "id": "1",
+    "last_seen": 1697045281,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4131,7 +4268,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606068,
+    "id": "1",
+    "last_seen": 1697045281,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4153,7 +4291,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606069,
+    "id": "1",
+    "last_seen": 1697045282,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4191,7 +4330,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606069,
+    "id": "1",
+    "last_seen": 1697045282,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4213,7 +4353,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606070,
+    "id": "1",
+    "last_seen": 1697045283,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4251,7 +4392,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606070,
+    "id": "1",
+    "last_seen": 1697045283,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4273,7 +4415,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606071,
+    "id": "1",
+    "last_seen": 1697045284,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4311,7 +4454,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606071,
+    "id": "1",
+    "last_seen": 1697045284,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4333,7 +4477,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606072,
+    "id": "1",
+    "last_seen": 1697045285,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4371,7 +4516,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606072,
+    "id": "1",
+    "last_seen": 1697045285,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4393,7 +4539,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606073,
+    "id": "1",
+    "last_seen": 1697045286,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4431,7 +4578,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606073,
+    "id": "1",
+    "last_seen": 1697045286,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4453,7 +4601,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606074,
+    "id": "1",
+    "last_seen": 1697045287,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4491,7 +4640,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606074,
+    "id": "1",
+    "last_seen": 1697045287,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4513,7 +4663,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606075,
+    "id": "1",
+    "last_seen": 1697045288,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4551,7 +4702,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606075,
+    "id": "1",
+    "last_seen": 1697045288,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4573,7 +4725,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606076,
+    "id": "1",
+    "last_seen": 1697045289,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4611,7 +4764,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606076,
+    "id": "1",
+    "last_seen": 1697045289,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4633,67 +4787,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606077,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606077,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606078,
+    "id": "1",
+    "last_seen": 1697045290,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4731,7 +4826,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606078,
+    "id": "1",
+    "last_seen": 1697045290,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4753,67 +4849,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606079,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606079,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606080,
+    "id": "1",
+    "last_seen": 1697045291,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4851,7 +4888,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606080,
+    "id": "1",
+    "last_seen": 1697045291,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4873,67 +4911,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606081,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606081,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 2
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606082,
+    "id": "1",
+    "last_seen": 1697045292,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -4971,7 +4950,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606082,
+    "id": "1",
+    "last_seen": 1697045292,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -4993,7 +4973,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606083,
+    "id": "1",
+    "last_seen": 1697045293,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5031,7 +5012,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606083,
+    "id": "1",
+    "last_seen": 1697045293,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5053,7 +5035,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606084,
+    "id": "1",
+    "last_seen": 1697045294,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5075,7 +5058,7 @@
       "on-plate[full]": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "step_id": 2
   },
   {
     "pos": [
@@ -5091,13 +5074,14 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606084,
+    "id": "1",
+    "last_seen": 1697045294,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "step_id": 2
   },
   {
     "pos": [
@@ -5113,7 +5097,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606085,
+    "id": "1",
+    "last_seen": 1697045295,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5135,7 +5120,7 @@
       "on-plate[full]": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "step_id": 2
   },
   {
     "pos": [
@@ -5151,13 +5136,14 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606085,
+    "id": "1",
+    "last_seen": 1697045295,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "step_id": 2
   },
   {
     "pos": [
@@ -5173,7 +5159,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606086,
+    "id": "1",
+    "last_seen": 1697045296,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5195,7 +5182,7 @@
       "on-plate[full]": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "step_id": 2
   },
   {
     "pos": [
@@ -5211,13 +5198,14 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606086,
+    "id": "1",
+    "last_seen": 1697045296,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "step_id": 2
   },
   {
     "pos": [
@@ -5233,367 +5221,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606087,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606087,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606088,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606088,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606089,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606089,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606090,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606090,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606091,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606091,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606092,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 1.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606092,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 3
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606093,
+    "id": "1",
+    "last_seen": 1697045297,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5631,7 +5260,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606093,
+    "id": "1",
+    "last_seen": 1697045297,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5653,7 +5283,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606094,
+    "id": "1",
+    "last_seen": 1697045298,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5691,7 +5322,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606094,
+    "id": "1",
+    "last_seen": 1697045298,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5713,7 +5345,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606095,
+    "id": "1",
+    "last_seen": 1697045299,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5751,7 +5384,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606095,
+    "id": "1",
+    "last_seen": 1697045299,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5773,7 +5407,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606096,
+    "id": "1",
+    "last_seen": 1697045300,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5811,7 +5446,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606096,
+    "id": "1",
+    "last_seen": 1697045300,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5833,7 +5469,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606097,
+    "id": "1",
+    "last_seen": 1697045301,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5871,7 +5508,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606097,
+    "id": "1",
+    "last_seen": 1697045301,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5893,7 +5531,566 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606098,
+    "id": "1",
+    "last_seen": 1697045302,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045302,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045303,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045303,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045304,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045304,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045305,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045305,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045306,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045306,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045307,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045307,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045308,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045308,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045309,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045309,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045310,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 1.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045310,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 3
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045311,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5931,7 +6128,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606098,
+    "id": "1",
+    "last_seen": 1697045311,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -5953,7 +6151,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606099,
+    "id": "1",
+    "last_seen": 1697045312,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -5991,7 +6190,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606099,
+    "id": "1",
+    "last_seen": 1697045312,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6013,7 +6213,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606100,
+    "id": "1",
+    "last_seen": 1697045313,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6051,7 +6252,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606100,
+    "id": "1",
+    "last_seen": 1697045313,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6073,7 +6275,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606101,
+    "id": "1",
+    "last_seen": 1697045314,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6111,7 +6314,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606101,
+    "id": "1",
+    "last_seen": 1697045314,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6133,7 +6337,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606102,
+    "id": "1",
+    "last_seen": 1697045315,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6171,7 +6376,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606102,
+    "id": "1",
+    "last_seen": 1697045315,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6193,7 +6399,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606103,
+    "id": "1",
+    "last_seen": 1697045316,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6231,7 +6438,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606103,
+    "id": "1",
+    "last_seen": 1697045316,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6253,7 +6461,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606104,
+    "id": "1",
+    "last_seen": 1697045317,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6291,7 +6500,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606104,
+    "id": "1",
+    "last_seen": 1697045317,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6313,7 +6523,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606105,
+    "id": "1",
+    "last_seen": 1697045318,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6351,7 +6562,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606105,
+    "id": "1",
+    "last_seen": 1697045318,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6373,7 +6585,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606106,
+    "id": "1",
+    "last_seen": 1697045319,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6411,7 +6624,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606106,
+    "id": "1",
+    "last_seen": 1697045319,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6433,7 +6647,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606107,
+    "id": "1",
+    "last_seen": 1697045320,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6471,7 +6686,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606107,
+    "id": "1",
+    "last_seen": 1697045320,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6493,7 +6709,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606108,
+    "id": "1",
+    "last_seen": 1697045321,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6531,7 +6748,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606108,
+    "id": "1",
+    "last_seen": 1697045321,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6553,7 +6771,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606109,
+    "id": "1",
+    "last_seen": 1697045322,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6591,7 +6810,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606109,
+    "id": "1",
+    "last_seen": 1697045322,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6613,7 +6833,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606110,
+    "id": "1",
+    "last_seen": 1697045323,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6651,7 +6872,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606110,
+    "id": "1",
+    "last_seen": 1697045323,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6673,7 +6895,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606111,
+    "id": "1",
+    "last_seen": 1697045324,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6711,7 +6934,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606111,
+    "id": "1",
+    "last_seen": 1697045324,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6733,7 +6957,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606112,
+    "id": "1",
+    "last_seen": 1697045325,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6771,7 +6996,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606112,
+    "id": "1",
+    "last_seen": 1697045325,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6793,7 +7019,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606113,
+    "id": "1",
+    "last_seen": 1697045326,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6831,7 +7058,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606113,
+    "id": "1",
+    "last_seen": 1697045326,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6853,7 +7081,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606114,
+    "id": "1",
+    "last_seen": 1697045327,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6891,7 +7120,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606114,
+    "id": "1",
+    "last_seen": 1697045327,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6913,7 +7143,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606115,
+    "id": "1",
+    "last_seen": 1697045328,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -6951,7 +7182,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606115,
+    "id": "1",
+    "last_seen": 1697045328,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -6973,7 +7205,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606116,
+    "id": "1",
+    "last_seen": 1697045329,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7011,7 +7244,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606116,
+    "id": "1",
+    "last_seen": 1697045329,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7033,7 +7267,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606117,
+    "id": "1",
+    "last_seen": 1697045330,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7071,7 +7306,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606117,
+    "id": "1",
+    "last_seen": 1697045330,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7093,7 +7329,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606118,
+    "id": "1",
+    "last_seen": 1697045331,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7131,7 +7368,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606118,
+    "id": "1",
+    "last_seen": 1697045331,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7153,7 +7391,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606119,
+    "id": "1",
+    "last_seen": 1697045332,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7191,7 +7430,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606119,
+    "id": "1",
+    "last_seen": 1697045332,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7213,7 +7453,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606120,
+    "id": "1",
+    "last_seen": 1697045333,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7251,7 +7492,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606120,
+    "id": "1",
+    "last_seen": 1697045333,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7273,7 +7515,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606121,
+    "id": "1",
+    "last_seen": 1697045334,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7311,7 +7554,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606121,
+    "id": "1",
+    "last_seen": 1697045334,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7333,7 +7577,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606122,
+    "id": "1",
+    "last_seen": 1697045335,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7371,7 +7616,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606122,
+    "id": "1",
+    "last_seen": 1697045335,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7393,7 +7639,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606123,
+    "id": "1",
+    "last_seen": 1697045336,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7431,7 +7678,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606123,
+    "id": "1",
+    "last_seen": 1697045336,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7453,7 +7701,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606124,
+    "id": "1",
+    "last_seen": 1697045337,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7491,7 +7740,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606124,
+    "id": "1",
+    "last_seen": 1697045337,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7513,7 +7763,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606125,
+    "id": "1",
+    "last_seen": 1697045338,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7551,7 +7802,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606125,
+    "id": "1",
+    "last_seen": 1697045338,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7573,7 +7825,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606126,
+    "id": "1",
+    "last_seen": 1697045339,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7611,7 +7864,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606126,
+    "id": "1",
+    "last_seen": 1697045339,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7633,7 +7887,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606127,
+    "id": "1",
+    "last_seen": 1697045340,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7671,7 +7926,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606127,
+    "id": "1",
+    "last_seen": 1697045340,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7693,7 +7949,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606128,
+    "id": "1",
+    "last_seen": 1697045341,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7731,7 +7988,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606128,
+    "id": "1",
+    "last_seen": 1697045341,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7753,7 +8011,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606129,
+    "id": "1",
+    "last_seen": 1697045342,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7791,7 +8050,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606129,
+    "id": "1",
+    "last_seen": 1697045342,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7813,7 +8073,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606130,
+    "id": "1",
+    "last_seen": 1697045343,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7851,7 +8112,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606130,
+    "id": "1",
+    "last_seen": 1697045343,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7873,7 +8135,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606131,
+    "id": "1",
+    "last_seen": 1697045344,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7911,7 +8174,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606131,
+    "id": "1",
+    "last_seen": 1697045344,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7933,7 +8197,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606132,
+    "id": "1",
+    "last_seen": 1697045345,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -7971,7 +8236,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606132,
+    "id": "1",
+    "last_seen": 1697045345,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -7993,7 +8259,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606133,
+    "id": "1",
+    "last_seen": 1697045346,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8031,7 +8298,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606133,
+    "id": "1",
+    "last_seen": 1697045346,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8053,7 +8321,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606134,
+    "id": "1",
+    "last_seen": 1697045347,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8091,7 +8360,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606134,
+    "id": "1",
+    "last_seen": 1697045347,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8113,7 +8383,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606135,
+    "id": "1",
+    "last_seen": 1697045348,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8151,7 +8422,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606135,
+    "id": "1",
+    "last_seen": 1697045348,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8173,7 +8445,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606136,
+    "id": "1",
+    "last_seen": 1697045349,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8211,7 +8484,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606136,
+    "id": "1",
+    "last_seen": 1697045349,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8233,7 +8507,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606137,
+    "id": "1",
+    "last_seen": 1697045350,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8271,7 +8546,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606137,
+    "id": "1",
+    "last_seen": 1697045350,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8293,7 +8569,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606138,
+    "id": "1",
+    "last_seen": 1697045351,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8331,7 +8608,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606138,
+    "id": "1",
+    "last_seen": 1697045351,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8353,127 +8631,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606139,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 1.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 5
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606139,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 5
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606140,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 1.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 5
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606140,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 5
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606141,
+    "id": "1",
+    "last_seen": 1697045352,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8511,7 +8670,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606141,
+    "id": "1",
+    "last_seen": 1697045352,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8533,7 +8693,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606142,
+    "id": "1",
+    "last_seen": 1697045353,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8571,7 +8732,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606142,
+    "id": "1",
+    "last_seen": 1697045353,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8593,7 +8755,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606143,
+    "id": "1",
+    "last_seen": 1697045354,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8631,7 +8794,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606143,
+    "id": "1",
+    "last_seen": 1697045354,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8653,7 +8817,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606144,
+    "id": "1",
+    "last_seen": 1697045355,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8691,7 +8856,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606144,
+    "id": "1",
+    "last_seen": 1697045355,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8713,7 +8879,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606145,
+    "id": "1",
+    "last_seen": 1697045356,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8751,7 +8918,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606145,
+    "id": "1",
+    "last_seen": 1697045356,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8773,7 +8941,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606146,
+    "id": "1",
+    "last_seen": 1697045357,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8811,7 +8980,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606146,
+    "id": "1",
+    "last_seen": 1697045357,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8833,7 +9003,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606147,
+    "id": "1",
+    "last_seen": 1697045358,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8871,7 +9042,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606147,
+    "id": "1",
+    "last_seen": 1697045358,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8893,7 +9065,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606148,
+    "id": "1",
+    "last_seen": 1697045359,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8931,7 +9104,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606148,
+    "id": "1",
+    "last_seen": 1697045359,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -8953,7 +9127,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606149,
+    "id": "1",
+    "last_seen": 1697045360,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -8991,7 +9166,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606149,
+    "id": "1",
+    "last_seen": 1697045360,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9013,7 +9189,132 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606150,
+    "id": "1",
+    "last_seen": 1697045361,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 1.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045361,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045362,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 1.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045362,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 5
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045363,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9051,7 +9352,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606150,
+    "id": "1",
+    "last_seen": 1697045363,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9073,7 +9375,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606151,
+    "id": "1",
+    "last_seen": 1697045364,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9111,7 +9414,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606151,
+    "id": "1",
+    "last_seen": 1697045364,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9133,7 +9437,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606152,
+    "id": "1",
+    "last_seen": 1697045365,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9171,7 +9476,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606152,
+    "id": "1",
+    "last_seen": 1697045365,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9193,7 +9499,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606153,
+    "id": "1",
+    "last_seen": 1697045366,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9231,7 +9538,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606153,
+    "id": "1",
+    "last_seen": 1697045366,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9253,7 +9561,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606154,
+    "id": "1",
+    "last_seen": 1697045367,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9291,7 +9600,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606154,
+    "id": "1",
+    "last_seen": 1697045367,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9313,7 +9623,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606155,
+    "id": "1",
+    "last_seen": 1697045368,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9351,7 +9662,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606155,
+    "id": "1",
+    "last_seen": 1697045368,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9373,7 +9685,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606156,
+    "id": "1",
+    "last_seen": 1697045369,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9411,7 +9724,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606156,
+    "id": "1",
+    "last_seen": 1697045369,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9433,7 +9747,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606157,
+    "id": "1",
+    "last_seen": 1697045370,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9471,7 +9786,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606157,
+    "id": "1",
+    "last_seen": 1697045370,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9493,7 +9809,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606158,
+    "id": "1",
+    "last_seen": 1697045371,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9531,7 +9848,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606158,
+    "id": "1",
+    "last_seen": 1697045371,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9553,7 +9871,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606159,
+    "id": "1",
+    "last_seen": 1697045372,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9591,7 +9910,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606159,
+    "id": "1",
+    "last_seen": 1697045372,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9613,7 +9933,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606160,
+    "id": "1",
+    "last_seen": 1697045373,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9651,7 +9972,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606160,
+    "id": "1",
+    "last_seen": 1697045373,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9673,7 +9995,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606161,
+    "id": "1",
+    "last_seen": 1697045374,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9711,7 +10034,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606161,
+    "id": "1",
+    "last_seen": 1697045374,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9733,7 +10057,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606162,
+    "id": "1",
+    "last_seen": 1697045375,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9771,7 +10096,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606162,
+    "id": "1",
+    "last_seen": 1697045375,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9793,7 +10119,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606163,
+    "id": "1",
+    "last_seen": 1697045376,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9831,7 +10158,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606163,
+    "id": "1",
+    "last_seen": 1697045376,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9853,67 +10181,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606164,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 1.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 6
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606164,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 6
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606165,
+    "id": "1",
+    "last_seen": 1697045377,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -9951,7 +10220,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606165,
+    "id": "1",
+    "last_seen": 1697045377,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -9973,67 +10243,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606166,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 1.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 6
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606166,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 6
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606167,
+    "id": "1",
+    "last_seen": 1697045378,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10071,7 +10282,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606167,
+    "id": "1",
+    "last_seen": 1697045378,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10093,7 +10305,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606168,
+    "id": "1",
+    "last_seen": 1697045379,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10131,7 +10344,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606168,
+    "id": "1",
+    "last_seen": 1697045379,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10153,7 +10367,132 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606169,
+    "id": "1",
+    "last_seen": 1697045380,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 1.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045380,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045381,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 1.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045381,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 6
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045382,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10191,7 +10530,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606169,
+    "id": "1",
+    "last_seen": 1697045382,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10213,7 +10553,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606170,
+    "id": "1",
+    "last_seen": 1697045383,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10251,7 +10592,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606170,
+    "id": "1",
+    "last_seen": 1697045383,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10273,7 +10615,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606171,
+    "id": "1",
+    "last_seen": 1697045384,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10311,7 +10654,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606171,
+    "id": "1",
+    "last_seen": 1697045384,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10333,7 +10677,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606172,
+    "id": "1",
+    "last_seen": 1697045385,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10371,7 +10716,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606172,
+    "id": "1",
+    "last_seen": 1697045385,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10393,7 +10739,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606173,
+    "id": "1",
+    "last_seen": 1697045386,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10431,7 +10778,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606173,
+    "id": "1",
+    "last_seen": 1697045386,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10453,7 +10801,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606174,
+    "id": "1",
+    "last_seen": 1697045387,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10491,7 +10840,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606174,
+    "id": "1",
+    "last_seen": 1697045387,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10513,7 +10863,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606175,
+    "id": "1",
+    "last_seen": 1697045388,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10551,7 +10902,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606175,
+    "id": "1",
+    "last_seen": 1697045388,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10573,7 +10925,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606176,
+    "id": "1",
+    "last_seen": 1697045389,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10611,7 +10964,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606176,
+    "id": "1",
+    "last_seen": 1697045389,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10633,7 +10987,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606177,
+    "id": "1",
+    "last_seen": 1697045390,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10671,7 +11026,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606177,
+    "id": "1",
+    "last_seen": 1697045390,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10693,7 +11049,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606178,
+    "id": "1",
+    "last_seen": 1697045391,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10731,7 +11088,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606178,
+    "id": "1",
+    "last_seen": 1697045391,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10753,7 +11111,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606179,
+    "id": "1",
+    "last_seen": 1697045392,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10791,7 +11150,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606179,
+    "id": "1",
+    "last_seen": 1697045392,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10813,7 +11173,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606180,
+    "id": "1",
+    "last_seen": 1697045393,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10851,7 +11212,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606180,
+    "id": "1",
+    "last_seen": 1697045393,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10873,7 +11235,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606181,
+    "id": "1",
+    "last_seen": 1697045394,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10911,7 +11274,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606181,
+    "id": "1",
+    "last_seen": 1697045394,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10933,7 +11297,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606182,
+    "id": "1",
+    "last_seen": 1697045395,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -10971,7 +11336,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606182,
+    "id": "1",
+    "last_seen": 1697045395,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -10993,7 +11359,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606183,
+    "id": "1",
+    "last_seen": 1697045396,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11031,7 +11398,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606183,
+    "id": "1",
+    "last_seen": 1697045396,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11053,7 +11421,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606184,
+    "id": "1",
+    "last_seen": 1697045397,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11091,7 +11460,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606184,
+    "id": "1",
+    "last_seen": 1697045397,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11113,7 +11483,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606185,
+    "id": "1",
+    "last_seen": 1697045398,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11151,7 +11522,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606185,
+    "id": "1",
+    "last_seen": 1697045398,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11173,7 +11545,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606186,
+    "id": "1",
+    "last_seen": 1697045399,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11211,7 +11584,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606186,
+    "id": "1",
+    "last_seen": 1697045399,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11233,7 +11607,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606187,
+    "id": "1",
+    "last_seen": 1697045400,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11271,7 +11646,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606187,
+    "id": "1",
+    "last_seen": 1697045400,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11293,7 +11669,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606188,
+    "id": "1",
+    "last_seen": 1697045401,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11331,7 +11708,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606188,
+    "id": "1",
+    "last_seen": 1697045401,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11353,7 +11731,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606189,
+    "id": "1",
+    "last_seen": 1697045402,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11391,7 +11770,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606189,
+    "id": "1",
+    "last_seen": 1697045402,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11413,7 +11793,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606190,
+    "id": "1",
+    "last_seen": 1697045403,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11451,7 +11832,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606190,
+    "id": "1",
+    "last_seen": 1697045403,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11473,7 +11855,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606191,
+    "id": "1",
+    "last_seen": 1697045404,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11511,7 +11894,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606191,
+    "id": "1",
+    "last_seen": 1697045404,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11533,7 +11917,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606192,
+    "id": "1",
+    "last_seen": 1697045405,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11571,7 +11956,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606192,
+    "id": "1",
+    "last_seen": 1697045405,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11593,7 +11979,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606193,
+    "id": "1",
+    "last_seen": 1697045406,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11631,7 +12018,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606193,
+    "id": "1",
+    "last_seen": 1697045406,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11653,7 +12041,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606194,
+    "id": "1",
+    "last_seen": 1697045407,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11691,7 +12080,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606194,
+    "id": "1",
+    "last_seen": 1697045407,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11713,7 +12103,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606195,
+    "id": "1",
+    "last_seen": 1697045408,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11751,7 +12142,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606195,
+    "id": "1",
+    "last_seen": 1697045408,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11773,67 +12165,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606196,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 1.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 8
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606196,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 8
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606197,
+    "id": "1",
+    "last_seen": 1697045409,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11871,7 +12204,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606197,
+    "id": "1",
+    "last_seen": 1697045409,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11893,7 +12227,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606198,
+    "id": "1",
+    "last_seen": 1697045410,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11931,7 +12266,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606198,
+    "id": "1",
+    "last_seen": 1697045410,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -11953,7 +12289,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606199,
+    "id": "1",
+    "last_seen": 1697045411,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -11991,7 +12328,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606199,
+    "id": "1",
+    "last_seen": 1697045411,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12013,7 +12351,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606200,
+    "id": "1",
+    "last_seen": 1697045412,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12051,7 +12390,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606200,
+    "id": "1",
+    "last_seen": 1697045412,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12073,7 +12413,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606201,
+    "id": "1",
+    "last_seen": 1697045413,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12111,7 +12452,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606201,
+    "id": "1",
+    "last_seen": 1697045413,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12133,7 +12475,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606202,
+    "id": "1",
+    "last_seen": 1697045414,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12171,7 +12514,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606202,
+    "id": "1",
+    "last_seen": 1697045414,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12193,7 +12537,70 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606203,
+    "id": "1",
+    "last_seen": 1697045415,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 1.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 8
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045415,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 8
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045416,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12231,7 +12638,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606203,
+    "id": "1",
+    "last_seen": 1697045416,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12253,7 +12661,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606204,
+    "id": "1",
+    "last_seen": 1697045417,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12291,7 +12700,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606204,
+    "id": "1",
+    "last_seen": 1697045417,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12313,7 +12723,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606205,
+    "id": "1",
+    "last_seen": 1697045418,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12351,7 +12762,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606205,
+    "id": "1",
+    "last_seen": 1697045418,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12373,7 +12785,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606206,
+    "id": "1",
+    "last_seen": 1697045419,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12411,7 +12824,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606206,
+    "id": "1",
+    "last_seen": 1697045419,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12433,7 +12847,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606207,
+    "id": "1",
+    "last_seen": 1697045420,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12471,7 +12886,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606207,
+    "id": "1",
+    "last_seen": 1697045420,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12493,7 +12909,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606208,
+    "id": "1",
+    "last_seen": 1697045421,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12531,7 +12948,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606208,
+    "id": "1",
+    "last_seen": 1697045421,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12553,7 +12971,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606209,
+    "id": "1",
+    "last_seen": 1697045422,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12591,7 +13010,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606209,
+    "id": "1",
+    "last_seen": 1697045422,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12613,7 +13033,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606210,
+    "id": "1",
+    "last_seen": 1697045423,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12651,7 +13072,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606210,
+    "id": "1",
+    "last_seen": 1697045423,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12673,7 +13095,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606211,
+    "id": "1",
+    "last_seen": 1697045424,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12711,7 +13134,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606211,
+    "id": "1",
+    "last_seen": 1697045424,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12733,7 +13157,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606212,
+    "id": "1",
+    "last_seen": 1697045425,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12771,7 +13196,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606212,
+    "id": "1",
+    "last_seen": 1697045425,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12793,7 +13219,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606213,
+    "id": "1",
+    "last_seen": 1697045426,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12831,7 +13258,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606213,
+    "id": "1",
+    "last_seen": 1697045426,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12853,7 +13281,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606214,
+    "id": "1",
+    "last_seen": 1697045427,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12891,7 +13320,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606214,
+    "id": "1",
+    "last_seen": 1697045427,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12913,7 +13343,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606215,
+    "id": "1",
+    "last_seen": 1697045428,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -12951,7 +13382,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606215,
+    "id": "1",
+    "last_seen": 1697045428,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -12973,7 +13405,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606216,
+    "id": "1",
+    "last_seen": 1697045429,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13011,7 +13444,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606216,
+    "id": "1",
+    "last_seen": 1697045429,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13033,7 +13467,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606217,
+    "id": "1",
+    "last_seen": 1697045430,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13071,7 +13506,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606217,
+    "id": "1",
+    "last_seen": 1697045430,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13093,7 +13529,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606218,
+    "id": "1",
+    "last_seen": 1697045431,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13131,7 +13568,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606218,
+    "id": "1",
+    "last_seen": 1697045431,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13153,7 +13591,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606219,
+    "id": "1",
+    "last_seen": 1697045432,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13191,7 +13630,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606219,
+    "id": "1",
+    "last_seen": 1697045432,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13213,7 +13653,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606220,
+    "id": "1",
+    "last_seen": 1697045433,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13251,7 +13692,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606220,
+    "id": "1",
+    "last_seen": 1697045433,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13273,7 +13715,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606221,
+    "id": "1",
+    "last_seen": 1697045434,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13311,7 +13754,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606221,
+    "id": "1",
+    "last_seen": 1697045434,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13333,7 +13777,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606222,
+    "id": "1",
+    "last_seen": 1697045435,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13371,7 +13816,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606222,
+    "id": "1",
+    "last_seen": 1697045435,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13393,7 +13839,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606223,
+    "id": "1",
+    "last_seen": 1697045436,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13431,7 +13878,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606223,
+    "id": "1",
+    "last_seen": 1697045436,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13453,7 +13901,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606224,
+    "id": "1",
+    "last_seen": 1697045437,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13491,7 +13940,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606224,
+    "id": "1",
+    "last_seen": 1697045437,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13513,7 +13963,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606225,
+    "id": "1",
+    "last_seen": 1697045438,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13551,7 +14002,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606225,
+    "id": "1",
+    "last_seen": 1697045438,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13573,67 +14025,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606226,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 1.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 0.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 9
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606226,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 9
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606227,
+    "id": "1",
+    "last_seen": 1697045439,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13671,7 +14064,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606227,
+    "id": "1",
+    "last_seen": 1697045439,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13693,7 +14087,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606228,
+    "id": "1",
+    "last_seen": 1697045440,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13731,7 +14126,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606228,
+    "id": "1",
+    "last_seen": 1697045440,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13753,7 +14149,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606229,
+    "id": "1",
+    "last_seen": 1697045441,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13791,7 +14188,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606229,
+    "id": "1",
+    "last_seen": 1697045441,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13813,7 +14211,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606230,
+    "id": "1",
+    "last_seen": 1697045442,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13851,7 +14250,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606230,
+    "id": "1",
+    "last_seen": 1697045442,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13873,7 +14273,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606231,
+    "id": "1",
+    "last_seen": 1697045443,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13911,7 +14312,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606231,
+    "id": "1",
+    "last_seen": 1697045443,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13933,7 +14335,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606232,
+    "id": "1",
+    "last_seen": 1697045444,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -13971,7 +14374,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606232,
+    "id": "1",
+    "last_seen": 1697045444,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -13993,7 +14397,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606233,
+    "id": "1",
+    "last_seen": 1697045445,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14031,7 +14436,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606233,
+    "id": "1",
+    "last_seen": 1697045445,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14053,7 +14459,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606234,
+    "id": "1",
+    "last_seen": 1697045446,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14091,7 +14498,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606234,
+    "id": "1",
+    "last_seen": 1697045446,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14113,7 +14521,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606235,
+    "id": "1",
+    "last_seen": 1697045447,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14151,7 +14560,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606235,
+    "id": "1",
+    "last_seen": 1697045447,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14173,7 +14583,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606236,
+    "id": "1",
+    "last_seen": 1697045448,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14211,7 +14622,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606236,
+    "id": "1",
+    "last_seen": 1697045448,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14233,7 +14645,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606237,
+    "id": "1",
+    "last_seen": 1697045449,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14271,7 +14684,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606237,
+    "id": "1",
+    "last_seen": 1697045449,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14293,7 +14707,70 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606238,
+    "id": "1",
+    "last_seen": 1697045450,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 1.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 0.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 9
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045450,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 9
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045451,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14331,7 +14808,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606238,
+    "id": "1",
+    "last_seen": 1697045451,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14353,7 +14831,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606239,
+    "id": "1",
+    "last_seen": 1697045452,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14391,7 +14870,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606239,
+    "id": "1",
+    "last_seen": 1697045452,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14413,7 +14893,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606240,
+    "id": "1",
+    "last_seen": 1697045453,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14451,7 +14932,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606240,
+    "id": "1",
+    "last_seen": 1697045453,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14473,7 +14955,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606241,
+    "id": "1",
+    "last_seen": 1697045454,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14511,7 +14994,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606241,
+    "id": "1",
+    "last_seen": 1697045454,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14533,7 +15017,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606242,
+    "id": "1",
+    "last_seen": 1697045455,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14571,7 +15056,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606242,
+    "id": "1",
+    "last_seen": 1697045455,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14593,7 +15079,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606243,
+    "id": "1",
+    "last_seen": 1697045456,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14631,7 +15118,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606243,
+    "id": "1",
+    "last_seen": 1697045456,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14653,7 +15141,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606244,
+    "id": "1",
+    "last_seen": 1697045457,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14691,7 +15180,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606244,
+    "id": "1",
+    "last_seen": 1697045457,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14713,7 +15203,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606245,
+    "id": "1",
+    "last_seen": 1697045458,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14751,7 +15242,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606245,
+    "id": "1",
+    "last_seen": 1697045458,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14773,67 +15265,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606246,
-    "state": {
-      "in-package": 0.0,
-      "plain": 0.0,
-      "peanut-butter[initial]": 0.0,
-      "peanut-butter[full]": 0.0,
-      "pb+jelly[partial]": 0.0,
-      "pb+jelly[full]": 0.0,
-      "rolling": 0.0,
-      "rolled": 0.0,
-      "rolled+toothpicks[partial]": 0.0,
-      "rolled+toothpicks[full]": 0.0,
-      "ends-cut[partial]": 0.0,
-      "ends-cut[full]": 0.0,
-      "floss-underneath": 0.0,
-      "floss-crossed": 0.0,
-      "sliced[partial]": 1.0,
-      "sliced[full]": 0.0,
-      "on-plate[partial]": 0.0,
-      "on-plate[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 10
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "plate",
-    "status": "tracked",
-    "last_seen": 1696606246,
-    "state": {
-      "empty": 1.0,
-      "with-pinwheels[full]": 0.0
-    },
-    "hand_object_interaction": 0.27,
-    "step_id": 10
-  },
-  {
-    "pos": [
-      -0.2149151724097291,
-      -0.4343880843796524,
-      -0.6208099189217009
-    ],
-    "xyxyn": [
-      0.1,
-      0.1,
-      0.2,
-      0.2
-    ],
-    "label": "tortilla",
-    "status": "tracked",
-    "last_seen": 1696606247,
+    "id": "1",
+    "last_seen": 1697045459,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14871,7 +15304,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606247,
+    "id": "1",
+    "last_seen": 1697045459,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14893,7 +15327,70 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606248,
+    "id": "1",
+    "last_seen": 1697045460,
+    "state": {
+      "in-package": 0.0,
+      "plain": 0.0,
+      "peanut-butter[initial]": 0.0,
+      "peanut-butter[full]": 0.0,
+      "pb+jelly[partial]": 0.0,
+      "pb+jelly[full]": 0.0,
+      "rolling": 0.0,
+      "rolled": 0.0,
+      "rolled+toothpicks[partial]": 0.0,
+      "rolled+toothpicks[full]": 0.0,
+      "ends-cut[partial]": 0.0,
+      "ends-cut[full]": 0.0,
+      "floss-underneath": 0.0,
+      "floss-crossed": 0.0,
+      "sliced[partial]": 1.0,
+      "sliced[full]": 0.0,
+      "on-plate[partial]": 0.0,
+      "on-plate[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 10
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "plate",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045460,
+    "state": {
+      "empty": 1.0,
+      "with-pinwheels[full]": 0.0
+    },
+    "hand_object_interaction": 0.27,
+    "step_id": 10
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "tortilla",
+    "status": "tracked",
+    "id": "1",
+    "last_seen": 1697045461,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14931,7 +15428,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606248,
+    "id": "1",
+    "last_seen": 1697045461,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -14953,7 +15451,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606249,
+    "id": "1",
+    "last_seen": 1697045462,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -14991,7 +15490,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606249,
+    "id": "1",
+    "last_seen": 1697045462,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15013,7 +15513,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606250,
+    "id": "1",
+    "last_seen": 1697045463,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15051,7 +15552,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606250,
+    "id": "1",
+    "last_seen": 1697045463,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15073,7 +15575,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606251,
+    "id": "1",
+    "last_seen": 1697045464,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15111,7 +15614,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606251,
+    "id": "1",
+    "last_seen": 1697045464,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15133,7 +15637,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606252,
+    "id": "1",
+    "last_seen": 1697045465,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15171,7 +15676,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606252,
+    "id": "1",
+    "last_seen": 1697045465,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15193,7 +15699,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606253,
+    "id": "1",
+    "last_seen": 1697045466,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15231,7 +15738,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606253,
+    "id": "1",
+    "last_seen": 1697045466,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15253,7 +15761,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606254,
+    "id": "1",
+    "last_seen": 1697045467,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15291,7 +15800,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606254,
+    "id": "1",
+    "last_seen": 1697045467,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15313,7 +15823,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606255,
+    "id": "1",
+    "last_seen": 1697045468,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15351,7 +15862,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606255,
+    "id": "1",
+    "last_seen": 1697045468,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15373,7 +15885,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606256,
+    "id": "1",
+    "last_seen": 1697045469,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15411,7 +15924,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606256,
+    "id": "1",
+    "last_seen": 1697045469,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15433,7 +15947,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606257,
+    "id": "1",
+    "last_seen": 1697045470,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15471,7 +15986,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606257,
+    "id": "1",
+    "last_seen": 1697045470,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15493,7 +16009,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606258,
+    "id": "1",
+    "last_seen": 1697045471,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15531,7 +16048,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606258,
+    "id": "1",
+    "last_seen": 1697045471,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15553,7 +16071,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606259,
+    "id": "1",
+    "last_seen": 1697045472,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15591,7 +16110,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606259,
+    "id": "1",
+    "last_seen": 1697045472,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15613,7 +16133,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606260,
+    "id": "1",
+    "last_seen": 1697045473,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15651,7 +16172,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606260,
+    "id": "1",
+    "last_seen": 1697045473,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15673,7 +16195,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606261,
+    "id": "1",
+    "last_seen": 1697045474,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15711,7 +16234,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606261,
+    "id": "1",
+    "last_seen": 1697045474,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15733,7 +16257,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606262,
+    "id": "1",
+    "last_seen": 1697045475,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15771,7 +16296,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606262,
+    "id": "1",
+    "last_seen": 1697045475,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15793,7 +16319,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606263,
+    "id": "1",
+    "last_seen": 1697045476,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15831,7 +16358,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606263,
+    "id": "1",
+    "last_seen": 1697045476,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15853,7 +16381,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606264,
+    "id": "1",
+    "last_seen": 1697045477,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15891,7 +16420,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606264,
+    "id": "1",
+    "last_seen": 1697045477,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15913,7 +16443,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606265,
+    "id": "1",
+    "last_seen": 1697045478,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -15951,7 +16482,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606265,
+    "id": "1",
+    "last_seen": 1697045478,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -15973,7 +16505,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606266,
+    "id": "1",
+    "last_seen": 1697045479,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16011,7 +16544,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606266,
+    "id": "1",
+    "last_seen": 1697045479,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16033,7 +16567,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606267,
+    "id": "1",
+    "last_seen": 1697045480,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16071,7 +16606,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606267,
+    "id": "1",
+    "last_seen": 1697045480,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16093,7 +16629,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606268,
+    "id": "1",
+    "last_seen": 1697045481,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16131,7 +16668,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606268,
+    "id": "1",
+    "last_seen": 1697045481,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16153,7 +16691,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606269,
+    "id": "1",
+    "last_seen": 1697045482,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16191,7 +16730,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606269,
+    "id": "1",
+    "last_seen": 1697045482,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16213,7 +16753,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606270,
+    "id": "1",
+    "last_seen": 1697045483,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16251,7 +16792,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606270,
+    "id": "1",
+    "last_seen": 1697045483,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16273,7 +16815,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606271,
+    "id": "1",
+    "last_seen": 1697045484,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16311,7 +16854,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606271,
+    "id": "1",
+    "last_seen": 1697045484,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16333,7 +16877,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606272,
+    "id": "1",
+    "last_seen": 1697045485,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16371,7 +16916,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606272,
+    "id": "1",
+    "last_seen": 1697045485,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16393,7 +16939,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606273,
+    "id": "1",
+    "last_seen": 1697045486,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16431,7 +16978,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606273,
+    "id": "1",
+    "last_seen": 1697045486,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16453,7 +17001,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606274,
+    "id": "1",
+    "last_seen": 1697045487,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16491,7 +17040,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606274,
+    "id": "1",
+    "last_seen": 1697045487,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16513,7 +17063,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606275,
+    "id": "1",
+    "last_seen": 1697045488,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16551,7 +17102,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606275,
+    "id": "1",
+    "last_seen": 1697045488,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16573,7 +17125,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606276,
+    "id": "1",
+    "last_seen": 1697045489,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16611,7 +17164,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606276,
+    "id": "1",
+    "last_seen": 1697045489,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16633,7 +17187,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606277,
+    "id": "1",
+    "last_seen": 1697045490,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16671,7 +17226,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606277,
+    "id": "1",
+    "last_seen": 1697045490,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16693,7 +17249,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606278,
+    "id": "1",
+    "last_seen": 1697045491,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16731,7 +17288,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606278,
+    "id": "1",
+    "last_seen": 1697045491,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16753,7 +17311,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606279,
+    "id": "1",
+    "last_seen": 1697045492,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16791,7 +17350,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606279,
+    "id": "1",
+    "last_seen": 1697045492,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16813,7 +17373,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606280,
+    "id": "1",
+    "last_seen": 1697045493,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16851,7 +17412,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606280,
+    "id": "1",
+    "last_seen": 1697045493,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16873,7 +17435,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606281,
+    "id": "1",
+    "last_seen": 1697045494,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16911,7 +17474,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606281,
+    "id": "1",
+    "last_seen": 1697045494,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16933,7 +17497,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606282,
+    "id": "1",
+    "last_seen": 1697045495,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -16971,7 +17536,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606282,
+    "id": "1",
+    "last_seen": 1697045495,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -16993,7 +17559,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606283,
+    "id": "1",
+    "last_seen": 1697045496,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17031,7 +17598,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606283,
+    "id": "1",
+    "last_seen": 1697045496,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -17053,7 +17621,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606284,
+    "id": "1",
+    "last_seen": 1697045497,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17091,7 +17660,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606284,
+    "id": "1",
+    "last_seen": 1697045497,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -17113,7 +17683,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606285,
+    "id": "1",
+    "last_seen": 1697045498,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17151,7 +17722,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606285,
+    "id": "1",
+    "last_seen": 1697045498,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -17173,7 +17745,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606286,
+    "id": "1",
+    "last_seen": 1697045499,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17211,7 +17784,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606286,
+    "id": "1",
+    "last_seen": 1697045499,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -17233,7 +17807,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606287,
+    "id": "1",
+    "last_seen": 1697045500,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17271,7 +17846,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606287,
+    "id": "1",
+    "last_seen": 1697045500,
     "state": {
       "empty": 1.0,
       "with-pinwheels[full]": 0.0
@@ -17293,7 +17869,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606288,
+    "id": "1",
+    "last_seen": 1697045501,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17331,7 +17908,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606288,
+    "id": "1",
+    "last_seen": 1697045501,
     "state": {
       "empty": 0.0,
       "with-pinwheels[full]": 1.0
@@ -17353,7 +17931,8 @@
     ],
     "label": "tortilla",
     "status": "tracked",
-    "last_seen": 1696606289,
+    "id": "1",
+    "last_seen": 1697045502,
     "state": {
       "in-package": 0.0,
       "plain": 0.0,
@@ -17391,7 +17970,8 @@
     ],
     "label": "plate",
     "status": "tracked",
-    "last_seen": 1696606289,
+    "id": "1",
+    "last_seen": 1697045502,
     "state": {
       "empty": 0.0,
       "with-pinwheels[full]": 1.0
