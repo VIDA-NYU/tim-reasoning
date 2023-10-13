@@ -105,6 +105,28 @@ class TaskTracker:
         """
         self.current_step_number = max(self.current_step_number, node_step + 1)
 
+    def _build_output_dict(self, instruction):
+        return {
+            "session_id": self.get_id(),
+            "task_id": self.recipe,
+            "step_id": self.get_current_step_number(),
+            "step_status": "IN_PROGRESS",
+            "step_description": instruction,
+            "error_status": False,
+            "error_description": "",
+        }
+
+    def _build_error_dict(self, error):
+        return {
+            "session_id": self.get_id(),
+            "task_id": self.recipe,
+            "step_id": self.get_current_step_number(),
+            "step_status": "ERROR",
+            "step_description": "",
+            "error_status": True,
+            "error_description": str(error),
+        }
+
     def get_current_step_number(self) -> int or ReasoningErrors:
         """Returns Task graph's current step number
 
@@ -181,20 +203,30 @@ class TaskTracker:
                     partial_node,
                 ) = self.task_graph.find_partial_node(state=state, objects=objects)
                 if max_match > 0.1:
-                    return ReasoningErrors.PARTIAL_STATE
+                    return ReasoningErrors.PARTIAL_STATE, self._build_output_dict(
+                        instruction=self.get_next_recipe_step()
+                    )
                 else:
-                    return ReasoningErrors.INVALID_STATE
+                    error = ReasoningErrors.INVALID_STATE
+                    return error, self._build_error_dict(
+                        error=f"{error.value[0]} - {error.value[1]}"
+                    )
 
             # check_dependencies
             if not self._is_dependencies_completed(node=node):
                 # raise error
-                return ReasoningErrors.MISSING_PREVIOUS
+                error = ReasoningErrors.MISSING_PREVIOUS
+                return error, self._build_error_dict(
+                    error=f"{error.value[0]} - {error.value[1]}"
+                )
         if self.current_step_number == 0 and not node:
-            return None
+            return None, None
         # even if the node is already completed the below function would not do anything
         self.add_completed_node(
             node=node, node_id=node_id, objects=objects, object_ids=object_ids
         )
         # return none when no errors found to keep on going
         next_recipe_step = self.get_next_recipe_step()
-        return next_recipe_step
+        return next_recipe_step, self._build_output_dict(
+            instruction=next_recipe_step
+        )
