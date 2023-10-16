@@ -152,12 +152,12 @@ class SessionManager:
     def track_common_object(self, state, object_id, object_label):
         if self.last_task_tracker_tracked_id is not None:
             last_tracker = self.get_task_tracker(self.last_task_tracker_tracked_id)
-            instruction = last_tracker.track(
+            instruction, track_output = last_tracker.track(
                 state=state, objects=[object_label], object_ids=[object_id]
             )
             self.update_last_tracker(last_tracker)
-            return instruction
-        return None
+            return [track_output]
+        return [None]
 
     def track_unique_object(self, state, object_id, object_label):
         probable_task_trackers = self.find_task_tracker(object_id, object_label)
@@ -168,18 +168,20 @@ class SessionManager:
         # if we are sure there's only one TaskTracker
         if len(probable_task_trackers) == 1:
             task_tracker = probable_task_trackers[0]
-            instruction = task_tracker.track(
+            instruction, track_output = task_tracker.track(
                 state=state, objects=[object_label], object_ids=[object_id]
             )
             self.update_last_tracker(task_tracker)
-            return instruction
+            return [track_output]
         # multipe probable task_graphs possible
         else:
             if self.verbose:
                 self.log.info("Multipe probable task_graphs possible")
-            instructions = []
+            output = []
             for i, task_tracker in enumerate(probable_task_trackers):
-                instruction = task_tracker.track(state, [object_label], [object_id])
+                instruction, track_output = task_tracker.track(
+                    state, [object_label], [object_id]
+                )
                 self.update_last_tracker(task_tracker)
                 # if there's an error in instruction, it means we can drop this task_graph
                 if isinstance(instruction, ReasoningErrors):
@@ -187,7 +189,7 @@ class SessionManager:
                         self.log.info(
                             f"For `{task_tracker.recipe}` Recipe, received partial state completion."
                         )
-                        instructions.append(task_tracker.get_next_recipe_step())
+                        output.append(track_output)
                     else:
                         self.remove_task_tracker(wrong_tracker=task_tracker)
                 else:
@@ -195,8 +197,8 @@ class SessionManager:
                         self.log.info(
                             f"For `{task_tracker.recipe}` Recipe, next instruction = `{instruction}`"
                         )
-                    instructions.append(instruction)
-            return instructions
+                    output.append(track_output)
+            return output
 
     def track_object(self, state, object_id, object_label):
         if object_label in self.important_objects:
@@ -206,12 +208,32 @@ class SessionManager:
         else:
             self.log.error("Unknown object found.")
 
+    def track_object_state(self, object_id, object_label, object_state):
+        for state, prob in object_state.items():
+            self.object_states[object_id][state].append(prob)
+        output = None
+        if len(self.object_states[object_id]) >= self.patience:
+            avg_state = self.calculate_average_state(object_id, object_label)
+            if self.verbose:
+                self.log.info(
+                    f"Object id: {object_id}, label: {object_label} with avg state={avg_state}"
+                )
+            output = self.track_object(
+                state=avg_state,
+                object_id=object_id,
+                object_label=object_label,
+            )
+            self.handle_instruction(output)
+            self.reset_object_states(object_id)
+
+        return output
+
     def process_object(self, obj):
         object_id = obj['id']
         object_label = obj['label']
 
         if "state" not in obj:
-            return
+            return [None]
 
         object_state = obj['state']
 
@@ -219,27 +241,10 @@ class SessionManager:
             object_label in self.important_objects
             or object_label in self.common_objects
         ):
-            self.track_object_state(object_id, object_label, object_state)
+            return self.track_object_state(object_id, object_label, object_state)
         else:
             self.log.info(f"Not tracking : {object_label}")
-
-    def track_object_state(self, object_id, object_label, object_state):
-        for state, prob in object_state.items():
-            self.object_states[object_id][state].append(prob)
-
-        if len(self.object_states[object_id]) >= self.patience:
-            avg_state = self.calculate_average_state(object_id, object_label)
-            if self.verbose:
-                self.log.info(
-                    f"Object id: {object_id}, label: {object_label} with avg state={avg_state}"
-                )
-            instruction = self.track_object(
-                state=avg_state,
-                object_id=object_id,
-                object_label=object_label,
-            )
-            self.handle_instruction(instruction)
-            self.reset_object_states(object_id)
+            return [None]
 
     def calculate_average_state(self, object_id, object_label):
         avg_states = {
@@ -249,14 +254,14 @@ class SessionManager:
         return max(avg_states, key=avg_states.get)
 
     def handle_instruction(self, instruction):
-        if isinstance(instruction, list):
+        if instruction and self.verbose:
             self.log.info(f"Final Next instructions: {instruction}")
-        else:
-            self.log.info(f"Final Next instruction: {instruction}")
 
     def reset_object_states(self, object_id):
         self.object_states[object_id] = defaultdict(list)
 
     def handle_message(self, message: list):
+        final_output = []
         for obj in message:
-            self.process_object(obj)
+            final_output.extend(self.process_object(obj))
+        return final_output
