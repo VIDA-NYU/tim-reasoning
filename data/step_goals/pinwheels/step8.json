@@ -2,8 +2,10 @@
   "operand": "None",
   "goals": [
     {
-      "state": "ends-cut",
-      "objects": ["tortilla"]
+      "state": "ends-cut[full]",
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }

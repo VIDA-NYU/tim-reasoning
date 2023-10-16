@@ -9,3 +9,4 @@ jd = json.loads(data)
 sm = SessionManager()
 for j in jd:
     sm.handle_message(message=j['values'])
+

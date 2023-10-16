@@ -2,8 +2,10 @@
   "operand": "None",
   "goals": [
     {
-      "state": "rolled+toothpicks",
-      "objects": ["tortilla"]
+      "state": "rolled+toothpicks[full]",
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }

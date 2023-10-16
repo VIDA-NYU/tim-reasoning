@@ -105,6 +105,29 @@ class TaskTracker:
         """
         self.current_step_number = max(self.current_step_number, node_step + 1)
 
+    def _build_not_started_output_dict(self, current_step_num: int = 0):
+        if current_step_num == 0:
+            current_step_num = 1
+        current_step_num = str(current_step_num)
+        # get json instructions for current recipe
+        instructions = self.get_recipe()
+
+        if current_step_num in instructions:
+            step_description = instructions[current_step_num]
+        # else if its last step
+        else:
+            self.completed = True
+            step_description = "This recipe is complete."
+        return {
+            "session_id": self.get_id(),
+            "task_id": self.recipe,
+            "step_id": int(current_step_num),
+            "step_status": "NOT_STARTED",
+            "step_description": step_description,
+            "error_status": False,
+            "error_description": "",
+        }
+
     def _build_output_dict(self, instruction):
         return {
             "session_id": self.get_id(),
@@ -137,6 +160,15 @@ class TaskTracker:
             return ReasoningErrors.NOT_STARTED
         return self.current_step_number
 
+    def get_recipe(
+        self,
+        recipe_file_name: str = "recipe.json",
+        recipe_folder: str = RECIPE_DATA_FOLDER,
+    ):
+        json_data = self._read_json(json_file=f"{recipe_folder}/{recipe_file_name}")
+        instructions = json_data[self.recipe]["steps"]
+        return instructions
+
     def get_next_recipe_step(
         self,
         recipe_file_name: str = "recipe.json",
@@ -153,8 +185,7 @@ class TaskTracker:
             str or None: next step if exists else None
         """
         # get json instructions for current recipe
-        json_data = self._read_json(json_file=f"{recipe_folder}/{recipe_file_name}")
-        instructions = json_data[self.recipe]["steps"]
+        instructions = self.get_recipe(recipe_file_name, recipe_folder)
 
         # next step number
         current_step = self.get_current_step_number()
@@ -168,7 +199,7 @@ class TaskTracker:
         # else if its last step
         else:
             self.completed = True
-            return None
+            return "This recipe is complete."
 
     def add_completed_node(self, node, node_id, objects, object_ids):
         if node_id not in self.completed_nodes:
@@ -220,12 +251,16 @@ class TaskTracker:
                     error=f"{error.value[0]} - {error.value[1]}"
                 )
         if self.current_step_number == 0 and not node:
-            return None, None
+            # get the first recipe step
+            instructions = self.get_recipe()
+            instruction = instructions["1"]
+            return instruction, self._build_not_started_output_dict(
+                self.current_step_number
+            )
         # even if the node is already completed the below function would not do anything
         self.add_completed_node(
             node=node, node_id=node_id, objects=objects, object_ids=object_ids
         )
-        # return none when no errors found to keep on going
         next_recipe_step = self.get_next_recipe_step()
         return next_recipe_step, self._build_output_dict(
             instruction=next_recipe_step
