@@ -15,24 +15,19 @@ def generate_predictions(file_name):
         perception_outputs = json.load(fin)
 
     results = {'video': [], 'true_step': [], 'predicted_step': []}
-    sm = SessionManager()
+    sm = SessionManager(patience=1)
 
     for perception_output in perception_outputs:
+        #print('perception output', perception_output)
         actual_step = perception_output['session']['step_id']
-        print(f'Actual step: {actual_step}')
-        sm.handle_message(message=[perception_output])
-        fake_output_reasoning = {
-            "session_id": 1,
-            "task_id":  "pinwheels",
-            "step_id": 1,
-            "step_status": "IN_PROGRESS",
-            "step_description": "wipe off knife with a paper towel",
-            "error_status": True,
-            "error_description": "Errors detected in the step"
-            ""
-        }
-        predicted_step = fake_output_reasoning['step_id']
-        predicted_session = fake_output_reasoning['session_id']
+        #print(f'Actual step: {actual_step}')
+        output_reasoning = sm.handle_message(message=[perception_output])[0]
+
+        if output_reasoning is None:
+            continue #output_reasoning = {'step_id': 1, 'session_id': 0}  # Fake the None values
+        print('reasoning output', output_reasoning)
+        predicted_step = output_reasoning['step_id']
+        predicted_session = output_reasoning['session_id']
         results['true_step'].append(actual_step)
         results['predicted_step'].append(predicted_step)
         results['video'].append(predicted_session)
