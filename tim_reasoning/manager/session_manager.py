@@ -1,7 +1,7 @@
 import json
 
 from collections import defaultdict
-from tim_reasoning import Logger, TaskTracker
+from tim_reasoning import Logger, TaskTracker, RecentTrackerStack
 from tim_reasoning.reasoning_errors import ReasoningErrors
 
 
@@ -28,7 +28,8 @@ class SessionManager:
             self.important_objects,
             self.common_objects,
         ) = self.get_unique_common_objects()
-        self.last_task_tracker_tracked_id = None
+        self.recent_tracker_stack = RecentTrackerStack()
+        # self.last_task_tracker_tracked_id = None
 
     def get_last_task_tracker_tracked_id(self) -> int:
         """Return the id of the most recent (ongoing) task tracker
@@ -36,7 +37,7 @@ class SessionManager:
         Returns:
             int: recent task_tracker id
         """
-        return self.last_task_tracker_tracked_id
+        return self.recent_tracker_stack.get_recent()
 
     def get_task_tracker(self, task_tracker_id: int) -> TaskTracker:
         """Returns the task_tracker for the given id
@@ -70,11 +71,15 @@ class SessionManager:
             wrong_tracker (TaskTracker): task tracker object to be removed from memory
         """
         task_tracker_id = wrong_tracker.get_id()
+        # remove the task_tracker from the recent tracker stack
+        self.recent_tracker_stack.remove(task_tracker_id)
+
         if self.verbose:
             self.log.info(
                 f"For `{wrong_tracker.recipe}` Recipe with task id {task_tracker_id},"
                 f"got an error, hence, this recipe is not possible, deleting it from memory.\n"
             )
+        # find the index where it exists and remove it
         remove_idx = next(
             (
                 i
@@ -94,7 +99,7 @@ class SessionManager:
         Args:
             tracker (TaskTracker): task_tracker object just tracked
         """
-        self.last_task_tracker_tracked_id = tracker.get_id()
+        self.recent_tracker_stack.push(tracker.get_id())
 
     def create_probable_task_trackers(self, object_id, object_label) -> list:
         """For a given unique object, create probable task trackers
@@ -150,8 +155,10 @@ class SessionManager:
         return probable_task_trackers
 
     def track_common_object(self, state, object_id, object_label):
-        if self.last_task_tracker_tracked_id is not None:
-            last_tracker = self.get_task_tracker(self.last_task_tracker_tracked_id)
+        if self.get_last_task_tracker_tracked_id() is not None:
+            last_tracker = self.get_task_tracker(
+                self.get_last_task_tracker_tracked_id()
+            )
             instruction, track_output = last_tracker.track(
                 state=state, objects=[object_label], object_ids=[object_id]
             )
@@ -211,7 +218,7 @@ class SessionManager:
     def track_object_state(self, object_id, object_label, object_state):
         for state, prob in object_state.items():
             self.object_states[object_id][state].append(prob)
-        output = None
+        output = [None]
         if len(self.object_states[object_id]) >= self.patience:
             avg_state = self.calculate_average_state(object_id, object_label)
             if self.verbose:
