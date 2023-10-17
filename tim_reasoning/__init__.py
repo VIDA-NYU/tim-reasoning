@@ -9,4 +9,5 @@ from .pddl2graph.problem_parser import ProblemParser
 from .pddl2graph.pddl2graph_converter import Pddl2GraphConverter
 from .pddl2graph.json2graph_converter import Json2GraphConverter
 from .tasktracker.task_tracker import TaskTracker
+from .manager.recent_tracker_stack import RecentTrackerStack
 from .manager.session_manager import SessionManager

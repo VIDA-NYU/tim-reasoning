@@ -18,10 +18,13 @@ class DependencyGraph:
         for node in nodes:
             self.add_node(node)
 
-    def find_node(self, state: str, objects: list) -> (int, Node):
+    def find_node(
+        self, state: str, objects: list, visited_nodes: dict
+    ) -> (int, Node):
         for node in self.nodes.values():
-            if node.state == state and set(node.objects) == set(objects):
-                return node.get_id(), node
+            if node.get_id() not in visited_nodes:
+                if node.state == state and set(node.objects) == set(objects):
+                    return node.get_id(), node
         return None, None
 
     def find_partial_node(self, state: str, objects: list) -> float:

@@ -225,7 +225,9 @@ class TaskTracker:
         Returns:
             ReasoningErrors or None: errors or none
         """
-        node_id, node = self.task_graph.find_node(state=state, objects=objects)
+        node_id, node = self.task_graph.find_node(
+            state=state, objects=objects, visited_nodes=self.completed_nodes
+        )
         if self.current_step_number > 0:
             if not node:
                 (
