@@ -1,6 +1,6 @@
 import json
 import os
-
+from os.path import join, dirname
 from tim_reasoning import DependencyGraph, Logger
 from tim_reasoning.pddl2graph.node import Node
 
@@ -58,8 +58,8 @@ class Json2GraphConverter:
     def convert(
         self,
         recipe: str,
-        instructions_folder: str = 'data/step_goals',
-        recipe_data_folder: str = 'data/recipe',
+        instructions_folder: str = join(dirname(__file__), '../../data/step_goals'),
+        recipe_data_folder: str = join(dirname(__file__), '../../data/recipe'),
         verbose=False,
     ):
         TOTAL_STEPS = self._get_recipe_length(

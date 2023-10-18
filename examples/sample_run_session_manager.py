@@ -1,8 +1,10 @@
 from tim_reasoning import SessionManager
+from os.path import join, dirname
 
 import json
 
-with open('examples/sample_pinwheels.json', 'r') as f:
+
+with open(join(dirname(__file__), '../examples/sample_message.json'), 'r') as f:
     data = f.read()
 
 jd = json.loads(data)

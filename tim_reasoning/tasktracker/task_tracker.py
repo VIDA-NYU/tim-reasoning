@@ -1,9 +1,11 @@
 from tim_reasoning import Pddl2GraphConverter, Json2GraphConverter
 from tim_reasoning.pddl2graph.node import Node
 from tim_reasoning.reasoning_errors import ReasoningErrors
+from os.path import join, dirname
 
-PDDL_DATA_FOLDER = "data/pddl/gpt-generated"
-RECIPE_DATA_FOLDER = "data/recipe"
+
+PDDL_DATA_FOLDER = join(dirname(__file__), "../../data/pddl/gpt-generated")
+RECIPE_DATA_FOLDER = join(dirname(__file__), "../../data/recipe")
 
 
 class TaskTracker:
