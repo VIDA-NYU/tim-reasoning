@@ -1,16 +1,16 @@
 import json
-
 from collections import defaultdict
 from tim_reasoning import Logger, TaskTracker, RecentTrackerStack
 from tim_reasoning.reasoning_errors import ReasoningErrors
+from os.path import join, dirname
 
 
 class SessionManager:
     def __init__(
         self,
-        unique_objects_file: str = "data/step_goals/unique_objects.json",
-        common_objects_file: str = "data/step_goals/common_objects.json",
-        data_folder: str = "data/step_goals/",
+        unique_objects_file: str = join(dirname(__file__), "../../data/step_goals/unique_objects.json"),
+        common_objects_file: str = join(dirname(__file__), "../../data/step_goals/common_objects.json"),
+        data_folder: str = join(dirname(__file__), "../../data/step_goals/"),
         patience: int = 1,
         verbose: bool = True,
     ) -> None:

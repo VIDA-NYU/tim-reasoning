@@ -13,7 +13,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606000,
+    "id": 3,
+    "last_seen": 1697591895,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -26,7 +27,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -42,7 +47,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606001,
+    "id": 3,
+    "last_seen": 1697591896,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -55,7 +61,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -71,7 +81,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606002,
+    "id": 3,
+    "last_seen": 1697591897,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -84,7 +95,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -100,7 +115,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606003,
+    "id": 3,
+    "last_seen": 1697591898,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -113,7 +129,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -129,7 +149,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606004,
+    "id": 3,
+    "last_seen": 1697591899,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -142,7 +163,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -158,7 +183,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606005,
+    "id": 3,
+    "last_seen": 1697591900,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -171,7 +197,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -187,7 +217,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606006,
+    "id": 3,
+    "last_seen": 1697591901,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -200,7 +231,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -216,7 +251,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606007,
+    "id": 3,
+    "last_seen": 1697591902,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -229,7 +265,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -245,7 +285,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606008,
+    "id": 3,
+    "last_seen": 1697591903,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -258,7 +299,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -274,7 +319,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606009,
+    "id": 3,
+    "last_seen": 1697591904,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -287,7 +333,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -303,7 +353,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606010,
+    "id": 3,
+    "last_seen": 1697591905,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -316,7 +367,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -332,7 +387,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606011,
+    "id": 3,
+    "last_seen": 1697591906,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -345,7 +401,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -361,7 +421,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606012,
+    "id": 3,
+    "last_seen": 1697591907,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -374,7 +435,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -390,7 +455,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606013,
+    "id": 3,
+    "last_seen": 1697591908,
     "state": {
       "plain": 1.0,
       "oatmeal": 0.0,
@@ -403,7 +469,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -419,7 +489,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606014,
+    "id": 3,
+    "last_seen": 1697591909,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -432,7 +503,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -448,7 +523,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606015,
+    "id": 3,
+    "last_seen": 1697591910,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -461,7 +537,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -477,7 +557,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606016,
+    "id": 3,
+    "last_seen": 1697591911,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -490,7 +571,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -506,7 +591,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606017,
+    "id": 3,
+    "last_seen": 1697591912,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -519,7 +605,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -535,7 +625,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606018,
+    "id": 3,
+    "last_seen": 1697591913,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -548,7 +639,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -564,7 +659,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606019,
+    "id": 3,
+    "last_seen": 1697591914,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -577,7 +673,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -593,7 +693,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606020,
+    "id": 3,
+    "last_seen": 1697591915,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -606,7 +707,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -622,7 +727,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606021,
+    "id": 3,
+    "last_seen": 1697591916,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -635,7 +741,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -651,7 +761,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606022,
+    "id": 3,
+    "last_seen": 1697591917,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -664,7 +775,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -680,7 +795,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606023,
+    "id": 3,
+    "last_seen": 1697591918,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -693,7 +809,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -709,7 +829,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606024,
+    "id": 3,
+    "last_seen": 1697591919,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -722,7 +843,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -738,7 +863,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606025,
+    "id": 3,
+    "last_seen": 1697591920,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -751,7 +877,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -767,7 +897,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606026,
+    "id": 3,
+    "last_seen": 1697591921,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -780,7 +911,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -796,7 +931,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606027,
+    "id": 3,
+    "last_seen": 1697591922,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -809,7 +945,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -825,7 +965,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606028,
+    "id": 3,
+    "last_seen": 1697591923,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -838,7 +979,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -854,7 +999,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606029,
+    "id": 3,
+    "last_seen": 1697591924,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -867,7 +1013,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -883,7 +1033,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606030,
+    "id": 3,
+    "last_seen": 1697591925,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -896,7 +1047,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -912,7 +1067,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606031,
+    "id": 3,
+    "last_seen": 1697591926,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -925,7 +1081,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -941,7 +1101,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606032,
+    "id": 3,
+    "last_seen": 1697591927,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -954,7 +1115,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -970,7 +1135,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606033,
+    "id": 3,
+    "last_seen": 1697591928,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -983,7 +1149,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 1
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 1
+    }
   },
   {
     "pos": [
@@ -999,7 +1169,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606034,
+    "id": 3,
+    "last_seen": 1697591929,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1012,7 +1183,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1028,7 +1203,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606035,
+    "id": 3,
+    "last_seen": 1697591930,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1041,7 +1217,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1057,7 +1237,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606036,
+    "id": 3,
+    "last_seen": 1697591931,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1070,7 +1251,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1086,7 +1271,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606037,
+    "id": 3,
+    "last_seen": 1697591932,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1099,7 +1285,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1115,7 +1305,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606038,
+    "id": 3,
+    "last_seen": 1697591933,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1128,7 +1319,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1144,7 +1339,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606039,
+    "id": 3,
+    "last_seen": 1697591934,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1157,7 +1353,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1173,7 +1373,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606040,
+    "id": 3,
+    "last_seen": 1697591935,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1186,7 +1387,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1202,7 +1407,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606041,
+    "id": 3,
+    "last_seen": 1697591936,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1215,7 +1421,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1231,7 +1441,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606042,
+    "id": 3,
+    "last_seen": 1697591937,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1244,7 +1455,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1260,7 +1475,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606043,
+    "id": 3,
+    "last_seen": 1697591938,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1273,7 +1489,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1289,7 +1509,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606044,
+    "id": 3,
+    "last_seen": 1697591939,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1302,7 +1523,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1318,7 +1543,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606045,
+    "id": 3,
+    "last_seen": 1697591940,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1331,7 +1557,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1347,7 +1577,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606046,
+    "id": 3,
+    "last_seen": 1697591941,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1360,7 +1591,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1376,7 +1611,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606047,
+    "id": 3,
+    "last_seen": 1697591942,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1389,7 +1625,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1405,7 +1645,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606048,
+    "id": 3,
+    "last_seen": 1697591943,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1418,7 +1659,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1434,7 +1679,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606049,
+    "id": 3,
+    "last_seen": 1697591944,
     "state": {
       "plain": 0.0,
       "oatmeal": 1.0,
@@ -1447,7 +1693,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1463,7 +1713,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606050,
+    "id": 3,
+    "last_seen": 1697591945,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1476,7 +1727,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1492,7 +1747,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606051,
+    "id": 3,
+    "last_seen": 1697591946,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1505,7 +1761,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1521,7 +1781,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606052,
+    "id": 3,
+    "last_seen": 1697591947,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1534,7 +1795,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1550,7 +1815,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606053,
+    "id": 3,
+    "last_seen": 1697591948,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1563,7 +1829,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1579,7 +1849,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606054,
+    "id": 3,
+    "last_seen": 1697591949,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1592,7 +1863,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1608,7 +1883,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606055,
+    "id": 3,
+    "last_seen": 1697591950,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1621,7 +1897,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 2
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 2
+    }
   },
   {
     "pos": [
@@ -1637,7 +1917,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606056,
+    "id": 3,
+    "last_seen": 1697591951,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1650,7 +1931,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1666,7 +1951,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606057,
+    "id": 3,
+    "last_seen": 1697591952,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1679,7 +1965,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1695,7 +1985,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606058,
+    "id": 3,
+    "last_seen": 1697591953,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1708,7 +1999,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1724,7 +2019,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606059,
+    "id": 3,
+    "last_seen": 1697591954,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1737,7 +2033,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1753,7 +2053,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606060,
+    "id": 3,
+    "last_seen": 1697591955,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1766,7 +2067,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1782,7 +2087,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606061,
+    "id": 3,
+    "last_seen": 1697591956,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1795,7 +2101,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1811,7 +2121,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606062,
+    "id": 3,
+    "last_seen": 1697591957,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1824,7 +2135,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1840,7 +2155,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606063,
+    "id": 3,
+    "last_seen": 1697591958,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1853,7 +2169,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1869,7 +2189,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606064,
+    "id": 3,
+    "last_seen": 1697591959,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1882,7 +2203,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1898,7 +2223,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606065,
+    "id": 3,
+    "last_seen": 1697591960,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1911,7 +2237,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1927,7 +2257,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606066,
+    "id": 3,
+    "last_seen": 1697591961,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1940,7 +2271,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1956,7 +2291,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606067,
+    "id": 3,
+    "last_seen": 1697591962,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1969,7 +2305,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -1985,7 +2325,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606068,
+    "id": 3,
+    "last_seen": 1697591963,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -1998,7 +2339,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2014,7 +2359,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606069,
+    "id": 3,
+    "last_seen": 1697591964,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2027,7 +2373,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2043,7 +2393,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606070,
+    "id": 3,
+    "last_seen": 1697591965,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2056,7 +2407,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2072,7 +2427,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606071,
+    "id": 3,
+    "last_seen": 1697591966,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2085,7 +2441,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2101,7 +2461,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606072,
+    "id": 3,
+    "last_seen": 1697591967,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2114,7 +2475,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2130,7 +2495,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606073,
+    "id": 3,
+    "last_seen": 1697591968,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2143,7 +2509,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2159,7 +2529,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606074,
+    "id": 3,
+    "last_seen": 1697591969,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2172,7 +2543,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2188,7 +2563,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606075,
+    "id": 3,
+    "last_seen": 1697591970,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2201,7 +2577,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2217,7 +2597,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606076,
+    "id": 3,
+    "last_seen": 1697591971,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2230,7 +2611,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2246,7 +2631,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606077,
+    "id": 3,
+    "last_seen": 1697591972,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2259,7 +2645,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2275,7 +2665,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606078,
+    "id": 3,
+    "last_seen": 1697591973,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2288,7 +2679,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2304,7 +2699,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606079,
+    "id": 3,
+    "last_seen": 1697591974,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2317,7 +2713,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2333,7 +2733,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606080,
+    "id": 3,
+    "last_seen": 1697591975,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2346,7 +2747,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2362,7 +2767,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606081,
+    "id": 3,
+    "last_seen": 1697591976,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2375,7 +2781,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2391,7 +2801,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606082,
+    "id": 3,
+    "last_seen": 1697591977,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2404,7 +2815,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2420,7 +2835,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606083,
+    "id": 3,
+    "last_seen": 1697591978,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2433,7 +2849,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2449,7 +2869,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606084,
+    "id": 3,
+    "last_seen": 1697591979,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2462,7 +2883,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2478,7 +2903,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606085,
+    "id": 3,
+    "last_seen": 1697591980,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2491,7 +2917,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2507,7 +2937,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606086,
+    "id": 3,
+    "last_seen": 1697591981,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2520,7 +2951,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2536,7 +2971,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606087,
+    "id": 3,
+    "last_seen": 1697591982,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2549,7 +2985,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2565,7 +3005,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606088,
+    "id": 3,
+    "last_seen": 1697591983,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2578,7 +3019,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2594,7 +3039,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606089,
+    "id": 3,
+    "last_seen": 1697591984,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2607,7 +3053,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2623,7 +3073,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606090,
+    "id": 3,
+    "last_seen": 1697591985,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2636,7 +3087,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2652,7 +3107,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606091,
+    "id": 3,
+    "last_seen": 1697591986,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2665,7 +3121,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2681,7 +3141,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606092,
+    "id": 3,
+    "last_seen": 1697591987,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2694,7 +3155,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2710,7 +3175,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606093,
+    "id": 3,
+    "last_seen": 1697591988,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2723,7 +3189,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2739,7 +3209,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606094,
+    "id": 3,
+    "last_seen": 1697591989,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2752,7 +3223,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2768,7 +3243,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606095,
+    "id": 3,
+    "last_seen": 1697591990,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2781,7 +3257,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2797,7 +3277,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606096,
+    "id": 3,
+    "last_seen": 1697591991,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2810,7 +3291,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2826,7 +3311,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606097,
+    "id": 3,
+    "last_seen": 1697591992,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2839,7 +3325,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2855,7 +3345,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606098,
+    "id": 3,
+    "last_seen": 1697591993,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2868,7 +3359,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2884,7 +3379,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606099,
+    "id": 3,
+    "last_seen": 1697591994,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2897,7 +3393,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2913,7 +3413,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606100,
+    "id": 3,
+    "last_seen": 1697591995,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2926,7 +3427,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2942,7 +3447,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606101,
+    "id": 3,
+    "last_seen": 1697591996,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2955,7 +3461,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -2971,7 +3481,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606102,
+    "id": 3,
+    "last_seen": 1697591997,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -2984,7 +3495,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3000,7 +3515,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606103,
+    "id": 3,
+    "last_seen": 1697591998,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3013,7 +3529,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3029,7 +3549,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606104,
+    "id": 3,
+    "last_seen": 1697591999,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3042,7 +3563,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3058,7 +3583,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606105,
+    "id": 3,
+    "last_seen": 1697592000,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3071,7 +3597,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3087,7 +3617,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606106,
+    "id": 3,
+    "last_seen": 1697592001,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3100,7 +3631,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3116,7 +3651,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606107,
+    "id": 3,
+    "last_seen": 1697592002,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3129,7 +3665,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3145,7 +3685,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606108,
+    "id": 3,
+    "last_seen": 1697592003,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3158,7 +3699,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3174,7 +3719,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606109,
+    "id": 3,
+    "last_seen": 1697592004,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3187,7 +3733,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 3
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 3
+    }
   },
   {
     "pos": [
@@ -3203,7 +3753,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606110,
+    "id": 3,
+    "last_seen": 1697592005,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3216,7 +3767,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3232,7 +3787,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606111,
+    "id": 3,
+    "last_seen": 1697592006,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3245,7 +3801,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3261,7 +3821,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606112,
+    "id": 3,
+    "last_seen": 1697592007,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3274,7 +3835,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3290,7 +3855,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606113,
+    "id": 3,
+    "last_seen": 1697592008,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3303,7 +3869,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3319,7 +3889,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606114,
+    "id": 3,
+    "last_seen": 1697592009,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3332,7 +3903,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3348,7 +3923,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606115,
+    "id": 3,
+    "last_seen": 1697592010,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3361,7 +3937,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3377,7 +3957,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606116,
+    "id": 3,
+    "last_seen": 1697592011,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3390,7 +3971,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3406,7 +3991,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606117,
+    "id": 3,
+    "last_seen": 1697592012,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3419,7 +4005,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3435,7 +4025,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606118,
+    "id": 3,
+    "last_seen": 1697592013,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3448,7 +4039,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3464,7 +4059,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606119,
+    "id": 3,
+    "last_seen": 1697592014,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3477,7 +4073,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3493,7 +4093,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606120,
+    "id": 3,
+    "last_seen": 1697592015,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3506,7 +4107,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3522,7 +4127,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606121,
+    "id": 3,
+    "last_seen": 1697592016,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3535,7 +4141,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3551,7 +4161,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606122,
+    "id": 3,
+    "last_seen": 1697592017,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3564,7 +4175,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3580,7 +4195,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606123,
+    "id": 3,
+    "last_seen": 1697592018,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3593,7 +4209,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3609,7 +4229,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606124,
+    "id": 3,
+    "last_seen": 1697592019,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3622,7 +4243,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3638,7 +4263,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606125,
+    "id": 3,
+    "last_seen": 1697592020,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3651,7 +4277,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3667,7 +4297,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606126,
+    "id": 3,
+    "last_seen": 1697592021,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3680,7 +4311,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3696,7 +4331,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606127,
+    "id": 3,
+    "last_seen": 1697592022,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3709,7 +4345,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3725,7 +4365,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606128,
+    "id": 3,
+    "last_seen": 1697592023,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3738,7 +4379,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3754,7 +4399,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606129,
+    "id": 3,
+    "last_seen": 1697592024,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3767,7 +4413,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3783,7 +4433,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606130,
+    "id": 3,
+    "last_seen": 1697592025,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3796,7 +4447,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3812,7 +4467,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606131,
+    "id": 3,
+    "last_seen": 1697592026,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3825,7 +4481,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3841,7 +4501,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606132,
+    "id": 3,
+    "last_seen": 1697592027,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3854,7 +4515,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3870,7 +4535,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606133,
+    "id": 3,
+    "last_seen": 1697592028,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3883,7 +4549,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3899,7 +4569,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606134,
+    "id": 3,
+    "last_seen": 1697592029,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3912,7 +4583,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3928,7 +4603,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606135,
+    "id": 3,
+    "last_seen": 1697592030,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3941,7 +4617,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3957,7 +4637,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606136,
+    "id": 3,
+    "last_seen": 1697592031,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3970,7 +4651,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -3986,7 +4671,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606137,
+    "id": 3,
+    "last_seen": 1697592032,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -3999,7 +4685,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -4015,7 +4705,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606138,
+    "id": 3,
+    "last_seen": 1697592033,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4028,7 +4719,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 4
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 4
+    }
   },
   {
     "pos": [
@@ -4044,7 +4739,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606139,
+    "id": 3,
+    "last_seen": 1697592034,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4057,7 +4753,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4073,7 +4773,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606140,
+    "id": 3,
+    "last_seen": 1697592035,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4086,7 +4787,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4102,7 +4807,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606141,
+    "id": 3,
+    "last_seen": 1697592036,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4115,7 +4821,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4131,7 +4841,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606142,
+    "id": 3,
+    "last_seen": 1697592037,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4144,7 +4855,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4160,7 +4875,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606143,
+    "id": 3,
+    "last_seen": 1697592038,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4173,7 +4889,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4189,7 +4909,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606144,
+    "id": 3,
+    "last_seen": 1697592039,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4202,7 +4923,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4218,7 +4943,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606145,
+    "id": 3,
+    "last_seen": 1697592040,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4231,7 +4957,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4247,7 +4977,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606146,
+    "id": 3,
+    "last_seen": 1697592041,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4260,7 +4991,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4276,7 +5011,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606147,
+    "id": 3,
+    "last_seen": 1697592042,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4289,7 +5025,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4305,7 +5045,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606148,
+    "id": 3,
+    "last_seen": 1697592043,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4318,7 +5059,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4334,7 +5079,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606149,
+    "id": 3,
+    "last_seen": 1697592044,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4347,7 +5093,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4363,7 +5113,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606150,
+    "id": 3,
+    "last_seen": 1697592045,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4376,7 +5127,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4392,7 +5147,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606151,
+    "id": 3,
+    "last_seen": 1697592046,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4405,7 +5161,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4421,7 +5181,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606152,
+    "id": 3,
+    "last_seen": 1697592047,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4434,7 +5195,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4450,7 +5215,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606153,
+    "id": 3,
+    "last_seen": 1697592048,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4463,7 +5229,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4479,7 +5249,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606154,
+    "id": 3,
+    "last_seen": 1697592049,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4492,7 +5263,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4508,7 +5283,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606155,
+    "id": 3,
+    "last_seen": 1697592050,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4521,7 +5297,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4537,7 +5317,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606156,
+    "id": 3,
+    "last_seen": 1697592051,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4550,7 +5331,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4566,7 +5351,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606157,
+    "id": 3,
+    "last_seen": 1697592052,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4579,7 +5365,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4595,7 +5385,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606158,
+    "id": 3,
+    "last_seen": 1697592053,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4608,7 +5399,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4624,7 +5419,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606159,
+    "id": 3,
+    "last_seen": 1697592054,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4637,7 +5433,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4653,7 +5453,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606160,
+    "id": 3,
+    "last_seen": 1697592055,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4666,7 +5467,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4682,7 +5487,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606161,
+    "id": 3,
+    "last_seen": 1697592056,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4695,7 +5501,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4711,7 +5521,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606162,
+    "id": 3,
+    "last_seen": 1697592057,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4724,7 +5535,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4740,7 +5555,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606163,
+    "id": 3,
+    "last_seen": 1697592058,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4753,7 +5569,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4769,7 +5589,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606164,
+    "id": 3,
+    "last_seen": 1697592059,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4782,7 +5603,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4798,7 +5623,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606165,
+    "id": 3,
+    "last_seen": 1697592060,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4811,7 +5637,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4827,7 +5657,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606166,
+    "id": 3,
+    "last_seen": 1697592061,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4840,7 +5671,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4856,7 +5691,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606167,
+    "id": 3,
+    "last_seen": 1697592062,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4869,7 +5705,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4885,7 +5725,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606168,
+    "id": 3,
+    "last_seen": 1697592063,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4898,7 +5739,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4914,7 +5759,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606169,
+    "id": 3,
+    "last_seen": 1697592064,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4927,7 +5773,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4943,7 +5793,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606170,
+    "id": 3,
+    "last_seen": 1697592065,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4956,7 +5807,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -4972,7 +5827,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606171,
+    "id": 3,
+    "last_seen": 1697592066,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -4985,7 +5841,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5001,7 +5861,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606172,
+    "id": 3,
+    "last_seen": 1697592067,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5014,7 +5875,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5030,7 +5895,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606173,
+    "id": 3,
+    "last_seen": 1697592068,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5043,7 +5909,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5059,7 +5929,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606174,
+    "id": 3,
+    "last_seen": 1697592069,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5072,7 +5943,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5088,7 +5963,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606175,
+    "id": 3,
+    "last_seen": 1697592070,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5101,7 +5977,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5117,7 +5997,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606176,
+    "id": 3,
+    "last_seen": 1697592071,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5130,7 +6011,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5146,7 +6031,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606177,
+    "id": 3,
+    "last_seen": 1697592072,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5159,7 +6045,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5175,7 +6065,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606178,
+    "id": 3,
+    "last_seen": 1697592073,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5188,7 +6079,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5204,7 +6099,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606179,
+    "id": 3,
+    "last_seen": 1697592074,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5217,7 +6113,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5233,7 +6133,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606180,
+    "id": 3,
+    "last_seen": 1697592075,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5246,7 +6147,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5262,7 +6167,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606181,
+    "id": 3,
+    "last_seen": 1697592076,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5275,7 +6181,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5291,7 +6201,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606182,
+    "id": 3,
+    "last_seen": 1697592077,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5304,7 +6215,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5320,7 +6235,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606183,
+    "id": 3,
+    "last_seen": 1697592078,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5333,7 +6249,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5349,7 +6269,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606184,
+    "id": 3,
+    "last_seen": 1697592079,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5362,7 +6283,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5378,7 +6303,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606185,
+    "id": 3,
+    "last_seen": 1697592080,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5391,7 +6317,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5407,7 +6337,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606186,
+    "id": 3,
+    "last_seen": 1697592081,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5420,7 +6351,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5436,7 +6371,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606187,
+    "id": 3,
+    "last_seen": 1697592082,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5449,7 +6385,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5465,7 +6405,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606188,
+    "id": 3,
+    "last_seen": 1697592083,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5478,7 +6419,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5494,7 +6439,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606189,
+    "id": 3,
+    "last_seen": 1697592084,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5507,7 +6453,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5523,7 +6473,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606190,
+    "id": 3,
+    "last_seen": 1697592085,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5536,7 +6487,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5552,7 +6507,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606191,
+    "id": 3,
+    "last_seen": 1697592086,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5565,7 +6521,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5581,7 +6541,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606192,
+    "id": 3,
+    "last_seen": 1697592087,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5594,7 +6555,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5610,7 +6575,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606193,
+    "id": 3,
+    "last_seen": 1697592088,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5623,7 +6589,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5639,7 +6609,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606194,
+    "id": 3,
+    "last_seen": 1697592089,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5652,7 +6623,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5668,7 +6643,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606195,
+    "id": 3,
+    "last_seen": 1697592090,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5681,7 +6657,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5697,7 +6677,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606196,
+    "id": 3,
+    "last_seen": 1697592091,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5710,7 +6691,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5726,7 +6711,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606197,
+    "id": 3,
+    "last_seen": 1697592092,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5739,7 +6725,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5755,7 +6745,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606198,
+    "id": 3,
+    "last_seen": 1697592093,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5768,7 +6759,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5784,7 +6779,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606199,
+    "id": 3,
+    "last_seen": 1697592094,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5797,7 +6793,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5813,7 +6813,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606200,
+    "id": 3,
+    "last_seen": 1697592095,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5826,7 +6827,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5842,7 +6847,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606201,
+    "id": 3,
+    "last_seen": 1697592096,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5855,7 +6861,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5871,7 +6881,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606202,
+    "id": 3,
+    "last_seen": 1697592097,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5884,7 +6895,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5900,7 +6915,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606203,
+    "id": 3,
+    "last_seen": 1697592098,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5913,7 +6929,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5929,7 +6949,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606204,
+    "id": 3,
+    "last_seen": 1697592099,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5942,7 +6963,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5958,7 +6983,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606205,
+    "id": 3,
+    "last_seen": 1697592100,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -5971,7 +6997,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -5987,7 +7017,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606206,
+    "id": 3,
+    "last_seen": 1697592101,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6000,7 +7031,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6016,7 +7051,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606207,
+    "id": 3,
+    "last_seen": 1697592102,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6029,7 +7065,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6045,7 +7085,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606208,
+    "id": 3,
+    "last_seen": 1697592103,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6058,7 +7099,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6074,7 +7119,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606209,
+    "id": 3,
+    "last_seen": 1697592104,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6087,7 +7133,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6103,7 +7153,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606210,
+    "id": 3,
+    "last_seen": 1697592105,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6116,7 +7167,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6132,7 +7187,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606211,
+    "id": 3,
+    "last_seen": 1697592106,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6145,7 +7201,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6161,7 +7221,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606212,
+    "id": 3,
+    "last_seen": 1697592107,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6174,7 +7235,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6190,7 +7255,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606213,
+    "id": 3,
+    "last_seen": 1697592108,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6203,7 +7269,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6219,7 +7289,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606214,
+    "id": 3,
+    "last_seen": 1697592109,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6232,7 +7303,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6248,7 +7323,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606215,
+    "id": 3,
+    "last_seen": 1697592110,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6261,7 +7337,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6277,7 +7357,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606216,
+    "id": 3,
+    "last_seen": 1697592111,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6290,7 +7371,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6306,7 +7391,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606217,
+    "id": 3,
+    "last_seen": 1697592112,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6319,7 +7405,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6335,7 +7425,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606218,
+    "id": 3,
+    "last_seen": 1697592113,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6348,7 +7439,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6364,7 +7459,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606219,
+    "id": 3,
+    "last_seen": 1697592114,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6377,7 +7473,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6393,7 +7493,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606220,
+    "id": 3,
+    "last_seen": 1697592115,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6406,7 +7507,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6422,7 +7527,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606221,
+    "id": 3,
+    "last_seen": 1697592116,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6435,7 +7541,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6451,7 +7561,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606222,
+    "id": 3,
+    "last_seen": 1697592117,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6464,7 +7575,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6480,7 +7595,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606223,
+    "id": 3,
+    "last_seen": 1697592118,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6493,7 +7609,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6509,7 +7629,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606224,
+    "id": 3,
+    "last_seen": 1697592119,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6522,7 +7643,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6538,7 +7663,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606225,
+    "id": 3,
+    "last_seen": 1697592120,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6551,7 +7677,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 5
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 5
+    }
   },
   {
     "pos": [
@@ -6567,7 +7697,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606226,
+    "id": 3,
+    "last_seen": 1697592121,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6580,7 +7711,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6596,7 +7731,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606227,
+    "id": 3,
+    "last_seen": 1697592122,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6609,7 +7745,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6625,7 +7765,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606228,
+    "id": 3,
+    "last_seen": 1697592123,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6638,7 +7779,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6654,7 +7799,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606229,
+    "id": 3,
+    "last_seen": 1697592124,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6667,7 +7813,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6683,7 +7833,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606230,
+    "id": 3,
+    "last_seen": 1697592125,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6696,7 +7847,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6712,7 +7867,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606231,
+    "id": 3,
+    "last_seen": 1697592126,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6725,7 +7881,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6741,7 +7901,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606232,
+    "id": 3,
+    "last_seen": 1697592127,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6754,7 +7915,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6770,7 +7935,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606233,
+    "id": 3,
+    "last_seen": 1697592128,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6783,7 +7949,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6799,7 +7969,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606234,
+    "id": 3,
+    "last_seen": 1697592129,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6812,7 +7983,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6828,7 +8003,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606235,
+    "id": 3,
+    "last_seen": 1697592130,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6841,7 +8017,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6857,7 +8037,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606236,
+    "id": 3,
+    "last_seen": 1697592131,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6870,7 +8051,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6886,7 +8071,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606237,
+    "id": 3,
+    "last_seen": 1697592132,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6899,7 +8085,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6915,7 +8105,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606238,
+    "id": 3,
+    "last_seen": 1697592133,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6928,7 +8119,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 6
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 6
+    }
   },
   {
     "pos": [
@@ -6944,7 +8139,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606239,
+    "id": 3,
+    "last_seen": 1697592134,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6957,7 +8153,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -6973,7 +8173,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606240,
+    "id": 3,
+    "last_seen": 1697592135,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -6986,7 +8187,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7002,7 +8207,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606241,
+    "id": 3,
+    "last_seen": 1697592136,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7015,7 +8221,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7031,7 +8241,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606242,
+    "id": 3,
+    "last_seen": 1697592137,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7044,7 +8255,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7060,7 +8275,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606243,
+    "id": 3,
+    "last_seen": 1697592138,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7073,7 +8289,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7089,7 +8309,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606244,
+    "id": 3,
+    "last_seen": 1697592139,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7102,7 +8323,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7118,7 +8343,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606245,
+    "id": 3,
+    "last_seen": 1697592140,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7131,7 +8357,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7147,7 +8377,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606246,
+    "id": 3,
+    "last_seen": 1697592141,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7160,7 +8391,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7176,7 +8411,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606247,
+    "id": 3,
+    "last_seen": 1697592142,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7189,7 +8425,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7205,7 +8445,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606248,
+    "id": 3,
+    "last_seen": 1697592143,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7218,7 +8459,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7234,7 +8479,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606249,
+    "id": 3,
+    "last_seen": 1697592144,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7247,7 +8493,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7263,7 +8513,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606250,
+    "id": 3,
+    "last_seen": 1697592145,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7276,7 +8527,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7292,7 +8547,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606251,
+    "id": 3,
+    "last_seen": 1697592146,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7305,7 +8561,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7321,7 +8581,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606252,
+    "id": 3,
+    "last_seen": 1697592147,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7334,7 +8595,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7350,7 +8615,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606253,
+    "id": 3,
+    "last_seen": 1697592148,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7363,7 +8629,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 0.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7379,7 +8649,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606254,
+    "id": 3,
+    "last_seen": 1697592149,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7392,7 +8663,11 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 1.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   },
   {
     "pos": [
@@ -7408,7 +8683,8 @@
     ],
     "label": "bowl",
     "status": "tracked",
-    "last_seen": 1696606255,
+    "id": 3,
+    "last_seen": 1697592150,
     "state": {
       "plain": 0.0,
       "oatmeal": 0.0,
@@ -7421,6 +8697,78 @@
       "oatmeal+raisins[cooked]+banana+cinnamon+honey": 1.0
     },
     "hand_object_interaction": 0.27,
-    "step_id": 7
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "id": 3,
+    "last_seen": 1697592151,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 1.0
+    },
+    "hand_object_interaction": 0.27,
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
+  },
+  {
+    "pos": [
+      -0.2149151724097291,
+      -0.4343880843796524,
+      -0.6208099189217009
+    ],
+    "xyxyn": [
+      0.1,
+      0.1,
+      0.2,
+      0.2
+    ],
+    "label": "bowl",
+    "status": "tracked",
+    "id": 3,
+    "last_seen": 1697592152,
+    "state": {
+      "plain": 0.0,
+      "oatmeal": 0.0,
+      "oatmeal+water": 0.0,
+      "oatmeal[cooked]": 0.0,
+      "oatmeal[cooked]+raisins": 0.0,
+      "oatmeal+raisins[cooked]": 0.0,
+      "oatmeal+raisins[cooked]+banana": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon": 0.0,
+      "oatmeal+raisins[cooked]+banana+cinnamon+honey": 1.0
+    },
+    "hand_object_interaction": 0.27,
+    "session": {
+      "session_id": "oatmeal_mit-eval",
+      "task_id": "oatmeal",
+      "step_id": 7
+    }
   }
 ]
