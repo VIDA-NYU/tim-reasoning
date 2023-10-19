@@ -176,7 +176,7 @@ class TaskTracker:
         recipe_file_name: str = "recipe.json",
         recipe_folder: str = RECIPE_DATA_FOLDER,
     ) -> str or None:
-        """Returns the next recipe step instructions
+        """Returns the next (current) recipe step instructions
 
         Args:
             recipe_file_name (str, optional): recipe json file name. Defaults to "recipe.json".
