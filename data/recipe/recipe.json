@@ -21,7 +21,7 @@
             "2": "Place tea bag in mug.",
             "3": "Check the temperature of the water.",
             "4": "Pour water into mug.",
-            "5": "Steep for 3 minutes.", 
+            "5": "Steep for 3 minutes.",
             "6": "Discard tea bag.",
             "7": "Add honey and stir."
         }
@@ -38,7 +38,7 @@
         }
     },
     "coffee": {
-        "steps":{
+        "steps": {
             "1": "Measure 12 ounces of cold water and transfer to a kettle.",
             "2": "Assemble the filter cone. Place the dripper on top of a coffee mug.",
             "3": "Prepare the filter insert by folding the paper filter in half to create a semi-circle, and in half again to create a quarter-circle. Place the paper filter in the dripper and spread open to create a cone.",
@@ -50,12 +50,12 @@
         }
     },
     "oatmeal": {
-        "steps":{
+        "steps": {
             "1": "Measure 4 Tablespoons of quick-cook oats and place in a microwave-safe bowl.",
             "2": "Add 1/2 cup water.",
             "3": "Microwave for 30 seconds.",
             "4": "Add handful of raisins and stir.",
-            "5": "Microwave for 60 more seconds then stir.", 
+            "5": "Microwave for 60 more seconds then stir.",
             "6": "Top with banana slices.",
             "7": "Sprinkle with cinnamon and drizzle with honey before serving."
         }

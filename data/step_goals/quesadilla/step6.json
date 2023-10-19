@@ -3,7 +3,9 @@
   "goals": [
     {
       "state": "cut",
-      "objects": ["tortilla"]
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }
