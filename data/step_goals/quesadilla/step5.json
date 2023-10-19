@@ -1,13 +1,11 @@
 {
-  "operand": "and",
+  "operand": "None",
   "goals": [
     {
-      "state": "folding",
-      "objects": ["tortilla"]
-    },
-    {
-      "state": "closed",
-      "objects": ["tortilla"]
+      "state": "folded",
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }

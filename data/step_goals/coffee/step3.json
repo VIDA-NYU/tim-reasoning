@@ -1,13 +1,17 @@
 {
-  "operand": "and", 
+  "operand": "and",
   "goals": [
     {
       "state": "dripper+filter",
-      "objects": ["mug"]
+      "objects": [
+        "mug"
+      ]
     },
     {
       "state": "stacked",
-      "objects": ["mug"]
+      "objects": [
+        "mug"
+      ]
     }
   ]
 }

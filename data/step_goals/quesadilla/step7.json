@@ -1,13 +1,11 @@
 {
-  "operand": "and",
+  "operand": "None",
   "goals": [
     {
-      "state": "cut",
-      "objects": ["tortilla"]
-    },
-    {
-      "state": "on-plate",
-      "objects": ["tortilla"]
+      "state": "on-plate[full]",
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }

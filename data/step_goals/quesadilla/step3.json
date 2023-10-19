@@ -1,13 +1,11 @@
 {
-  "operand": "and",
+  "operand": "None",
   "goals": [
     {
       "state": "nutella+banana[full]",
-      "objects": ["tortilla"] 
-    },
-    {
-      "state": "open",
-      "objects": ["tortilla"]
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }

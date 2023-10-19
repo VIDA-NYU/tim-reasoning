@@ -2,9 +2,9 @@
   "operand": "None",
   "goals": [
     {
-      "state": "nutella+banana+cinnamon",
+      "state": "oatmeal+raisins[cooked]+banana",
       "objects": [
-        "tortilla"
+        "bowl"
       ]
     }
   ]
