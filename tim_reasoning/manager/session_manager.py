@@ -8,13 +8,18 @@ from os.path import join, dirname
 class SessionManager:
     def __init__(
         self,
-        unique_objects_file: str = join(dirname(__file__), "../../data/step_goals/unique_objects.json"),
-        common_objects_file: str = join(dirname(__file__), "../../data/step_goals/common_objects.json"),
+        unique_objects_file: str = join(
+            dirname(__file__), "../../data/step_goals/unique_objects.json"
+        ),
+        common_objects_file: str = join(
+            dirname(__file__), "../../data/step_goals/common_objects.json"
+        ),
         data_folder: str = join(dirname(__file__), "../../data/step_goals/"),
         patience: int = 1,
         verbose: bool = True,
     ) -> None:
         self.task_trackers = []
+        self.wrong_task_trackers = []
         self.patience = patience
         self.object_states = defaultdict(lambda: defaultdict(list))
         self.unique_objects_file = unique_objects_file
@@ -64,12 +69,19 @@ class SessionManager:
             common_objects = json.load(f)
         return unique_objects, common_objects
 
+    def add_wrong_tracker(self, wrong_tracker):
+        for tt in self.wrong_task_trackers:
+            if tt.get_id() == wrong_tracker.get_id():
+                return
+        self.wrong_task_trackers.append(wrong_tracker)
+
     def remove_task_tracker(self, wrong_tracker: TaskTracker):
         """Deletes a Task Tracker from memory when provided
 
         Args:
             wrong_tracker (TaskTracker): task tracker object to be removed from memory
         """
+        self.add_wrong_tracker(wrong_tracker)
         task_tracker_id = wrong_tracker.get_id()
         # remove the task_tracker from the recent tracker stack
         self.recent_tracker_stack.remove(task_tracker_id)
@@ -92,6 +104,21 @@ class SessionManager:
             self.log.error("Unknown task tracker id to be removed.")
         else:
             self.task_trackers.pop(remove_idx)
+
+    def handle_wrong_tasks(
+        self, probable_task_trackers: list, wrong_tracker_list: list
+    ):
+        """Removes the wrong tasks only if all of the probable ones were not wrong
+
+        Args:
+            probable_task_trackers (list): for given object, possible task_trackers
+            wrong_tracker_list (list): errorneous task trackers
+        """
+        if len(probable_task_trackers) != len(wrong_tracker_list) or set(
+            probable_task_trackers
+        ) != set(wrong_tracker_list):
+            for tt in wrong_tracker_list:
+                self.remove_task_tracker(wrong_tracker=tt)
 
     def update_last_tracker(self, tracker: TaskTracker):
         """Updates the most recent tracker's id
@@ -184,7 +211,7 @@ class SessionManager:
         else:
             if self.verbose:
                 self.log.info("Multipe probable task_graphs possible")
-            output = []
+            output, wrong_tracker_list = [], []
             for i, task_tracker in enumerate(probable_task_trackers):
                 instruction, track_output = task_tracker.track(
                     state, [object_label], [object_id]
@@ -193,18 +220,23 @@ class SessionManager:
                 # if there's an error in instruction, it means we can drop this task_graph
                 if isinstance(instruction, ReasoningErrors):
                     if instruction == ReasoningErrors.PARTIAL_STATE:
+                        # Return the current step - ignoring the input
                         self.log.info(
                             f"For `{task_tracker.recipe}` Recipe, received partial state completion."
                         )
                         output.append(track_output)
                     else:
-                        self.remove_task_tracker(wrong_tracker=task_tracker)
+                        # Return the error outputs
+                        wrong_tracker_list.append(task_tracker)
+                        output.append(track_output)
                 else:
                     if self.verbose:
                         self.log.info(
                             f"For `{task_tracker.recipe}` Recipe, next instruction = `{instruction}`"
                         )
                     output.append(track_output)
+            # Remove the wrong tasks only if all of the probable ones were not wrong
+            self.handle_wrong_tasks(probable_task_trackers, wrong_tracker_list)
             return output
 
     def track_object(self, state, object_id, object_label):
