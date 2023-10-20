@@ -306,13 +306,15 @@ class SessionManager:
         return final_output
 
     def update_step_task(self, step_session):
-        step_id, session_id = step_session.split('&')
-        # TODO: Update the task graph
-        return {'session_id': int(session_id),
-                'task_id': 'pinwheels',
-                'step_id': int(step_id),
-                'step_status': 'IN_PROGRESS',
-                'step_description': 'Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.',
-                'error_status': False,
-                'error_description': ''}
-
+        step_id, tracker_id = step_session.split('&')
+        tt = self.get_task_tracker(int(tracker_id))
+        if tt is None:
+            self.log.error(f"User set step {step_id} for Invalid Task")
+            return None
+        else:
+            instruction, track_output = tt.set_current_step(step_num=int(step_id))
+            if self.verbose:
+                self.log.info(
+                    f"User set step {step_id} for Task {tt.recipe}, received instruction = {instruction}"
+                )
+            return [track_output]
