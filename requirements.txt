@@ -1,8 +1,2 @@
 nltk
-spacy
-transformers
-datasets
-torch
-pytorch-transformers
-sentencepiece==0.1.95
-python-Levenshtein
+unified_planning
