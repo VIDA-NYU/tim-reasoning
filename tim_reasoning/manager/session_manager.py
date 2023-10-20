@@ -304,3 +304,15 @@ class SessionManager:
         for obj in message:
             final_output.extend(self.process_object(obj))
         return final_output
+
+    def update_step_task(self, step_session):
+        step_id, session_id = step_session.split('&')
+        # TODO: Update the task graph
+        return {'session_id': int(session_id),
+                'task_id': 'pinwheels',
+                'step_id': int(step_id),
+                'step_status': 'IN_PROGRESS',
+                'step_description': 'Secure the rolled tortilla by inserting 5 toothpicks about 1 inch apart.',
+                'error_status': False,
+                'error_description': ''}
+
