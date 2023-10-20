@@ -215,6 +215,30 @@ class TaskTracker:
                     self.object_ids.append(object_id)
                     self.object_labels.append(object_label)
 
+    def set_current_step(self, step_num: int):
+        """Set current step number and mark previous as completed
+
+        Args:
+            step_num (int): The step number to set as current
+
+        Raises:
+            ValueError: If step_num is less than 1
+        """
+        if step_num < 1:
+            raise ValueError("Step number must be greater than 0")
+
+        self.current_step_number = step_num
+
+        # Mark steps before current as completed
+        for node_id, node in self.task_graph.nodes.items():
+            if node.step_number < step_num:
+                self.add_completed_node(node, node_id, [], [])
+
+        next_recipe_step = self.get_next_recipe_step()
+        return next_recipe_step, self._build_output_dict(
+            instruction=next_recipe_step
+        )
+
     def track(
         self, state: str, objects: list, object_ids: list
     ) -> ReasoningErrors or None:
