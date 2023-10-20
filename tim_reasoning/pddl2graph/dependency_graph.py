@@ -2,8 +2,6 @@ from tim_reasoning import Logger
 from tim_reasoning.pddl2graph.node import Node
 import nltk
 
-nltk.download('punkt')
-
 
 class DependencyGraph:
     def __init__(self):

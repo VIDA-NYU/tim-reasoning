@@ -1,7 +1,6 @@
 import json
 import os
 
-from glob import glob
 from unified_planning.io import PDDLReader
 from tim_reasoning import Logger
 from tim_reasoning.pddl2graph.dependency_graph import DependencyGraph
