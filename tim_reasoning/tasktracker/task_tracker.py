@@ -1,3 +1,4 @@
+import json
 from tim_reasoning import Pddl2GraphConverter, Json2GraphConverter
 from tim_reasoning.pddl2graph.node import Node
 from tim_reasoning.reasoning_errors import ReasoningErrors
@@ -128,6 +129,7 @@ class TaskTracker:
             "step_description": step_description,
             "error_status": False,
             "error_description": "",
+            "total_steps": self.get_recipe_length(),
         }
 
     def _build_output_dict(self, instruction):
@@ -139,6 +141,7 @@ class TaskTracker:
             "step_description": instruction,
             "error_status": False,
             "error_description": "",
+            "total_steps": self.get_recipe_length(),
         }
 
     def _build_error_dict(self, error):
@@ -150,6 +153,7 @@ class TaskTracker:
             "step_description": "",
             "error_status": True,
             "error_description": str(error),
+            "total_steps": self.get_recipe_length(),
         }
 
     def get_current_step_number(self) -> int or ReasoningErrors:
@@ -170,6 +174,19 @@ class TaskTracker:
         json_data = self._read_json(json_file=f"{recipe_folder}/{recipe_file_name}")
         instructions = json_data[self.recipe]["steps"]
         return instructions
+
+    def get_recipe_length(
+        self,
+        recipe_file_name: str = "recipe.json",
+        recipe_folder: str = RECIPE_DATA_FOLDER,
+    ):
+        json_data = self._read_json(json_file=f"{recipe_folder}/{recipe_file_name}")
+        instructions = json_data[self.recipe]["steps"]
+        total_steps = len(instructions)
+        if total_steps > 0:
+            return len(instructions)
+        else:
+            return -1
 
     def get_next_recipe_step(
         self,
