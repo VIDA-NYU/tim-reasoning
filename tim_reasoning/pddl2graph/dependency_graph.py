@@ -19,6 +19,16 @@ class DependencyGraph:
     def find_node(
         self, state: str, objects: list, visited_nodes: dict
     ) -> (int, Node):
+        """Finds the node in the dependency graph based on object labels and states
+
+        Args:
+            state: state of object
+            objects: list of tracked objects
+            visited_nodes: completed nodes
+
+        Returns:
+            (int, Node): node_id, Node
+        """
         for node in self.nodes.values():
             if node.get_id() not in visited_nodes:
                 if node.state == state and set(node.objects) == set(objects):

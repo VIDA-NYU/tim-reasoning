@@ -1,0 +1,286 @@
+[
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.70,
+                    "plain": 0.01,
+                    "peanut-butter[initial]": 0.01,
+                    "peanut-butter[full]": 0.2,
+                    "pb+jelly[partial]": 0.02,
+                    "pb+jelly[full]": 0.02,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.02
+            }
+        ],
+        "timestamp": "1689963849888"
+    },
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.02,
+                    "plain": 0.45,
+                    "peanut-butter[initial]": 0.25,
+                    "peanut-butter[full]": 0.2,
+                    "pb+jelly[partial]": 0.02,
+                    "pb+jelly[full]": 0.02,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.89
+            },
+            {
+                "pos": [
+                    -1.2149151724097291,
+                    -0.4343880843796524,
+                    -0.6208099189217009
+                ],
+                "xyxyn": [
+                    0.0,
+                    0.1,
+                    0.1,
+                    0.2
+                ],
+                "label": "peanut butter jar",
+                "id": 2,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "hand_object_interaction": 0.0
+            }
+        ],
+        "timestamp": "1689963849889"
+    },
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.02,
+                    "plain": 0.05,
+                    "peanut-butter[initial]": 0.65,
+                    "peanut-butter[full]": 0.2,
+                    "pb+jelly[partial]": 0.02,
+                    "pb+jelly[full]": 0.02,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.89
+            }
+        ],
+        "timestamp": "1689963849890"
+    },
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.02,
+                    "plain": 0.05,
+                    "peanut-butter[initial]": 0.05,
+                    "peanut-butter[full]": 0.8,
+                    "pb+jelly[partial]": 0.02,
+                    "pb+jelly[full]": 0.02,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.89
+            }
+        ],
+        "timestamp": "1689963849891"
+    },
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.02,
+                    "plain": 0.05,
+                    "peanut-butter[initial]": 0.05,
+                    "peanut-butter[full]": 0.1,
+                    "pb+jelly[partial]": 0.72,
+                    "pb+jelly[full]": 0.02,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.89
+            }
+        ],
+        "timestamp": "1689963849892"
+    },
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.02,
+                    "plain": 0.05,
+                    "peanut-butter[initial]": 0.05,
+                    "peanut-butter[full]": 0.02,
+                    "pb+jelly[partial]": 0.1,
+                    "pb+jelly[full]": 0.72,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.89
+            }
+        ],
+        "timestamp": "1689963849893"
+    },
+    {
+        "values": [
+            {
+                "pos": [],
+                "xyxyn": [],
+                "label": "tortilla",
+                "id": 1,
+                "status": "tracked",
+                "last_seen": 133344374307946261,
+                "state": {
+                    "in-package": 0.00,
+                    "plain": 0.02,
+                    "peanut-butter[initial]": 0.05,
+                    "peanut-butter[full]": 0.02,
+                    "pb+jelly[partial]": 0.1,
+                    "pb+jelly[full]": 0.77,
+                    "nutella[partial]": 0.02,
+                    "nutella[full]": 0.02,
+                    "nutella+banana[partial]": 0.02,
+                    "nutella+banana[full]": 0.02,
+                    "nutella+banana+cinnamon": 0.02,
+                    "folding": 0.02,
+                    "folded": 0.02,
+                    "cut": 0.02,
+                    "rolling": 0.02,
+                    "rolled": 0.02,
+                    "rolled+toothpicks": 0.02,
+                    "ends-cut": 0.02,
+                    "sliced[partial]": 0.02,
+                    "sliced[full]": 0.02,
+                    "on-plate[partial]": 0.02,
+                    "on-plate[full]": 0.02
+                },
+                "hand_object_interaction": 0.89
+            }
+        ],
+        "timestamp": "1689963849894"
+    }
+]
