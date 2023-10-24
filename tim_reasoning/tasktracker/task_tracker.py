@@ -88,6 +88,7 @@ class TaskTracker:
             node (Node): given node (currently tracked)
         """
         for dep in node.dependencies:
+            print("dependency node = ", dep.objects, dep.state)
             dep_id = dep.get_id()
             if dep_id not in self.completed_nodes:
                 return False
@@ -102,8 +103,6 @@ class TaskTracker:
         Returns:
             json object: data
         """
-        import json
-
         with open(json_file, "r", encoding="utf-8") as f:
             data = json.load(f)
         return data
@@ -293,6 +292,8 @@ class TaskTracker:
                     partial_node,
                 ) = self.task_graph.find_partial_node(state=state, objects=objects)
                 if max_match > 0.1:
+                    # possibility of a future node (but incomplete)
+                    # or possibility of a previously completed node
                     return ReasoningErrors.PARTIAL_STATE, self._build_output_dict(
                         instruction=self.get_next_recipe_step()
                     )
@@ -301,14 +302,23 @@ class TaskTracker:
                     return error, self._build_error_dict(
                         error=f"{error.value[0]} - {error.value[1]}"
                     )
-
             # check_dependencies
             if not self._is_dependencies_completed(node=node):
-                # raise error
+                # first, create the error output
                 error = ReasoningErrors.MISSING_PREVIOUS
-                return error, self._build_error_dict(
+                error_output = self._build_error_dict(
                     error=f"{error.value[0]} - {error.value[1]}"
                 )
+                # second, we need to add this to completed list, update step num
+                self.add_completed_node(
+                    node=node,
+                    node_id=node_id,
+                    objects=objects,
+                    object_ids=object_ids,
+                )
+                # raise error
+
+                return (error, error_output)
         if self.current_step_number == 0 and not node:
             # get the first recipe step
             instructions = self.get_recipe()
