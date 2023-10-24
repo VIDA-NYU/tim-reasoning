@@ -40,6 +40,14 @@ class TaskTracker:
     def get_id(self):
         return self._id
 
+    def get_object_ids(self):
+        """Returns the object ids in the current task graph"""
+        return self.object_ids
+
+    def get_object_labels(self):
+        """Returns the object_labels in the current task graph"""
+        return self.object_labels
+
     def setup_task_graph(
         self,
         recipe: str,
@@ -130,6 +138,8 @@ class TaskTracker:
             "error_status": False,
             "error_description": "",
             "total_steps": self.get_recipe_length(),
+            "object_ids": self.get_object_ids(),
+            "object_labels": self.get_object_labels(),
         }
 
     def _build_output_dict(self, instruction):
@@ -142,6 +152,8 @@ class TaskTracker:
             "error_status": False,
             "error_description": "",
             "total_steps": self.get_recipe_length(),
+            "object_ids": self.get_object_ids(),
+            "object_labels": self.get_object_labels(),
         }
 
     def _build_error_dict(self, error):
@@ -154,6 +166,8 @@ class TaskTracker:
             "error_status": True,
             "error_description": str(error),
             "total_steps": self.get_recipe_length(),
+            "object_ids": self.get_object_ids(),
+            "object_labels": self.get_object_labels(),
         }
 
     def get_current_step_number(self) -> int or ReasoningErrors:
