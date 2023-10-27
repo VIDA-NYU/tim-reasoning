@@ -6,6 +6,7 @@ from tim_reasoning import SessionManager
 from data_generator import generate_data
 
 logging.basicConfig(level=logging.DEBUG)
+logging.getLogger('matplotlib').setLevel(logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 RESOURCE_PATH = join(dirname(__file__), 'resource')
@@ -13,7 +14,7 @@ RESOURCE_PATH = join(dirname(__file__), 'resource')
 
 def run_reasoning(recipe_id, video_id):
     perception_outputs = generate_data(recipe_id, video_id)
-    results = {'task_index': [], 'true_step': [], 'predicted_step': []}
+    results = {'task_id': [], 'true_step': [], 'predicted_step': []}
     sm = SessionManager(patience=1)
 
     for perception_output in perception_outputs:
@@ -24,10 +25,11 @@ def run_reasoning(recipe_id, video_id):
             continue
 
         predicted_step = output_reasoning['step_id']
-        predicted_session = output_reasoning['session_id']
+        #predicted_session = output_reasoning['session_id']
+        predicted_task = output_reasoning['task_id']
         results['true_step'].append(actual_step)
         results['predicted_step'].append(predicted_step)
-        results['task_index'].append(predicted_session)
+        results['task_id'].append(predicted_task)
 
     results_df = pd.DataFrame.from_dict(results)
     file_path = join(RESOURCE_PATH, f'{recipe_id}_reasoning_results.csv')
@@ -39,19 +41,15 @@ def run_reasoning(recipe_id, video_id):
 
 def visualize_results(results):
     steps = {f'Step {i}': i for i in (results['true_step'].unique())}
-    video_id = results['task_index'].unique()[0]
-    if video_id == 'all':
-        video_results = results
-    else:
-        video_results = results[results['task_index'] == video_id]
-    plot = video_results[['true_step', 'predicted_step']].plot()
-    plot.set_yticks(list(steps.values()), labels=steps.keys())
+    plot = results[['predicted_step', 'true_step']].plot()
+    plot.set_yticks([0] + list(steps.values()), labels=['Other Recipe'] + list(steps.keys()))
 
     plt.show()
 
 
 def evaluate_reasoning(recipe_id, video_id, plot_results=True):
     results = run_reasoning(recipe_id, video_id)
+    results.loc[results.task_id != recipe_id, 'predicted_step'] = 0  # Put 0 if it's another recipe step
     counts = results['predicted_step'].eq(results['true_step'])\
         .value_counts().rename({True: 'match', False: 'no match'})
     total_accuracy = counts['match'] / len(results)
