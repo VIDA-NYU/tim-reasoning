@@ -12,8 +12,9 @@ logger = logging.getLogger(__name__)
 RESOURCE_PATH = join(dirname(__file__), 'resource')
 
 
-def run_reasoning(recipe_id, video_id):
-    perception_outputs = generate_data(recipe_id, video_id)
+def run_reasoning(recipe_id, video_id, add_perturbations, steps_with_perturbations, error_percentage):
+    perception_outputs = generate_data(recipe_id, video_id, add_perturbations, steps_with_perturbations,
+                                       error_percentage)
     results = {'task_id': [], 'true_step': [], 'predicted_step': []}
     sm = SessionManager(patience=1)
 
@@ -47,8 +48,9 @@ def visualize_results(results):
     plt.show()
 
 
-def evaluate_reasoning(recipe_id, video_id, plot_results=True):
-    results = run_reasoning(recipe_id, video_id)
+def evaluate_reasoning(recipe_id, video_id, add_perturbations=False, steps_with_perturbations=[1],
+                       error_percentage=0.4, plot_results=True):
+    results = run_reasoning(recipe_id, video_id, add_perturbations, steps_with_perturbations, error_percentage)
     results.loc[results.task_id != recipe_id, 'predicted_step'] = 0  # Put 0 if it's another recipe step
     counts = results['predicted_step'].eq(results['true_step'])\
         .value_counts().rename({True: 'match', False: 'no match'})

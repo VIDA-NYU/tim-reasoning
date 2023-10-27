@@ -1,19 +1,17 @@
 import json
 import copy
 import logging
+import random
 import pandas as pd
 from datetime import datetime
 from os.path import join, dirname
 
 logger = logging.getLogger(__name__)
 
+random.seed(0)
 RESOURCE_PATH = join(dirname(__file__), 'resource')
-
 OBJECTS = {'pinwheels': ['tortilla', 'plate', 'knife'], 'oatmeal': ['bowl']}
-
-
 CURRENT_TIME = int(datetime.now().timestamp())
-
 PERCEPTION_OUTPUT_TEMPLATE = {
     "pos": [-0.2149151724097291, -0.4343880843796524, -0.6208099189217009],
     "xyxyn": [0.1, 0.1, 0.2, 0.2],
@@ -24,8 +22,6 @@ PERCEPTION_OUTPUT_TEMPLATE = {
     "state": {},
     "hand_object_interaction": 0.27,
 }
-
-
 MAPPING_IDS = {'tortilla': 0, 'knife': 1, 'plate': 2, 'bowl': 3}
 
 
@@ -111,29 +107,29 @@ def format_annotations(raw_annotations, video_id):
     return annotated_video
 
 
-def make_perception_outputs(annotated_video):
+def make_groundtruth_outputs(annotated_video):
     perception_outputs = []
 
     for step_id, step_annotations in annotated_video['records'].items():
         session_annotation = {'session_id': annotated_video['session_id'], 'task_id': annotated_video['task_id'],
                               'step_id': step_id}
         for step_annotation in step_annotations:
-            step_outputs = make_step_outputs(session_annotation, step_annotation, annotated_video['unique_states'],
-                                             PERCEPTION_OUTPUT_TEMPLATE)
+            step_outputs = make_groundtruth_step_outputs(session_annotation, step_annotation,
+                                                         annotated_video['unique_states'], PERCEPTION_OUTPUT_TEMPLATE)
             perception_outputs += step_outputs
 
     logger.debug('Perception outputs generated.')
     return perception_outputs
 
 
-def make_step_outputs(session_annotation, step_annotation, unique_states, output_template, target_state_probas=None,
-                      target_object=None):
+def make_groundtruth_step_outputs(session_annotation, step_annotation, unique_states, output_template, fps=1):
     objects = step_annotation['objects']
     start_time = step_annotation['start_time']
     end_time = step_annotation['end_time']
+    ranges = list(range(start_time, (end_time + 1) * fps))
     step_outputs = []
 
-    for time_secs in range(start_time, end_time + 1):
+    for time_secs in ranges:
         time_stamp = CURRENT_TIME + time_secs
         for object_name, object_state in objects.items():
             object_output = copy.deepcopy(output_template)
@@ -144,10 +140,6 @@ def make_step_outputs(session_annotation, step_annotation, unique_states, output
             state_probas = {s: 0.0 for s in unique_states[object_name]}
             state_probas[object_state] = 1.0
             object_output['state'] = state_probas
-
-            if object_name == target_object:
-                object_output['state'] = target_state_probas
-
             step_outputs.append(object_output)
 
     return step_outputs
@@ -161,15 +153,15 @@ def save_outputs(outputs, file_name):
     logger.debug(f'Perception outputs saved at {file_path}')
 
 
-def simulate_state_probas(state_probas, unique_states):
+def complete_state_probas(initial_state_probas, unique_states):
     all_state_probas = {}
 
-    if state_probas is None:
-        state_probas = {}
+    if initial_state_probas is None:
+        initial_state_probas = {}
 
     total_proba = 0
 
-    for state_name, state_proba in state_probas.items():
+    for state_name, state_proba in initial_state_probas.items():
         try:
             unique_states.remove(state_name)
         except:
@@ -186,21 +178,66 @@ def simulate_state_probas(state_probas, unique_states):
     return all_state_probas
 
 
-def make_errors(annotated_video, target_step, target_object=None, target_state_probas=None):
-    unique_states = copy.deepcopy(annotated_video['unique_states'][target_object])
+def generate_perturbed_indices(list_size, percentage):
+    sample_size = int(list_size * percentage)
+    indices = random.sample(range(0, list_size), sample_size)
+    boolean_values = [False] * list_size
+
+    for index in indices:
+        boolean_values[index] = True
+
+    return boolean_values
+
+
+def make_errored_step_outputs(session_annotation, step_annotation, unique_states, output_template, error_percentage,
+                              fps=1):
+    objects = step_annotation['objects']
+    start_time = step_annotation['start_time']
+    end_time = step_annotation['end_time']
+    ranges = list(range(start_time, (end_time + 1)*fps))
+    indices_to_perturb = generate_perturbed_indices(len(ranges), error_percentage)
+    step_outputs = []
+
+    for index, time_secs in enumerate(ranges):
+        time_stamp = CURRENT_TIME + time_secs
+        for object_name, object_state in objects.items():
+            object_output = copy.deepcopy(output_template)
+            object_output['id'] = MAPPING_IDS[object_name]
+            object_output['session'] = session_annotation
+            object_output['label'] = object_name
+            object_output['last_seen'] = time_stamp
+
+            if indices_to_perturb[index]:
+                object_states = copy.deepcopy(unique_states[object_name])
+                initial_state_probas = {random.choice(object_states): round(random.uniform(0, 1), 2)}
+                state_probas = complete_state_probas(initial_state_probas, object_states)
+            else:
+                state_probas = {s: 0.0 for s in unique_states[object_name]}
+                state_probas[object_state] = 1.0
+
+            object_output['state'] = state_probas
+
+            step_outputs.append(object_output)
+
+    return step_outputs
+
+
+def make_errored_outputs(annotated_video, steps_with_perturbations, error_percentage):
     perception_outputs = []
 
     for step_id, step_annotations in annotated_video['records'].items():
-        state_probas = None
         session_annotation = {'session_id': annotated_video['session_id'], 'task_id': annotated_video['task_id'],
                               'step_id': step_id}
 
-        if target_step == step_id:
-            state_probas = simulate_state_probas(target_state_probas, unique_states)
-
         for step_annotation in step_annotations:
-            step_outputs = make_step_outputs(session_annotation, step_annotation, annotated_video['unique_states'],
-                                             PERCEPTION_OUTPUT_TEMPLATE, state_probas, target_object)
+            if step_id in steps_with_perturbations:
+                step_outputs = make_errored_step_outputs(session_annotation, step_annotation,
+                                                         annotated_video['unique_states'], PERCEPTION_OUTPUT_TEMPLATE,
+                                                         error_percentage)
+            else:
+                step_outputs = make_groundtruth_step_outputs(session_annotation, step_annotation,
+                                                             annotated_video['unique_states'],
+                                                             PERCEPTION_OUTPUT_TEMPLATE)
             perception_outputs += step_outputs
 
     return perception_outputs
@@ -236,17 +273,16 @@ def merge_sessions(session1, session2, step_size=1):
     return merged_sessions
 
 
-def generate_data(recipe_id, video_id=None):
+def generate_data(recipe_id, video_id=None, add_perturbations=False, steps_with_perturbations=[1], error_percentage=0.4):
     raw_annotations_path = join(RESOURCE_PATH, 'raw_annotations.csv')
     raw_annotations = pd.read_csv(raw_annotations_path)
     formatted_annotations = format_annotations(raw_annotations, video_id)
-    perception_outputs = make_perception_outputs(formatted_annotations)
+
+    if add_perturbations:
+        perception_outputs = make_errored_outputs(formatted_annotations, steps_with_perturbations, error_percentage)
+    else:
+        perception_outputs = make_groundtruth_outputs(formatted_annotations)
+
     save_outputs(perception_outputs, f'{recipe_id}_perception_outputs')
 
     return perception_outputs
-
-
-if __name__ == '__main__':
-    recipe_id = 'pinwheels'
-    video_id = 'pinwheels_2023.04.04-18.33.59'
-    generate_data(recipe_id, video_id)
