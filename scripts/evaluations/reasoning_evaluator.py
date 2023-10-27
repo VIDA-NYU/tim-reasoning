@@ -1,19 +1,18 @@
-
-import json
+import logging
 import pandas as pd
+import matplotlib.pyplot as plt
 from os.path import join, dirname
 from tim_reasoning import SessionManager
+from data_generator import generate_data
 
-RESULTS_PATH = join(dirname(__file__), './resource')
-PERCEPTION_OUTPUTS_PATH = join(dirname(__file__), '../data_generator/resource/perception_object_states')
+logging.basicConfig(level=logging.DEBUG)
+logger = logging.getLogger(__name__)
+
+RESOURCE_PATH = join(dirname(__file__), 'resource')
 
 
-def generate_predictions(file_name):
-    output_path = join(PERCEPTION_OUTPUTS_PATH, f'{file_name}.json')
-
-    with open(output_path, 'r') as fin:
-        perception_outputs = json.load(fin)
-
+def run_reasoning(recipe_id, video_id):
+    perception_outputs = generate_data(recipe_id, video_id)
     results = {'task_index': [], 'true_step': [], 'predicted_step': []}
     sm = SessionManager(patience=1)
 
@@ -22,16 +21,55 @@ def generate_predictions(file_name):
         output_reasoning = sm.handle_message(message=[perception_output])[0]
 
         if output_reasoning is None:
-            continue  # output_reasoning = {'step_id': 1, 'session_id': 0}  # Fake the None values
-        print('reasoning output', output_reasoning)
+            continue
+
         predicted_step = output_reasoning['step_id']
         predicted_session = output_reasoning['session_id']
         results['true_step'].append(actual_step)
         results['predicted_step'].append(predicted_step)
         results['task_index'].append(predicted_session)
-        results_df = pd.DataFrame.from_dict(results)
-        results_df.to_csv(join(RESULTS_PATH, f'results_{file_name}.csv'), index=False)
+
+    results_df = pd.DataFrame.from_dict(results)
+    file_path = join(RESOURCE_PATH, f'{recipe_id}_reasoning_results.csv')
+    results_df.to_csv(file_path, index=False)
+    logger.debug(f'Reasoning results saved at {file_path}')
+
+    return results_df
 
 
-perception_outputs_file = 'pinwheels_session'
-generate_predictions(perception_outputs_file)
+def visualize_results(results):
+    steps = {f'Step {i}': i for i in (results['true_step'].unique())}
+    video_id = results['task_index'].unique()[0]
+    if video_id == 'all':
+        video_results = results
+    else:
+        video_results = results[results['task_index'] == video_id]
+    plot = video_results[['true_step', 'predicted_step']].plot()
+    plot.set_yticks(list(steps.values()), labels=steps.keys())
+
+    plt.show()
+
+
+def evaluate_reasoning(recipe_id, video_id, plot_results=True):
+    results = run_reasoning(recipe_id, video_id)
+    counts = results['predicted_step'].eq(results['true_step'])\
+        .value_counts().rename({True: 'match', False: 'no match'})
+    total_accuracy = counts['match'] / len(results)
+
+    logger.debug(f'Average accuracy: {round(total_accuracy, 3)}')
+
+    results['match'] = results['predicted_step'].eq(results['true_step'])
+    performance_by_step = results.groupby('true_step')['match'].mean().round(3)
+
+    logger.debug('Accuracy for each step:')
+    for step_id, step_performance in enumerate(performance_by_step, 1):
+        logger.debug(f'Step {step_id}: {step_performance}')
+
+    if plot_results:
+        visualize_results(results)
+
+
+if __name__ == '__main__':
+    recipe_id = 'pinwheels'
+    video_id = 'pinwheels_2023.04.04-18.33.59'
+    evaluate_reasoning(recipe_id, video_id)
