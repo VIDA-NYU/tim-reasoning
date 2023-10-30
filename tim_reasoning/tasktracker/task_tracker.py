@@ -24,7 +24,7 @@ class TaskTracker:
         self._id = TaskTracker._id
         TaskTracker._id += 1
         self.recipe = recipe
-        self.task_graph = self.setup_task_graph(
+        self.task_graph = self._setup_task_graph(
             recipe,
             data_folder,
             RECIPE_DATA_FOLDER,
@@ -36,45 +36,10 @@ class TaskTracker:
         self.object_ids = []  # ids are unique
         self.object_labels = []  # object_labels can be duplicates
         self.completed = False  # whether the Task is completed or not
-
-    def get_id(self):
-        return self._id
-
-    def get_object_ids(self):
-        """Returns the object ids in the current task graph"""
-        return self.object_ids
-
-    def get_object_labels(self):
-        """Returns the object_labels in the current task graph"""
-        return self.object_labels
-
-    def setup_task_graph(
-        self,
-        recipe: str,
-        instructions_folder: str,
-        recipe_data_folder: str,
-        if_json_converter: bool,
-        verbose: bool,
-    ):
-        if if_json_converter:
-            json2graph_converter = Json2GraphConverter()
-            task_graph = json2graph_converter.convert(
-                recipe=recipe,
-                instructions_folder=instructions_folder,
-                recipe_data_folder=recipe_data_folder,
-                verbose=verbose,
-            )
-            return task_graph
-        else:
-            instructions_folder = f'{instructions_folder}/{recipe}'
-            pddl2graph_converter = Pddl2GraphConverter()
-            task_graph = pddl2graph_converter.convert(
-                recipe=recipe,
-                pddl_folder=instructions_folder,
-                recipe_data_folder=recipe_data_folder,
-                verbose=verbose,
-            )
-            return task_graph
+        self.task_errors = {
+            "missing": [],
+            "reorder": [],
+        }  # Track errors for the task tracker
 
     def _is_dependencies_completed(self, node: Node):
         """Returns a boolean value indicating whether or not all of the dependencies are completed.
@@ -88,7 +53,6 @@ class TaskTracker:
             node (Node): given node (currently tracked)
         """
         for dep in node.dependencies:
-            print("dependency node = ", dep.objects, dep.state)
             dep_id = dep.get_id()
             if dep_id not in self.completed_nodes:
                 return False
@@ -184,6 +148,94 @@ class TaskTracker:
             "object_ids": self.get_object_ids(),
             "object_labels": self.get_object_labels(),
         }
+
+    def _get_current_missing_dependencies(self, node: Node, missing_deps: list):
+        if node:
+            for dep in node.dependencies:
+                dep_id = dep.get_id()
+                if dep_id not in self.completed_nodes:
+                    missing_deps.append(dep.step_number)
+                missing_deps = self._get_current_missing_dependencies(
+                    dep, missing_deps
+                )
+        return missing_deps
+
+    def _setup_task_graph(
+        self,
+        recipe: str,
+        instructions_folder: str,
+        recipe_data_folder: str,
+        if_json_converter: bool,
+        verbose: bool,
+    ):
+        if if_json_converter:
+            json2graph_converter = Json2GraphConverter()
+            task_graph = json2graph_converter.convert(
+                recipe=recipe,
+                instructions_folder=instructions_folder,
+                recipe_data_folder=recipe_data_folder,
+                verbose=verbose,
+            )
+            return task_graph
+        else:
+            instructions_folder = f'{instructions_folder}/{recipe}'
+            pddl2graph_converter = Pddl2GraphConverter()
+            task_graph = pddl2graph_converter.convert(
+                recipe=recipe,
+                pddl_folder=instructions_folder,
+                recipe_data_folder=recipe_data_folder,
+                verbose=verbose,
+            )
+            return task_graph
+
+    def _handle_track_missing_dependencies(self, node, node_id, objects, object_ids):
+        # first, we need to add this to completed list, update step num
+        self.add_completed_node(
+            node=node,
+            node_id=node_id,
+            objects=objects,
+            object_ids=object_ids,
+        )
+        # second, create the error output
+        # find all the missing dependencies
+        missing_deps = self._get_current_missing_dependencies(node, [])
+        missing_deps = set(missing_deps)
+        already_missing = set(self.task_errors["missing"])
+        # find the new missed errors
+        new_missed = list(missing_deps - already_missing)
+        # update the missing errors
+        self.task_errors["missing"] = list(missing_deps)
+        # if there are no new missings steps, just output the current step
+        if not new_missed:
+            next_recipe_step = self.get_next_recipe_step()
+            return next_recipe_step, self._build_output_dict(
+                instruction=next_recipe_step
+            )
+        else:
+            error = ReasoningErrors.MISSING_PREVIOUS
+            error_output = self._build_error_dict(
+                error=f"Missing step: {str(new_missed)[1:-1]}"
+            )
+            return (error, error_output)
+
+    def get_id(self):
+        return self._id
+
+    def get_object_ids(self):
+        """Returns the object ids in the current task graph"""
+        return self.object_ids
+
+    def get_object_labels(self):
+        """Returns the object_labels in the current task graph"""
+        return self.object_labels
+
+    def get_task_errors(self) -> dict:
+        """Returns the dictionary of errors so far
+
+        Returns:
+            dict: dictionary of errors
+        """
+        return self.task_errors
 
     def get_current_step_number(self) -> int or ReasoningErrors:
         """Returns Task graph's current step number
@@ -311,11 +363,14 @@ class TaskTracker:
         Returns:
             ReasoningErrors or None: errors or none
         """
+        # Finds the the given object_label in the uncompleted nodes (regardless of the step_num)
         node_id, node = self.task_graph.find_node(
             state=state, objects=objects, visited_nodes=self.completed_nodes
         )
         if self.current_step_number > 0:
+            # if object not found in unvisited steps
             if not node:
+                # Partial match is either with COMPLETED nodes or FUTURE (partially) nodes
                 (
                     max_match,
                     partial_node_id,
@@ -328,27 +383,20 @@ class TaskTracker:
                         instruction=self.get_next_recipe_step()
                     )
                 else:
+                    # This means that the state or object is totally new
                     error = ReasoningErrors.INVALID_STATE
                     return error, self._build_error_dict(
                         error=f"{error.value[0]} - {error.value[1]}"
                     )
-            # check_dependencies
+            # Otherwise if we found the node, check dependencies of the found node
             if not self._is_dependencies_completed(node=node):
-                # first, create the error output
-                error = ReasoningErrors.MISSING_PREVIOUS
-                error_output = self._build_error_dict(
-                    error=f"{error.value[0]} - {error.value[1]}"
-                )
-                # second, we need to add this to completed list, update step num
-                self.add_completed_node(
+                instruction, output = self._handle_track_missing_dependencies(
                     node=node,
                     node_id=node_id,
                     objects=objects,
                     object_ids=object_ids,
                 )
-                # raise error
-
-                return (error, error_output)
+                return instruction, output
         if self.current_step_number == 0 and not node:
             # get the first recipe step
             instructions = self.get_recipe()

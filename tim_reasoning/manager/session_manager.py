@@ -27,17 +27,20 @@ class SessionManager:
         self.common_objects_file = common_objects_file
         self.data_folder = data_folder
         self.verbose = verbose
+        # Internal logger
         self.log = Logger(name="SessionManager")
-        if self.verbose:
-            self.log.info("Session Manager initiated.")
         (
             self.important_objects,
             self.common_objects,
         ) = self.get_unique_common_objects()
+        # Initiate Recent tracker STACK to track most recent tasks we tracked in memory
         self.recent_tracker_stack = RecentTrackerStack()
+        # PTG Demo logger
         self.demo_logger = self._get_demo_logger()
         self.demo_logger.start_trial()
         # self.last_task_tracker_tracked_id = None
+        if self.verbose:
+            self.log.info("Session Manager initiated.")
 
     def _get_demo_logger(self):
         now = datetime.now()
