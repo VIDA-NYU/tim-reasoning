@@ -1,5 +1,6 @@
 import json
 from collections import defaultdict
+from datetime import datetime
 from tim_reasoning import DemoLogger, Logger, RecentTrackerStack, TaskTracker
 from tim_reasoning.reasoning_errors import ReasoningErrors
 from os.path import join, dirname
@@ -34,9 +35,19 @@ class SessionManager:
             self.common_objects,
         ) = self.get_unique_common_objects()
         self.recent_tracker_stack = RecentTrackerStack()
-        self.demo_logger = DemoLogger('log.log')
+        self.demo_logger = self._get_demo_logger()
         self.demo_logger.start_trial()
         # self.last_task_tracker_tracked_id = None
+
+    def _get_demo_logger(self):
+        now = datetime.now()
+
+        # Format time as string
+        time_str = now.strftime("%Y-%m-%dT%H-%M-%S.%f")[:-3]
+
+        # Append trial number
+        log_name = f"trial_log_{time_str}.log"
+        return DemoLogger(log_name)
 
     def get_last_task_tracker_tracked_id(self) -> int:
         """Return the id of the most recent (ongoing) task tracker
