@@ -320,14 +320,13 @@ class SessionManager:
             self.demo_logger.log_message(output)
         return final_output
 
-    def update_step_task(self, step_session):
-        step_id, tracker_id = step_session.split('&')
-        tt = self.get_task_tracker(int(tracker_id))
+    def update_step(self, task_tracker_id, step_id):
+        tt = self.get_task_tracker(task_tracker_id)
         if tt is None:
             self.log.error(f"User set step {step_id} for Invalid Task")
             return [None]
         else:
-            instruction, track_output = tt.set_current_step(step_num=int(step_id))
+            instruction, track_output = tt.set_current_step(step_num=step_id)
             if self.verbose:
                 self.log.info(
                     f"User set step {step_id} for Task {tt.recipe}, received instruction = {instruction}"
