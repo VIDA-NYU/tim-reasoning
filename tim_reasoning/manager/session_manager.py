@@ -1,6 +1,6 @@
 import json
 from collections import defaultdict
-from tim_reasoning import Logger, TaskTracker, RecentTrackerStack
+from tim_reasoning import DemoLogger, Logger, RecentTrackerStack, TaskTracker
 from tim_reasoning.reasoning_errors import ReasoningErrors
 from os.path import join, dirname
 
@@ -34,6 +34,8 @@ class SessionManager:
             self.common_objects,
         ) = self.get_unique_common_objects()
         self.recent_tracker_stack = RecentTrackerStack()
+        self.demo_logger = DemoLogger('log.log')
+        self.demo_logger.start_trial()
         # self.last_task_tracker_tracked_id = None
 
     def get_last_task_tracker_tracked_id(self) -> int:
@@ -68,6 +70,14 @@ class SessionManager:
         with open(self.common_objects_file) as f:
             common_objects = json.load(f)
         return unique_objects, common_objects
+
+    def get_probable_task_trackers(self, object_id, object_label):
+        probable_task_trackers = [
+            t
+            for t in self.task_trackers
+            if object_label in t.object_labels and object_id in t.object_ids
+        ]
+        return probable_task_trackers
 
     def add_wrong_tracker(self, wrong_tracker):
         for tt in self.wrong_task_trackers:
@@ -128,6 +138,19 @@ class SessionManager:
         """
         self.recent_tracker_stack.push(tracker.get_id())
 
+    def create_new_task_tracker(self, object_id, object_label, recipe):
+        new_task = TaskTracker(
+            recipe=recipe,
+            data_folder=self.data_folder,
+            if_json_converter=True,
+        )
+        # add respective id and labels of object
+        new_task.object_ids.append(object_id)
+        new_task.object_labels.append(object_label)
+        # Add newly created task tracker to self.task_trackers
+        self.task_trackers.append(new_task)
+        return new_task
+
     def create_probable_task_trackers(self, object_id, object_label) -> list:
         """For a given unique object, create probable task trackers
 
@@ -140,17 +163,10 @@ class SessionManager:
         """
         with open(self.unique_objects_file) as f:
             recipes = json.load(f)[object_label]
-        task_trackers = [
-            TaskTracker(
-                recipe=recipe,
-                data_folder=self.data_folder,
-                if_json_converter=True,
-            )
-            for recipe in recipes
-        ]
-        for new_task in task_trackers:
-            new_task.object_ids.append(object_id)
-            new_task.object_labels.append(object_label)
+        task_trackers = []
+        for recipe in recipes:
+            tt = self.create_new_task_tracker(object_id, object_label, recipe)
+            task_trackers.append(tt)
         return task_trackers
 
     def find_task_tracker(self, object_id, object_label) -> list:
@@ -163,11 +179,9 @@ class SessionManager:
         Returns:
             list: list of task_trackers this object is in.
         """
-        probable_task_trackers = [
-            t
-            for t in self.task_trackers
-            if object_label in t.object_labels and object_id in t.object_ids
-        ]
+        probable_task_trackers = self.get_probable_task_trackers(
+            object_id=object_id, object_label=object_label
+        )
         # else tasktracker not found hence create a new tasktracker
         if not probable_task_trackers:
             probable_task_trackers = self.create_probable_task_trackers(
@@ -177,8 +191,6 @@ class SessionManager:
                 self.log.info(
                     f"Created {len(probable_task_trackers)} TaskTrackers for {object_label}_{object_id}"
                 )
-            # Add newly created task trackers to self.task_trackers
-            self.task_trackers.extend(probable_task_trackers)
         return probable_task_trackers
 
     def track_common_object(self, state, object_id, object_label):
@@ -303,6 +315,9 @@ class SessionManager:
         final_output = []
         for obj in message:
             final_output.extend(self.process_object(obj))
+        # Log messages throughout trial
+        for output in final_output:
+            self.demo_logger.log_message(output)
         return final_output
 
     def update_step_task(self, step_session):
@@ -318,3 +333,47 @@ class SessionManager:
                     f"User set step {step_id} for Task {tt.recipe}, received instruction = {instruction}"
                 )
             return [track_output]
+
+    def update_task(self, task_tracker_id: int, recipe_name: str):
+        """Updates the recipe for a given task/object with user's feedback
+
+        Args:
+            task_tracker_id (int): the task_tracker id whose recipe is wrong
+            recipe_name (str): the recipe it needs to be changed (CORRECT recipe)
+        """
+        # Get the task tracker object with the given ID
+        tt = self.get_task_tracker(task_tracker_id)
+        if tt is None:
+            self.log.error("Session ID (task_tracker_id) doesn't exist.")
+            return
+
+        # Get associated object IDs and labels
+        object_ids = tt.get_object_ids()
+        object_labels = tt.get_object_labels()
+        # Map object ID/label pairs to probable task trackers
+        probable_tts_map = {}
+        for object_id, object_label in zip(object_ids, object_labels):
+            if object_label in self.important_objects:
+                # Get probable task trackers for object
+                if (object_id, object_label) not in probable_tts_map:
+                    probable_tts_map[
+                        (object_id, object_label)
+                    ] = self.get_probable_task_trackers(object_id, object_label)
+                else:
+                    self.log.error("Error: Duplicate object ids")
+        # Check all probable task trackers
+        for (object_id, object_label), probable_tts in probable_tts_map.items():
+            for probable_tt in probable_tts:
+                # If recipe matches, return output for current step
+                if probable_tt.get_recipe() == recipe_name:
+                    track_output = probable_tt.get_current_instruction_output()
+                    return [track_output]
+        # Otherwise create new task tracker
+        new_tt = self.create_new_task_tracker(
+            object_id=object_id,
+            object_label=object_label,
+            recipe=recipe_name,
+        )
+        # Return output for new task tracker
+        track_output = new_tt.get_current_instruction_output()
+        return [track_output]
