@@ -6,15 +6,15 @@ class ReasoningErrors(Enum):
 
     # Define the different error types.
     INVALID_STATE = (
-        "Invalid state.",  # title
+        "Invalid state",  # title
         "The state provided is not valid.",  # description
     )
     PARTIAL_STATE = (
-        "Partial state.",  # title
+        "Partial state",  # title
         "The state provided is partially valid.",  # description
     )
     MISSING_PREVIOUS = (
-        "Previous step incomplete.",  # title
+        "Previous step incomplete",  # title
         "Some of the previous states are incomplete.",  # description
     )
     NOT_STARTED = (
@@ -22,6 +22,6 @@ class ReasoningErrors(Enum):
         "The task graph hasn't started, there were no tasks recorded.",
     )
     UNEXPECTED_ERROR = (
-        "An unexpected error occurred.",
+        "An unexpected error occurred",
         "Please contact support for assistance.",
     )
