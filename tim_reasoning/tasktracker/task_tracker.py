@@ -155,6 +155,22 @@ class TaskTracker:
             "object_labels": self.get_object_labels(),
         }
 
+    def _build_completed_output_dict(
+        self, instruction: str = "This recipe is complete."
+    ):
+        return {
+            "session_id": self.get_id(),
+            "task_id": self.recipe,
+            "step_id": self.get_current_step_number(),
+            "step_status": "COMPLETED",
+            "step_description": instruction,
+            "error_status": False,
+            "error_description": "",
+            "total_steps": self.get_recipe_length(),
+            "object_ids": self.get_object_ids(),
+            "object_labels": self.get_object_labels(),
+        }
+
     def _build_error_dict(self, error):
         return {
             "session_id": self.get_id(),
@@ -205,7 +221,7 @@ class TaskTracker:
         self,
         recipe_file_name: str = "recipe.json",
         recipe_folder: str = RECIPE_DATA_FOLDER,
-    ) -> str or None:
+    ) -> str:
         """Returns the next (current) recipe step instructions
 
         Args:
@@ -214,7 +230,7 @@ class TaskTracker:
                 recipe json folder location. Defaults to RECIPE_DATA_FOLDER.
 
         Returns:
-            str or None: next step if exists else None
+            str: next step if exists
         """
         # get json instructions for current recipe
         instructions = self.get_recipe(recipe_file_name, recipe_folder)
@@ -232,6 +248,20 @@ class TaskTracker:
         else:
             self.completed = True
             return "This recipe is complete."
+
+    def get_current_instruction_output(self):
+        """Returns the instruction output dict for current step without tracking"""
+        current_step = self.get_current_step_number()
+
+        if current_step == ReasoningErrors.NOT_STARTED:
+            return self._build_not_started_output_dict()
+
+        instruction = self.get_next_recipe_step()
+
+        if self.completed:
+            return self._build_completed_output_dict()
+
+        return self._build_output_dict(instruction)
 
     def add_completed_node(self, node, node_id, objects, object_ids):
         if node_id not in self.completed_nodes:
