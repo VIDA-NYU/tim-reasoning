@@ -1,9 +1,11 @@
 {
-  "operand": "and",
+  "operand": "None",
   "goals": [
     {
       "state": "stacked",
-      "objects": ["mug"]
+      "objects": [
+        "mug"
+      ]
     }
   ]
 }

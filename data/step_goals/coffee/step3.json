@@ -1,14 +1,8 @@
 {
-  "operand": "and",
+  "operand": "None",
   "goals": [
     {
       "state": "dripper+filter",
-      "objects": [
-        "mug"
-      ]
-    },
-    {
-      "state": "stacked",
       "objects": [
         "mug"
       ]
