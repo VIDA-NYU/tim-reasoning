@@ -2,10 +2,8 @@
   "operand": "None",
   "goals": [
     {
-      "state": "liquid",
-      "objects": [
-        "mug"
-      ]
+      "state": "water[partial]",
+      "objects": ["mug"]
     }
   ]
 }

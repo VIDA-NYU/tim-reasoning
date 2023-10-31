@@ -3,9 +3,7 @@
   "goals": [
     {
       "state": "dripper+filter",
-      "objects": [
-        "mug"
-      ]
+      "objects": ["mug"]
     }
   ]
 }
