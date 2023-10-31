@@ -381,6 +381,8 @@ class SessionManager:
                 if probable_tt.get_recipe() == recipe_name:
                     track_output = probable_tt.get_current_instruction_output()
                     return [track_output]
+                else:
+                    self.remove_task_tracker(wrong_tracker=probable_tt)
         # Otherwise create new task tracker
         new_tt = self.create_new_task_tracker(
             object_id=object_id,
