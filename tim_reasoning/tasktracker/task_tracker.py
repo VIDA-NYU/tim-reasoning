@@ -386,8 +386,25 @@ class TaskTracker:
                     # This means that the state or object is totally new
                     error = ReasoningErrors.INVALID_STATE
                     return error, self._build_error_dict(
-                        error=f"{error.value[0]} - {error.value[1]}"
+                        error=f"Error: unseen action or object"
                     )
+            elif node.step_number < self.get_current_step_number():
+                # this will only occur when the
+                # previous step's node was incomplete and we found it
+                if node.step_number in self.task_errors["missing"]:
+                    # remove from missing errors
+                    self.task_errors["missing"] = set(
+                        self.task_errors["missing"]
+                    ) - set([node.step_number])
+                    # add to reorder
+                    self.task_errors["reorder"].append(node.step_number)
+                    (
+                        instruction,
+                        output,
+                    ) = ReasoningErrors.REORDER_ERROR, self._build_error_dict(
+                        error=f"Step {node.step_number} completed late."
+                    )
+                    return instruction, output
             # Otherwise if we found the node, check dependencies of the found node
             if not self._is_dependencies_completed(node=node):
                 instruction, output = self._handle_track_missing_dependencies(
