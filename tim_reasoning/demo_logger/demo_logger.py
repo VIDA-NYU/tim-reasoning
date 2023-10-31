@@ -37,12 +37,12 @@ class DemoLogger:
         if message is None:
             self.writer.writerow([timestamp, "NYU", "null", "null", "null"])
         else:
-            session_id = message.get('session_id')
-            task_id = self.recipe_map[message.get('task_id')]
+            task_id = message.get('task_id')
+            task_name = self.recipe_map[message.get('task_name')]
             step_id = message.get('step_id')
             step_status = self._get_step_status(message)
 
-            self.writer.writerow([timestamp, "NYU", task_id, step_id, step_status])
+            self.writer.writerow([timestamp, "NYU", task_name, step_id, step_status])
 
     def _get_step_status(self, message):
         if message.get('error_status'):

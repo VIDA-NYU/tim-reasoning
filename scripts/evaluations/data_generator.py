@@ -10,7 +10,9 @@ logger = logging.getLogger(__name__)
 
 random.seed(0)
 RESOURCE_PATH = join(dirname(__file__), 'resource')
-OBJECTS = {'pinwheels': ['tortilla'], 'quesadilla': ['tortilla'], 'oatmeal': ['bowl']}
+OBJECTS = {'pinwheels': ['tortilla'], 'quesadilla': ['tortilla'], 'oatmeal': ['bowl'], 'coffee': ['mug'],
+           'tea': ['mug']}
+FPS = 1
 CURRENT_TIME = int(datetime.now().timestamp())
 PERCEPTION_OUTPUT_TEMPLATE = {
     "pos": [-0.2149151724097291, -0.4343880843796524, -0.6208099189217009],
@@ -25,7 +27,8 @@ PERCEPTION_OUTPUT_TEMPLATE = {
 
 MAPPING_IDS = None
 
-def curate_perception_annotations(annotations, video_id):
+
+def curate_perception_annotations(annotations, video_id, save_curated_annotation=True):
     video_annotations = copy.deepcopy(annotations[annotations['video_name'] == video_id])
     video_annotations = video_annotations[pd.notnull(video_annotations['time'])]
     video_annotations['start_time'] = video_annotations['time'].apply(to_seconds)
@@ -56,6 +59,10 @@ def curate_perception_annotations(annotations, video_id):
     curated_annotations['end_time'][-1] = curated_annotations['start_time'][
                                                 -1] + 3  # Last element doesn't have and end time, just add 3 secs
     curated_annotations_df = pd.DataFrame.from_dict(curated_annotations)
+
+    if save_curated_annotation:
+        curated_annotations_df.to_csv(join(RESOURCE_PATH, f'{recipe_id}_curated_annotation.csv'), index=False)
+
     logger.debug('Perception outputs curated.')
 
     return curated_annotations_df
@@ -115,14 +122,15 @@ def make_groundtruth_outputs(annotated_video):
                               'step_id': step_id}
         for step_annotation in step_annotations:
             step_outputs = make_groundtruth_step_outputs(session_annotation, step_annotation,
-                                                         annotated_video['unique_states'], PERCEPTION_OUTPUT_TEMPLATE)
+                                                         annotated_video['unique_states'], PERCEPTION_OUTPUT_TEMPLATE,
+                                                         FPS)
             perception_outputs += step_outputs
 
     logger.debug('Perception outputs generated.')
     return perception_outputs
 
 
-def make_groundtruth_step_outputs(session_annotation, step_annotation, unique_states, output_template, fps=1):
+def make_groundtruth_step_outputs(session_annotation, step_annotation, unique_states, output_template, fps):
     objects = step_annotation['objects']
     start_time = step_annotation['start_time']
     end_time = step_annotation['end_time']
@@ -189,7 +197,7 @@ def generate_perturbed_indices(list_size, percentage):
     return boolean_values
 
 
-def make_errored_step_outputs(session_annotation, step_annotation, unique_states, output_template, error_rate, fps=1):
+def make_errored_step_outputs(session_annotation, step_annotation, unique_states, output_template, error_rate, fps):
     objects = step_annotation['objects']
     start_time = step_annotation['start_time']
     end_time = step_annotation['end_time']
@@ -224,6 +232,7 @@ def make_errored_step_outputs(session_annotation, step_annotation, unique_states
 def make_errored_outputs(annotated_video, noise_config):
     steps_with_noises = noise_config['steps']
     error_rate = noise_config['error_rate']
+    fps = noise_config['fps'] if 'fps' in noise_config else FPS
     perception_outputs = []
 
     for step_id, step_annotations in annotated_video['records'].items():
@@ -234,11 +243,11 @@ def make_errored_outputs(annotated_video, noise_config):
             if step_id in steps_with_noises:
                 step_outputs = make_errored_step_outputs(session_annotation, step_annotation,
                                                          annotated_video['unique_states'], PERCEPTION_OUTPUT_TEMPLATE,
-                                                         error_rate)
+                                                         error_rate, fps)
             else:
                 step_outputs = make_groundtruth_step_outputs(session_annotation, step_annotation,
                                                              annotated_video['unique_states'],
-                                                             PERCEPTION_OUTPUT_TEMPLATE)
+                                                             PERCEPTION_OUTPUT_TEMPLATE, fps)
             perception_outputs += step_outputs
 
     return perception_outputs
@@ -277,7 +286,8 @@ def merge_sessions(session1, session2, step_size=1):
 def generate_data(recipe_id, video_id=None, noise_config=None):
     global MAPPING_IDS
     MAPPING_IDS = {'tortilla': random.randint(0, 1000), 'knife': random.randint(1000, 2000),
-                   'plate': random.randint(2000, 3000), 'bowl': random.randint(3000, 4000)}
+                   'plate': random.randint(2000, 3000), 'bowl': random.randint(3000, 4000),
+                   'mug': random.randint(3000, 4000)}
     raw_annotations_path = join(RESOURCE_PATH, 'raw_annotations.csv')
     raw_annotations = pd.read_csv(raw_annotations_path)
     formatted_annotations = format_annotations(raw_annotations, video_id)
@@ -290,15 +300,3 @@ def generate_data(recipe_id, video_id=None, noise_config=None):
     save_outputs(perception_outputs, f'{recipe_id}_perception_outputs')
 
     return perception_outputs
-
-
-if __name__ == '__main__':
-    recipe_id = 'pinwheels'
-    video_id = 'pinwheels_2023.04.04-18.33.59'
-    generate_data(recipe_id, video_id)
-    recipe_id = 'quesadilla'
-    video_id = 'quesadilla_2023.06.16-18.57.48'
-    generate_data(recipe_id, video_id)
-    recipe_id = 'outmeal'
-    video_id = 'oatmeal_2023.06.16-20.33.26'
-    generate_data(recipe_id, video_id)

@@ -2,10 +2,8 @@
   "operand": "None",
   "goals": [
     {
-      "state": "stacked",
-      "objects": [
-        "mug"
-      ]
+      "state": "empty",
+      "objects": ["mug"]
     }
   ]
 }

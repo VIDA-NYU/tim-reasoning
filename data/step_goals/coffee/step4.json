@@ -2,10 +2,8 @@
   "operand": "None",
   "goals": [
     {
-      "state": "dripper+filter+dry-grounds",
-      "objects": [
-        "mug"
-      ]
+      "state": "dripper+filter+coffee[dry]",
+      "objects": ["mug"]
     }
   ]
 }

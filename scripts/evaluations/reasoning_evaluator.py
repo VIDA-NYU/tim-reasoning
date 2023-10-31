@@ -13,7 +13,7 @@ logger = logging.getLogger(__name__)
 RESOURCE_PATH = join(dirname(__file__), 'resource')
 
 
-def run_reasoning(recipe_id, video_id, noise_config):
+def run_reasoning(recipe_id, video_id, noise_config, save_reasoning_outputs=True):
     perception_outputs = generate_data(recipe_id, video_id, noise_config)
     results = {'true_task': [], 'predicted_task': [], 'true_step': [], 'predicted_step': []}
     sm = SessionManager(patience=1)
@@ -31,7 +31,7 @@ def run_reasoning(recipe_id, video_id, noise_config):
 
         for output_reasoning in outputs_reasoning:
             predicted_step = output_reasoning['step_id']
-            predicted_task = output_reasoning['task_id']
+            predicted_task = output_reasoning['task_name']
             results['true_task'].append(actual_task)
             results['true_step'].append(actual_step)
             results['predicted_step'].append(predicted_step)
@@ -42,14 +42,15 @@ def run_reasoning(recipe_id, video_id, noise_config):
     results_df.to_csv(file_path, index=False)
     logger.debug(f'Reasoning results saved at {file_path}')
 
-    with open('reasoning_output.json', 'w') as fout:
-        json.dump(all_outputs, fout, indent=2)
+    if save_reasoning_outputs:
+        with open(join(RESOURCE_PATH, f'{recipe_id}_reasoning_outputs.json'), 'w') as fout:
+            json.dump(all_outputs, fout, indent=2)
     return results_df
 
 
 def visualize_results(results):
     steps = {f'Step {i}': i for i in (results['true_step'].unique())}
-    plot = results[['predicted_step', 'true_step']].plot()
+    plot = results.plot(legend=True)
     plot.set_yticks([0] + list(steps.values()), labels=['Other Recipe'] + list(steps.keys()))
 
     plt.show()
@@ -68,7 +69,6 @@ def evaluate_reasoning(recipe_id, video_id, noise_config=None, plot_results=True
 
     performance_by_step = results.groupby(['true_task', 'true_step'])['match_step'].mean().round(3)
 
-    print(performance_by_step, type(performance_by_step))
     logger.debug('Accuracy for each step:')
     for step_id, step_performance in enumerate(performance_by_step, 1):
         logger.debug(f'Step {step_id}: {step_performance}')
@@ -80,10 +80,14 @@ def evaluate_reasoning(recipe_id, video_id, noise_config=None, plot_results=True
 if __name__ == '__main__':
     recipe_id = 'pinwheels'
     video_id = 'pinwheels_2023.04.04-18.33.59'
-    #recipe_id = 'quesadilla'
-    #video_id = 'quesadilla_2023.06.16-18.57.48'
+    recipe_id = 'quesadilla'
+    video_id = 'quesadilla_2023.06.16-18.57.48'
     #recipe_id = 'outmeal'
     #video_id = 'oatmeal_2023.06.16-20.33.26'
-    noise_config = {'steps': [1], 'error_rate': 0.4}
+    #recipe_id = 'coffee'
+    #video_id = 'coffee_mit-eval'
+    #recipe_id = 'tea'
+    #video_id = 'tea_2023.06.16-18.43.48'
+    #noise_config = {'steps': [1], 'error_rate': 0.2}
     noise_config = None
     evaluate_reasoning(recipe_id, video_id, noise_config)
