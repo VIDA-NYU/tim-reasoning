@@ -25,3 +25,7 @@ class ReasoningErrors(Enum):
         "An unexpected error occurred",
         "Please contact support for assistance.",
     )
+    REORDER_ERROR = (
+        "Step done not in order",  # title
+        "Some of the steps were not in order.",  # description
+    )
