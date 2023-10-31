@@ -65,7 +65,7 @@ def evaluate_reasoning(recipe_id, video_id, noise_config=None, plot_results=True
 
     results['match_step'] = ((results['true_task'] == results['predicted_task']) & (results['true_step'] == results['predicted_step']))
     total_accuracy = results['match_step'].value_counts()[True] / len(results)
-    logger.debug(f'Task recognition accuracy: {round(total_accuracy, 3)}')
+    logger.debug(f'Step recognition accuracy: {round(total_accuracy, 3)}')
 
     performance_by_step = results.groupby(['true_task', 'true_step'])['match_step'].mean().round(3)
 
@@ -86,8 +86,8 @@ if __name__ == '__main__':
     #video_id = 'oatmeal_2023.06.16-20.33.26'
     #recipe_id = 'coffee'
     #video_id = 'coffee_mit-eval'
-    #recipe_id = 'tea'
-    #video_id = 'tea_2023.06.16-18.43.48'
+    recipe_id = 'tea'
+    video_id = 'tea_2023.06.16-18.43.48'
     #noise_config = {'steps': [1], 'error_rate': 0.2}
     noise_config = None
     evaluate_reasoning(recipe_id, video_id, noise_config)
