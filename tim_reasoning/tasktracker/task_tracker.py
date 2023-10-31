@@ -93,8 +93,8 @@ class TaskTracker:
             self.completed = True
             step_description = "This recipe is complete."
         return {
-            "session_id": self.get_id(),
-            "task_id": self.recipe,
+            "task_id": self.get_id(),
+            "task_name": self.recipe,
             "step_id": int(current_step_num),
             "step_status": "NOT_STARTED",
             "step_description": step_description,
@@ -107,8 +107,8 @@ class TaskTracker:
 
     def _build_output_dict(self, instruction):
         return {
-            "session_id": self.get_id(),
-            "task_id": self.recipe,
+            "task_id": self.get_id(),
+            "task_name": self.recipe,
             "step_id": self.get_current_step_number(),
             "step_status": "IN_PROGRESS",
             "step_description": instruction,
@@ -123,8 +123,8 @@ class TaskTracker:
         self, instruction: str = "This recipe is complete."
     ):
         return {
-            "session_id": self.get_id(),
-            "task_id": self.recipe,
+            "task_id": self.get_id(),
+            "task_name": self.recipe,
             "step_id": self.get_current_step_number(),
             "step_status": "COMPLETED",
             "step_description": instruction,
@@ -137,8 +137,8 @@ class TaskTracker:
 
     def _build_error_dict(self, error):
         return {
-            "session_id": self.get_id(),
-            "task_id": self.recipe,
+            "task_id": self.get_id(),
+            "task_name": self.recipe,
             "step_id": self.get_current_step_number(),
             "step_status": "ERROR",
             "step_description": "",
