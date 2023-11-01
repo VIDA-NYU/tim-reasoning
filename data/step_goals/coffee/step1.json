@@ -2,8 +2,8 @@
   "operand": "None",
   "goals": [
     {
-      "state": "empty",
-      "objects": ["mug"]
+      "state": "with-water",
+      "objects": ["measuring_cup"]
     }
   ]
 }

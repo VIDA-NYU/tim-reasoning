@@ -1,0 +1,9 @@
+{
+  "operand": "None", 
+  "goals": [
+    {
+      "state": "in-water",
+      "objects": ["thermometer"]
+    }
+  ]
+}
