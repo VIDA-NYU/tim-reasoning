@@ -336,12 +336,16 @@ class SessionManager:
         self.object_states[object_id] = defaultdict(list)
 
     def handle_message(self, message: list):
-        final_output = []
+        active_output = []
         for obj in message:
-            final_output.extend(self.process_object(obj))
+            active_output.extend(self.process_object(obj))
         # Log messages throughout trial
-        for output in final_output:
+        for output in active_output:
             self.demo_logger.log_message(output)
+        final_output = {
+            "active_output": active_output,
+            "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+        }
         return final_output
 
     def update_step(self, task_tracker_id, step_id):
