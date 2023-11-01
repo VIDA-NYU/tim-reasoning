@@ -1,7 +1,13 @@
 import json
 from collections import defaultdict
 from datetime import datetime
-from tim_reasoning import DemoLogger, Logger, RecentTrackerStack, TaskTracker
+from tim_reasoning import (
+    DemoLogger,
+    Logger,
+    ObjectPositionTracker,
+    RecentTrackerStack,
+    TaskTracker,
+)
 from tim_reasoning.reasoning_errors import ReasoningErrors
 from os.path import join, dirname
 
@@ -35,6 +41,7 @@ class SessionManager:
         ) = self.get_unique_common_objects()
         # Initiate Recent tracker STACK to track most recent tasks we tracked in memory
         self.recent_tracker_stack = RecentTrackerStack()
+        self.object_position_tracker = ObjectPositionTracker()
         # PTG Demo logger
         self.demo_logger = self._get_demo_logger()
         self.demo_logger.start_trial()
@@ -303,34 +310,27 @@ class SessionManager:
 
         return output
 
-    def process_object(self, obj: dict) -> tuple:
-        """Processes the perception output for a single object and runs tracking
-
-        Args:
-            obj (dict): object information
-
-        Returns:
-            tuple: UI input, position_coordinates
-        """
+    def process_object(self, obj):
         object_id = obj['id']
         object_label = obj['label']
-        object_pos = obj['pos']
-        if "state" not in obj:
-            return [None], None
+        object_pos = obj['pos'] if 'pos' in obj else None
 
+        if "state" not in obj:
+            return [None]
+
+        self.object_position_tracker.set_pos(
+            object_id=object_id, object_pos=object_pos
+        )
         object_state = obj['state']
 
         if (
             object_label in self.important_objects
             or object_label in self.common_objects
         ):
-            return (
-                self.track_object_state(object_id, object_label, object_state),
-                object_pos,
-            )
+            return self.track_object_state(object_id, object_label, object_state)
         else:
             self.log.info(f"Not tracking : {object_label}")
-            return [None], None
+            return [None]
 
     def calculate_average_state(self, object_id, object_label):
         avg_states = {
@@ -346,16 +346,21 @@ class SessionManager:
     def reset_object_states(self, object_id):
         self.object_states[object_id] = defaultdict(list)
 
-    def handle_message(self, message: dict):
-        # active_output = []
-        active_output, object_pos = self.process_object(message)
+    def handle_message(self, message: list):
+        active_output = []
+        # Traverse a single object
+        for obj in message:
+            manager_output = self.process_object(obj)
+            active_tasks = self.object_position_tracker.create_active_tasks_output(
+                manager_output
+            )
+            active_output.extend(active_tasks)
         # Log messages throughout trial
         for output in active_output:
             self.demo_logger.log_message(output)
         final_output = {
             "active_tasks": active_output,
             "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
-            "object_position": object_pos,
         }
         return final_output
 
