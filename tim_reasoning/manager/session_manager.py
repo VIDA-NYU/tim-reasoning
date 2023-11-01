@@ -303,12 +303,20 @@ class SessionManager:
 
         return output
 
-    def process_object(self, obj):
+    def process_object(self, obj: dict) -> tuple:
+        """Processes the perception output for a single object and runs tracking
+
+        Args:
+            obj (dict): object information
+
+        Returns:
+            tuple: UI input, position_coordinates
+        """
         object_id = obj['id']
         object_label = obj['label']
-
+        object_pos = obj['pos']
         if "state" not in obj:
-            return [None]
+            return [None], None
 
         object_state = obj['state']
 
@@ -316,10 +324,13 @@ class SessionManager:
             object_label in self.important_objects
             or object_label in self.common_objects
         ):
-            return self.track_object_state(object_id, object_label, object_state)
+            return (
+                self.track_object_state(object_id, object_label, object_state),
+                object_pos,
+            )
         else:
             self.log.info(f"Not tracking : {object_label}")
-            return [None]
+            return [None], None
 
     def calculate_average_state(self, object_id, object_label):
         avg_states = {
@@ -335,16 +346,16 @@ class SessionManager:
     def reset_object_states(self, object_id):
         self.object_states[object_id] = defaultdict(list)
 
-    def handle_message(self, message: list):
-        active_output = []
-        for obj in message:
-            active_output.extend(self.process_object(obj))
+    def handle_message(self, message: dict):
+        # active_output = []
+        active_output, object_pos = self.process_object(message)
         # Log messages throughout trial
         for output in active_output:
             self.demo_logger.log_message(output)
         final_output = {
-            "active_output": active_output,
+            "active_tasks": active_output,
             "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+            "object_position": object_pos,
         }
         return final_output
 
