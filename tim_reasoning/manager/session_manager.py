@@ -375,10 +375,55 @@ class SessionManager:
                 self.log.info(
                     f"User set step {step_id} for Task {tt.recipe}, received instruction = {instruction}"
                 )
-            return [track_output]
+            active_tasks = self.object_position_tracker.create_active_tasks_output(
+                [track_output]
+            )
+            final_output = {
+                "active_tasks": active_tasks,
+                "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+            }
+            return final_output
 
-    def update_task(self, task_tracker_id: int, recipe_name: str):
-        """Updates the recipe for a given task/object with user's feedback
+    def update_task(self, correct_task_tracker_id: int, recipe_name: str):
+        # Get the task tracker object with the given ID
+        tt = self.get_task_tracker(correct_task_tracker_id)
+        if tt is None:
+            self.log.error("Session ID (task_tracker_id) doesn't exist.")
+            return
+
+        # Get associated object IDs and labels
+        object_ids = tt.get_object_ids()
+        object_labels = tt.get_object_labels()
+        # Map object ID/label pairs to probable task trackers
+        probable_tts_map = {}
+        for object_id, object_label in zip(object_ids, object_labels):
+            if object_label in self.important_objects:
+                # Get probable task trackers for object
+                if (object_id, object_label) not in probable_tts_map:
+                    probable_tts_map[
+                        (object_id, object_label)
+                    ] = self.get_probable_task_trackers(object_id, object_label)
+                else:
+                    self.log.error("Error: Duplicate object ids")
+        # Check all probable task trackers and remove incorrect ones
+        for (object_id, object_label), probable_tts in probable_tts_map.items():
+            for probable_tt in probable_tts:
+                # If id matches, return output for current step
+                if probable_tt.get_id() != correct_task_tracker_id:
+                    self.remove_task_tracker(wrong_tracker=probable_tt)
+
+        track_output = tt.get_current_instruction_output()
+        active_tasks = self.object_position_tracker.create_active_tasks_output(
+            [track_output]
+        )
+        final_output = {
+            "active_tasks": active_tasks,
+            "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+        }
+        return final_output
+
+    def change_task(self, task_tracker_id: int, recipe_name: str):
+        """Changes the recipe for a given task/object with user's feedback
 
         Args:
             task_tracker_id (int): the task_tracker id whose recipe is wrong
