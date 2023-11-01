@@ -8,4 +8,5 @@ from .pddl2graph.json2graph_converter import Json2GraphConverter
 from .tasktracker.task_tracker import TaskTracker
 from .demo_logger.demo_logger import DemoLogger
 from .manager.recent_tracker_stack import RecentTrackerStack
+from .manager.object_position_tracker import ObjectPositionTracker
 from .manager.session_manager import SessionManager

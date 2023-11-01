@@ -40,6 +40,7 @@ class TaskTracker:
             "missing": [],
             "reorder": [],
         }  # Track errors for the task tracker
+        self.object_positions = []
 
     def _is_dependencies_completed(self, node: Node):
         """Returns a boolean value indicating whether or not all of the dependencies are completed.
