@@ -277,7 +277,17 @@ class SessionManager:
         for state, prob in object_state.items():
             self.object_states[object_id][state].append(prob)
         output = [None]
-        if len(self.object_states[object_id]) >= self.patience:
+        if (
+            len(
+                self.object_states[object_id][
+                    max(
+                        self.object_states[object_id],
+                        key=lambda k: len(self.object_states[object_id][k]),
+                    )
+                ]
+            )
+            >= self.patience
+        ):
             avg_state = self.calculate_average_state(object_id, object_label)
             if self.verbose:
                 self.log.info(

@@ -44,7 +44,10 @@ class DependencyGraph:
         for node in self.nodes.values():
             if set(node.objects) == set(objects):
                 # Calculate percentage of state string that matches
-                node_tokens = set(nltk.word_tokenize(node.state))
+                # Remove 'partial', and 'full' states
+                node_tokens = set(nltk.word_tokenize(node.state)) - set(
+                    ['partial', 'full']
+                )
                 node_tokens = set([token for token in node_tokens if len(token) > 1])
 
                 common_tokens = state_tokens.intersection(node_tokens)
