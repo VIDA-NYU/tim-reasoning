@@ -11,7 +11,7 @@ logging.getLogger('matplotlib').setLevel(logging.CRITICAL)
 logger = logging.getLogger(__name__)
 
 RESOURCE_PATH = join(dirname(__file__), 'resource')
-PATIENCE = 1
+PATIENCE = 3
 
 
 def run_reasoning(recipe_id, video_id, noise_config, save_reasoning_outputs=True):
@@ -26,17 +26,16 @@ def run_reasoning(recipe_id, video_id, noise_config, save_reasoning_outputs=True
     all_outputs = []
 
     for perception_output in perception_outputs:
-        actual_step = perception_output['session']['step_id']
-        actual_task = perception_output['session']['task_id']
-        # print("\n\n\n\nperception_output: ", perception_output)
+        actual_step = perception_output['groundtruth']['step_id']
+        actual_task = perception_output['groundtruth']['task_name']
         outputs_reasoning = sm.handle_message(message=[perception_output])
-        # print("\n\n\n\n")
-        if outputs_reasoning[0] is None:
+
+        if outputs_reasoning['active_tasks'][0] is None:
             continue
 
         all_outputs.append(outputs_reasoning)
 
-        for output_reasoning in outputs_reasoning:
+        for output_reasoning in outputs_reasoning['active_tasks']:
             predicted_step = output_reasoning['step_id']
             predicted_task = output_reasoning['task_name']
             results['true_task'].append(actual_task)
@@ -63,9 +62,9 @@ def visualize_results(results, recipe_id, video_id, noise_config):
     plot.set_yticks(
         [0] + list(steps.values()), labels=['Other Recipe'] + list(steps.keys())
     )
-    plt.title(
-        f"Model Patience {PATIENCE}, recipe {recipe_id} with noise at Step {noise_config['steps'][0]}"
-    )
+    #plt.title(
+    #   f"Model Patience {PATIENCE}, recipe {recipe_id} with noise at Step {noise_config['steps'][0]}"
+    #)
 
     # plt.show()
     plt.savefig(f"{recipe_id}_{str(noise_config)}_P{PATIENCE}_plot.png")
@@ -102,13 +101,13 @@ if __name__ == '__main__':
 
     # recipe_id = 'quesadilla'
     # video_id = 'quesadilla_2023.06.16-18.57.48'
-    # recipe_id = 'oatmeal'
-    # video_id = 'oatmeal_2023.06.16-20.33.26'
+    recipe_id = 'oatmeal'
+    video_id = 'oatmeal_2023.06.16-20.33.26'
     # recipe_id = 'coffee'
     # video_id = 'coffee_mit-eval'
-    recipe_id = 'tea'
-    video_id = 'tea_2023.06.16-18.43.48'
+    # recipe_id = 'tea'
+    # video_id = 'tea_2023.06.16-18.43.48'
 
     noise_config = None
-    noise_config = {'steps': [1], 'error_rate': 0.3}
+    #noise_config = {'steps': [1], 'error_rate': 0.3}
     evaluate_reasoning(recipe_id, video_id, noise_config)

@@ -125,8 +125,8 @@ def format_annotations(raw_annotations, video_id):
     recipe_id = curated_annotations.iloc[0]['recipe']
     unique_states = get_unique_states(curated_annotations, OBJECTS[recipe_id])
     annotated_video = {
-        'task_id': recipe_id,
-        'session_id': video_id,
+        'task_name': recipe_id,
+        'task_id': video_id,
         'records': {},
         'unique_states': unique_states,
     }
@@ -154,8 +154,8 @@ def make_groundtruth_outputs(annotated_video):
 
     for step_id, step_annotations in annotated_video['records'].items():
         session_annotation = {
-            'session_id': annotated_video['session_id'],
             'task_id': annotated_video['task_id'],
+            'task_name': annotated_video['task_name'],
             'step_id': step_id,
         }
         for step_annotation in step_annotations:
@@ -186,7 +186,7 @@ def make_groundtruth_step_outputs(
         for object_name, object_state in objects.items():
             object_output = copy.deepcopy(output_template)
             object_output['id'] = MAPPING_IDS[object_name]
-            object_output['session'] = session_annotation
+            object_output['groundtruth'] = session_annotation
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
             state_probas = {s: 0.0 for s in unique_states[object_name]}
@@ -261,7 +261,7 @@ def make_errored_step_outputs(
         for object_name, object_state in objects.items():
             object_output = copy.deepcopy(output_template)
             object_output['id'] = MAPPING_IDS[object_name]
-            object_output['session'] = session_annotation
+            object_output['groundtruth'] = session_annotation
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
 
@@ -292,8 +292,8 @@ def make_errored_outputs(annotated_video, noise_config):
 
     for step_id, step_annotations in annotated_video['records'].items():
         session_annotation = {
-            'session_id': annotated_video['session_id'],
             'task_id': annotated_video['task_id'],
+            'task_name': annotated_video['task_name'],
             'step_id': step_id,
         }
 
@@ -324,7 +324,7 @@ def group_by_step(session):
     session_by_step = {}
 
     for entry in session:
-        step_id = entry['session']['step_id']
+        step_id = entry['groundtruth']['step_id']
         if step_id not in session_by_step:
             session_by_step[step_id] = []
 
