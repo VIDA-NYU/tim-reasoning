@@ -24,10 +24,12 @@ class SessionManager:
         data_folder: str = join(dirname(__file__), "../../data/step_goals/"),
         patience: int = 1,
         verbose: bool = True,
+        ohi_threshold: float = 0.2,
     ) -> None:
         self.task_trackers = []
         self.wrong_task_trackers = []
         self.patience = patience
+        self.ohi_threshold = ohi_threshold
         self.object_states = defaultdict(lambda: defaultdict(list))
         self.unique_objects_file = unique_objects_file
         self.common_objects_file = common_objects_file
@@ -190,7 +192,9 @@ class SessionManager:
             task_trackers.append(tt)
         return task_trackers
 
-    def find_task_tracker(self, object_id, object_label) -> list:
+    def find_task_tracker(
+        self, object_id, object_label, object_hand_interaction
+    ) -> list:
         """Finds or create task_tracker for a given object presence
 
         Args:
@@ -204,7 +208,10 @@ class SessionManager:
             object_id=object_id, object_label=object_label
         )
         # else tasktracker not found hence create a new tasktracker
-        if not probable_task_trackers:
+        if (not probable_task_trackers) and (
+            object_hand_interaction is None
+            or object_hand_interaction > self.ohi_threshold
+        ):
             probable_task_trackers = self.create_probable_task_trackers(
                 object_id=object_id, object_label=object_label
             )
@@ -226,8 +233,12 @@ class SessionManager:
             return [track_output]
         return [None]
 
-    def track_unique_object(self, state, object_id, object_label):
-        probable_task_trackers = self.find_task_tracker(object_id, object_label)
+    def track_unique_object(
+        self, state, object_id, object_label, object_hand_interaction
+    ):
+        probable_task_trackers = self.find_task_tracker(
+            object_id, object_label, object_hand_interaction
+        )
         if self.verbose:
             self.log.info(
                 f"Found {len(probable_task_trackers)} TaskTrackers for {object_label}_{object_id}"
@@ -272,15 +283,19 @@ class SessionManager:
             self.handle_wrong_tasks(probable_task_trackers, wrong_tracker_list)
             return output
 
-    def track_object(self, state, object_id, object_label):
+    def track_object(self, state, object_id, object_label, object_hand_interaction):
         if object_label in self.important_objects:
-            return self.track_unique_object(state, object_id, object_label)
+            return self.track_unique_object(
+                state, object_id, object_label, object_hand_interaction
+            )
         elif object_label in self.common_objects:
             return self.track_common_object(state, object_id, object_label)
         else:
             self.log.error("Unknown object found.")
 
-    def track_object_state(self, object_id, object_label, object_state):
+    def track_object_state(
+        self, object_id, object_label, object_state, object_hand_interaction
+    ):
         for state, prob in object_state.items():
             self.object_states[object_id][state].append(prob)
         output = [None]
@@ -304,6 +319,7 @@ class SessionManager:
                 state=avg_state,
                 object_id=object_id,
                 object_label=object_label,
+                object_hand_interaction=object_hand_interaction,
             )
             self.handle_instruction(output)
             self.reset_object_states(object_id)
@@ -314,7 +330,11 @@ class SessionManager:
         object_id = obj['id']
         object_label = obj['label']
         object_pos = obj['pos'] if 'pos' in obj else None
-
+        object_hand_interaction = (
+            obj['hand_object_interaction']
+            if 'hand_object_interaction' in obj
+            else None
+        )
         if "state" not in obj:
             return [None]
 
@@ -327,7 +347,9 @@ class SessionManager:
             object_label in self.important_objects
             or object_label in self.common_objects
         ):
-            return self.track_object_state(object_id, object_label, object_state)
+            return self.track_object_state(
+                object_id, object_label, object_state, object_hand_interaction
+            )
         else:
             self.log.info(f"Not tracking : {object_label}")
             return [None]
