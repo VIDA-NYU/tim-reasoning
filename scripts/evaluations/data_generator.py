@@ -3,6 +3,7 @@ import copy
 import logging
 import random
 import pandas as pd
+import numpy as np
 from datetime import datetime
 from os.path import join, dirname
 
@@ -47,13 +48,13 @@ def curate_perception_annotations(
         .astype('Int64', errors='ignore')
         .sub(1)
     )
-    recipe_id = video_annotations.iloc[0]['recipe']
+    task_name = video_annotations.iloc[0]['recipe']
     step_id = 0
-    tracked_objects = OBJECTS[recipe_id]
+    tracked_objects = OBJECTS[task_name]
     current_states = {o: None for o in tracked_objects}
     curated_annotations = {
-        'recipe': [],
-        'video': [],
+        'task_name': [],
+        'video_id': [],
         'start_time': [],
         'end_time': [],
         'step': [],
@@ -72,8 +73,8 @@ def curate_perception_annotations(
             curated_annotations[tracked_object].append(
                 current_states[tracked_object]
             )
-        curated_annotations['recipe'].append(row['recipe'])
-        curated_annotations['video'].append(row['video_name'])
+        curated_annotations['task_name'].append(row['recipe'])
+        curated_annotations['video_id'].append(row['video_name'])
         curated_annotations['start_time'].append(row['start_time'])
         curated_annotations['end_time'].append(row['end_time'])
         curated_annotations['step'].append(step_id)
@@ -85,7 +86,7 @@ def curate_perception_annotations(
 
     if save_curated_annotation:
         curated_annotations_df.to_csv(
-            join(RESOURCE_PATH, f'{recipe_id}_curated_annotation.csv'), index=False
+            join(RESOURCE_PATH, f'{task_name}_curated_annotation.csv'), index=False
         )
 
     logger.debug('Perception outputs curated.')
@@ -122,17 +123,17 @@ def get_unique_states(annotations, objects):
 
 def format_annotations(raw_annotations, video_id):
     curated_annotations = curate_perception_annotations(raw_annotations, video_id)
-    recipe_id = curated_annotations.iloc[0]['recipe']
-    unique_states = get_unique_states(curated_annotations, OBJECTS[recipe_id])
+    task_name = curated_annotations.iloc[0]['task_name']
+    unique_states = get_unique_states(curated_annotations, OBJECTS[task_name])
     annotated_video = {
-        'task_name': recipe_id,
+        'task_name': task_name,
         'task_id': video_id,
         'records': {},
         'unique_states': unique_states,
     }
 
     for _, row in curated_annotations.iterrows():
-        tracked_objects = select_tracked_objects(row, OBJECTS[recipe_id])
+        tracked_objects = select_tracked_objects(row, OBJECTS[task_name])
         step_id = row['step']
         if step_id not in annotated_video['records']:
             annotated_video['records'][step_id] = []
@@ -241,7 +242,7 @@ def generate_perturbed_indices(list_size, percentage):
     return boolean_values
 
 
-def make_errored_step_outputs(
+def make_noisy_step_outputs(
     session_annotation,
     step_annotation,
     unique_states,
@@ -284,7 +285,7 @@ def make_errored_step_outputs(
     return step_outputs
 
 
-def make_errored_outputs(annotated_video, noise_config):
+def make_noisy_outputs(annotated_video, noise_config):
     steps_with_noises = noise_config['steps']
     error_rate = noise_config['error_rate']
     fps = noise_config['fps'] if 'fps' in noise_config else FPS
@@ -299,7 +300,7 @@ def make_errored_outputs(annotated_video, noise_config):
 
         for step_annotation in step_annotations:
             if step_id in steps_with_noises:
-                step_outputs = make_errored_step_outputs(
+                step_outputs = make_noisy_step_outputs(
                     session_annotation,
                     step_annotation,
                     annotated_video['unique_states'],
@@ -320,37 +321,44 @@ def make_errored_outputs(annotated_video, noise_config):
     return perception_outputs
 
 
-def group_by_step(session):
-    session_by_step = {}
+def skip_steps(perception_outputs, steps_to_skip):
+    new_perception_outputs = []
 
-    for entry in session:
-        step_id = entry['groundtruth']['step_id']
-        if step_id not in session_by_step:
-            session_by_step[step_id] = []
+    for output in perception_outputs:
+        actual_step = output['groundtruth']['step_id']
+        if actual_step not in steps_to_skip:
+            new_perception_outputs.append(output)
 
-        session_by_step[step_id].append(entry)
-
-    return list(session_by_step.values())
+    return new_perception_outputs
 
 
-def merge_sessions(session1, session2, step_size=1):
-    max_length = max(len(session1), len(session2))
-    merged_sessions = []
-    current_index = 0
-    session1_by_step = group_by_step(session1)
-    session2_by_step = group_by_step(session2)
+def reorder_steps(perception_outputs, steps_to_reorder):
+    new_perception_outputs = []
+    map_steps = {}
 
-    while current_index < max_length:
-        selected_steps = session1_by_step[current_index : current_index + step_size]
-        merged_sessions += selected_steps
-        selected_steps = session2_by_step[current_index : current_index + step_size]
-        merged_sessions += selected_steps
-        current_index = current_index + step_size
+    for output in perception_outputs:
+        actual_step = output['groundtruth']['step_id']
 
-    return merged_sessions
+        if actual_step not in map_steps:
+            map_steps[actual_step] = []
+
+        map_steps[actual_step].append(output)
+
+    new_order_steps = np.array(list(map_steps.keys()))
+    indices = [s-1 for s in steps_to_reorder]
+    shuffled_indices = indices.copy()
+    random.shuffle(shuffled_indices)
+    new_order_steps[indices] = new_order_steps[shuffled_indices]
+
+    for step in new_order_steps:
+        new_perception_outputs += map_steps[step]
+
+    return new_perception_outputs
 
 
-def generate_data(recipe_id, video_id=None, noise_config=None):
+def generate_data(task_name, video_id=None, noise_config=None, error_config=None):
+    if error_config is None:
+        error_config = {'name': None}
     global MAPPING_IDS
     MAPPING_IDS = {
         'tortilla': random.randint(0, 1000),
@@ -359,6 +367,7 @@ def generate_data(recipe_id, video_id=None, noise_config=None):
         'bowl': random.randint(3000, 4000),
         'mug': random.randint(3000, 4000),
     }
+
     raw_annotations_path = join(RESOURCE_PATH, 'raw_annotations.csv')
     raw_annotations = pd.read_csv(raw_annotations_path)
     formatted_annotations = format_annotations(raw_annotations, video_id)
@@ -366,10 +375,16 @@ def generate_data(recipe_id, video_id=None, noise_config=None):
     if noise_config is None:
         perception_outputs = make_groundtruth_outputs(formatted_annotations)
     else:
-        perception_outputs = make_errored_outputs(
+        perception_outputs = make_noisy_outputs(
             formatted_annotations, noise_config
         )
 
-    save_outputs(perception_outputs, f'{recipe_id}_perception_outputs')
+    if error_config['name'] == 'skip_steps':
+        perception_outputs = skip_steps(perception_outputs, error_config['steps'])
+
+    elif error_config['name'] == 'reorder_steps':
+        perception_outputs = reorder_steps(perception_outputs, error_config['steps'])
+
+    save_outputs(perception_outputs, f'{task_name}_perception_outputs')
 
     return perception_outputs
