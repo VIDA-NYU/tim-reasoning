@@ -1,4 +1,5 @@
 import json
+import sys
 from tim_reasoning import Pddl2GraphConverter, Json2GraphConverter
 from tim_reasoning.pddl2graph.node import Node
 from tim_reasoning.reasoning_errors import ReasoningErrors
@@ -78,7 +79,17 @@ class TaskTracker:
         Args:
             node_step (int): last node added's step_number
         """
-        self.current_step_number = max(self.current_step_number, node_step + 1)
+        # self.current_step_number = max(self.current_step_number, node_step + 1)
+        print("updating step num")
+        min_missing_step = (
+            min(self.task_errors["missing"])
+            if self.task_errors["missing"]
+            else sys.maxsize
+        )
+
+        max_step = max(self.current_step_number, node_step + 1)
+        print(self.current_step_number, node_step + 1, max_step, min_missing_step)
+        self.current_step_number = min(max_step, min_missing_step)
 
     def _build_not_started_output_dict(self, current_step_num: int = 0):
         if current_step_num == 0:
@@ -414,6 +425,8 @@ class TaskTracker:
                     objects=objects,
                     object_ids=object_ids,
                 )
+                # update the current_step_number
+                self._update_step_number(node_step=node.step_number)
                 return instruction, output
         if self.current_step_number == 0 and not node:
             # get the first recipe step
