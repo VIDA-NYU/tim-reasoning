@@ -368,7 +368,7 @@ class SessionManager:
         tt = self.get_task_tracker(task_tracker_id)
         if tt is None:
             self.log.error(f"User set step {step_id} for Invalid Task")
-            return [None]
+            return
         else:
             instruction, track_output = tt.set_current_step(step_num=step_id)
             if self.verbose:
