@@ -90,8 +90,8 @@ def calculate_accuracy(results):
     return task_accuracy, step_accuracy
 
 
-def evaluate_reasoning(num_sessions):
-    sessions = generate_multiple_sessions(num_sessions, error_name=None)
+def evaluate_reasoning(num_sessions, seed_tasks, add_noise, error_name):
+    sessions = generate_multiple_sessions(num_sessions, seed_tasks,  add_noise, error_name)
     task_accuracies = []
     step_accuracies = []
 
@@ -106,5 +106,15 @@ def evaluate_reasoning(num_sessions):
 
 
 if __name__ == '__main__':
-    evaluate_reasoning(100)
+    seed_tasks = [
+        ('pinwheels', 'pinwheels_2023.04.04-18.33.59'),
+        ('quesadilla', 'quesadilla_2023.06.16-18.57.48'),
+        ('oatmeal', 'oatmeal_2023.06.16-20.33.26'),
+        ('coffee', 'coffee_mit-eval'),
+        ('tea', 'tea_2023.06.16-18.43.48')
+    ]
+    error_name = None
+    add_noise = True
+    num_sessions = 100
+    evaluate_reasoning(num_sessions, seed_tasks, add_noise, error_name)
 
