@@ -14,8 +14,8 @@ OBJECTS = {
     'pinwheels': ['tortilla'],
     'quesadilla': ['tortilla'],
     'oatmeal': ['bowl'],
-    'coffee': ['mug'],
-    'tea': ['mug'],
+    'coffee': ['mug', 'measuring_cup', 'thermometer'],
+    'tea': ['mug', 'measuring_cup', 'thermometer']
 }
 FPS = 1
 CURRENT_TIME = int(datetime.now().timestamp())
@@ -358,6 +358,8 @@ def generate_data(recipe_id, video_id=None, noise_config=None):
         'plate': random.randint(2000, 3000),
         'bowl': random.randint(3000, 4000),
         'mug': random.randint(3000, 4000),
+        'measuring_cup': random.randint(5000, 6000),
+        'thermometer': random.randint(6000, 7000),
     }
     raw_annotations_path = join(RESOURCE_PATH, 'raw_annotations.csv')
     raw_annotations = pd.read_csv(raw_annotations_path)

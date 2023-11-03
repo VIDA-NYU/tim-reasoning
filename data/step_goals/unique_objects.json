@@ -9,5 +9,13 @@
     "mug": [
         "tea",
         "coffee"
+    ],
+    "measuring_cup": [
+        "tea",
+        "coffee"
+    ],
+    "thermometer": [
+        "tea",
+        "coffee"
     ]
 }
