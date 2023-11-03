@@ -1,10 +1,11 @@
 import logging
 import json
 import pandas as pd
+import numpy as np
 import matplotlib.pyplot as plt
 from os.path import join, dirname
 from tim_reasoning import SessionManager
-from data_generator import generate_data
+from data_generator import generate_task, generate_multiple_sessions
 
 logging.basicConfig(level=logging.DEBUG)
 logging.getLogger('matplotlib').setLevel(logging.CRITICAL)
@@ -14,8 +15,7 @@ RESOURCE_PATH = join(dirname(__file__), 'resource')
 PATIENCE = 3
 
 
-def run_reasoning(recipe_id, video_id, noise_config, save_reasoning_outputs=True):
-    perception_outputs = generate_data(recipe_id, video_id, noise_config)
+def run_reasoning(session_id, session, save_reasoning_outputs=True):
     results = {
         'true_task': [],
         'predicted_task': [],
@@ -25,63 +25,59 @@ def run_reasoning(recipe_id, video_id, noise_config, save_reasoning_outputs=True
     sm = SessionManager(patience=PATIENCE)
     all_outputs = []
 
-    for perception_output in perception_outputs:
+    for perception_output in session:
         actual_step = perception_output['groundtruth']['step_id']
         actual_task = perception_output['groundtruth']['task_name']
-        outputs_reasoning = sm.handle_message(message=[perception_output])
+        reasoning_outputs = sm.handle_message(message=[perception_output])
 
-        if outputs_reasoning['active_tasks'][0] is None:
+        if reasoning_outputs['active_tasks'][0] is None:
             continue
 
-        all_outputs.append(outputs_reasoning)
+        all_outputs.append(reasoning_outputs)
 
-        for output_reasoning in outputs_reasoning['active_tasks']:
-            predicted_step = output_reasoning['step_id']
-            predicted_task = output_reasoning['task_name']
+        for reasoning_output in reasoning_outputs['active_tasks']:
+            predicted_step = reasoning_output['step_id']
+            predicted_task = reasoning_output['task_name']
             results['true_task'].append(actual_task)
             results['true_step'].append(actual_step)
             results['predicted_step'].append(predicted_step)
             results['predicted_task'].append(predicted_task)
 
     results_df = pd.DataFrame.from_dict(results)
-    file_path = join(RESOURCE_PATH, f'{recipe_id}_reasoning_results.csv')
-    results_df.to_csv(file_path, index=False)
-    logger.debug(f'Reasoning results saved at {file_path}')
 
     if save_reasoning_outputs:
         with open(
-            join(RESOURCE_PATH, f'{recipe_id}_reasoning_outputs.json'), 'w'
+            join(RESOURCE_PATH, f'{session_id}_reasoning_outputs.json'), 'w'
         ) as fout:
             json.dump(all_outputs, fout, indent=2)
+
+        file_path = join(RESOURCE_PATH, f'{session_id}_reasoning_results.csv')
+        results_df.to_csv(file_path, index=False)
+
     return results_df
 
 
-def visualize_results(results, recipe_id, video_id, noise_config):
-    steps = {f'Step {i}': i for i in (results['true_step'].unique())}
-    plot = results.plot(legend=True)
-    plot.set_yticks(
-        [0] + list(steps.values()), labels=['Other Recipe'] + list(steps.keys())
-    )
-    #plt.title(
-    #   f"Model Patience {PATIENCE}, recipe {recipe_id} with noise at Step {noise_config['steps'][0]}"
-    #)
-
-    # plt.show()
-    plt.savefig(f"{recipe_id}_{str(noise_config)}_P{PATIENCE}_plot.png")
-
-
-def evaluate_reasoning(recipe_id, video_id, noise_config=None, plot_results=True):
-    results = run_reasoning(recipe_id, video_id, noise_config)
-
+def calculate_accuracy(results):
     results['match_task'] = results['true_task'] == results['predicted_task']
-    total_accuracy = results['match_task'].value_counts()[True] / len(results)
-    logger.debug(f'Task recognition accuracy: {round(total_accuracy, 3)}')
+    task_matches = 0
+    try:
+        task_matches = results['match_task'].value_counts()[True]
+    except:
+        pass
+    task_accuracy = task_matches / len(results)
+    logger.debug(f'Task recognition accuracy: {round(task_accuracy, 3)}')
 
     results['match_step'] = (results['true_task'] == results['predicted_task']) & (
-        results['true_step'] == results['predicted_step']
+            results['true_step'] == results['predicted_step']
     )
-    total_accuracy = results['match_step'].value_counts()[True] / len(results)
-    logger.debug(f'Step recognition accuracy: {round(total_accuracy, 3)}')
+
+    step_matches = 0
+    try:
+        step_matches = results['match_step'].value_counts()[True]
+    except:
+        pass
+    step_accuracy = step_matches / len(results)
+    logger.debug(f'Step recognition accuracy: {round(step_accuracy, 3)}')
 
     performance_by_step = (
         results.groupby(['true_task', 'true_step'])['match_step'].mean().round(3)
@@ -91,23 +87,24 @@ def evaluate_reasoning(recipe_id, video_id, noise_config=None, plot_results=True
     for step_id, step_performance in enumerate(performance_by_step, 1):
         logger.debug(f'Step {step_id}: {step_performance}')
 
-    if plot_results:
-        visualize_results(results, recipe_id, video_id, noise_config)
+    return task_accuracy, step_accuracy
+
+
+def evaluate_reasoning(num_sessions):
+    sessions = generate_multiple_sessions(num_sessions, error_name=None)
+    task_accuracies = []
+    step_accuracies = []
+
+    for session_id, session in sessions:
+        results = run_reasoning(session_id, session)
+        task_accuracy, step_accuracy = calculate_accuracy(results)
+        task_accuracies.append(task_accuracy)
+        step_accuracies.append(step_accuracy)
+
+    logger.debug(f'Task recognition accuracy: {round(np.mean(task_accuracies), 2)} +/- {round(np.std(task_accuracies), 2)}')
+    logger.debug(f'Step recognition accuracy: {round(np.mean(step_accuracies), 2)} +/- {round(np.std(step_accuracies), 2)}')
 
 
 if __name__ == '__main__':
-    # recipe_id = 'pinwheels'
-    # video_id = 'pinwheels_2023.04.04-18.33.59'
+    evaluate_reasoning(100)
 
-    # recipe_id = 'quesadilla'
-    # video_id = 'quesadilla_2023.06.16-18.57.48'
-    recipe_id = 'oatmeal'
-    video_id = 'oatmeal_2023.06.16-20.33.26'
-    # recipe_id = 'coffee'
-    # video_id = 'coffee_mit-eval'
-    # recipe_id = 'tea'
-    # video_id = 'tea_2023.06.16-18.43.48'
-
-    noise_config = None
-    #noise_config = {'steps': [1], 'error_rate': 0.3}
-    evaluate_reasoning(recipe_id, video_id, noise_config)

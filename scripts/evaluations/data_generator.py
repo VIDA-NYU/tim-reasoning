@@ -9,7 +9,7 @@ from os.path import join, dirname
 
 logger = logging.getLogger(__name__)
 
-random.seed(20)
+random.seed(0)
 RESOURCE_PATH = join(dirname(__file__), 'resource')
 OBJECTS = {
     'pinwheels': ['tortilla'],
@@ -32,6 +32,7 @@ PERCEPTION_OUTPUT_TEMPLATE = {
 }
 
 MAPPING_IDS = None
+BEST_PROBA = 0.8
 
 
 def curate_perception_annotations(
@@ -190,8 +191,11 @@ def make_groundtruth_step_outputs(
             object_output['groundtruth'] = session_annotation
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
-            state_probas = {s: 0.0 for s in unique_states[object_name]}
-            state_probas[object_state] = 1.0
+            object_states = copy.deepcopy(unique_states[object_name])
+            initial_state_probas = {object_state: BEST_PROBA}
+            state_probas = complete_state_probas(initial_state_probas, object_states)
+            #state_probas = {s: 0.0 for s in unique_states[object_name]}
+            #state_probas[object_state] = 1.0
             object_output['state'] = state_probas
             step_outputs.append(object_output)
 
@@ -265,18 +269,15 @@ def make_noisy_step_outputs(
             object_output['groundtruth'] = session_annotation
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
-
+            object_states = copy.deepcopy(unique_states[object_name])
             if indices_to_perturb[index]:
-                object_states = copy.deepcopy(unique_states[object_name])
-                initial_state_probas = {
-                    random.choice(object_states): round(random.uniform(0, 1), 2)
-                }
-                state_probas = complete_state_probas(
-                    initial_state_probas, object_states
-                )
+                initial_state_probas = {random.choice(object_states): round(random.uniform(0, 1), 2)}
+                state_probas = complete_state_probas(initial_state_probas, object_states)
             else:
-                state_probas = {s: 0.0 for s in unique_states[object_name]}
-                state_probas[object_state] = 1.0
+                initial_state_probas = {object_state: BEST_PROBA}
+                state_probas = complete_state_probas(initial_state_probas, object_states)
+                #state_probas = {s: 0.0 for s in unique_states[object_name]}
+                #state_probas[object_state] = 1.0
 
             object_output['state'] = state_probas
 
@@ -356,9 +357,39 @@ def reorder_steps(perception_outputs, steps_to_reorder):
     return new_perception_outputs
 
 
-def generate_data(task_name, video_id=None, noise_config=None, error_config=None):
+def merge_tasks(tasks):
+    if len(tasks) == 1:
+        return tasks[0]
+
+    idx_traversed = {"pinwheels": 0, "quesadilla": 0, "oatmeal": 0, "coffee": 0, "tea": 0}
+    all_data = []
+    total_rows = 0
+
+    for task in tasks:
+        total_rows += len(task)
+        all_data.append(task)
+
+    total_tasks = len(all_data)
+    key_map = list(idx_traversed.keys())
+
+    result = []
+    while True:
+        if len(result) >= total_rows:
+            break
+        k_idx = random.randint(0, total_tasks - 1)
+        recipe = key_map[k_idx]
+        curr_row = idx_traversed[recipe]
+        if len(all_data[k_idx]) > curr_row:
+            result.append(all_data[k_idx][curr_row])
+            idx_traversed[recipe] += 1
+
+    return result
+
+
+def generate_task(task_name, video_id, noise_config=None, error_config=None):
     if error_config is None:
         error_config = {'name': None}
+
     global MAPPING_IDS
     MAPPING_IDS = {
         'tortilla': random.randint(0, 1000),
@@ -385,6 +416,62 @@ def generate_data(task_name, video_id=None, noise_config=None, error_config=None
     elif error_config['name'] == 'reorder_steps':
         perception_outputs = reorder_steps(perception_outputs, error_config['steps'])
 
-    save_outputs(perception_outputs, f'{task_name}_perception_outputs')
-
     return perception_outputs
+
+
+def generate_session(seed_tasks, add_noise, error_name):
+    with open(join(dirname(__file__), '../../data/recipe/recipe.json'), 'r') as read_file:
+        all_tasks = json.load(read_file)
+
+    tasks = []
+
+    for task_name, video_id in seed_tasks:
+        steps = [int(s) for s in all_tasks[task_name]['steps'].keys()]
+
+        noise_config = None
+        if add_noise:
+            num_steps = random.randint(1, len(steps))
+            noise_config = {'steps': random.sample(steps, num_steps), 'error_rate': round(random.uniform(0.1, 0.3), 2)}
+        logger.debug(f'Noise config: {str(noise_config)}')
+        error_config = None
+        if error_name == 'skip_steps':
+            num_steps = random.randint(1, len(steps)-1)
+            error_config = {'name': error_name, 'steps': random.sample(steps, num_steps)}
+        elif error_name == 'reorder_steps':
+            num_steps = random.randint(2, 3)
+            error_config = {'name': error_name, 'steps': random.sample(steps, num_steps)}
+
+        logger.debug(f'Error config: {str(error_config)}')
+        task = generate_task(task_name, video_id, noise_config, error_config)
+        tasks.append(task)
+
+    session = merge_tasks(tasks)
+
+    return session
+
+
+def generate_multiple_sessions(num_sessions, seed_tasks=None, add_noise=True, error_name=None):
+    if seed_tasks is None:
+        seed_tasks = [
+            ('pinwheels', 'pinwheels_2023.04.04-18.33.59'),
+            ('quesadilla', 'quesadilla_2023.06.16-18.57.48'),
+            ('oatmeal', 'oatmeal_2023.06.16-20.33.26'),
+            ('coffee', 'coffee_mit-eval'),
+            ('tea', 'tea_2023.06.16-18.43.48')
+        ]
+
+    sessions = []
+    counter = 0
+
+    while counter < num_sessions:
+        session_id = f'session{counter}'
+        logger.debug(f'Creating {session_id}')
+        num_tasks = random.randint(1, len(seed_tasks))
+        tasks = random.sample(seed_tasks, num_tasks)
+        logger.debug(f'Tasks: {str([t for t, _ in tasks])}')
+        session = generate_session(tasks, add_noise, error_name)
+        save_outputs(session, f'{session_id}_perception_outputs')
+        sessions.append((session_id, session))
+        counter += 1
+
+    return sessions
