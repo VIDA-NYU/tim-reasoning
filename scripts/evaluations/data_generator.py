@@ -32,7 +32,8 @@ PERCEPTION_OUTPUT_TEMPLATE = {
 }
 
 MAPPING_IDS = None
-BEST_PROBA = 0.8
+BEST_PROBA_PERCEPTION = 0.8
+MAX_NOISE_PERCEPTION = 0.3
 
 
 def curate_perception_annotations(
@@ -81,8 +82,8 @@ def curate_perception_annotations(
         curated_annotations['step'].append(step_id)
 
     curated_annotations['end_time'][-1] = (
-        curated_annotations['start_time'][-1] + 3
-    )  # Last element doesn't have and end time, just add 3 secs
+        curated_annotations['start_time'][-1] + 10
+    )  # Last element doesn't have and end time, just add 10 secs
     curated_annotations_df = pd.DataFrame.from_dict(curated_annotations)
 
     if save_curated_annotation:
@@ -192,7 +193,7 @@ def make_groundtruth_step_outputs(
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
             object_states = copy.deepcopy(unique_states[object_name])
-            initial_state_probas = {object_state: BEST_PROBA}
+            initial_state_probas = {object_state: BEST_PROBA_PERCEPTION}
             state_probas = complete_state_probas(initial_state_probas, object_states)
             #state_probas = {s: 0.0 for s in unique_states[object_name]}
             #state_probas[object_state] = 1.0
@@ -274,7 +275,7 @@ def make_noisy_step_outputs(
                 initial_state_probas = {random.choice(object_states): round(random.uniform(0, 1), 2)}
                 state_probas = complete_state_probas(initial_state_probas, object_states)
             else:
-                initial_state_probas = {object_state: BEST_PROBA}
+                initial_state_probas = {object_state: BEST_PROBA_PERCEPTION}
                 state_probas = complete_state_probas(initial_state_probas, object_states)
                 #state_probas = {s: 0.0 for s in unique_states[object_name]}
                 #state_probas[object_state] = 1.0

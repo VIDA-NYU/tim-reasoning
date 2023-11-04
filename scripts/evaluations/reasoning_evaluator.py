@@ -57,7 +57,7 @@ def run_reasoning(session_id, session, save_reasoning_outputs=True):
     return results_df
 
 
-def calculate_accuracy(results):
+def calculate_accuracy(results, session_id):
     results['match_task'] = results['true_task'] == results['predicted_task']
     task_matches = 0
     try:
@@ -65,7 +65,7 @@ def calculate_accuracy(results):
     except:
         pass
     task_accuracy = task_matches / len(results)
-    logger.debug(f'Task recognition accuracy: {round(task_accuracy, 3)}')
+    logger.debug(f'Task recognition accuracy in {session_id}: {round(task_accuracy, 3)}')
 
     results['match_step'] = (results['true_task'] == results['predicted_task']) & (
             results['true_step'] == results['predicted_step']
@@ -77,32 +77,50 @@ def calculate_accuracy(results):
     except:
         pass
     step_accuracy = step_matches / len(results)
-    logger.debug(f'Step recognition accuracy: {round(step_accuracy, 3)}')
+    logger.debug(f'Step recognition accuracy in {session_id}: {round(step_accuracy, 3)}')
 
     performance_by_step = (
         results.groupby(['true_task', 'true_step'])['match_step'].mean().round(3)
     )
 
-    logger.debug('Accuracy for each step:')
+    logger.debug(f'Accuracy for each step in {session_id}:')
     for step_id, step_performance in enumerate(performance_by_step, 1):
         logger.debug(f'Step {step_id}: {step_performance}')
 
     return task_accuracy, step_accuracy
 
 
-def evaluate_reasoning(num_sessions, seed_tasks, add_noise, error_name):
+def visualize_results(results, session_id, task_name, error_name):
+    steps = {f'Step {i}': i for i in (results['true_step'].unique())}
+    results.loc[results.predicted_task != task_name, 'predicted_step'] = 0  # Put 0 if it's another recipe step
+    plot = results.plot(legend=True)
+    plot.set_yticks(
+        [0] + list(steps.values()), labels=['Other Recipe'] + list(steps.keys())
+    )
+    plt.title(
+        f'Model Patience {PATIENCE}, task {task_name} with error {str(error_name)}'
+    )
+
+    plt.savefig(join(RESOURCE_PATH, f'{task_name}_{session_id}_error{str(error_name)}_P{PATIENCE}_plot.png'))
+
+
+def evaluate_reasoning(num_sessions, seed_tasks, add_noise, error_name, save_plots=False):
     sessions = generate_multiple_sessions(num_sessions, seed_tasks,  add_noise, error_name)
     task_accuracies = []
     step_accuracies = []
 
     for session_id, session in sessions:
         results = run_reasoning(session_id, session)
-        task_accuracy, step_accuracy = calculate_accuracy(results)
+        task_accuracy, step_accuracy = calculate_accuracy(results, session_id)
         task_accuracies.append(task_accuracy)
         step_accuracies.append(step_accuracy)
+        if save_plots:
+            task_to_visualize = session[0]['groundtruth']['task_name']
+            #  The visualization supports only 1 task
+            visualize_results(results, session_id, task_to_visualize, error_name)
 
-    logger.debug(f'Task recognition accuracy: {round(np.mean(task_accuracies), 2)} +/- {round(np.std(task_accuracies), 2)}')
-    logger.debug(f'Step recognition accuracy: {round(np.mean(step_accuracies), 2)} +/- {round(np.std(step_accuracies), 2)}')
+    logger.debug(f'Global task recognition accuracy: {round(np.mean(task_accuracies), 2)} +/- {round(np.std(task_accuracies), 2)}')
+    logger.debug(f'Global step recognition accuracy: {round(np.mean(step_accuracies), 2)} +/- {round(np.std(step_accuracies), 2)}')
 
 
 if __name__ == '__main__':
