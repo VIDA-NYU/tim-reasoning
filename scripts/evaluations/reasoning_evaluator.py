@@ -113,7 +113,7 @@ if __name__ == '__main__':
         ('coffee', 'coffee_mit-eval'),
         ('tea', 'tea_2023.06.16-18.43.48')
     ]
-    error_name = None
+    error_name = None  # Other options are: 'skip_steps' and 'reorder_steps'
     add_noise = True
     num_sessions = 100
     evaluate_reasoning(num_sessions, seed_tasks, add_noise, error_name)
