@@ -27,7 +27,7 @@ def curate_perception_annotations(
         .astype('Int64', errors='ignore')
         #.sub(1)
     )
-    #print(video_id, video_annotations)
+
     task_name = video_annotations.iloc[0]['recipe']
     step_id = 0
     actual_step = None
@@ -74,12 +74,12 @@ def to_seconds(minutes_seconds):
     return only_seconds
 
 
-def read_unique_states(target_object=None):
+def read_unique_states(target_objects):
     unique_states_df = pd.read_csv(join(RESOURCE_PATH, 'unique_states.csv'))
 
     unique_states = []
     for _, row in unique_states_df.iterrows():
-        if row['object'].strip() != target_object:
+        if row['object'].strip() not in target_objects:
             continue
         state_id = row['object'].strip() + '_' + row['state'].strip()
         unique_states.append(state_id)
@@ -114,10 +114,10 @@ def remap_labels(label):
     return label
 
 
-def make_data(raw_annotations, video_id, target_object='bowl'):
+def make_data(raw_annotations, video_id, target_objects):
     curated_annotations = curate_perception_annotations(raw_annotations, video_id)
     unique_objects = read_unique_objects()
-    unique_states = read_unique_states(target_object)
+    unique_states = read_unique_states(target_objects)
     all_columns = unique_states + unique_objects + ['step']
 
     all_data = {f: [] for f in all_columns}
@@ -148,11 +148,11 @@ def make_data(raw_annotations, video_id, target_object='bowl'):
             obj_name = obj['label']
             states = obj.get('state', {})
             for state, proba in states.items():
-                counter_valid_states += 1
                 #state = remap_labels(state)
                 state_id = obj_name + '_' + state
                 if state_id in states_to_add:
                     states_to_add[state_id] = proba
+                    counter_valid_states += 1
 
             hoi_value = obj.get('hand_object_interaction', 0)
             objects_to_add[obj_name + '_hoi'] = hoi_value
@@ -169,7 +169,6 @@ def make_data(raw_annotations, video_id, target_object='bowl'):
                 for state in tmp_states:
                     last_probas = tmp_states[state]
                     tmp_states[state] = np.mean(last_probas)
-
                 states_to_add = tmp_states
 
         else:
@@ -188,24 +187,79 @@ def make_data(raw_annotations, video_id, target_object='bowl'):
 
 
 def create_matrices():
-    raw_annotations_path = join(RESOURCE_PATH, 'raw_annotations_new.csv')
+    raw_annotations_path = join(RESOURCE_PATH, 'raw_step_annotations.csv')
     raw_annotations = pd.read_csv(raw_annotations_path)
 
-    videos = {
-        'oatmeal': [
-            'oatmeal_2023.06.16-20.08.08',
-            'oatmeal_2023.06.30-20.10.42',
-            'oatmeal_2023.06.16-20.33.26',
-            'oatmeal_2023.06.16-20.18.26',
-            'oatmeal_2023.11.03-18.51.03',
-            'oatmeal_2023.11.03-19.04.04',
-            'oatmeal_2023.11.03-18.43.03'
-        ]
+    annotated_data = {
+        'oatmeal': {
+            'videos': [
+                'oatmeal_2023.06.16-20.08.08',
+                'oatmeal_2023.06.30-20.10.42',
+                'oatmeal_2023.06.16-20.33.26',
+                'oatmeal_2023.06.16-20.18.26',
+                'oatmeal_2023.11.03-18.51.03',
+                'oatmeal_2023.11.03-19.04.04',
+                'oatmeal_2023.11.03-18.43.03'
+            ],
+            'objects': ['bowl']
+        },
+        'pinwheels': {
+            'videos': [
+                'pinwheels_2023.03.30-16.38.48',
+                'pinwheels_2023.03.30-16.50.36',
+                'pinwheels_2023.04.04-19.50.02',
+                'pinwheels_2023.04.03-19.38.08',
+                'pinwheels_2023.04.04-18.33.59',
+                'pinwheels_2023.03.08-17.46.28',
+                'pinwheels_2023.03.02-22.56.36'
+            ],
+            'objects': ['tortilla']
+        },
+        'quesadilla': {
+            'videos': [
+                'quesadilla_2023.06.16-18.53.43',
+                'quesadilla_2023.06.16-18.57.48',
+                'quesadilla_2023.06.16-19.00.58',
+                'quesadilla_2023.11.03-19.31.43',
+                'quesadilla_2023.11.03-19.49.08',
+                'quesadilla_2023.11.03-19.45.06',
+                'quesadilla_2023.11.03-19.36.01'
+            ],
+            'objects': ['tortilla']
+        },
+        'coffee': {
+            'videos': [
+                'coffee_2023.06.16-21.17.24',
+                'coffee_2023.05.02-21.49.08',
+                'coffee_2023.05.02-22.15.40',
+                'coffee_2023.05.02-22.24.32',
+                'coffee_2023.05.02-22.33.01',
+                'coffee_2023.06.16-21.11.12'
+            ],
+            'objects': ['mug']
+        },
+        'tea': {
+            'videos': [
+                'tea_2023.06.16-18.20.42',
+                'tea_2023.06.16-18.43.48',
+                'tea_2023.06.30-19.29.16',
+                #'tea_2023.11.03-21.46.12',
+                'tea_2023.11.05-13.55.41',
+                'tea_2023.11.05-13.39.54',
+                'tea_2023.11.05-13.47.39',
+                'tea_2023.11.05-13.39.54',
+                'tea_2023.11.05-13.47.39',
+                'tea_2023.11.05-13.55.41'
+            ],
+            'objects': ['mug']
+        }
     }
 
-    for video_id in videos['oatmeal']:
-        print(video_id)
-        make_data(raw_annotations, video_id)
+    for task_name in annotated_data.keys():
+        for video_id in annotated_data[task_name]['videos']:
+            print(video_id)
+            make_data(raw_annotations, video_id, annotated_data[task_name]['objects'])
 
 
-create_matrices()
+if __name__ == '__main__':
+    create_matrices()
