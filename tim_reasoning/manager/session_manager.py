@@ -121,7 +121,7 @@ class SessionManager:
 
         if self.verbose:
             self.log.info(
-                f"For `{wrong_tracker.recipe}` Recipe with task id {task_tracker_id},"
+                f"For `{wrong_tracker.recipe}` recipe with task id {task_tracker_id}, "
                 f"got an error, hence, this recipe is not possible, deleting it from memory.\n"
             )
         # find the index where it exists and remove it
@@ -230,7 +230,32 @@ class SessionManager:
                 state=state, objects=[object_label], object_ids=[object_id]
             )
             self.update_last_tracker(last_tracker)
-            return [track_output]
+
+            final_output = [track_output]
+
+            unique_obj_id, unique_obj_label = None, None
+            # traverse through the objects to get unique objects
+            for obj_id, obj_label in zip(
+                last_tracker.get_object_ids(), last_tracker.get_object_labels()
+            ):
+                if obj_label in self.important_objects:
+                    unique_obj_id = obj_id
+                    unique_obj_label = obj_label
+                    break
+            if unique_obj_id is not None:
+                probable_task_trackers = self.get_probable_task_trackers(
+                    unique_obj_id, unique_obj_label
+                )
+                for tt in probable_task_trackers:
+                    if tt.get_id() != last_tracker.get_id():
+                        _, track_output = tt.track(
+                            state=state,
+                            objects=[object_label],
+                            object_ids=[object_id],
+                        )
+                        self.update_last_tracker(tt)
+                        final_output.extend([track_output])
+            return final_output
         return [None]
 
     def track_unique_object(
@@ -250,11 +275,21 @@ class SessionManager:
                 state=state, objects=[object_label], object_ids=[object_id]
             )
             self.update_last_tracker(task_tracker)
+            self.log.info(
+                f"Received instruction = {instruction}, and track_output = {track_output} when "
+                f"{object_label}_{object_id} tracked in "
+                f"task {task_tracker.recipe}_{task_tracker.get_id()}",
+            )
+            if instruction == ReasoningErrors.INVALID_STATE:
+                next_recipe_step = task_tracker.get_next_recipe_step()
+                track_output = task_tracker._build_output_dict(
+                    instruction=next_recipe_step
+                )
             return [track_output]
         # multipe probable task_graphs possible
         else:
             if self.verbose:
-                self.log.info("Multipe probable task_graphs possible")
+                self.log.info("Multiple probable task_graphs possible")
             output, wrong_tracker_list = [], []
             for i, task_tracker in enumerate(probable_task_trackers):
                 instruction, track_output = task_tracker.track(
@@ -269,9 +304,24 @@ class SessionManager:
                             f"For `{task_tracker.recipe}` Recipe, received partial state completion."
                         )
                         output.append(track_output)
+                    elif instruction == ReasoningErrors.FUTURE_STEP:
+                        output.append(track_output)
                     else:
                         # Return the error outputs
-                        wrong_tracker_list.append(task_tracker)
+                        smallest_step_num = min(
+                            [
+                                probable_t.get_current_step_number()
+                                for probable_t in probable_task_trackers
+                            ]
+                        )
+                        if (
+                            task_tracker.get_current_step_number()
+                            == smallest_step_num
+                        ):
+                            self.log.info(
+                                f"{instruction} Error found while tracking {object_label}_{object_id} for task {task_tracker.recipe}_{task_tracker.get_id()}"
+                            )
+                            wrong_tracker_list.append(task_tracker)
                         output.append(track_output)
                 else:
                     if self.verbose:
@@ -280,7 +330,8 @@ class SessionManager:
                         )
                     output.append(track_output)
             # Remove the wrong tasks only if all of the probable ones were not wrong
-            self.handle_wrong_tasks(probable_task_trackers, wrong_tracker_list)
+            if wrong_tracker_list:
+                self.handle_wrong_tasks(probable_task_trackers, wrong_tracker_list)
             return output
 
     def track_object(self, state, object_id, object_label, object_hand_interaction):
@@ -335,7 +386,7 @@ class SessionManager:
             if 'hand_object_interaction' in obj
             else None
         )
-        if "state" not in obj:
+        if "state" not in obj or obj["state"] == {}:
             return [None]
 
         self.object_position_tracker.set_pos(

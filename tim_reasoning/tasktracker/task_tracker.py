@@ -33,7 +33,7 @@ class TaskTracker:
             verbose,
         )
         self.completed_nodes = {}
-        self.current_step_number = 0
+        self.current_step_number = 1
         self.object_ids = []  # ids are unique
         self.object_labels = []  # object_labels can be duplicates
         self.completed = False  # whether the Task is completed or not
@@ -86,12 +86,9 @@ class TaskTracker:
         )
 
         max_step = max(self.current_step_number, node_step + 1)
-        print(self.current_step_number, node_step + 1, max_step, min_missing_step)
         self.current_step_number = min(max_step, min_missing_step)
 
-    def _build_not_started_output_dict(self, current_step_num: int = 0):
-        if current_step_num == 0:
-            current_step_num = 1
+    def _build_not_started_output_dict(self, current_step_num: int = 1):
         current_step_num = str(current_step_num)
         # get json instructions for current recipe
         instructions = self.get_recipe()
@@ -151,7 +148,7 @@ class TaskTracker:
             "task_name": self.recipe,
             "step_id": self.get_current_step_number(),
             "step_status": "ERROR",
-            "step_description": "",
+            "step_description": self.get_next_recipe_step(),
             "error_status": True,
             "error_description": str(error),
             "total_steps": self.get_recipe_length(),
@@ -199,20 +196,27 @@ class TaskTracker:
             return task_graph
 
     def _handle_track_missing_dependencies(self, node, node_id, objects, object_ids):
-        # first, we need to add this to completed list, update step num
-        self.add_completed_node(
-            node=node,
-            node_id=node_id,
-            objects=objects,
-            object_ids=object_ids,
-        )
-        # second, create the error output
         # find all the missing dependencies
         missing_deps = self._get_current_missing_dependencies(node, [])
         missing_deps = set(missing_deps)
         already_missing = set(self.task_errors["missing"])
         # find the new missed errors
         new_missed = list(missing_deps - already_missing)
+        if len(new_missed) > (self.current_step_number * 0.35):
+            error = ReasoningErrors.FUTURE_STEP
+            output = self._build_error_dict(
+                error="Received future step way ahead in future."
+            )
+            return error, output
+        # we need to add this to completed list, update step num
+        self.add_completed_node(
+            node=node,
+            node_id=node_id,
+            objects=objects,
+            object_ids=object_ids,
+        )
+        # create the error output
+
         # update the missing errors
         self.task_errors["missing"] = list(missing_deps)
         # if there are no new missings steps, just output the current step
@@ -254,7 +258,7 @@ class TaskTracker:
             int or ReasoningErrors: current step number
         """
         if self.current_step_number == 0:
-            return ReasoningErrors.NOT_STARTED
+            return 1
         return self.current_step_number
 
     def get_recipe(
@@ -299,13 +303,10 @@ class TaskTracker:
 
         # next step number
         current_step = self.get_current_step_number()
-        if isinstance(current_step, int):
-            step_num = str(self.current_step_number)
-        else:
-            return ReasoningErrors.NOT_STARTED
+        current_step = str(current_step)
         # if next instruction exists
-        if step_num in instructions:
-            return instructions[step_num]
+        if current_step in instructions:
+            return instructions[current_step]
         # else if its last step
         else:
             self.completed = True
@@ -315,7 +316,7 @@ class TaskTracker:
         """Returns the instruction output dict for current step without tracking"""
         current_step = self.get_current_step_number()
 
-        if current_step == ReasoningErrors.NOT_STARTED:
+        if current_step == 1:
             return self._build_not_started_output_dict()
 
         instruction = self.get_next_recipe_step()
@@ -336,20 +337,6 @@ class TaskTracker:
                 if object_id not in self.object_ids:
                     self.object_ids.append(object_id)
                     self.object_labels.append(object_label)
-
-    def should_track_node(self, node, max_lookahead=3):
-        if not node:
-            return False
-
-        if node.step_number > self.current_step_number + max_lookahead:
-            # Node too far ahead
-            return False
-
-        if node.step_number < 1:
-            # Invalid step number
-            return False
-
-        return True
 
     def set_current_step(self, step_num: int):
         """Set current step number and mark previous as completed
@@ -375,9 +362,7 @@ class TaskTracker:
             instruction=next_recipe_step
         )
 
-    def track(
-        self, state: str, objects: list, object_ids: list
-    ) -> ReasoningErrors or None:
+    def track(self, state: str, objects: list, object_ids: list):
         """Track the steps using task graph, add to completed list and raise errors
 
         Args:
@@ -385,86 +370,89 @@ class TaskTracker:
             objects (list): current objects
 
         Returns:
-            ReasoningErrors or None: errors or none
+            tuple
         """
         # Finds the the given object_label in the uncompleted nodes (regardless of the step_num)
         node_id, node = self.task_graph.find_node(
             state=state, objects=objects, visited_nodes=self.completed_nodes
         )
-        if self.should_track_node(node):
-            if self.current_step_number > 0:
-                # if object not found in unvisited steps
-                if not node:
-                    # Partial match is either with COMPLETED nodes or FUTURE (partially) nodes
+        if self.current_step_number > 0:
+            # if object not found in unvisited steps
+            if not node:
+                # Partial match is either with COMPLETED nodes or FUTURE (partially) nodes
+                (
+                    max_match,
+                    partial_node_id,
+                    partial_node,
+                ) = self.task_graph.find_partial_node(state=state, objects=objects)
+                if max_match > 0.1:
+                    # possibility of a future node (but incomplete)
+                    # or possibility of a previously completed node
+                    return (
+                        ReasoningErrors.PARTIAL_STATE,
+                        self._build_output_dict(
+                            instruction=self.get_next_recipe_step()
+                        ),
+                    )
+                else:
+                    # This means that the state or object is totally new
+                    error = ReasoningErrors.INVALID_STATE
+                    return error, self._build_error_dict(
+                        error=f"Unseen action or object might be detected"
+                    )
+            elif node.step_number < self.get_current_step_number():
+                # this will only occur when the
+                # previous step's node was incomplete and we found it
+                if node.step_number in self.task_errors["missing"]:
+                    # remove from missing errors
+                    self.task_errors["missing"] = set(
+                        self.task_errors["missing"]
+                    ) - set([node.step_number])
+                    # add to reorder
+                    self.task_errors["reorder"].append(node.step_number)
                     (
-                        max_match,
-                        partial_node_id,
-                        partial_node,
-                    ) = self.task_graph.find_partial_node(
-                        state=state, objects=objects
+                        instruction,
+                        output,
+                    ) = ReasoningErrors.REORDER_ERROR, self._build_error_dict(
+                        error=f"Step {node.step_number} completed late."
                     )
-                    if max_match > 0.1:
-                        # possibility of a future node (but incomplete)
-                        # or possibility of a previously completed node
-                        return (
-                            ReasoningErrors.PARTIAL_STATE,
-                            self._build_output_dict(
-                                instruction=self.get_next_recipe_step()
-                            ),
-                        )
-                    else:
-                        # This means that the state or object is totally new
-                        error = ReasoningErrors.INVALID_STATE
-                        return error, self._build_error_dict(
-                            error=f"Error: unseen action or object"
-                        )
-                elif node.step_number < self.get_current_step_number():
-                    # this will only occur when the
-                    # previous step's node was incomplete and we found it
-                    if node.step_number in self.task_errors["missing"]:
-                        # remove from missing errors
-                        self.task_errors["missing"] = set(
-                            self.task_errors["missing"]
-                        ) - set([node.step_number])
-                        # add to reorder
-                        self.task_errors["reorder"].append(node.step_number)
-                        (
-                            instruction,
-                            output,
-                        ) = ReasoningErrors.REORDER_ERROR, self._build_error_dict(
-                            error=f"Step {node.step_number} completed late."
-                        )
-                        return instruction, output
-                # Otherwise if we found the node, check dependencies of the found node
-                if not self._is_dependencies_completed(node=node):
-                    instruction, output = self._handle_track_missing_dependencies(
-                        node=node,
-                        node_id=node_id,
-                        objects=objects,
-                        object_ids=object_ids,
-                    )
-                    # update the current_step_number
-                    self._update_step_number(node_step=node.step_number)
                     return instruction, output
-            if self.current_step_number == 0 and not node:
-                # get the first recipe step
-                instructions = self.get_recipe()
-                instruction = instructions["1"]
-                return instruction, self._build_not_started_output_dict(
-                    self.current_step_number
+            # Otherwise if we found the node, check dependencies of the found node
+            if not self._is_dependencies_completed(node=node):
+                # check if the new step is not too far ahead in future
+                # and update the missing nodes
+                instruction, output = self._handle_track_missing_dependencies(
+                    node=node,
+                    node_id=node_id,
+                    objects=objects,
+                    object_ids=object_ids,
                 )
+                # update the current_step_number
+                # self._update_step_number(node_step=node.step_number)
+                return instruction, output
+        if self.current_step_number == 0 and not node:
+            # get the first recipe step
+            instructions = self.get_recipe()
+            instruction = instructions["1"]
+            return instruction, self._build_not_started_output_dict(
+                self.current_step_number
+            )
+        # if the task is not started, check dependency
+        elif self.current_step_number == 0 and node:
+            if not self._is_dependencies_completed(node=node):
+                instruction, output = self._handle_track_missing_dependencies(
+                    node=node,
+                    node_id=node_id,
+                    objects=objects,
+                    object_ids=object_ids,
+                )
+                return instruction, output
+        else:
             # even if the node is already completed the below function would not do anything
             self.add_completed_node(
                 node=node, node_id=node_id, objects=objects, object_ids=object_ids
             )
-            next_recipe_step = self.get_next_recipe_step()
-            return next_recipe_step, self._build_output_dict(
-                instruction=next_recipe_step
-            )
-
-        else:
-            error = ReasoningErrors.FUTURE_STEP
-            output = self._build_error_dict(
-                error="Received future step way ahead in future."
-            )
-            return error, output
+        next_recipe_step = self.get_next_recipe_step()
+        return next_recipe_step, self._build_output_dict(
+            instruction=next_recipe_step
+        )
