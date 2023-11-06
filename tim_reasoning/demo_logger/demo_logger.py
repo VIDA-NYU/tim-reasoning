@@ -3,7 +3,7 @@ import csv
 from os.path import join
 from datetime import datetime
 
-LOGS_FOLDER = os.getenv('REASONING_LOGS_PATH')
+LOGS_FOLDER = os.getenv('REASONING_LOGS_PATH', '')
 
 
 class DemoLogger:
