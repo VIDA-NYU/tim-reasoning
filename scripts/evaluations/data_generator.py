@@ -3,12 +3,13 @@ import copy
 import logging
 import random
 import pandas as pd
+import numpy as np
 from datetime import datetime
 from os.path import join, dirname
 
 logger = logging.getLogger(__name__)
 
-random.seed(20)
+random.seed(0)
 RESOURCE_PATH = join(dirname(__file__), 'resource')
 OBJECTS = {
     'pinwheels': ['tortilla'],
@@ -31,6 +32,8 @@ PERCEPTION_OUTPUT_TEMPLATE = {
 }
 
 MAPPING_IDS = None
+BEST_PROBA_PERCEPTION = 0.8
+MAX_NOISE_PERCEPTION = 0.3
 
 
 def curate_perception_annotations(
@@ -47,13 +50,13 @@ def curate_perception_annotations(
         .astype('Int64', errors='ignore')
         .sub(1)
     )
-    recipe_id = video_annotations.iloc[0]['recipe']
+    task_name = video_annotations.iloc[0]['recipe']
     step_id = 0
-    tracked_objects = OBJECTS[recipe_id]
+    tracked_objects = OBJECTS[task_name]
     current_states = {o: None for o in tracked_objects}
     curated_annotations = {
-        'recipe': [],
-        'video': [],
+        'task_name': [],
+        'video_id': [],
         'start_time': [],
         'end_time': [],
         'step': [],
@@ -72,20 +75,20 @@ def curate_perception_annotations(
             curated_annotations[tracked_object].append(
                 current_states[tracked_object]
             )
-        curated_annotations['recipe'].append(row['recipe'])
-        curated_annotations['video'].append(row['video_name'])
+        curated_annotations['task_name'].append(row['recipe'])
+        curated_annotations['video_id'].append(row['video_name'])
         curated_annotations['start_time'].append(row['start_time'])
         curated_annotations['end_time'].append(row['end_time'])
         curated_annotations['step'].append(step_id)
 
     curated_annotations['end_time'][-1] = (
-        curated_annotations['start_time'][-1] + 3
-    )  # Last element doesn't have and end time, just add 3 secs
+        curated_annotations['start_time'][-1] + 10
+    )  # Last element doesn't have and end time, just add 10 secs
     curated_annotations_df = pd.DataFrame.from_dict(curated_annotations)
 
     if save_curated_annotation:
         curated_annotations_df.to_csv(
-            join(RESOURCE_PATH, f'{recipe_id}_curated_annotation.csv'), index=False
+            join(RESOURCE_PATH, f'{task_name}_curated_annotation.csv'), index=False
         )
 
     logger.debug('Perception outputs curated.')
@@ -122,17 +125,17 @@ def get_unique_states(annotations, objects):
 
 def format_annotations(raw_annotations, video_id):
     curated_annotations = curate_perception_annotations(raw_annotations, video_id)
-    recipe_id = curated_annotations.iloc[0]['recipe']
-    unique_states = get_unique_states(curated_annotations, OBJECTS[recipe_id])
+    task_name = curated_annotations.iloc[0]['task_name']
+    unique_states = get_unique_states(curated_annotations, OBJECTS[task_name])
     annotated_video = {
-        'task_id': recipe_id,
-        'session_id': video_id,
+        'task_name': task_name,
+        'task_id': video_id,
         'records': {},
         'unique_states': unique_states,
     }
 
     for _, row in curated_annotations.iterrows():
-        tracked_objects = select_tracked_objects(row, OBJECTS[recipe_id])
+        tracked_objects = select_tracked_objects(row, OBJECTS[task_name])
         step_id = row['step']
         if step_id not in annotated_video['records']:
             annotated_video['records'][step_id] = []
@@ -154,8 +157,8 @@ def make_groundtruth_outputs(annotated_video):
 
     for step_id, step_annotations in annotated_video['records'].items():
         session_annotation = {
-            'session_id': annotated_video['session_id'],
             'task_id': annotated_video['task_id'],
+            'task_name': annotated_video['task_name'],
             'step_id': step_id,
         }
         for step_annotation in step_annotations:
@@ -186,11 +189,14 @@ def make_groundtruth_step_outputs(
         for object_name, object_state in objects.items():
             object_output = copy.deepcopy(output_template)
             object_output['id'] = MAPPING_IDS[object_name]
-            object_output['session'] = session_annotation
+            object_output['groundtruth'] = session_annotation
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
-            state_probas = {s: 0.0 for s in unique_states[object_name]}
-            state_probas[object_state] = 1.0
+            object_states = copy.deepcopy(unique_states[object_name])
+            initial_state_probas = {object_state: BEST_PROBA_PERCEPTION}
+            state_probas = complete_state_probas(initial_state_probas, object_states)
+            #state_probas = {s: 0.0 for s in unique_states[object_name]}
+            #state_probas[object_state] = 1.0
             object_output['state'] = state_probas
             step_outputs.append(object_output)
 
@@ -241,7 +247,7 @@ def generate_perturbed_indices(list_size, percentage):
     return boolean_values
 
 
-def make_errored_step_outputs(
+def make_noisy_step_outputs(
     session_annotation,
     step_annotation,
     unique_states,
@@ -261,21 +267,18 @@ def make_errored_step_outputs(
         for object_name, object_state in objects.items():
             object_output = copy.deepcopy(output_template)
             object_output['id'] = MAPPING_IDS[object_name]
-            object_output['session'] = session_annotation
+            object_output['groundtruth'] = session_annotation
             object_output['label'] = object_name
             object_output['last_seen'] = time_stamp
-
+            object_states = copy.deepcopy(unique_states[object_name])
             if indices_to_perturb[index]:
-                object_states = copy.deepcopy(unique_states[object_name])
-                initial_state_probas = {
-                    random.choice(object_states): round(random.uniform(0, 1), 2)
-                }
-                state_probas = complete_state_probas(
-                    initial_state_probas, object_states
-                )
+                initial_state_probas = {random.choice(object_states): round(random.uniform(0, 1), 2)}
+                state_probas = complete_state_probas(initial_state_probas, object_states)
             else:
-                state_probas = {s: 0.0 for s in unique_states[object_name]}
-                state_probas[object_state] = 1.0
+                initial_state_probas = {object_state: BEST_PROBA_PERCEPTION}
+                state_probas = complete_state_probas(initial_state_probas, object_states)
+                #state_probas = {s: 0.0 for s in unique_states[object_name]}
+                #state_probas[object_state] = 1.0
 
             object_output['state'] = state_probas
 
@@ -284,7 +287,7 @@ def make_errored_step_outputs(
     return step_outputs
 
 
-def make_errored_outputs(annotated_video, noise_config):
+def make_noisy_outputs(annotated_video, noise_config):
     steps_with_noises = noise_config['steps']
     error_rate = noise_config['error_rate']
     fps = noise_config['fps'] if 'fps' in noise_config else FPS
@@ -292,14 +295,14 @@ def make_errored_outputs(annotated_video, noise_config):
 
     for step_id, step_annotations in annotated_video['records'].items():
         session_annotation = {
-            'session_id': annotated_video['session_id'],
             'task_id': annotated_video['task_id'],
+            'task_name': annotated_video['task_name'],
             'step_id': step_id,
         }
 
         for step_annotation in step_annotations:
             if step_id in steps_with_noises:
-                step_outputs = make_errored_step_outputs(
+                step_outputs = make_noisy_step_outputs(
                     session_annotation,
                     step_annotation,
                     annotated_video['unique_states'],
@@ -320,37 +323,74 @@ def make_errored_outputs(annotated_video, noise_config):
     return perception_outputs
 
 
-def group_by_step(session):
-    session_by_step = {}
+def skip_steps(perception_outputs, steps_to_skip):
+    new_perception_outputs = []
 
-    for entry in session:
-        step_id = entry['session']['step_id']
-        if step_id not in session_by_step:
-            session_by_step[step_id] = []
+    for output in perception_outputs:
+        actual_step = output['groundtruth']['step_id']
+        if actual_step not in steps_to_skip:
+            new_perception_outputs.append(output)
 
-        session_by_step[step_id].append(entry)
-
-    return list(session_by_step.values())
+    return new_perception_outputs
 
 
-def merge_sessions(session1, session2, step_size=1):
-    max_length = max(len(session1), len(session2))
-    merged_sessions = []
-    current_index = 0
-    session1_by_step = group_by_step(session1)
-    session2_by_step = group_by_step(session2)
+def reorder_steps(perception_outputs, steps_to_reorder):
+    new_perception_outputs = []
+    map_steps = {}
 
-    while current_index < max_length:
-        selected_steps = session1_by_step[current_index : current_index + step_size]
-        merged_sessions += selected_steps
-        selected_steps = session2_by_step[current_index : current_index + step_size]
-        merged_sessions += selected_steps
-        current_index = current_index + step_size
+    for output in perception_outputs:
+        actual_step = output['groundtruth']['step_id']
 
-    return merged_sessions
+        if actual_step not in map_steps:
+            map_steps[actual_step] = []
+
+        map_steps[actual_step].append(output)
+
+    new_order_steps = np.array(list(map_steps.keys()))
+    indices = [s-1 for s in steps_to_reorder]
+    shuffled_indices = indices.copy()
+    random.shuffle(shuffled_indices)
+    new_order_steps[indices] = new_order_steps[shuffled_indices]
+
+    for step in new_order_steps:
+        new_perception_outputs += map_steps[step]
+
+    return new_perception_outputs
 
 
-def generate_data(recipe_id, video_id=None, noise_config=None):
+def merge_tasks(tasks):
+    if len(tasks) == 1:
+        return tasks[0]
+
+    idx_traversed = {"pinwheels": 0, "quesadilla": 0, "oatmeal": 0, "coffee": 0, "tea": 0}
+    all_data = []
+    total_rows = 0
+
+    for task in tasks:
+        total_rows += len(task)
+        all_data.append(task)
+
+    total_tasks = len(all_data)
+    key_map = list(idx_traversed.keys())
+
+    result = []
+    while True:
+        if len(result) >= total_rows:
+            break
+        k_idx = random.randint(0, total_tasks - 1)
+        recipe = key_map[k_idx]
+        curr_row = idx_traversed[recipe]
+        if len(all_data[k_idx]) > curr_row:
+            result.append(all_data[k_idx][curr_row])
+            idx_traversed[recipe] += 1
+
+    return result
+
+
+def generate_task(task_name, video_id, noise_config=None, error_config=None):
+    if error_config is None:
+        error_config = {'name': None}
+
     global MAPPING_IDS
     MAPPING_IDS = {
         'tortilla': random.randint(0, 1000),
@@ -359,6 +399,7 @@ def generate_data(recipe_id, video_id=None, noise_config=None):
         'bowl': random.randint(3000, 4000),
         'mug': random.randint(3000, 4000),
     }
+
     raw_annotations_path = join(RESOURCE_PATH, 'raw_annotations.csv')
     raw_annotations = pd.read_csv(raw_annotations_path)
     formatted_annotations = format_annotations(raw_annotations, video_id)
@@ -366,10 +407,72 @@ def generate_data(recipe_id, video_id=None, noise_config=None):
     if noise_config is None:
         perception_outputs = make_groundtruth_outputs(formatted_annotations)
     else:
-        perception_outputs = make_errored_outputs(
+        perception_outputs = make_noisy_outputs(
             formatted_annotations, noise_config
         )
 
-    save_outputs(perception_outputs, f'{recipe_id}_perception_outputs')
+    if error_config['name'] == 'skip_steps':
+        perception_outputs = skip_steps(perception_outputs, error_config['steps'])
+
+    elif error_config['name'] == 'reorder_steps':
+        perception_outputs = reorder_steps(perception_outputs, error_config['steps'])
 
     return perception_outputs
+
+
+def generate_session(seed_tasks, add_noise, error_name):
+    with open(join(dirname(__file__), '../../data/recipe/recipe.json'), 'r') as read_file:
+        all_tasks = json.load(read_file)
+
+    tasks = []
+
+    for task_name, video_id in seed_tasks:
+        steps = [int(s) for s in all_tasks[task_name]['steps'].keys()]
+
+        noise_config = None
+        if add_noise:
+            num_steps = random.randint(1, len(steps))
+            noise_config = {'steps': random.sample(steps, num_steps), 'error_rate': round(random.uniform(0.1, 0.3), 2)}
+        logger.debug(f'Noise config: {str(noise_config)}')
+        error_config = None
+        if error_name == 'skip_steps':
+            num_steps = random.randint(1, len(steps)-1)
+            error_config = {'name': error_name, 'steps': random.sample(steps, num_steps)}
+        elif error_name == 'reorder_steps':
+            num_steps = random.randint(2, 3)
+            error_config = {'name': error_name, 'steps': random.sample(steps, num_steps)}
+
+        logger.debug(f'Error config: {str(error_config)}')
+        task = generate_task(task_name, video_id, noise_config, error_config)
+        tasks.append(task)
+
+    session = merge_tasks(tasks)
+
+    return session
+
+
+def generate_multiple_sessions(num_sessions, seed_tasks=None, add_noise=True, error_name=None):
+    if seed_tasks is None:
+        seed_tasks = [
+            ('pinwheels', 'pinwheels_2023.04.04-18.33.59'),
+            ('quesadilla', 'quesadilla_2023.06.16-18.57.48'),
+            ('oatmeal', 'oatmeal_2023.06.16-20.33.26'),
+            ('coffee', 'coffee_mit-eval'),
+            ('tea', 'tea_2023.06.16-18.43.48')
+        ]
+
+    sessions = []
+    counter = 0
+
+    while counter < num_sessions:
+        session_id = f'session{counter}'
+        logger.debug(f'Creating {session_id}')
+        num_tasks = random.randint(1, len(seed_tasks))
+        tasks = random.sample(seed_tasks, num_tasks)
+        logger.debug(f'Tasks: {str([t for t, _ in tasks])}')
+        session = generate_session(tasks, add_noise, error_name)
+        save_outputs(session, f'{session_id}_perception_outputs')
+        sessions.append((session_id, session))
+        counter += 1
+
+    return sessions

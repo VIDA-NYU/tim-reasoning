@@ -7,6 +7,7 @@ class DemoLogger:
         self.output_file = output_file
         self.writer = None
         self.start_time = None
+        self.last_status = None
         self.recipe_map = {
             "pinwheels": "A",
             "coffee": "B",
@@ -17,7 +18,7 @@ class DemoLogger:
 
     def start_trial(self):
         self.start_time = datetime.now()
-        self.writer = csv.writer(open(self.output_file, 'w'))
+        self.writer = csv.writer(open(self.output_file, 'w'), quoting=csv.QUOTE_NONNUMERIC, quotechar="'")
         self.writer.writerow(
             [
                 'timestamp',
@@ -34,15 +35,18 @@ class DemoLogger:
             raise Exception("Must call start_trial() before logging messages!")
 
         timestamp = datetime.now()
+
         if message is None:
-            self.writer.writerow([timestamp, "NYU", "null", "null", "null"])
+            new_status = ["NYU", "null", "null", "null"]
         else:
-            task_id = message.get('task_id')
             task_name = self.recipe_map[message.get('task_name')]
             step_id = message.get('step_id')
             step_status = self._get_step_status(message)
+            new_status = ["NYU", task_name, step_id, step_status]
+            if step_status == "error":
+                new_status += [message.get('error_description')]
 
-            self.writer.writerow([timestamp, "NYU", task_name, step_id, step_status])
+        self.write_in_file(timestamp, new_status)
 
     def _get_step_status(self, message):
         if message.get('error_status'):
@@ -51,3 +55,8 @@ class DemoLogger:
             return "active"
         else:
             return "null"
+
+    def write_in_file(self, timestamp, new_status):
+        if new_status != self.last_status:
+            self.last_status = new_status
+            self.writer.writerow([timestamp] + new_status)
