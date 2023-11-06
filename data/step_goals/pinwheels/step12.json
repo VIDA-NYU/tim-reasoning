@@ -3,7 +3,9 @@
   "goals": [
     {
       "state": "on-plate[full]",
-      "objects": ["pinwheels"]
+      "objects": [
+        "tortilla"
+      ]
     }
   ]
 }

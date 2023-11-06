@@ -24,10 +24,12 @@ class SessionManager:
         data_folder: str = join(dirname(__file__), "../../data/step_goals/"),
         patience: int = 1,
         verbose: bool = True,
+        ohi_threshold: float = 0.2,
     ) -> None:
         self.task_trackers = []
         self.wrong_task_trackers = []
         self.patience = patience
+        self.ohi_threshold = ohi_threshold
         self.object_states = defaultdict(lambda: defaultdict(list))
         self.unique_objects_file = unique_objects_file
         self.common_objects_file = common_objects_file
@@ -119,7 +121,7 @@ class SessionManager:
 
         if self.verbose:
             self.log.info(
-                f"For `{wrong_tracker.recipe}` Recipe with task id {task_tracker_id},"
+                f"For `{wrong_tracker.recipe}` recipe with task id {task_tracker_id}, "
                 f"got an error, hence, this recipe is not possible, deleting it from memory.\n"
             )
         # find the index where it exists and remove it
@@ -190,7 +192,9 @@ class SessionManager:
             task_trackers.append(tt)
         return task_trackers
 
-    def find_task_tracker(self, object_id, object_label) -> list:
+    def find_task_tracker(
+        self, object_id, object_label, object_hand_interaction
+    ) -> list:
         """Finds or create task_tracker for a given object presence
 
         Args:
@@ -204,7 +208,10 @@ class SessionManager:
             object_id=object_id, object_label=object_label
         )
         # else tasktracker not found hence create a new tasktracker
-        if not probable_task_trackers:
+        if (not probable_task_trackers) and (
+            object_hand_interaction is None
+            or object_hand_interaction > self.ohi_threshold
+        ):
             probable_task_trackers = self.create_probable_task_trackers(
                 object_id=object_id, object_label=object_label
             )
@@ -223,11 +230,40 @@ class SessionManager:
                 state=state, objects=[object_label], object_ids=[object_id]
             )
             self.update_last_tracker(last_tracker)
-            return [track_output]
+
+            final_output = [track_output]
+
+            unique_obj_id, unique_obj_label = None, None
+            # traverse through the objects to get unique objects
+            for obj_id, obj_label in zip(
+                last_tracker.get_object_ids(), last_tracker.get_object_labels()
+            ):
+                if obj_label in self.important_objects:
+                    unique_obj_id = obj_id
+                    unique_obj_label = obj_label
+                    break
+            if unique_obj_id is not None:
+                probable_task_trackers = self.get_probable_task_trackers(
+                    unique_obj_id, unique_obj_label
+                )
+                for tt in probable_task_trackers:
+                    if tt.get_id() != last_tracker.get_id():
+                        _, track_output = tt.track(
+                            state=state,
+                            objects=[object_label],
+                            object_ids=[object_id],
+                        )
+                        self.update_last_tracker(tt)
+                        final_output.extend([track_output])
+            return final_output
         return [None]
 
-    def track_unique_object(self, state, object_id, object_label):
-        probable_task_trackers = self.find_task_tracker(object_id, object_label)
+    def track_unique_object(
+        self, state, object_id, object_label, object_hand_interaction
+    ):
+        probable_task_trackers = self.find_task_tracker(
+            object_id, object_label, object_hand_interaction
+        )
         if self.verbose:
             self.log.info(
                 f"Found {len(probable_task_trackers)} TaskTrackers for {object_label}_{object_id}"
@@ -239,11 +275,21 @@ class SessionManager:
                 state=state, objects=[object_label], object_ids=[object_id]
             )
             self.update_last_tracker(task_tracker)
+            self.log.info(
+                f"Received instruction = {instruction}, and track_output = {track_output} when "
+                f"{object_label}_{object_id} tracked in "
+                f"task {task_tracker.recipe}_{task_tracker.get_id()}",
+            )
+            if instruction == ReasoningErrors.INVALID_STATE:
+                next_recipe_step = task_tracker.get_next_recipe_step()
+                track_output = task_tracker._build_output_dict(
+                    instruction=next_recipe_step
+                )
             return [track_output]
         # multipe probable task_graphs possible
         else:
             if self.verbose:
-                self.log.info("Multipe probable task_graphs possible")
+                self.log.info("Multiple probable task_graphs possible")
             output, wrong_tracker_list = [], []
             for i, task_tracker in enumerate(probable_task_trackers):
                 instruction, track_output = task_tracker.track(
@@ -258,9 +304,24 @@ class SessionManager:
                             f"For `{task_tracker.recipe}` Recipe, received partial state completion."
                         )
                         output.append(track_output)
+                    elif instruction == ReasoningErrors.FUTURE_STEP:
+                        output.append(track_output)
                     else:
                         # Return the error outputs
-                        wrong_tracker_list.append(task_tracker)
+                        smallest_step_num = min(
+                            [
+                                probable_t.get_current_step_number()
+                                for probable_t in probable_task_trackers
+                            ]
+                        )
+                        if (
+                            task_tracker.get_current_step_number()
+                            == smallest_step_num
+                        ):
+                            self.log.info(
+                                f"{instruction} Error found while tracking {object_label}_{object_id} for task {task_tracker.recipe}_{task_tracker.get_id()}"
+                            )
+                            wrong_tracker_list.append(task_tracker)
                         output.append(track_output)
                 else:
                     if self.verbose:
@@ -269,18 +330,23 @@ class SessionManager:
                         )
                     output.append(track_output)
             # Remove the wrong tasks only if all of the probable ones were not wrong
-            self.handle_wrong_tasks(probable_task_trackers, wrong_tracker_list)
+            if wrong_tracker_list:
+                self.handle_wrong_tasks(probable_task_trackers, wrong_tracker_list)
             return output
 
-    def track_object(self, state, object_id, object_label):
+    def track_object(self, state, object_id, object_label, object_hand_interaction):
         if object_label in self.important_objects:
-            return self.track_unique_object(state, object_id, object_label)
+            return self.track_unique_object(
+                state, object_id, object_label, object_hand_interaction
+            )
         elif object_label in self.common_objects:
             return self.track_common_object(state, object_id, object_label)
         else:
             self.log.error("Unknown object found.")
 
-    def track_object_state(self, object_id, object_label, object_state):
+    def track_object_state(
+        self, object_id, object_label, object_state, object_hand_interaction
+    ):
         for state, prob in object_state.items():
             self.object_states[object_id][state].append(prob)
         output = [None]
@@ -304,6 +370,7 @@ class SessionManager:
                 state=avg_state,
                 object_id=object_id,
                 object_label=object_label,
+                object_hand_interaction=object_hand_interaction,
             )
             self.handle_instruction(output)
             self.reset_object_states(object_id)
@@ -314,8 +381,12 @@ class SessionManager:
         object_id = obj['id']
         object_label = obj['label']
         object_pos = obj['pos'] if 'pos' in obj else None
-
-        if "state" not in obj:
+        object_hand_interaction = (
+            obj['hand_object_interaction']
+            if 'hand_object_interaction' in obj
+            else None
+        )
+        if "state" not in obj or obj["state"] == {}:
             return [None]
 
         self.object_position_tracker.set_pos(
@@ -327,7 +398,9 @@ class SessionManager:
             object_label in self.important_objects
             or object_label in self.common_objects
         ):
-            return self.track_object_state(object_id, object_label, object_state)
+            return self.track_object_state(
+                object_id, object_label, object_state, object_hand_interaction
+            )
         else:
             self.log.info(f"Not tracking : {object_label}")
             return [None]

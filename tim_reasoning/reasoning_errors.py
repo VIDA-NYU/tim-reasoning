@@ -29,3 +29,4 @@ class ReasoningErrors(Enum):
         "Step done not in order",  # title
         "Some of the steps were not in order.",  # description
     )
+    FUTURE_STEP = ("Very future step", "Received future step way ahead in future")
