@@ -2,6 +2,7 @@ import pandas as pd
 from os.path import join, dirname
 
 RESOURCE_PATH = join(dirname(__file__), 'resource')
+OBJECTS_OF_INTEREST = {'bowl', 'mug', 'tortilla', 'plate'}
 
 
 def read_unique_states(target_objects):
@@ -23,14 +24,18 @@ def read_unique_objects():
     return [o + '_hoi' for o in unique_objects_df['object'].unique()]
 
 
-def convert_message(message, target_objects):
+def convert_message(message):
+    object_name = message['label']
+
+    if object_name not in OBJECTS_OF_INTEREST:
+        return None
+
     unique_objects = read_unique_objects()
-    unique_states = read_unique_states(target_objects)
+    unique_states = read_unique_states([object_name])
     all_columns = unique_states + unique_objects
     all_columns_indices = {v: i for i, v in enumerate(all_columns)}
 
-    object_name = message['label']
-    values = [0] * len(all_columns)
+    perception_predictions = [0] * len(all_columns)
     states_to_add = {}
 
     for state, confidence in message['state'].items():
@@ -39,16 +44,16 @@ def convert_message(message, target_objects):
 
     for state_id, state_confidence in states_to_add.items():
         index = all_columns_indices[state_id]
-        values[index] = state_confidence
+        perception_predictions[index] = state_confidence
 
     hoi_id = object_name + '_hoi'
     hoi_confidence = message['hand_object_interaction']
     index = all_columns_indices[hoi_id]
-    values[index] = hoi_confidence
+    perception_predictions[index] = hoi_confidence
 
-    print(all_columns)
-    print(values)
-    return values
+    output = {'id': message['id'], 'object_name': object_name, 'states': perception_predictions}
+
+    return output
 
 
 if __name__ == '__main__':
@@ -79,6 +84,7 @@ if __name__ == '__main__':
     },
     "hand_object_interaction": 0.27,
     }
-    target_objects = ['mug']
-    convert_message(message, target_objects)
+
+    output = convert_message(message)
+    print(output)
 
