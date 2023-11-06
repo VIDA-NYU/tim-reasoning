@@ -2,7 +2,7 @@
   "operand": "None",
   "goals": [
     {
-      "state": "dripper",
+      "state": "dripper[empty]",
       "objects": ["mug"]
     }
   ]
