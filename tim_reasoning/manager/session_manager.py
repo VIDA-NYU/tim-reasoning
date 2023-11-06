@@ -6,6 +6,7 @@ from tim_reasoning import (
     Logger,
     ObjectPositionTracker,
     RecentTrackerStack,
+    RunML,
     TaskTracker,
 )
 from tim_reasoning.reasoning_errors import ReasoningErrors
@@ -48,6 +49,7 @@ class SessionManager:
         self.demo_logger = self._get_demo_logger()
         self.demo_logger.start_trial()
         # self.last_task_tracker_tracked_id = None
+        self.rm = RunML()
         if self.verbose:
             self.log.info("Session Manager initiated.")
 
@@ -435,7 +437,8 @@ class SessionManager:
             "active_tasks": active_output,
             "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
         }
-        return final_output
+        dashboard_output = self.rm.run_message(message=message[0])
+        return final_output, dashboard_output
 
     def update_step(self, task_tracker_id, step_id):
         tt = self.get_task_tracker(task_tracker_id)

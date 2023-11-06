@@ -9,4 +9,6 @@ from .tasktracker.task_tracker import TaskTracker
 from .demo_logger.demo_logger import DemoLogger
 from .manager.recent_tracker_stack import RecentTrackerStack
 from .manager.object_position_tracker import ObjectPositionTracker
+from .manager.message_converter import MessageConverter
+from .manager.run_ML import RunML
 from .manager.session_manager import SessionManager
