@@ -2,7 +2,7 @@
   "operand": "None",
   "goals": [
     {
-      "state": "dripper+filter+grounds+water",
+      "state": "dripper+filter+coffee[wet]",
       "objects": [
         "mug"
       ]
