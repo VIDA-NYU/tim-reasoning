@@ -1,10 +1,14 @@
+import os
 import csv
+from os.path import join
 from datetime import datetime
+
+LOGS_FOLDER = os.getenv('REASONING_LOGS_PATH')
 
 
 class DemoLogger:
     def __init__(self, output_file):
-        self.output_file = output_file
+        self.output_file = join(LOGS_FOLDER, output_file)
         self.writer = None
         self.start_time = None
         self.last_status = None
