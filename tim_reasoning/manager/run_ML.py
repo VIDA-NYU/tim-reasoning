@@ -80,8 +80,8 @@ class RunML:
             object_id, pred_step_num, object_name, task_id
         )
 
-    def run_message(self, message):
-        message_output = self.mc.convert_message(message=message)
+    def run_message(self, message, entire_message):
+        message_output = self.mc.convert_message(message, entire_message)
         if message_output is None:
             return {}
         object_id = message_output["id"]

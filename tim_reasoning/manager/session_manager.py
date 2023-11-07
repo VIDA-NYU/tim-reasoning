@@ -453,7 +453,7 @@ class SessionManager:
         else:
             return final_output
 
-    def handle_message(self, message: list):
+    def handle_message(self, message: list, entire_message: list):
         active_output = []
         # Traverse a single object
         for obj in message:
@@ -469,7 +469,7 @@ class SessionManager:
             "active_tasks": active_output,
             "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
         }
-        dashboard_output = self.rm.run_message(message=message[0])
+        dashboard_output = self.rm.run_message(message[0], entire_message)
         final_output = self.quick_fix_ui_output(final_output, dashboard_output)
         return final_output, dashboard_output
 

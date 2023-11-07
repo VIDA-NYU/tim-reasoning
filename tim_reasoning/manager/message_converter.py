@@ -26,11 +26,17 @@ class MessageConverter:
 
         return [o + '_hoi' for o in unique_objects_df['object'].unique()]
 
-    def convert_message(self, message):
+    def convert_message(self, message, entire_message):
         object_name = message['label']
 
         if object_name not in OBJECTS_OF_INTEREST:
             return None
+
+        all_hois = {}
+        for obj_message in entire_message:
+            hoi_id = obj_message['label'] + '_hoi'
+            hoi_confidence = message.get('hand_object_interaction', 0)
+            all_hois[hoi_id] = hoi_confidence
 
         unique_objects = self.read_unique_objects()
         unique_states = self.read_unique_states([object_name])
@@ -48,10 +54,9 @@ class MessageConverter:
             index = all_columns_indices[state_id]
             perception_predictions[index] = state_confidence
 
-        hoi_id = object_name + '_hoi'
-        hoi_confidence = message.get('hand_object_interaction', 0)
-        index = all_columns_indices[hoi_id]
-        perception_predictions[index] = hoi_confidence
+        for hoi_id, hoi_confidence in all_hois.items():
+            index = all_columns_indices[hoi_id]
+            perception_predictions[index] = hoi_confidence
 
         output = {
             'id': message['id'],
