@@ -13,6 +13,8 @@ class RunML:
         self.tasks = {}
         self.curr_task_id = 0
         self.mc = MessageConverter()
+        self.object_info = {}  # id: [[states], [states] ... ]
+        self.window_size = 5
 
     def load_model(self, object_name):
         loaded_rf = None
@@ -20,7 +22,9 @@ class RunML:
             model_location = join(dirname(__file__), "../../oatmeal_rf.joblib")
             loaded_rf = joblib.load(model_location)
         elif object_name == "tortilla":
-            model_location = join(dirname(__file__), "../../pinwheels_quesadilla_rf.joblib")
+            model_location = join(
+                dirname(__file__), "../../pinwheels_quesadilla_rf.joblib"
+            )
             loaded_rf = joblib.load(model_location)
         elif object_name == "mug":
             model_location = join(dirname(__file__), "../../tea_coffee_rf.joblib")
@@ -68,7 +72,8 @@ class RunML:
 
     def run(self, object_name, object_id, data: list):
         model = self.load_model(object_name)
-        if model == None: return {}
+        if model is None:
+            return {}
         task_id = self.get_task_id(object_id=object_id)
         pred_step_num = model.predict(np.array([data]))[0]
         return self.create_dashboard_output(
@@ -77,8 +82,21 @@ class RunML:
 
     def run_message(self, message):
         message_output = self.mc.convert_message(message=message)
-        if message_output == None: return {}
+        if message_output is None:
+            return {}
         object_id = message_output["id"]
         object_name = message_output["object_name"]
         data = message_output["states"]
-        return self.run(object_name, object_id, data)
+        if object_id in self.object_info:
+            self.object_info[object_id].pop(0)
+            self.object_info[object_id].append(data)
+        else:
+            self.object_info[object_id] = [data[:] for _ in range(self.window_size)]
+        # Average the data now
+        # Transpose the list of lists to work with columns
+        transposed = list(map(list, zip(*self.object_info[object_id])))
+
+        # Calculate the average for each column
+        averages = [sum(col) / len(col) for col in transposed]
+
+        return self.run(object_name, object_id, averages)
