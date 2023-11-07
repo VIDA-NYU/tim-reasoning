@@ -437,18 +437,21 @@ class SessionManager:
         self.object_states[object_id] = defaultdict(list)
 
     def quick_fix_ui_output(self, final_output, dashboard_output):
-        active_task = final_output["active_tasks"][0]
-        task_name = dashboard_output["task_name"]
-        step_num = dashboard_output["step_num"]
-        active_task["task_name"] = task_name
-        active_task["step_id"] = step_num
+        if "task_name" in dashboard_output and "step_id" in dashboard_output:
+            active_task = final_output["active_tasks"][0]
+            task_name = dashboard_output["task_name"]
+            step_num = dashboard_output["step_num"]
+            active_task["task_name"] = task_name
+            active_task["step_id"] = step_num
 
-        instructions = self.get_recipe(task_name=task_name)
-        if len(instructions) > 1:
-            active_task["step_description"] = instructions[str(step_num)]
-            active_task["total_steps"] = len(instructions)
-        final_output["active_tasks"] = [active_task]
-        return final_output
+            instructions = self.get_recipe(task_name=task_name)
+            if len(instructions) > 1:
+                active_task["step_description"] = instructions[str(step_num)]
+                active_task["total_steps"] = len(instructions)
+            final_output["active_tasks"] = [active_task]
+            return final_output
+        else:
+            return final_output
 
     def handle_message(self, message: list):
         active_output = []
