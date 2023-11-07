@@ -2,7 +2,7 @@ import pandas as pd
 from os.path import join, dirname
 
 RESOURCE_PATH = join(dirname(__file__), 'resource')
-OBJECTS_OF_INTEREST = {'bowl', 'mug', 'tortilla', 'plate'}
+OBJECTS_OF_INTEREST = {'bowl', 'mug', 'tortilla'}
 
 
 class MessageConverter:
@@ -40,7 +40,7 @@ class MessageConverter:
         perception_predictions = [0] * len(all_columns)
         states_to_add = {}
 
-        for state, confidence in message['state'].items():
+        for state, confidence in message.get('state', {}).items():
             state_id = object_name + '_' + state
             states_to_add[state_id] = confidence
 
@@ -49,7 +49,7 @@ class MessageConverter:
             perception_predictions[index] = state_confidence
 
         hoi_id = object_name + '_hoi'
-        hoi_confidence = message['hand_object_interaction']
+        hoi_confidence = message.get('hand_object_interaction', 0)
         index = all_columns_indices[hoi_id]
         perception_predictions[index] = hoi_confidence
 
