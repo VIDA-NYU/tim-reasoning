@@ -13,6 +13,9 @@ from tim_reasoning.reasoning_errors import ReasoningErrors
 from os.path import join, dirname
 
 
+RECIPE_DATA_FOLDER = join(dirname(__file__), "../../data/recipe")
+
+
 class SessionManager:
     def __init__(
         self,
@@ -103,6 +106,18 @@ class SessionManager:
             if object_label in t.object_labels and object_id in t.object_ids
         ]
         return probable_task_trackers
+
+    def get_recipe(
+        self,
+        task_name: str,
+        recipe_file_name: str = "recipe.json",
+        recipe_folder: str = RECIPE_DATA_FOLDER,
+    ):
+        json_file = f"{recipe_folder}/{recipe_file_name}"
+        with open(json_file, "r", encoding="utf-8") as f:
+            json_data = json.load(f)
+        instructions = json_data[task_name]["steps"]
+        return instructions
 
     def add_wrong_tracker(self, wrong_tracker):
         for tt in self.wrong_task_trackers:
@@ -421,6 +436,20 @@ class SessionManager:
     def reset_object_states(self, object_id):
         self.object_states[object_id] = defaultdict(list)
 
+    def quick_fix_ui_output(self, final_output, dashboard_output):
+        active_task = final_output["active_tasks"][0]
+        task_name = dashboard_output["task_name"]
+        step_num = dashboard_output["step_num"]
+        active_task["task_name"] = task_name
+        active_task["step_id"] = step_num
+
+        instructions = self.get_recipe(task_name=task_name)
+        if len(instructions) > 1:
+            active_task["step_description"] = instructions[str(step_num)]
+            active_task["total_steps"] = len(instructions)
+        final_output["active_tasks"] = [active_task]
+        return final_output
+
     def handle_message(self, message: list):
         active_output = []
         # Traverse a single object
@@ -438,6 +467,7 @@ class SessionManager:
             "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
         }
         dashboard_output = self.rm.run_message(message=message[0])
+        final_output = self.quick_fix_ui_output(final_output, dashboard_output)
         return final_output, dashboard_output
 
     def update_step(self, task_tracker_id, step_id):
