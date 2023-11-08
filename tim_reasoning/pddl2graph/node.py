@@ -8,8 +8,6 @@ class Node:
         self.objects = objects
         self.dependencies = []
         self.step_number = step_number
-        # TODO:
-        # add tools in the step
 
     def get_id(self) -> int:
         """Return Node ID

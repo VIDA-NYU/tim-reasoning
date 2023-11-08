@@ -202,7 +202,11 @@ class TaskTracker:
         already_missing = set(self.task_errors["missing"])
         # find the new missed errors
         new_missed = list(missing_deps - already_missing)
-        if len(new_missed) > (self.current_step_number * 0.35):
+        # Only if the step_num detected is greater than 3
+        # and the 65% dependencies are completed, then raise future step error
+        if (node.step_number > 3) and len(new_missed) > (
+            self.current_step_number * 0.35
+        ):
             error = ReasoningErrors.FUTURE_STEP
             output = self._build_error_dict(
                 error="Received future step way ahead in future."
