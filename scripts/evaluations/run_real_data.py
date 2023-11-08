@@ -13,26 +13,31 @@ RESOURCE_PATH = join(dirname(__file__), 'resource')
 PATIENCE = 5
 
 
-def run_reasoning(video_id, file_name):
+def run_reasoning(video_id, file_name, use_combined=True):
     sm = SessionManager(patience=PATIENCE)
 
     with open(join(RESOURCE_PATH, f'perception_outputs/{video_id}-deticmemory.json'), 'r') as read_file:
         detic_data = json.load(read_file)
 
-    data = {'task': [], 'step': [], 'obj_id':[], 'obj_name':[]}
+    data = {'task': [], 'step': []}
     for entry in detic_data:
         entry = entry['values']
         for obj_entry in entry:
-            _, dashboard = sm.handle_message([obj_entry], entry)
-            if len(dashboard) > 0:
-                predicted_task_id = dashboard['task_id']
-                predicted_task_name = dashboard['task_name']
-                predicted_step = dashboard['step_num']
+            combined_approach, ml_approach = sm.handle_message([obj_entry], entry)
+            if not use_combined and len(ml_approach) > 0:
+                predicted_task_id = ml_approach['task_id']
+                predicted_task_name = ml_approach['task_name']
+                predicted_step = ml_approach['step_num']
                 new_name = predicted_task_name + '_' + str(predicted_task_id)
                 data['task'].append(new_name)
                 data['step'].append(predicted_step)
-                data['obj_id'].append(dashboard['object_id'])
-                data['obj_name'].append(dashboard['object_name'])
+            elif use_combined and len(combined_approach['active_tasks']) and combined_approach['active_tasks'][0] is not None:
+                predicted_task_id = combined_approach['active_tasks'][0]['task_id']
+                predicted_task_name = combined_approach['active_tasks'][0]['task_name']
+                predicted_step = combined_approach['active_tasks'][0]['step_id']
+                new_name = predicted_task_name + '_' + str(predicted_task_id)
+                data['task'].append(new_name)
+                data['step'].append(predicted_step)
 
     data_df = pd.DataFrame.from_dict(data)
     data_df.to_csv(f'{file_name}.csv', index_label='index')

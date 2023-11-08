@@ -28,7 +28,7 @@ class SessionManager:
         data_folder: str = join(dirname(__file__), "../../data/step_goals/"),
         patience: int = 1,
         verbose: bool = True,
-        ohi_threshold: float = 0.2,
+        ohi_threshold: float = 0.0,
     ) -> None:
         self.task_trackers = []
         self.wrong_task_trackers = []
@@ -65,6 +65,16 @@ class SessionManager:
         # Append trial number
         log_name = f"trial_log_{time_str}.log"
         return DemoLogger(log_name)
+
+    def get_inprogress_task_ids(self):
+        inprogress_task_ids = []
+        if len(self.task_trackers) > 2:
+            for tt in self.task_trackers:
+                if tt.get_current_step_number() > 1:
+                    inprogress_task_ids.append(tt.get_id())
+            return inprogress_task_ids
+        else:
+            return [tt.get_id() for tt in self.task_trackers]
 
     def get_last_task_tracker_tracked_id(self) -> int:
         """Return the id of the most recent (ongoing) task tracker
@@ -436,41 +446,82 @@ class SessionManager:
     def reset_object_states(self, object_id):
         self.object_states[object_id] = defaultdict(list)
 
-    def quick_fix_ui_output(self, final_output, dashboard_output):
-        if "task_name" in dashboard_output and "step_id" in dashboard_output:
-            active_task = final_output["active_tasks"][0]
-            task_name = dashboard_output["task_name"]
-            step_num = dashboard_output["step_num"]
-            active_task["task_name"] = task_name
-            active_task["step_id"] = step_num
+    def quick_fix_ui_output(
+        self, final_output, dashboard_output, object_id, object_name
+    ):
+        """we need to update the steps in task graph using the prediction from
+        ML model
 
-            instructions = self.get_recipe(task_name=task_name)
-            if len(instructions) > 1:
-                active_task["step_description"] = instructions[str(step_num)]
-                active_task["total_steps"] = len(instructions)
-            final_output["active_tasks"] = [active_task]
-            return final_output
-        else:
-            return final_output
+        Args:
+            final_output (_type_): this contains not so great step detection
+            dashboard_output (_type_): contains the ML predicted steps
+
+        Returns:
+            dict: final_output that is provided to the ui
+        """
+        print('dashboard_output', dashboard_output)
+        print('final_output', final_output)
+        if "task_name" in dashboard_output and "step_num" in dashboard_output:
+            if len(final_output["active_tasks"]) > 0:
+                active_task = final_output["active_tasks"][0]
+                if active_task is None:
+                    #active_task = {}
+                    return final_output
+                task_name = dashboard_output["task_name"]
+                step_num = dashboard_output["step_num"]
+                active_task["task_name"] = task_name
+                active_task["step_id"] = step_num
+
+                instructions = self.get_recipe(task_name=task_name)
+                if len(instructions) > 1:
+                    active_task["step_description"] = instructions[str(step_num)]
+                    active_task["total_steps"] = len(instructions)
+                final_output["active_tasks"] = [active_task]
+                # object_id from dashboard_output (which has BETTER `task_name` and `step_num`)
+                tts = self.get_probable_task_trackers(
+                    object_id=object_id, object_label=object_name
+                )
+                # find tasktracker for given object_id in the backend
+                # change the tts[0]
+                target_task_tracker = tts[0]
+                # if the task is predicted different modify it
+                if target_task_tracker.recipe != task_name:
+                    target_task_tracker.set_recipe_name(new_recipe_name=task_name)
+                # update the step based on ml model
+                final_output = self.update_step(
+                    target_task_tracker.get_id(), step_id=step_num + 1
+                )
+                return final_output
+
+        return final_output
 
     def handle_message(self, message: list, entire_message: list):
         active_output = []
         # Traverse a single object
         for obj in message:
+            # get graph system output
             manager_output = self.process_object(obj)
+            # add 3d pos
             active_tasks = self.object_position_tracker.create_active_tasks_output(
                 manager_output
             )
             active_output.extend(active_tasks)
-        # Log messages throughout trial
-        for output in active_output:
-            self.demo_logger.log_message(output)
         final_output = {
             "active_tasks": active_output,
-            "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+            "inprogress_task_ids": self.get_inprogress_task_ids(),
         }
         dashboard_output = self.rm.run_message(message[0], entire_message)
-        final_output = self.quick_fix_ui_output(final_output, dashboard_output)
+        object_id = message[0].get("id")
+        object_name = message[0].get("label")
+        #print('hi', object_id, object_name, message[0])
+        #raise ValueError("")
+        final_output = self.quick_fix_ui_output(
+            final_output, dashboard_output, object_id, object_name
+        )
+        # Log messages throughout trial
+        if final_output["active_tasks"] is not None:
+            for output in final_output["active_tasks"]:
+                self.demo_logger.log_message(output)
         return final_output, dashboard_output
 
     def update_step(self, task_tracker_id, step_id):
@@ -489,7 +540,7 @@ class SessionManager:
             )
             final_output = {
                 "active_tasks": active_tasks,
-                "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+                "inprogress_task_ids": self.get_inprogress_task_ids(),
             }
             return final_output
 
@@ -527,7 +578,7 @@ class SessionManager:
         )
         final_output = {
             "active_tasks": active_tasks,
-            "inprogress_task_ids": [tt.get_id() for tt in self.task_trackers],
+            "inprogress_task_ids": self.get_inprogress_task_ids(),
         }
         return final_output
 
