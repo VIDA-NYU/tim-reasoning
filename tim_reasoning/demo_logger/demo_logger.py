@@ -22,19 +22,20 @@ class DemoLogger:
 
     def start_trial(self):
         self.start_time = datetime.now()
-        self.writer = csv.writer(
-            open(self.output_file, 'w'), quoting=csv.QUOTE_NONNUMERIC, quotechar="'"
-        )
-        self.writer.writerow(
-            [
-                'timestamp',
-                'team_name',
-                'recipe_id',
-                'step_number',
-                'current_status',
-                'optional_comment',
-            ]
-        )
+        with open(self.output_file, 'w') as outfile:
+            self.writer = csv.writer(
+                outfile, quoting=csv.QUOTE_NONNUMERIC, quotechar="'"
+            )
+            self.writer.writerow(
+                [
+                    'timestamp',
+                    'team_name',
+                    'recipe_id',
+                    'step_number',
+                    'current_status',
+                    'optional_comment',
+                ]
+            )
 
     def log_message(self, message):
         if not self.writer:
@@ -64,5 +65,9 @@ class DemoLogger:
 
     def write_in_file(self, timestamp, new_status):
         if new_status != self.last_status:
-            self.last_status = new_status
-            self.writer.writerow([timestamp] + new_status)
+            with open(self.output_file, 'a') as outfile:
+                self.writer = csv.writer(
+                    outfile, quoting=csv.QUOTE_NONNUMERIC, quotechar="'"
+                )
+                self.last_status = new_status
+                self.writer.writerow([timestamp] + new_status)
