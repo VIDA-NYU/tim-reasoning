@@ -8,13 +8,32 @@ TOTAL_STEPS_PINWHEELS = 12
 TOTAL_STEPS_TEA = 7
 
 
+class Task:
+    def __init__(self, obj_id):
+        self.object_ids = set()
+        self.current_step = None
+        self.task_name = None
+        self.object_ids.add(obj_id)
+
+    def get_task_name(self):
+        return self.task_name
+
+    def get_current_step(self):
+        return self.current_step
+
+    def get_object_ids(self):
+        return self.object_ids
+
+
 class RunML:
     def __init__(self) -> None:
-        self.tasks = {}
+        self.tasks = {}  # <id_task, Task>
         self.curr_task_id = 0
         self.mc = MessageConverter()
         self.object_info = {}  # id: [[states], [states] ... ]
         self.window_size = 5
+        self.current_task_name = None
+        self.current_step = None
 
     def load_model(self, object_name):
         loaded_rf = None
@@ -31,10 +50,20 @@ class RunML:
             loaded_rf = joblib.load(model_location)
         return loaded_rf
 
-    def create_dashboard_output(
-        self, object_id, pred_step_num, object_name, task_id
-    ):
+    def create_dashboard_output(self, task_id, task_name, step_num, object_id, object_name):
+
+        return {
+            "object_id": object_id,
+            "task_id": task_id,
+            "task_name": task_name,
+            "object_name": object_name,
+            "step_num": int(step_num),
+        }
+
+    def identify_task_step(self, object_name, pred_step_num):
         step_num = None
+        task_name = None
+
         if object_name == "bowl":
             step_num = pred_step_num
             task_name = "oatmeal"
@@ -53,31 +82,46 @@ class RunML:
                 step_num = pred_step_num
                 task_name = "tea"
 
-        return {
-            "object_id": object_id,
-            "task_id": task_id,
-            "task_name": task_name,
-            "object_name": object_name,
-            "step_num": int(step_num),
-        }
+        self.current_task_name = task_name
+        self.current_step = step_num
 
     def get_task_id(self, object_id):
-        if object_id in self.tasks:
-            task_id = self.tasks[object_id]
-        else:
-            self.curr_task_id += 1
-            self.tasks[object_id] = self.curr_task_id
-            task_id = self.tasks[object_id]
-        return task_id
+        for task_id, task in self.tasks.items():
+            if object_id in task.get_object_ids():
+                self.tasks[task_id].current_step = self.current_step
+                return task_id
+
+            elif self.current_task_name == task.get_task_name() and self.current_step == task.get_current_step():
+                self.tasks[task_id].current_step = self.current_step
+                self.tasks[task_id].object_ids.add(object_id)  # Add the new object id
+                return task_id
+
+        new_task = Task(object_id)
+        self.curr_task_id += 1
+        self.tasks[self.curr_task_id] = new_task
+        self.tasks[self.curr_task_id].task_name = self.current_task_name
+        self.tasks[self.curr_task_id].current_step = self.current_step
+
+        return self.curr_task_id
 
     def run(self, object_name, object_id, data: list):
         model = self.load_model(object_name)
         if model is None:
             return {}
-        task_id = self.get_task_id(object_id=object_id)
+
         pred_step_num = model.predict(np.array([data]))[0]
+        #pred_proba = model.predict_proba(np.array([data]))
+        # print('>>>> step', pred_step_num)
+        # print('>>>> proba', pred_proba)
+        # if pred_proba.max() <= 0.4:
+        #    return {}
+
+        self.identify_task_step(object_name, pred_step_num)
+
+        task_id = self.get_task_id(object_id=object_id)
+
         return self.create_dashboard_output(
-            object_id, pred_step_num, object_name, task_id
+            task_id, self.current_task_name, self.current_step, object_id, object_name
         )
 
     def run_message(self, message, entire_message):
