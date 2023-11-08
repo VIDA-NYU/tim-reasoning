@@ -42,7 +42,9 @@ class DemoLogger:
 
         timestamp = datetime.now()
 
-        if message is not None:
+        if message is None:
+            new_status = ["NYU", "null", "null", "null"]
+        else:
             task_name = self.recipe_map[message.get('task_name')]
             step_id = message.get('step_id')
             step_status = self._get_step_status(message)
@@ -50,7 +52,7 @@ class DemoLogger:
             if step_status == "error":
                 new_status += [message.get('error_description')]
 
-            self.write_in_file(timestamp, new_status)
+        self.write_in_file(timestamp, new_status)
 
     def _get_step_status(self, message):
         if message.get('error_status'):

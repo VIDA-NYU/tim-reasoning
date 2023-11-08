@@ -459,8 +459,8 @@ class SessionManager:
         Returns:
             dict: final_output that is provided to the ui
         """
-        print('dashboard_output', dashboard_output)
-        print('final_output', final_output)
+        # print('dashboard_output', dashboard_output)
+        # print('final_output', final_output)
         if "task_name" in dashboard_output and "step_num" in dashboard_output:
             if len(final_output["active_tasks"]) > 0:
                 active_task = final_output["active_tasks"][0]
