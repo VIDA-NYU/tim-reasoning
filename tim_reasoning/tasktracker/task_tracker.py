@@ -338,6 +338,18 @@ class TaskTracker:
                     self.object_ids.append(object_id)
                     self.object_labels.append(object_label)
 
+    def set_recipe_name(self, new_recipe_name, new_step_number=1):
+        self.recipe = new_recipe_name
+        self.task_graph = self._setup_task_graph(
+            new_recipe_name, PDDL_DATA_FOLDER, RECIPE_DATA_FOLDER, True, True
+        )
+        self.completed_nodes = {}
+        self.current_step_number = new_step_number
+        self.task_errors = {
+            "missing": [],
+            "reorder": [],
+        }
+
     def set_current_step(self, step_num: int):
         """Set current step number and mark previous as completed
 
@@ -350,12 +362,18 @@ class TaskTracker:
         if step_num < 1:
             raise ValueError("Step number must be greater than 0")
 
-        self.current_step_number = step_num
+        if step_num < self.current_step_number:
+            for node_id, node in self.completed_nodes.items():
+                if node.step_number > step_num:
+                    del self.completed_nodes[node_id]
+            self.current_step_number = step_num
+        else:
+            self.current_step_number = step_num
 
-        # Mark steps before current as completed
-        for node_id, node in self.task_graph.nodes.items():
-            if node.step_number < step_num:
-                self.add_completed_node(node, node_id, [], [])
+            # Mark steps before current as completed
+            for node_id, node in self.task_graph.nodes.items():
+                if node.step_number < step_num:
+                    self.add_completed_node(node, node_id, [], [])
 
         next_recipe_step = self.get_next_recipe_step()
         return next_recipe_step, self._build_output_dict(
