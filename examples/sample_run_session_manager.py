@@ -9,19 +9,21 @@ import json
 
 
 ## either this
-with open("examples/sample_message_errors.json", "r") as f:
-    data = f.read()
-jd = json.loads(data)
-sm = SessionManager(patience=1)
-for j in jd:
-    sm.handle_message(message=j['values'])
+# with open("examples/sample_message_errors.json", "r") as f:
+#     data = f.read()
+# jd = json.loads(data)
+# sm = SessionManager(patience=1)
+# for j in jd:
+#     sm.handle_message(message=j['values'])
 
 
 ## or this
 
-# with open("examples/sample_pinwheels.json", "r") as f:
-#     data = f.read()
+with open("examples/sample_pinwheels.json", "r") as f:
+    data = f.read()
 
-# jd = json.loads(data)
-# sm = SessionManager(patience=1)
-# sm.handle_message(message=jd)
+jd = json.loads(data)
+sm = SessionManager(patience=1)
+for j in jd:
+    print(sm.handle_message(message=[j], entire_message=[]))
+    print("\n\n\n")

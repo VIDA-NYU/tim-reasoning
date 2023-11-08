@@ -465,7 +465,7 @@ class SessionManager:
             if len(final_output["active_tasks"]) > 0:
                 active_task = final_output["active_tasks"][0]
                 if active_task is None:
-                    #active_task = {}
+                    # active_task = {}
                     return final_output
                 task_name = dashboard_output["task_name"]
                 step_num = dashboard_output["step_num"]
@@ -488,7 +488,7 @@ class SessionManager:
                 if target_task_tracker.recipe != task_name:
                     target_task_tracker.set_recipe_name(new_recipe_name=task_name)
                 # update the step based on ml model
-                final_output = self.update_step(
+                final_output = self.update_step_by_ML_prediction(
                     target_task_tracker.get_id(), step_id=step_num + 1
                 )
                 return final_output
@@ -513,8 +513,8 @@ class SessionManager:
         dashboard_output = self.rm.run_message(message[0], entire_message)
         object_id = message[0].get("id")
         object_name = message[0].get("label")
-        #print('hi', object_id, object_name, message[0])
-        #raise ValueError("")
+        # print('hi', object_id, object_name, message[0])
+        # raise ValueError("")
         final_output = self.quick_fix_ui_output(
             final_output, dashboard_output, object_id, object_name
         )
@@ -523,6 +523,26 @@ class SessionManager:
             for output in final_output["active_tasks"]:
                 self.demo_logger.log_message(output)
         return final_output, dashboard_output
+
+    def update_step_by_ML_prediction(self, task_tracker_id, step_id):
+        tt = self.get_task_tracker(task_tracker_id)
+        if tt is None:
+            self.log.error(f"User set step {step_id} for Invalid Task")
+            return
+        else:
+            instruction, track_output = tt.set_current_step(step_num=step_id)
+            if self.verbose:
+                self.log.info(
+                    f"User set step {step_id} for Task {tt.recipe}, received instruction = {instruction}"
+                )
+            active_tasks = self.object_position_tracker.create_active_tasks_output(
+                [track_output]
+            )
+            final_output = {
+                "active_tasks": active_tasks,
+                "inprogress_task_ids": self.get_inprogress_task_ids(),
+            }
+            return final_output
 
     def update_step(self, task_tracker_id, step_id):
         tt = self.get_task_tracker(task_tracker_id)
