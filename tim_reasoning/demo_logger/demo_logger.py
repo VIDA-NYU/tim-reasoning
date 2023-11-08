@@ -42,7 +42,7 @@ class DemoLogger:
 
         timestamp = datetime.now()
         # new_status = ["NYU", "null", "null", "null"]
-        if message:
+        if message is not None:
             task_name = self.recipe_map[message.get('task_name')]
             step_id = message.get('step_id')
             step_status = self._get_step_status(message)
