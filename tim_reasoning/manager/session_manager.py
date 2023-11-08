@@ -459,35 +459,41 @@ class SessionManager:
         Returns:
             dict: final_output that is provided to the ui
         """
-        if "task_name" in dashboard_output and "step_id" in dashboard_output:
-            active_task = final_output["active_tasks"][0]
-            task_name = dashboard_output["task_name"]
-            step_num = dashboard_output["step_num"]
-            active_task["task_name"] = task_name
-            active_task["step_id"] = step_num
+        print('dashboard_output', dashboard_output)
+        print('final_output', final_output)
+        if "task_name" in dashboard_output and "step_num" in dashboard_output:
+            if len(final_output["active_tasks"]) > 0:
+                active_task = final_output["active_tasks"][0]
+                if active_task is None:
+                    #active_task = {}
+                    return final_output
+                task_name = dashboard_output["task_name"]
+                step_num = dashboard_output["step_num"]
+                active_task["task_name"] = task_name
+                active_task["step_id"] = step_num
 
-            instructions = self.get_recipe(task_name=task_name)
-            if len(instructions) > 1:
-                active_task["step_description"] = instructions[str(step_num)]
-                active_task["total_steps"] = len(instructions)
-            final_output["active_tasks"] = [active_task]
-            # object_id from dashboard_output (which has BETTER `task_name` and `step_num`)
-            tts = self.get_probable_task_trackers(
-                object_id=object_id, object_label=object_name
-            )
-            # find tasktracker for given object_id in the backend
-            # change the tts[0]
-            target_task_tracker = tts[0]
-            # if the task is predicted different modify it
-            if target_task_tracker.recipe != task_name:
-                target_task_tracker.set_recipe_name(new_recipe_name=task_name)
-            # update the step based on ml model
-            final_output = self.update_step(
-                target_task_tracker.get_id(), step_id=step_num + 1
-            )
-            return final_output
-        else:
-            return final_output
+                instructions = self.get_recipe(task_name=task_name)
+                if len(instructions) > 1:
+                    active_task["step_description"] = instructions[str(step_num)]
+                    active_task["total_steps"] = len(instructions)
+                final_output["active_tasks"] = [active_task]
+                # object_id from dashboard_output (which has BETTER `task_name` and `step_num`)
+                tts = self.get_probable_task_trackers(
+                    object_id=object_id, object_label=object_name
+                )
+                # find tasktracker for given object_id in the backend
+                # change the tts[0]
+                target_task_tracker = tts[0]
+                # if the task is predicted different modify it
+                if target_task_tracker.recipe != task_name:
+                    target_task_tracker.set_recipe_name(new_recipe_name=task_name)
+                # update the step based on ml model
+                final_output = self.update_step(
+                    target_task_tracker.get_id(), step_id=step_num + 1
+                )
+                return final_output
+
+        return final_output
 
     def handle_message(self, message: list, entire_message: list):
         active_output = []
@@ -506,13 +512,16 @@ class SessionManager:
         }
         dashboard_output = self.rm.run_message(message[0], entire_message)
         object_id = message[0].get("id")
-        object_name = message[0].get("object_name")
+        object_name = message[0].get("label")
+        #print('hi', object_id, object_name, message[0])
+        #raise ValueError("")
         final_output = self.quick_fix_ui_output(
             final_output, dashboard_output, object_id, object_name
         )
         # Log messages throughout trial
-        for output in final_output["active_tasks"]:
-            self.demo_logger.log_message(output)
+        if final_output["active_tasks"] is not None:
+            for output in final_output["active_tasks"]:
+                self.demo_logger.log_message(output)
         return final_output, dashboard_output
 
     def update_step(self, task_tracker_id, step_id):

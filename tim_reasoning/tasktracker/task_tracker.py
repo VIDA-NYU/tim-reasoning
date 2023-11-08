@@ -361,11 +361,14 @@ class TaskTracker:
         """
         if step_num < 1:
             raise ValueError("Step number must be greater than 0")
-
         if step_num < self.current_step_number:
+            nodes_to_delete = []
             for node_id, node in self.completed_nodes.items():
                 if node.step_number > step_num:
-                    del self.completed_nodes[node_id]
+                    nodes_to_delete.append(node_id)
+
+            for node_id in nodes_to_delete:
+                del self.completed_nodes[node_id]
             self.current_step_number = step_num
         else:
             self.current_step_number = step_num
