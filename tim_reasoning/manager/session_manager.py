@@ -13,19 +13,19 @@ from tim_reasoning.reasoning_errors import ReasoningErrors
 from os.path import join, dirname
 
 
-RECIPE_DATA_FOLDER = join(dirname(__file__), "../../data/recipe")
+RECIPE_DATA_FOLDER = join(dirname(__file__), "../resource/recipe")
 
 
 class SessionManager:
     def __init__(
         self,
         unique_objects_file: str = join(
-            dirname(__file__), "../../data/step_goals/unique_objects.json"
+            dirname(__file__), "../resource/step_goals/unique_objects.json"
         ),
         common_objects_file: str = join(
-            dirname(__file__), "../../data/step_goals/common_objects.json"
+            dirname(__file__), "../resource/step_goals/common_objects.json"
         ),
-        data_folder: str = join(dirname(__file__), "../../data/step_goals/"),
+        data_folder: str = join(dirname(__file__), "../resource/step_goals/"),
         patience: int = 1,
         verbose: bool = True,
         ohi_threshold: float = 0.0,

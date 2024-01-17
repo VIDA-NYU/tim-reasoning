@@ -1,7 +1,7 @@
 import pandas as pd
 from os.path import join, dirname
 
-RESOURCE_PATH = join(dirname(__file__), 'resource')
+RESOURCE_PATH = join(dirname(__file__), "../resource/csv")
 OBJECTS_OF_INTEREST = {'bowl', 'mug', 'tortilla'}
 
 

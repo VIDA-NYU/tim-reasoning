@@ -38,15 +38,15 @@ class RunML:
     def load_model(self, object_name):
         loaded_rf = None
         if object_name == "bowl":
-            model_location = join(dirname(__file__), "../../oatmeal_rf.joblib")
+            model_location = join(dirname(__file__), "../resource/models/oatmeal_rf.joblib")
             loaded_rf = joblib.load(model_location)
         elif object_name == "tortilla":
             model_location = join(
-                dirname(__file__), "../../pinwheels_quesadilla_rf.joblib"
+                dirname(__file__), "../resource/models/pinwheels_quesadilla_rf.joblib"
             )
             loaded_rf = joblib.load(model_location)
         elif object_name == "mug":
-            model_location = join(dirname(__file__), "../../tea_coffee_rf.joblib")
+            model_location = join(dirname(__file__), "../resource/models/tea_coffee_rf.joblib")
             loaded_rf = joblib.load(model_location)
         return loaded_rf
 

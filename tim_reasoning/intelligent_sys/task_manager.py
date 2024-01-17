@@ -4,7 +4,7 @@ import sys
 from os.path import join, dirname
 
 
-RECIPE_DATA_FOLDER = join(dirname(__file__), "../../data/recipe")
+RECIPE_DATA_FOLDER = join(dirname(__file__), "../resource/recipe")
 
 
 class TaskManager:
