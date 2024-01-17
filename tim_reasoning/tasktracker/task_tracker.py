@@ -6,8 +6,8 @@ from tim_reasoning.reasoning_errors import ReasoningErrors
 from os.path import join, dirname
 
 
-PDDL_DATA_FOLDER = join(dirname(__file__), "../../data/pddl/gpt-generated")
-RECIPE_DATA_FOLDER = join(dirname(__file__), "../../data/recipe")
+PDDL_DATA_FOLDER = join(dirname(__file__), "../resource/pddl/gpt-generated")
+RECIPE_DATA_FOLDER = join(dirname(__file__), "../resource/recipe")
 
 
 class TaskTracker:

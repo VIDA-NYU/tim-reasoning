@@ -1,6 +1,8 @@
 include LICENSE.txt
 include README.md
 include requirements.txt
-include tim_reasoning/models/mistake_detect_bert/configs/*.json
-include tim_reasoning/resource/mit_recipes/*.json
-include tim_reasoning/resource/annotated_videos/*.csv
+include tim_reasoning/resource/models/*.pddl
+include tim_reasoning/resource/csv/*.csv
+include tim_reasoning/resource/pddl/*.joblib
+include tim_reasoning/resource/recipe/*.json
+include tim_reasoning/resource/step_goals/*.json
