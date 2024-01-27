@@ -32,7 +32,8 @@ class StateManager:
         self.probability_matrix = utils.create_matrix(recipe['_id'])
         self.min_executions = self.probability_matrix['step_times']
         self.transition_matrix = np.zeros(self.probability_matrix['matrix'].shape[0])
-        self.transition_matrix[0] = 1.0
+        if len(self.transition_matrix):
+            self.transition_matrix[0] = 1.0
         self._build_task_graph()
         self.graph_task[self.current_step_index]['step_status'] = StepStatus.NEW
         self.status = RecipeStatus.IN_PROGRESS

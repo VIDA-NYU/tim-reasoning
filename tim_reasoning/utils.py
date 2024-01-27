@@ -11,9 +11,11 @@ ANNOTATED_VIDEOS_PATH = join(dirname(__file__), 'resource', 'annotated_videos')
 def load_recipe_entity_labels(recipe_id):
     with open(join(RECIPES_PATH, f'recipe_{recipe_id}.json')) as fin:
         recipe_data = json.load(fin)
-
-        recipe_object_labels = {'ingredients': list(recipe_data['ingredient_objects'].keys()),
-                                'tools': list(recipe_data['tool_objects'].keys())}
+        if 'ingredient_objects' in recipe_data:
+            recipe_object_labels = {'ingredients': list(recipe_data['ingredient_objects'].keys()),
+                                    'tools': list(recipe_data['tool_objects'].keys())}
+        else:
+            recipe_object_labels = {'ingredients': recipe_data.get('ingredients',[]), 'tools': recipe_data.get('tools', [])}
 
         return recipe_object_labels
 
@@ -57,7 +59,10 @@ def has_common_words(word1, word2):
 
 
 def create_matrix(recipe_id, exclude=None):
-    annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'recipe_{recipe_id}.csv'), keep_default_na=False)
+    try:
+        annotations = pd.read_csv(join(ANNOTATED_VIDEOS_PATH, f'recipe_{recipe_id}.csv'), keep_default_na=False)
+    except Exception:
+        return {'indexes': {}, 'matrix': np.zeros((0,0)), 'step_times': 0}
     annotations = annotations[annotations['video_id'] != exclude]  # For testing
     annotations = annotations[annotations['step_id'] != '']
     no_action_label = 'no action'
@@ -80,6 +85,6 @@ def create_matrix(recipe_id, exclude=None):
     matrix = matrix / step_times[:, np.newaxis]
 
     # There is no way to know how many recipes there are in the train data, a video can contain multiple recipes
-    num_train_videos = {'pinwheels': 6, 'coffee': 6, 'mugcake': 4, 'tourniquet': 4}
+    num_train_videos = {'pinwheels': 6, 'coffee': 6, 'mugcake': 4, 'tourniquet': 4, 'm5': 1}
 
     return {'indexes': unique_actions, 'matrix': matrix, 'step_times': step_times/num_train_videos[recipe_id]}
