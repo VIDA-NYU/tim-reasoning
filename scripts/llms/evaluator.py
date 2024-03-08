@@ -32,6 +32,8 @@ def create_initial_question(video_data):
 
 
 def evaluate_offline_video_understanding(video_id):
+    model_path = '/scratch/rl3725/llms_experiments/LLaMA-VID/work_dirs/llama-vid/llama-vid-7b-full-224-video-fps-1'
+    video_path = f'/scratch/rl3725/llms_experiments/data/ego4d/v2/full_scale/{video_id}_mod.mp4'
     annotations = read_train_data()
     video_data = annotations[video_id]
     general_summary = make_general_summary(video_data)
@@ -40,7 +42,9 @@ def evaluate_offline_video_understanding(video_id):
     questions = [create_initial_question(video_data), 'Describe the video in detail.']
     question_ids = range(len(questions))
     true_answers = [general_summary, detailed_summary]
-    pred_answers = run(questions)
+    pred_answers = run(model_path, video_path, questions, temperature=0.5)
+
+    print(f'{len(pred_answers)} replied questions.')
 
     for question_id, true_answer, pred_answer in zip(question_ids, true_answers, pred_answers):
         if questions[question_id] is not None and true_answer is not None:

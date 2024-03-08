@@ -58,8 +58,11 @@ def read_train_data():
 
 
 if __name__ == '__main__':
+    videos = ['1938c632-f575-49dd-8ae0-e48dbb467920', '51224e32-3d6c-4148-9eea-7b73da751f25',
+              '0c192ca8-1ede-4ef0-a05e-2f4151b6bdfc', 'ac582760-09b1-4a6e-be08-f19f9bf5dfcb', 
+              'grp-42686a5b-10d2-499f-b9a8-8043f528efdd']
     annotations = read_train_data()
-    video_id = '1938c632-f575-49dd-8ae0-e48dbb467920'
+    video_id = videos[4]
     video_data = annotations[video_id]
     general_summary = make_general_summary(video_data)
     detailed_summary = make_detailed_summary(video_data)
