@@ -19,7 +19,16 @@ def read_annotations(file_path):
 
 def get_goal(video_data):
     goal = video_data['goal_description']
+
     return goal
+
+
+def get_steps(video_data):
+    steps = [x['step_description'] for x in video_data['segments']]
+    if len(steps) == 0:
+        return None
+
+    return steps
 
 
 def aggregate_steps(video_data):
