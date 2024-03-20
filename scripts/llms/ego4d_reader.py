@@ -4,7 +4,8 @@ from os.path import join, dirname
 FOLDER_PATH = join(dirname(__file__), './ego4d/annotations')
 
 
-def read_annotations(file_path):
+def read_annotations(data_split='goalstep_train'):
+    file_path = join(FOLDER_PATH, f'{data_split}.json')
     with open(file_path, 'r') as file:
         raw_annotations = json.load(file)
 
@@ -30,6 +31,12 @@ def get_steps(video_data):
 
     return steps
 
+def get_summary_sentences(video_data):
+    steps = video_data['summary']
+    if len(steps) == 0:
+        return None
+
+    return steps
 
 def aggregate_steps(video_data):
     steps = '. '.join(
@@ -60,20 +67,26 @@ def make_detailed_summary(video_data):
     return summary
 
 
-def read_train_data():
-    annotations = read_annotations(join(FOLDER_PATH, 'goalstep_train.json'))
+def get_valid_annotations(*args):
+    all_annotations = read_annotations(*args)
+    valid_annotations = {}
 
-    return annotations
+    for video_id, video_data in all_annotations.items():
+        if len(video_data['segments']) > 0 and len(video_data['summary']) > 0:
+            valid_annotations[video_id] = video_data
 
+    print(f'Found {len(valid_annotations)} valid annotations out of {len(all_annotations)}.')
+
+    return valid_annotations
 
 if __name__ == '__main__':
-    videos = ['1938c632-f575-49dd-8ae0-e48dbb467920', '51224e32-3d6c-4148-9eea-7b73da751f25',
-              '0c192ca8-1ede-4ef0-a05e-2f4151b6bdfc', 'ac582760-09b1-4a6e-be08-f19f9bf5dfcb', 
-              'grp-42686a5b-10d2-499f-b9a8-8043f528efdd']
-    annotations = read_train_data()
-    video_id = videos[4]
-    video_data = annotations[video_id]
+    videos = ['1938c632-f575-49dd-8ae0-e48dbb467920', '51224e32-3d6c-4148-9eea-7b73da751f25', 
+              'ac582760-09b1-4a6e-be08-f19f9bf5dfcb', 'grp-42686a5b-10d2-499f-b9a8-8043f528efdd']
+    valid_annotations = get_valid_annotations()
+    print(list(valid_annotations.keys())[:100])
+    video_id = videos[0]
+    video_data = valid_annotations[video_id]
     general_summary = make_general_summary(video_data)
-    detailed_summary = make_detailed_summary(video_data)
-    print(general_summary)
-    print(detailed_summary)
+    steps = get_steps(video_data)
+    print('Summary:', general_summary)
+    print('Steps:', steps)
