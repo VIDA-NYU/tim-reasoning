@@ -79,14 +79,50 @@ def get_valid_annotations(*args):
 
     return valid_annotations
 
+
+def get_step_timestamps(video_data):
+    step_timestamps = []
+
+    for segment in video_data['segments']:
+        description = segment['step_description']
+        start_time = segment['start_time'] 
+        end_time = segment['end_time']
+        step_timestamps.append({'description': description, 'start_time': start_time, 'end_time': end_time})
+
+    return step_timestamps
+
+
 if __name__ == '__main__':
-    videos = ['1938c632-f575-49dd-8ae0-e48dbb467920', '51224e32-3d6c-4148-9eea-7b73da751f25', 
-              'ac582760-09b1-4a6e-be08-f19f9bf5dfcb', 'grp-42686a5b-10d2-499f-b9a8-8043f528efdd']
+    import random
+    random.seed(27)
+    videos = ['09bccca1-368b-4776-9433-3c8835837110', '1938c632-f575-49dd-8ae0-e48dbb467920']
     valid_annotations = get_valid_annotations()
-    print(list(valid_annotations.keys())[:100])
+    #print(list(valid_annotations.keys())[:100])
     video_id = videos[0]
     video_data = valid_annotations[video_id]
     general_summary = make_general_summary(video_data)
     steps = get_steps(video_data)
-    print('Summary:', general_summary)
-    print('Steps:', steps)
+    #print('Summary:', general_summary)
+    #print('Steps:', steps)
+
+    print('--------- NO MODIFICATION ---------')
+    steps = '. '.join([f'{i}: {x.capitalize()}' for i, x in enumerate(steps, 1)])
+    print(f'In the video the person should follow these steps: {steps}. Which step is missing in the video?', '\n')
+    print(f'In the video the person should follow these steps: {steps}. Were the steps done in order?', '\n')
+
+    print('---------- MISSING STEPS ----------')
+    steps = get_steps(video_data)
+    new_step = 'Cut the oranges'
+    position_to_insert = random.randrange(len(steps) - 1 )
+    steps.insert(position_to_insert, new_step)
+    steps = '. '.join([f'{i}: {x.capitalize()}' for i, x in enumerate(steps, 1)])
+    print(f'In the video the person should follow these steps: {steps}. Which step is missing in the video?', '\n')
+
+    print('--------- REORDERED STEPS ---------')
+    steps = get_steps(video_data)
+    random.shuffle(steps)
+    steps = '. '.join([f'{i}: {x.capitalize()}' for i, x in enumerate(steps, 1)])
+    print(f'In the video the person should follow these steps: {steps}. Were the steps done in order?', '\n')
+
+    step_timestamps = get_step_timestamps(video_data)
+    print(step_timestamps)
