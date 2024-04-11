@@ -1,29 +1,18 @@
-# Based on this: https://github.com/dvlab-research/LLaMA-VID/blob/main/llamavid/serve/cli.py
-import argparse
-import torch
-
-from llamavid.constants import IMAGE_TOKEN_INDEX, DEFAULT_IMAGE_TOKEN, DEFAULT_IM_START_TOKEN, DEFAULT_IM_END_TOKEN
-from llamavid.conversation import conv_templates, SeparatorStyle
-from llamavid.model.builder import load_pretrained_model
-from llava.utils import disable_torch_init
-from llava.mm_utils import tokenizer_image_token, get_model_name_from_path, KeywordsStoppingCriteria
-
-from PIL import Image
+import sys
+import os
+import random
+import numpy as np
+import pandas as pd
+from os.path import dirname, join
+from torchmetrics.text import BLEUScore
+from torchmetrics.text.rouge import ROUGEScore
 from decord import VideoReader, cpu
+from ego4d_reader import get_goal, aggregate_steps, get_valid_annotations, get_steps, make_general_summary, \
+    make_detailed_summary, get_summary_sentences, get_step_timestamps
+from llamavid_runner import run, run_by_clips
 
-import requests
-from PIL import Image
-from io import BytesIO
-from transformers import TextStreamer
-
-
-def load_image(image_file):
-    if image_file.startswith('http') or image_file.startswith('https'):
-        response = requests.get(image_file)
-        image = Image.open(BytesIO(response.content)).convert('RGB')
-    else:
-        image = Image.open(image_file).convert('RGB')
-    return image
+random.seed(27)
+annotations = get_valid_annotations()
 
 
 def load_video(video_path, fps=1):
@@ -31,120 +20,68 @@ def load_video(video_path, fps=1):
     fps = round(vr.get_avg_fps() / fps)
     frame_idx = [i for i in range(0, len(vr), fps)]
     spare_frames = vr.get_batch(frame_idx).asnumpy()
+    
     return spare_frames
 
 
-def run(model_path, image_file, questions, model_base=None, load_8bit=True, load_4bit=True, a_conv_mode=None, temperature=0.2, top_p=0.7, max_new_tokens=512, debug=True):
-    # Model
-    disable_torch_init()
-    answers = []
-    model_name = get_model_name_from_path(model_path)
-    tokenizer, model, image_processor, context_len = load_pretrained_model(model_path, model_base, model_name, load_8bit, load_4bit)
+def create_step_question(video_data):
+    goal = get_goal(video_data).lower()
+    steps = aggregate_steps(video_data)
+    if steps is None:
+        return None
+    question = f'In the video, the person should be {goal}, these are the recipe steps: {steps}. In which step is the person?'
 
-    if 'llama-2' in model_name.lower():
-        conv_mode = "llava_llama_2"
-    elif "v1" in model_name.lower() or "vid" in model_name.lower():
-        conv_mode = "llava_v1"
-    elif "mpt" in model_name.lower():
-        conv_mode = "mpt"
-    else:
-        conv_mode = "llava_v0"
+    return question
 
-    if a_conv_mode is not None and conv_mode != a_conv_mode:
-        print(
-            '[WARNING] the auto inferred conversation mode is {}, while `--conv-mode` is {}, using {}'.format(conv_mode,
-                                                                                                              a_conv_mode,
-                                                                                                              a_conv_mode))
-    else:
-        a_conv_mode = conv_mode
+def get_current_step(step_timestamps, start_time, end_time):
+    current_step = None
 
-    conv = conv_templates[a_conv_mode].copy()
-    if "mpt" in model_name.lower():
-        roles = ('user', 'assistant')
-    else:
-        roles = conv.roles
-
-    if image_file is not None:
-        if '.mp4' in image_file:
-            image = load_video(image_file)
-            image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
-            image_tensor = [image_tensor]
-        else:
-            image = load_image(image_file)
-            image_tensor = image_processor.preprocess(image, return_tensors='pt')['pixel_values'].half().cuda()
-    else:
-        image_tensor = None
-
-    question_counter = 0
-    while question_counter < len(questions):
-        try:
-            inp = questions[question_counter]#input(f"{roles[0]}: ")
-            print(f"{roles[0]}: {inp}")
-        except EOFError:
-            inp = ""
-        if not inp:
-            print("exit...")
+    for index, step_timestamp in enumerate(step_timestamps, 1):
+        if step_timestamp['start_time'] <= start_time and end_time <= step_timestamp['end_time']:
+            current_step = str(index) + '. ' + step_timestamp['description']
             break
-        question_counter += 1
-        print(f"{roles[1]}: ", end="")
-
-        model.update_prompt([[inp]])
-
-        if image_file is not None:
-            # first message
-            if model.config.mm_use_im_start_end:
-                inp = DEFAULT_IM_START_TOKEN + DEFAULT_IMAGE_TOKEN + DEFAULT_IM_END_TOKEN + '\n' + inp
-            else:
-                inp = DEFAULT_IMAGE_TOKEN + '\n' + inp
-            conv.append_message(conv.roles[0], inp)
-            image = None
-        else:
-            # later messages
-            conv.append_message(conv.roles[0], inp)
-        conv.append_message(conv.roles[1], None)
-        prompt = conv.get_prompt()
-
-        input_ids = tokenizer_image_token(prompt, tokenizer, IMAGE_TOKEN_INDEX, return_tensors='pt').unsqueeze(0).cuda()
-        stop_str = conv.sep if conv.sep_style != SeparatorStyle.TWO else conv.sep2
-        keywords = [stop_str]
-        stopping_criteria = KeywordsStoppingCriteria(keywords, tokenizer, input_ids)
-        streamer = TextStreamer(tokenizer, skip_prompt=True, skip_special_tokens=True)
-
-        with torch.inference_mode():
-            output_ids = model.generate(
-                input_ids,
-                images=image_tensor,
-                do_sample=True,
-                temperature=temperature,
-                top_p=top_p,
-                max_new_tokens=max_new_tokens,
-                streamer=streamer,
-                use_cache=True,
-                stopping_criteria=[stopping_criteria])
-
-        outputs = tokenizer.decode(output_ids[0, input_ids.shape[1]:]).strip()
-        conv.messages[-1][-1] = outputs
-        conv.messages[-2][-1] = conv.messages[-2][-1].replace(DEFAULT_IMAGE_TOKEN + '\n', '')
-
-        answers.append(outputs)
-
-        if debug:
-            print("\n", {"prompt": prompt, "outputs": outputs}, "\n")
-
-        return answers
+        '''elif step_timestamp['start_time'] <= start_time:
+            current_step += str(index) + '. ' + step_timestamp['description']
+        elif end_time <= step_timestamp['end_time']:
+            current_step += str(index) + '. ' + step_timestamp['description']
+            break'''
+            
+    return current_step
 
 
-if __name__ == "__main__":
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--model-path", type=str, default="facebook/opt-350m")
-    parser.add_argument("--model-base", type=str, default=None)
-    parser.add_argument("--image-file", type=str, default=None)
-    parser.add_argument("--num-gpus", type=int, default=1)
-    parser.add_argument("--conv-mode", type=str, default=None)
-    parser.add_argument("--temperature", type=float, default=0.2)  # set to 0.5 for video
-    parser.add_argument("--top-p", type=float, default=0.7)
-    parser.add_argument("--max-new-tokens", type=int, default=512)
-    parser.add_argument("--load-8bit", action="store_true")
-    parser.add_argument("--load-4bit", action="store_true")
-    parser.add_argument("--debug", action="store_true")
-    args = parser.parse_args()
+
+def run_llamavid(video_ids):
+    window_size = 5
+    results = {'video_id': [], 'true_answer': [], 'predicted_answer': []}
+    output_path = 'results_llamavid.csv'
+
+    for video_id in video_ids:
+        video_path = f'/scratch/rl3725/llms_experiments/data/ego4d/v2/full_scale_mod/{video_id}.mp4'
+        video_frames = load_video(video_path)
+        video_data = annotations[video_id]
+        step_timestamps = get_step_timestamps(video_data)
+        questions = [create_step_question(video_data)]
+        start_time = 0
+        
+        while start_time < len(video_frames):
+            end_time = start_time + window_size
+            clip_frames = video_frames[start_time:end_time]
+            true_answer = get_current_step(step_timestamps, start_time, end_time)
+            
+            if true_answer is not None:
+                predicted_answer = run_by_clips(clip_frames, questions)[0]
+                results['video_id'].append(video_id)
+                results['true_answer'].append(true_answer)
+                results['predicted_answer'].append(predicted_answer)
+                print(f'Start time:{start_time}, end time: {end_time}, true answer: {true_answer}, predicted answer: {predicted_answer}')
+            start_time = end_time
+    
+    results_df = pd.DataFrame.from_dict(results)
+    exist_file = os.path.exists(output_path)
+    results_df.to_csv(output_path, index=False, mode='a', header=not exist_file)
+
+
+if __name__ == '__main__':
+    video_ids = ['09bccca1-368b-4776-9433-3c8835837110']#, '1938c632-f575-49dd-8ae0-e48dbb467920']
+    #video_ids = ['39d087b0-afc2-47d8-ba91-b70dd8fab90e', '2f6da5f6-e26c-4ac3-8f71-12386f7588e2', '09bccca1-368b-4776-9433-3c8835837110', '6639f53c-701d-4fe7-adcd-55d040ce8afe', 'grp-090c6bc0-49da-4d3b-b209-a1a60aeb0317', 'd9691bde-a0b2-4521-8374-a74f594aaaac', '4c642620-db0e-4096-9ece-2b2c6fdb47b0', 'grp-ab070b36-def2-4ad7-a760-2a9ce29ce505', 'grp-d250521e-5197-44aa-8baa-2f42b24444d2', '5cdf77b8-7bf8-421b-99b6-19fa6429aeb4', '546a1aed-676d-44ed-a63c-8db89fa4d935', '94d5eff8-0fac-4719-adf2-5c0208ab89f7', '91e3e6ce-bc01-4720-a490-e319dd380509', '1938c632-f575-49dd-8ae0-e48dbb467920', 'b0a55292-f9a0-4af2-8f2a-bd6d7eff2b2e', '51224e32-3d6c-4148-9eea-7b73da751f25', 'b83285c5-0b88-4ced-a52e-5c34ea371507', 'grp-2be0151d-8ee7-4e7a-adf5-6b2b3d5afdb0', '68205f0f-9b30-4d81-986d-f8816e70bddd', '0ebb682e-6aec-482c-bbb7-774ec5eca906', '78b06017-cd7b-441c-ba48-33c04e37a82a', '1bece8d5-2d0f-47bb-a1f0-4fc3f94970f5', '4fa75795-ddc4-4582-9715-bb7887439263', 'grp-344098b8-3b27-4a98-a11d-f18fa5c25a5c', 'grp-5c00fc7f-e94b-47ac-98bb-a04896fd6092', 'grp-0cf6e8bd-48a6-4764-9367-c59603a00e4e', 'c939aae4-e7c8-453c-8671-40573db0c656', 'f5b87541-3879-444f-be65-2b17f1d95735', '8383791d-2df9-4bac-89b6-4cc01df5f4d1', '748536e4-636a-4dc6-b1a7-d9cbfdc1cffd', 'grp-66a0900b-069d-48bf-9071-f4e659f8a9d0', 'f7a0beb6-b220-40c0-a72d-ec4b79134a73', 'grp-9f28e782-417c-4c8b-a7ae-42fc96a0e94f', 'grp-e191e0de-e570-4925-9cbb-e05fe1132a47', '4bddae9e-8ffb-4a03-9421-adf6268d91b6', '48475a9f-e11e-46f7-bdb6-398b44af344e', 'b4072935-56a6-4765-bb4d-d5f6bbeb95b9', 'aa7e4a70-abda-4ef4-a1e0-5af5bda1e560', '737e9619-7768-407c-8a4f-6fe1e8d61f04', 'c79e05d5-eaf6-4323-a707-744020743037', '0fe191ef-c28a-422c-aede-46f8aa8532a6', '1ab9d5f7-0181-458e-a5e7-72ce87501f3e', '71c04f59-46c2-4ac8-af56-e04b29acc8ec', 'grp-0eb88d90-6da1-4957-bc4f-1ced804cd7ce', '1025f75a-dc3d-4a90-9542-8a92755e0761', '9961615a-7e54-4b22-84ee-8e05f52c22df', '97811639-7def-4034-8083-a82a59156234', 'grp-0b215326-8706-4611-9b76-3402d617f19e', '2c27b5f1-4af6-49ad-a43c-3efb0c150868', 'ec3556de-be79-4ad4-aa0f-eaca48abb5d5', 'd51a0b73-1ad7-4d4e-be99-714f6637668a', '26202090-684d-4be8-b3cc-de04da827e91', 'grp-bbd4830e-fad8-4339-8290-eb298cf6ca30', 'f4cc5fdc-f64f-4dd7-9b95-61db9bbf33d5', 'grp-fc70c4fe-13e1-4691-ab97-501a22b3a71e', '3a03f541-a520-4b67-87b2-f9c79f9b54ee', 'e7bb40bd-2ba3-4ac9-8e10-b209504f2964', 'grp-a738fe92-4d8e-48db-9c1f-280a7471b5dd', 'fa35a547-13b5-4355-873c-322c1860349a', 'grp-6fea409b-159e-45cb-8fac-da7779d02309', 'grp-94cdabf3-c078-4ad4-a3a1-c42c8fc3f4ad', 'f42ae9c2-d43e-45af-8adb-02d0b16b2ef7', '767dbef9-f625-4785-810c-7d8c78c1eddb', 'be8889c4-114f-4cb2-9e2c-fef576dbb00d', 'f938bcd9-bf30-4dfb-9a99-d6b9ee53c046', 'grp-86b7a8dc-e0ba-4b21-a097-eed463fb2747', '15d2dc4a-b935-49f4-ae91-4c9100b681c8', '2f46d1e6-2a85-4d46-b955-10c2eded661c', 'grp-f6a0d8f5-468d-4e47-bfca-e7d13b75f26d', 'cda837dd-1632-45f8-88f7-cfbf7875523b', 'ebc9f0f8-924b-47d1-a639-de4f2d6e6a4c', '3ec3eab7-842d-409d-8866-42ddcbd24cd9', '37d183ce-ba64-4ad2-8a54-ae2fb791fd38', '272e8bcd-32a8-48ce-a9c4-a5f0a4f15145', 'ab875220-cd6c-410d-8fbc-94742e51e775', 'grp-65403036-df60-4ccb-ac72-2808b841665c', 'grp-a3e528b8-dce9-431f-b3ca-b2707f3439d2', '93f78437-229d-4824-a8c1-68d9b17e754d', '42d548dc-bb10-427f-a1fe-468f31bc0de5', 'grp-6de30946-5d3a-47a8-b1d0-790937405da3', 'grp-d13aa822-29de-428a-bdf4-f4d6ec4a22e0', 'grp-745aef91-750a-48aa-9464-88802a2a7a40', 'grp-d59f69bd-8250-4d06-998b-f057f51e6a8f', 'grp-415c9b83-b4a1-49ba-832b-f77c2e6f996c', '42e4a840-68a1-4992-923d-7452500b4218', 'grp-95710114-4168-47b4-a63e-a4d220b42fcf', 'grp-ef725741-fe17-4bd2-ad6e-aba3e9468fd5', '049cfb89-3bcc-4fa3-8d0e-4e7e218b05ae', 'f43bb351-fb98-4a74-bd50-f57e91d3863f', '5093842e-7cf9-4509-bf04-6e0ec6b75b27', 'grp-530dd2a8-462c-450b-9f38-1dfff28f139e', 'grp-87cfce50-3d03-4ffe-b9a7-e94a435175e3', 'grp-5aa3cd50-4925-4a1a-a8d5-2e18af017660', 'f735d4bb-d65e-4965-ac0d-270c0b9e5993', '4474c9c2-9d20-46fd-8fec-7d64942738e7', 'e3d02ddb-f386-4ae3-a62d-e4fe4db7f345', 'bc6bf18b-0ef8-4cb9-aa51-d5d3558916e5', '690f58f1-f18c-4415-bab0-787c2f83d051', 'grp-229e8124-605e-4c86-b4ac-fc03e0a71111', 'grp-dc4afc9e-7a2d-4876-b5cf-fde740582358']
+    run_llamavid(video_ids)
