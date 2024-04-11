@@ -4,7 +4,7 @@
 #SBATCH --mem 48GB
 #SBATCH --time 00:30:00
 #SBATCH --job-name=llms
-#SBATCH --output logs/video_runner_job_%J.out
+#SBATCH --output logs/video_processor_job_%J.out
 
 
 ./sing << EOF
