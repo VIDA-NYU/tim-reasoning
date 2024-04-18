@@ -5,6 +5,6 @@ videos="2f6da5f6-e26c-4ac3-8f71-12386f7588e2 09bccca1-368b-4776-9433-3c883583711
 for video in $videos
 do
          echo "Running video ${video}"
-         sbatch video_runner.SBATCH $video
+         sbatch video_processor.SBATCH $video
 done
 
