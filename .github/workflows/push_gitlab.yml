@@ -13,6 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
+    - name: Ensure main branch exists
+      run: |
+        git checkout -b main || git checkout main
+
     - name: Push to GitLab
       env:
         GITLAB_URL: ${{ secrets.GITLAB_URL }}
