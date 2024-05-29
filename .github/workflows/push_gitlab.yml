@@ -1,0 +1,22 @@
+name: Push to GitLab
+
+on:
+  push:
+    branches:
+      - gitlab
+
+jobs:
+  push_to_gitlab:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Push to GitLab
+      env:
+        GITLAB_URL: ${{ secrets.GITLAB_URL }}
+        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+      run: |
+        git remote add gitlab $GITLAB_URL
+        git push gitlab main
