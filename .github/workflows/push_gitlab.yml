@@ -13,7 +13,10 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
       with:
-        fetch-depth: 0
+        fetch-depth: 1  # Shallow clone to speed up initial checkout
+
+    - name: Convert to full repository
+      run: git fetch --unshallow
 
     - name: Ensure main branch exists
       run: |
