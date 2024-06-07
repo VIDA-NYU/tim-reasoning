@@ -3,35 +3,35 @@ name: Push to GitLab
 on:
   push:
     branches:
-      - gitlab
+      - '*'
 
 jobs:
-  push_to_gitlab:
+  mirror_to_gitlab:
     runs-on: ubuntu-latest
 
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-      with:
-        fetch-depth: 1  # Shallow clone to speed up initial checkout
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 0  # Fetch all history to ensure the current branch is fully included
 
-    - name: Convert to full repository
-      run: git fetch --unshallow
+      - name: Set up Git
+        run: |
+          git config --global user.name 'GitHub Actions'
+          git config --global user.email 'actions@github.com'
 
-    - name: Ensure main branch exists
-      run: |
-        git checkout -b main || git checkout main
-        
-    - name: Set up Git
-      run: |
-        git config --global user.name 'github-actions'
-        git config --global user.email 'actions@github.com'
-        git config --global http.postBuffer 10000000  # 10 MB
-        
-    - name: Add GitLab remote and push
-      env:
-        GITLAB_URL: ${{ secrets.GITLAB_URL }}
-        GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
-      run: |
-        git remote set-url origin https://oauth2:$GITLAB_TOKEN@$GITLAB_URL
-        git push origin main
+      - name: Add GitLab remote
+        env:
+          GITLAB_URL: ${{ secrets.GITLAB_URL }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          git remote set-url origin https://oauth2:$GITLAB_TOKEN@$GITLAB_URL
+
+      - name: Push current branch to GitLab
+        env:
+          GITLAB_URL: ${{ secrets.GITLAB_URL }}
+          GITLAB_TOKEN: ${{ secrets.GITLAB_TOKEN }}
+        run: |
+          # Push the current branch to GitLab
+          git push origin ${{ github.ref_name }}
+          
